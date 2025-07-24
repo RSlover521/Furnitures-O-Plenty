@@ -1,6 +1,8 @@
-package com.rslover521.furnituressoplenty;
+package com.rslover521.furnituresoplenty;
 
 import com.mojang.logging.LogUtils;
+
+import net.minecraftforge.event.server.ServerStartingEvent;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 import org.slf4j.Logger;
@@ -13,7 +15,12 @@ public class FurnituresOPlenty {
     // Directly reference a slf4j logger
     private static final Logger LOGGER = LogUtils.getLogger();
 
-    public FurnituresOPlenty(FMLJavaModLoadingContext context) {
-    	LOGGER.info("hi");
+    @SuppressWarnings("removal")
+	public FurnituresOPlenty(FMLJavaModLoadingContext context) {
+    	ModBlocks.BLOCKS.register(FMLJavaModLoadingContext.get().getModEventBus());
+    	ModBlocks.ITEMS.register(FMLJavaModLoadingContext.get().getModEventBus());
+    }
+    public static void onServerStart(ServerStartingEvent event) {
+    	LOGGER.info("Initializing Furnitures O' Plenty and recipes");
     }
 }
