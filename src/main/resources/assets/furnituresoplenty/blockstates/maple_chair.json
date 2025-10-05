@@ -1,5 +1,7 @@
 {
   "variants": {
-    "": { "model": "yourmod:block/maple_chair" }
+    "": {
+      "model": "furnituresoplenty:block/maple_chair"
+    }
   }
 }

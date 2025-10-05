@@ -1,6 +1,6 @@
 package com.rslover521.furnituresoplenty;
 
-import com.rslover521.ModBlocks.MapleChairBlock;
+import com.rslover521.ModBlocks.CustomChairBlock;
 
 import net.minecraft.core.registries.BuiltInRegistries;
 import net.minecraft.resources.ResourceKey;
@@ -20,8 +20,9 @@ public class ModBlocks {
 	public static final DeferredRegister<Block> BLOCKS = DeferredRegister.create(ForgeRegistries.BLOCKS, FurnituresOPlenty.MODID);
 	public static final DeferredRegister<Item> ITEMS = DeferredRegister.create(ForgeRegistries.ITEMS, FurnituresOPlenty.MODID);
 	
-	public static final RegistryObject<Block> MAPLE_CHAIR = BLOCKS.register("maple_chair", MapleChairBlock::new);
+	public static final RegistryObject<Block> MAPLE_CHAIR = BLOCKS.register("maple_chair", () -> new CustomChairBlock("maple"));
 	
 	public static final RegistryObject<BlockItem> MAPLE_CHAIR_ITEM = ITEMS.register("maple_chair",
 			() -> new BlockItem(MAPLE_CHAIR.get(), new Item.Properties()));
+	
 }
