@@ -6,6 +6,8 @@ import java.util.List;
 import com.mrcrayfish.furniture.refurbished.block.ChairBlock;
 import com.rslover521.entity.SeatEntity;
 
+import biomesoplenty.api.block.BOPWoodTypes;
+
 import net.minecraft.core.BlockPos;
 import net.minecraft.world.InteractionHand;
 import net.minecraft.world.InteractionResult;
@@ -22,14 +24,14 @@ import net.minecraft.world.phys.AABB;
 import net.minecraft.world.phys.BlockHitResult;
 import net.minecraft.resources.ResourceLocation;
 
-public class CustomChairBlock extends Block {
-	private final String woodTypeName;
+public class CustomChairBlock extends ChairBlock {
+	private WoodType woodType;
 	
-	public CustomChairBlock(String woodTypeName) {
-		super(Properties.of()
+	public CustomChairBlock(WoodType woodType) {
+		super(woodType, Properties.of()
 				.strength(1.5F)
 				.sound(SoundType.WOOD));
-		this.woodTypeName = woodTypeName;
+		this.woodType = woodType;
 	}
 	
 	@Override
@@ -43,7 +45,11 @@ public class CustomChairBlock extends Block {
 		return InteractionResult.CONSUME;
 	}
 	
-	public String getWoodTypeName() {
-		return woodTypeName;
+	public WoodType getWoodType() {
+		return woodType;
+	}
+	
+	public void setWoodType(WoodType woodType) {
+		this.woodType = woodType;
 	}
 }

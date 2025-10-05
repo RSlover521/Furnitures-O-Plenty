@@ -8,7 +8,7 @@ import net.minecraft.world.entity.MobCategory;
 import net.minecraft.world.level.Level;
 import net.minecraftforge.network.NetworkHooks;
 
-public class SeatEntity extends Entity{
+public class SeatEntity extends Entity {
 	public static final EntityType<SeatEntity> TYPE = EntityType.Builder
 			.<SeatEntity>of(SeatEntity::new, MobCategory.MISC)
 			.sized(0.001F, 0.001F)

@@ -1,6 +1,7 @@
 package com.rslover521.furnituresoplenty;
 
 import com.mojang.logging.LogUtils;
+import com.rslover521.ModBlocks.BOPWoodFurnitureRegistry;
 
 import net.minecraft.world.item.Item;
 import net.minecraft.world.level.block.Block;
@@ -35,8 +36,15 @@ public class FurnituresOPlenty {
     	
     	ModBlocks.BLOCKS.register(modEventBus);
     	ModBlocks.ITEMS.register(modEventBus);
+    	
+    	BOPWoodFurnitureRegistry.BLOCKS.register(modEventBus);
+    	BOPWoodFurnitureRegistry.ITEMS.register(modEventBus);
+    	
+    	BOPWoodFurnitureRegistry.registerAllChairs();
     }
     public static void onServerStart(ServerStartingEvent event) {
     	LOGGER.info("Initializing Furnitures O' Plenty and recipes");
     }
+    
+    
 }
