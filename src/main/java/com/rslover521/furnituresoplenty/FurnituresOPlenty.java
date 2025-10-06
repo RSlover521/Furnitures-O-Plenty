@@ -17,8 +17,8 @@ public class FurnituresOPlenty {
 
     @SuppressWarnings("removal")
 	public FurnituresOPlenty(FMLJavaModLoadingContext context) {
-    	ModBlocks.BLOCKS.register(FMLJavaModLoadingContext.get().getModEventBus());
-    	ModBlocks.ITEMS.register(FMLJavaModLoadingContext.get().getModEventBus());
+    	ModFurnitures.BLOCKS.register(FMLJavaModLoadingContext.get().getModEventBus());
+    	ModFurnitures.ITEMS.register(FMLJavaModLoadingContext.get().getModEventBus());
     }
     public static void onServerStart(ServerStartingEvent event) {
     	LOGGER.info("Initializing Furnitures O' Plenty and recipes");
