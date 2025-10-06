@@ -1,0 +1,14 @@
+{
+  "type": "refurbished_furniture:workbench",
+  "result": {
+    "item": "furnituresoplenty:maple_chair"
+  },
+  "ingredients": [
+    {
+      "item": "biomesoplenty:maple_planks"
+    },
+    {
+      "item": "biomesoplenty:maple_planks"
+    }
+  ]
+}

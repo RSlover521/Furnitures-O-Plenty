@@ -122,8 +122,9 @@ repositories {
     }
     // If you have mod jar dependencies in ./libs, you can declare them as a repository like so.
     // See https://docs.gradle.org/current/userguide/declaring_repositories.html#sub:flat_dir_resolver
+    mavenLocal()
     flatDir {
-    	dir 'libs'
+    	dirs 'libs'
     }
 }
 
@@ -145,14 +146,19 @@ dependencies {
     // This maps to ./libs/coolmod-${mc_version}-${coolmod_version}.jar
     // The group id is ignored when searching -- in this case, it is "blank"
     // implementation fg.deobf("blank:coolmod-${mc_version}:${coolmod_version}")
+    
+   	// MrCrayfish�s Refurbished Furniture
+    implementation fg.deobf("libs:refurbished_furniture-forge-1.20.1-1.0.14")
 
-    implementation fg.deobf(name: "refurbished_furniture-forge-1.20.1-1.0.14")
-    implementation fg.deobf(name: "BiomesOPlenty-forge-1.20.1-19.0.0.96")
-    implementation fg.deobf(name: "framework-forge-1.20.1-0.7.15")
-    implementation fg.deobf(name: "TerraBlender-forge-1.20.1-3.0.1.10")
-    implementation fg.deobf(name: "GlitchCore-forge-1.20.1-0.0.1.1")
+    // Biomes O� Plenty
+    compileOnly fg.deobf("libs:BiomesOPlenty-forge-1.20.1-19.0.0.96")
+    runtimeOnly fg.deobf("libs:BiomesOPlenty-forge-1.20.1-19.0.0.96")
 
-
+    // Framework + TerraBlender + GlitchCore
+    implementation fg.deobf("libs:framework-forge-1.20.1-0.7.15")
+    implementation fg.deobf("libs:TerraBlender-forge-1.20.1-3.0.1.10")
+    implementation fg.deobf("libs:GlitchCore-forge-1.20.1-0.0.1.1")
+    
     // For more info:
     // http://www.gradle.org/docs/current/userguide/artifact_dependencies_tutorial.html
     // http://www.gradle.org/docs/current/userguide/dependency_management.html
