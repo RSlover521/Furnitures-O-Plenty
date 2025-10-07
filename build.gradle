@@ -147,17 +147,31 @@ dependencies {
     // The group id is ignored when searching -- in this case, it is "blank"
     // implementation fg.deobf("blank:coolmod-${mc_version}:${coolmod_version}")
     
-   	// MrCrayfish�s Refurbished Furniture
-    implementation fg.deobf("libs:refurbished_furniture-forge-1.20.1-1.0.14")
+   	// TerraBlender (Curse Maven)
+    implementation fg.deobf('curse.maven:terrablender-563928:5068217')
+    // local fallback if you have the jar in libs/
+    // modImplementation fg.deobf(files('libs/terrablender-3.0.1.10.jar'))
 
-    // Biomes O� Plenty
-    compileOnly fg.deobf("libs:BiomesOPlenty-forge-1.20.1-19.0.0.96")
-    runtimeOnly fg.deobf("libs:BiomesOPlenty-forge-1.20.1-19.0.0.96")
+    // Biomes O' Plenty 19.0.0.96 (Curse Maven)
+    implementation fg.deobf('curse.maven:biomes-o-plenty-220318:6364065')
+    // local fallback
+    // modImplementation fg.deobf(files('libs/BiomesOPlenty-forge-1.20.1-19.0.0.96.jar'))
 
-    // Framework + TerraBlender + GlitchCore
-    implementation fg.deobf("libs:framework-forge-1.20.1-0.7.15")
-    implementation fg.deobf("libs:TerraBlender-forge-1.20.1-3.0.1.10")
-    implementation fg.deobf("libs:GlitchCore-forge-1.20.1-0.0.1.1")
+    // Refurbished Furniture 1.0.14 (Curse Maven)
+    implementation fg.deobf('curse.maven:refurbished-furniture-897116:6623931')
+    // local fallback
+    // modImplementation fg.deobf(files('libs/refurbished_furniture-forge-1.20.1-1.0.14.jar'))
+
+    // Framework 0.7.15 (Curse Maven)
+    implementation fg.deobf('curse.maven:framework-549225:6531428')
+    // local fallback
+    // modImplementation fg.deobf(files('libs/framework-forge-1.20.1-0.7.15.jar'))
+
+    // GlitchCore 0.0.1.1 (Curse Maven)
+    implementation fg.deobf('curse.maven:glitchcore-955399:5787839')
+    // local fallback
+    // modImplementation fg.deobf(files('libs/GlitchCore-forge-1.20.1-0.0.1.1.jar'))
+
     
     // For more info:
     // http://www.gradle.org/docs/current/userguide/artifact_dependencies_tutorial.html
