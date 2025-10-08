@@ -1,0 +1,64 @@
+{
+    "go.toolsManagement.checkForUpdates": "local",
+    "go.useLanguageServer": true,
+    "go.gopath": "/go",
+    "python.defaultInterpreterPath": "/home/codespace/.python/current/bin/python3",
+    "jupyter.kernels.filter": [
+        {
+            "path": "/opt/conda/bin/python",
+            "type": "pythonEnvironment"
+        },
+        {
+            "path": "/bin/python2",
+            "type": "pythonEnvironment"
+        },
+        {
+            "path": "/usr/bin/python2",
+            "type": "pythonEnvironment"
+        },
+        {
+            "path": "/usr/local/python/current/bin/python3",
+            "type": "pythonEnvironment"
+        },
+        {
+            "path": "/usr/local/python/current/bin/python",
+            "type": "pythonEnvironment"
+        },
+        {
+            "path": "/usr/bin/python3",
+            "type": "pythonEnvironment"
+        },
+        {
+            "path": "/bin/python3",
+            "type": "pythonEnvironment"
+        }
+    ],
+    "lldb.executable": "/usr/bin/lldb",
+    "github.copilot.chat.codeGeneration.instructions": [
+        {
+            "text": "This workspace is in a dev container running on \"Ubuntu 24.04.2 LTS\".\n\nUse `\"$BROWSER\" <url>` to open a webpage in the host's default browser.\n\nSome of the command line tools available on the `PATH`: `apt`, `dpkg`, `docker`, `git`, `gh`, `kubectl`, `curl`, `wget`, `ssh`, `scp`, `rsync`, `gpg`, `ps`, `lsof`, `netstat`, `top`, `tree`, `find`, `grep`, `zip`, `unzip`, `tar`, `gzip`, `bzip2`, `xz`"
+        }
+    ],
+
+    // --- Minecraft / Java LS fixes ---
+    "java.configuration.inferredSourceRoots": [],
+    "java.project.explorer.showNonJavaResources": true,
+    "java.import.exclusions": [
+        "**/jdk/nashorn/**"
+    ],
+    "java.project.referencedLibraries": [
+        "/home/codespace/.gradle/caches/forge_gradle/minecraft_user_repo/mcp/1.20.1-20230612.114412/joined/decompile/output.jar"
+    ],
+    "java.sourcePaths": [
+        "/home/codespace/.gradle/caches/forge_gradle/minecraft_user_repo/mcp/1.20.1-20230612.114412/joined/decompile"
+    ],
+    "java.compile.nullAnalysis.mode": "automatic",
+    "java.configuration.updateBuildConfiguration": "automatic",
+    "java.format.settings.url": ".vscode/java-formatter.xml",
+    "[java]": {
+        "editor.insertSpaces": false
+    },
+    "githubPullRequests.ignoredPullRequestBranches": [
+        "main"
+    ]
+}

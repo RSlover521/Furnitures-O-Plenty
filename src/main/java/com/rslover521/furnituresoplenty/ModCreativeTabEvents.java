@@ -11,7 +11,7 @@ public class ModCreativeTabEvents {
 	@SubscribeEvent
 	public static void onBuildCreativeTab(BuildCreativeModeTabContentsEvent event) {
 		if(event.getTabKey() == CreativeModeTabs.FUNCTIONAL_BLOCKS) {
-			event.accept(ModBlocks.MAPLE_CHAIR_ITEM.get());
+			event.accept(ModFurnitures.MAPLE_CHAIR_ITEM.get());
 		}
 		
 	}
