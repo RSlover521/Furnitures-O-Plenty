@@ -12,6 +12,8 @@ import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.RegistryObject;
 
+import biomesoplenty.api.block.BOPWoodTypes;
+
 public class ModFurnitures {
 	public static final DeferredRegister<Block> BLOCKS = 
 			DeferredRegister.create(ForgeRegistries.BLOCKS, 
@@ -21,10 +23,9 @@ public class ModFurnitures {
 			DeferredRegister.create(ForgeRegistries.ITEMS, 
 			FurnituresOPlenty.MODID);
 
-	private static final List<String> BOP_WOOD_TYPES = List.of(
+	public static final List<String> BOP_WOOD_TYPES = List.of(
 		"cherry", "mahogany", "jacaranda", "palm", "willow", "fir", "redwood", "hellbark", "magic", "dead"
 	);
-
 
 	public static void register(IEventBus eventBus) {
 		BLOCKS.register(eventBus);
@@ -36,7 +37,7 @@ public class ModFurnitures {
 			String name = wood + "_chair";
 
 			RegistryObject<Block> block = BLOCKS.register(name,
-					() -> new ChairBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_PLANKS))
+					() -> new CustomChairBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_PLANKS))
 			);
 			
 			ITEMS.register(name,

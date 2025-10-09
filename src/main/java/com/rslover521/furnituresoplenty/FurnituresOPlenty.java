@@ -23,7 +23,7 @@ public class FurnituresOPlenty {
     // Define mod id in a common place for everything to reference
     public static final String MODID = "furnituresoplenty";
     // Directly reference a slf4j logger
-    private static final Logger LOGGER = LogUtils.getLogger();
+    public static final Logger LOGGER = LogUtils.getLogger();
     
     public static final DeferredRegister<Block> BLOCKS = DeferredRegister.create(ForgeRegistries.BLOCKS, MODID);
     public static final DeferredRegister<Item> ITEMS = DeferredRegister.create(ForgeRegistries.ITEMS, MODID);
@@ -40,7 +40,6 @@ public class FurnituresOPlenty {
     	BOPWoodFurnitureRegistry.BLOCKS.register(modEventBus);
     	BOPWoodFurnitureRegistry.ITEMS.register(modEventBus);
     	
-    	BOPWoodFurnitureRegistry.registerAllChairs();
     }
     public static void onServerStart(ServerStartingEvent event) {
     	LOGGER.info("Initializing Furnitures O' Plenty and recipes");
