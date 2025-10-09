@@ -39,6 +39,8 @@ if ! command -v xpra &> /dev/null; then
   sudo apt-get install xpra
 fi
 
+sudo apt-get install lxterminal
+
 # -----------------------------
 # 1. Clean up old sessions
 # -----------------------------
@@ -54,7 +56,9 @@ sleep 2
 
 if command -v lxterminal &>/dev/null; then
     TERMINAL="lxterminal"
+    echo "✅ LXTerminal found, launching LXTerminal inside Xpra display."
 else
+    echo "⚠️ LXTerminal not found. Falling back to xterminal (xterm)"
     sudo apt-get install -y xterm
     TERMINAL="xterm"
 fi

@@ -40,7 +40,6 @@ public class FurnituresOPlenty {
     	BOPWoodFurnitureRegistry.BLOCKS.register(modEventBus);
     	BOPWoodFurnitureRegistry.ITEMS.register(modEventBus);
     	
-    	BOPWoodFurnitureRegistry.registerAllChairs();
     }
     public static void onServerStart(ServerStartingEvent event) {
     	LOGGER.info("Initializing Furnitures O' Plenty and recipes");
