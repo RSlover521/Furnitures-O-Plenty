@@ -43,6 +43,7 @@ public class BOPWoodFurnitureRegistry {
 					
 					CHAIRS.put(type.name(), block);
 					
+					FurnituresOPlenty.LOGGER.info("Registered: " + id);
 				} catch (Exception e) {
 					e.printStackTrace();
 				}

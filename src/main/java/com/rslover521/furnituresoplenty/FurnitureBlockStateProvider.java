@@ -1,5 +1,8 @@
 package com.rslover521.furnituresoplenty;
 
+import java.util.ArrayList;
+import java.util.List;
+
 import com.rslover521.ModBlocks.BOPWoodFurnitureRegistry;
 
 import net.minecraft.data.DataGenerator;
@@ -14,10 +17,12 @@ public class FurnitureBlockStateProvider extends BlockStateProvider {
 	 public FurnitureBlockStateProvider(PackOutput output, ExistingFileHelper exFileHelper) {
 	        super(output, FurnituresOPlenty.MODID, exFileHelper);
 	    }
+	 
+	 List<String> BOP_WOODS = new ArrayList<>(10);
 
 	
 	protected void registerStatesAndModels() {
-		for(String wood : BOPWoodFurnitureRegistry.BOP_WOODS) {
+		for(String wood : BOP_WOODS) {
 			Block block = BOPWoodFurnitureRegistry.CHAIRS.get(wood).get();
 			
 			ModelFile chairModel = models()
