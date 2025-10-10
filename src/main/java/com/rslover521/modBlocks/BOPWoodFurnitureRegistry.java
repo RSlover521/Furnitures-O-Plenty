@@ -52,9 +52,9 @@ public class BOPWoodFurnitureRegistry {
 	}
 
 	private static RegistryObject<Block> registerChair(String name, WoodType woodType) {
-		RegistryObject<Block> block = BLOCKS.register("furnituresoplenty:" + name + "_chair", () -> 
+		RegistryObject<Block> block = BLOCKS.register(name + "_chair", () -> 
 				new CustomChairBlock(woodType));
-		ITEMS.register("furnituresoplenty:" + name + "_chair", () -> 
+		ITEMS.register(name + "_chair", () -> 
 				new BlockItem(block.get(), new Item.Properties()));
 		return block;
 	}

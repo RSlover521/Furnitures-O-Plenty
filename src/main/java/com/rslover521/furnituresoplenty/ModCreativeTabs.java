@@ -21,10 +21,21 @@ public class ModCreativeTabs {
                     .title(Component.translatable("itemGroup." + FurnituresOPlenty.MODID + ".furnituresoplenty"))
                     .icon(() -> new ItemStack(BOPWoodFurnitureRegistry.MAPLE_CHAIR.get())) // example icon
                     .displayItems((parameters, output) -> {
+                        output.accept(BOPWoodFurnitureRegistry.DEAD_CHAIR.get());
+                        output.accept(BOPWoodFurnitureRegistry.EMPYREAL_CHAIR.get());
+                        output.accept(BOPWoodFurnitureRegistry.FIR_CHAIR.get());
+                        output.accept(BOPWoodFurnitureRegistry.HELLBARK_CHAIR.get());
+                        output.accept(BOPWoodFurnitureRegistry.JACARANDA_CHAIR.get());
+                        output.accept(BOPWoodFurnitureRegistry.MAGIC_CHAIR.get());
+                        output.accept(BOPWoodFurnitureRegistry.MAHOGANY_CHAIR.get());
                         output.accept(BOPWoodFurnitureRegistry.MAPLE_CHAIR.get());
-                    })
-                    .build()
-    );
+                        output.accept(BOPWoodFurnitureRegistry.PALM_CHAIR.get());
+                        output.accept(BOPWoodFurnitureRegistry.PINE_CHAIR.get());
+                        output.accept(BOPWoodFurnitureRegistry.REDWOOD_CHAIR.get());
+                        output.accept(BOPWoodFurnitureRegistry.UMBRAN_CHAIR.get());
+                        output.accept(BOPWoodFurnitureRegistry.WILLOW_CHAIR.get());
+                        })
+                    .build());
 	
 	@SuppressWarnings("removal")
 	public static void register() {

@@ -1,5 +1,5 @@
 {
-  "parent": "refurbished_furniture:block/chair_tucked",
+  "parent": "refurbished_furniture:block/chair",
   "textures": {
     "particle": "biomesoplenty:block/maple_planks",
     "texture": "furnituresoplenty:block/maple_chair"
