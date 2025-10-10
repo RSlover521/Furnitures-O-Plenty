@@ -1,4 +1,4 @@
-package com.rslover521.modBlocks;
+package com.rslover521.furnituresoplenty.modFurnitures;
 
 import com.mrcrayfish.furniture.refurbished.block.TableBlock;
 

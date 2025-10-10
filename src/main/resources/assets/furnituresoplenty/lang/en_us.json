@@ -1,0 +1,17 @@
+{
+    "block.furnituresoplenty.maple_chair": "Maple Chair",
+    "block.furnituresoplenty.fir_chair": "Fir Chair",
+    "block.furnituresoplenty.pine_chair": "Pine Chair",
+    "block.furnituresoplenty.redwood_chair": "Redwood Chair",
+    "block.furnituresoplenty.mahogany_chair": "Mahogany Chair",
+    "block.furnituresoplenty.jacaranda_chair": "Jacaranda Chair",
+    "block.furnituresoplenty.palm_chair": "Palm Chair",
+    "block.furnituresoplenty.willow_chair": "Willow Chair",
+    "block.furnituresoplenty.dead_chair": "Dead Chair",
+    "block.furnituresoplenty.magic_chair": "Magic Chair",
+    "block.furnituresoplenty.umbran_chair": "Umbran Chair",
+    "block.furnituresoplenty.hellbark_chair": "Hellbark Chair",
+    "block.furnituresoplenty.empyreal_chair": "Empyreal Chair",
+
+    "itemGroup.furnituresoplenty.furnituresoplenty": "Furnitures O' Plenty"
+}

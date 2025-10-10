@@ -1,7 +1,8 @@
 package com.rslover521.furnituresoplenty;
 
 import com.mojang.logging.LogUtils;
-import com.rslover521.modBlocks.BOPWoodFurnitureRegistry;
+import com.rslover521.furnituresoplenty.modFurnitures.ModCreativeTabs;
+import com.rslover521.furnituresoplenty.registries.BOPChairRegistry;
 
 import net.minecraft.world.item.Item;
 import net.minecraft.world.level.block.Block;
@@ -33,8 +34,8 @@ public class FurnituresOPlenty {
 	public FurnituresOPlenty() {
     	IEventBus modEventBus = FMLJavaModLoadingContext.get().getModEventBus();
     	
-    	BOPWoodFurnitureRegistry.BLOCKS.register(modEventBus);
-    	BOPWoodFurnitureRegistry.ITEMS.register(modEventBus);
+    	BOPChairRegistry.BLOCKS.register(modEventBus);
+    	BOPChairRegistry.ITEMS.register(modEventBus);
     	
     	ModCreativeTabs.register();
     	

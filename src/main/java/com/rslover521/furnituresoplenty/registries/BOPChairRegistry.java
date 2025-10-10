@@ -1,9 +1,9 @@
-package com.rslover521.modBlocks;
-
-import biomesoplenty.api.block.BOPWoodTypes;
+package com.rslover521.furnituresoplenty.registries;
 
 import com.rslover521.furnituresoplenty.FurnituresOPlenty;
+import com.rslover521.furnituresoplenty.modFurnitures.CustomChairBlock;
 
+import biomesoplenty.api.block.BOPWoodTypes;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.level.block.Block;
@@ -13,7 +13,7 @@ import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.RegistryObject;
 
-public class BOPWoodFurnitureRegistry {
+public class BOPChairRegistry {
 	public static final DeferredRegister<Block> BLOCKS =
 			DeferredRegister.create(ForgeRegistries.BLOCKS, FurnituresOPlenty.MODID);
 	
