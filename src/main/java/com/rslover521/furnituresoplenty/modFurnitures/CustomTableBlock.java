@@ -8,11 +8,22 @@ import net.minecraft.world.level.block.state.properties.WoodType;
 import net.minecraft.world.level.material.MapColor;
 
 public class CustomTableBlock extends TableBlock {
+	private WoodType type;
+	
     public CustomTableBlock(WoodType woodType) {
         super(woodType, BlockBehaviour.Properties.of()
                 .mapColor(MapColor.WOOD)
                 .strength(2.0F, 3.0F)
                 .sound(SoundType.WOOD)
                 .noOcclusion());
+        this.type = woodType;
+    }
+    
+    public WoodType getWoodType() {
+    	return type;
+    }
+    
+    public void setWoodType(WoodType woodType) {
+    	this.type = woodType;
     }
 }

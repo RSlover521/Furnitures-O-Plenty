@@ -3,6 +3,7 @@ package com.rslover521.furnituresoplenty;
 import com.mojang.logging.LogUtils;
 import com.rslover521.furnituresoplenty.modFurnitures.ModCreativeTabs;
 import com.rslover521.furnituresoplenty.registries.BOPChairRegistry;
+import com.rslover521.furnituresoplenty.registries.BOPTableRegistry;
 
 import net.minecraft.world.item.Item;
 import net.minecraft.world.level.block.Block;
@@ -36,6 +37,9 @@ public class FurnituresOPlenty {
     	
     	BOPChairRegistry.BLOCKS.register(modEventBus);
     	BOPChairRegistry.ITEMS.register(modEventBus);
+    	
+    	BOPTableRegistry.BLOCKS.register(modEventBus);
+    	BOPTableRegistry.ITEMS.register(modEventBus);
     	
     	ModCreativeTabs.register();
     	

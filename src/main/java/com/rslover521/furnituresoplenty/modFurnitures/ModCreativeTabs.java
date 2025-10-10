@@ -22,6 +22,9 @@ public class ModCreativeTabs {
                     .title(Component.translatable("itemGroup." + FurnituresOPlenty.MODID + ".furnituresoplenty"))
                     .icon(() -> new ItemStack(BOPChairRegistry.MAPLE_CHAIR.get())) // example icon
                     .displayItems((parameters, output) -> {
+                    	
+                    	// Chairs
+                    	
                         output.accept(BOPChairRegistry.DEAD_CHAIR.get());
                         output.accept(BOPChairRegistry.EMPYREAL_CHAIR.get());
                         output.accept(BOPChairRegistry.FIR_CHAIR.get());
@@ -35,6 +38,10 @@ public class ModCreativeTabs {
                         output.accept(BOPChairRegistry.REDWOOD_CHAIR.get());
                         output.accept(BOPChairRegistry.UMBRAN_CHAIR.get());
                         output.accept(BOPChairRegistry.WILLOW_CHAIR.get());
+                        
+                        // Tables
+                        
+                        
                         })
                     .build());
 	
