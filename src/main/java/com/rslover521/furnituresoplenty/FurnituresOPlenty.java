@@ -34,11 +34,10 @@ public class FurnituresOPlenty {
 	public FurnituresOPlenty() {
     	IEventBus modEventBus = FMLJavaModLoadingContext.get().getModEventBus();
     	
-    	ModBlocks.BLOCKS.register(modEventBus);
-    	ModBlocks.ITEMS.register(modEventBus);
-    	
     	BOPWoodFurnitureRegistry.BLOCKS.register(modEventBus);
     	BOPWoodFurnitureRegistry.ITEMS.register(modEventBus);
+    	
+    	ModCreativeTabs.register();
     	
     }
     public static void onServerStart(ServerStartingEvent event) {

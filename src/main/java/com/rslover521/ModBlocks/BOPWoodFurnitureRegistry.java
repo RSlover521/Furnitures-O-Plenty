@@ -8,6 +8,7 @@ import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.state.properties.WoodType;
+import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.RegistryObject;
@@ -19,7 +20,7 @@ public class BOPWoodFurnitureRegistry {
 	public static final DeferredRegister<Item> ITEMS =
 			DeferredRegister.create(ForgeRegistries.ITEMS, FurnituresOPlenty.MODID);
 
-	// === Biomes O’ Plenty wood chairs ===
+	// === Biomes O' Plenty wood chairs ===
 	public static final RegistryObject<Block> FIR_CHAIR;
 	public static final RegistryObject<Block> PINE_CHAIR;
 	public static final RegistryObject<Block> MAPLE_CHAIR;
@@ -56,5 +57,15 @@ public class BOPWoodFurnitureRegistry {
 		ITEMS.register("furnituresoplenty:" + name + "_chair", () -> 
 				new BlockItem(block.get(), new Item.Properties()));
 		return block;
+	}
+	
+	@SuppressWarnings("removal")
+	public static void registerItem() {
+		ITEMS.register(FMLJavaModLoadingContext.get().getModEventBus());
+	}
+	
+	@SuppressWarnings("removal")
+	public static void registerBlock() {
+		BLOCKS.register(FMLJavaModLoadingContext.get().getModEventBus());
 	}
 }
