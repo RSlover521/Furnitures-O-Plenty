@@ -1,4 +1,4 @@
-package com.rslover521.ModBlocks;
+package com.rslover521.modBlocks;
 
 import biomesoplenty.api.block.BOPWoodTypes;
 

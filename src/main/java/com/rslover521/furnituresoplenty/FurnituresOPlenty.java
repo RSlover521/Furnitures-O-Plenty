@@ -1,12 +1,11 @@
 package com.rslover521.furnituresoplenty;
 
 import com.mojang.logging.LogUtils;
-import com.rslover521.ModBlocks.BOPWoodFurnitureRegistry;
+import com.rslover521.modBlocks.BOPWoodFurnitureRegistry;
 
 import net.minecraft.world.item.Item;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.state.BlockBehaviour;
-import net.minecraft.world.level.block.state.properties.WoodType;
 import net.minecraftforge.event.server.ServerStartingEvent;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.fml.common.Mod;
