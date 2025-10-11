@@ -15,13 +15,16 @@ public class JsonFileWriterUtil {
 
     // Base path for generated assets (relative to project root)
     private static final String BASE_PATH = "src/main/resources/assets/furnituresoplenty/";
+    
+    private static int count;
 
     public static void main(String[] args) {
         for (String wood : WOOD_TYPES) {
+        	generateBlockstate(wood);
             generateBlockModel(wood);
             generateItemModel(wood);
         }
-        System.out.println("Finished generating JSON files for all wood types!");
+        System.out.println("Finished generating JSON files for all wood types! Wrote " + count + "files.");
     }
 
     private static void generateBlockstate(String wood) {
@@ -66,6 +69,7 @@ public class JsonFileWriterUtil {
             file.getParentFile().mkdirs();
             try (FileWriter writer = new FileWriter(file, StandardCharsets.UTF_8)) {
                 writer.write(content);
+                count ++;
             }
             System.out.println("Wrote: " + filePath);
         } catch (IOException e) {

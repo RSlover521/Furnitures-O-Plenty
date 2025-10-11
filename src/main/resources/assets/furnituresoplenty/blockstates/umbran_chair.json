@@ -1,20 +1,8 @@
 {
   "variants": {
-    "facing=north": {
-      "model": "furnituresoplenty:block/maple_chair",
-      "y": 0
-    },
-    "facing=east": {
-      "model": "furnituresoplenty:block/maple_chair",
-      "y": 90
-    },
-    "facing=south": {
-      "model": "furnituresoplenty:block/maple_chair",
-      "y": 180
-    },
-    "facing=west": {
-      "model": "furnituresoplenty:block/maple_chair",
-      "y": 270
-    }
+    "facing=north": { "model": "furnituresoplenty:block/umbran_chair", "y": 0 },
+    "facing=east":  { "model": "furnituresoplenty:block/umbran_chair", "y": 90 },
+    "facing=south": { "model": "furnituresoplenty:block/umbran_chair", "y": 180 },
+    "facing=west":  { "model": "furnituresoplenty:block/umbran_chair", "y": 270 }
   }
 }
