@@ -1,17 +1,31 @@
 {
-    "block.furnituresoplenty.maple_chair": "Maple Chair",
     "block.furnituresoplenty.fir_chair": "Fir Chair",
     "block.furnituresoplenty.pine_chair": "Pine Chair",
+    "block.furnituresoplenty.maple_chair": "Maple Chair",
     "block.furnituresoplenty.redwood_chair": "Redwood Chair",
     "block.furnituresoplenty.mahogany_chair": "Mahogany Chair",
     "block.furnituresoplenty.jacaranda_chair": "Jacaranda Chair",
     "block.furnituresoplenty.palm_chair": "Palm Chair",
-    "block.furnituresoplenty.willow_chair": "Willow Chair",
     "block.furnituresoplenty.dead_chair": "Dead Chair",
+    "block.furnituresoplenty.willow_chair": "Willow Chair",
     "block.furnituresoplenty.magic_chair": "Magic Chair",
     "block.furnituresoplenty.umbran_chair": "Umbran Chair",
     "block.furnituresoplenty.hellbark_chair": "Hellbark Chair",
     "block.furnituresoplenty.empyreal_chair": "Empyreal Chair",
+
+    "block.furnituresoplenty.fir_table": "Fir Table",
+    "block.furnituresoplenty.pine_table": "Pine Table",
+    "block.furnituresoplenty.maple_table": "Maple Table",
+    "block.furnituresoplenty.redwood_table": "Redwood Table",
+    "block.furnituresoplenty.mahogany_table": "Mahogany Table",
+    "block.furnituresoplenty.jacaranda_table": "Jacaranda Table",
+    "block.furnituresoplenty.palm_table": "Palm Table",
+    "block.furnituresoplenty.dead_table": "Dead Table",
+    "block.furnituresoplenty.willow_table" : "Willow Table",
+    "block.furnituresoplenty.magic_table": "Magic Table",
+    "block.furnituresoplenty.umbran_table": "Umbran Table",
+    "block.furnituresoplenty.hellbark_table": "Hellbark Table",
+    "block.furnituresoplenty.empyreal_table": "Empyreal Table",
 
     "itemGroup.furnituresoplenty.furnituresoplenty": "Furnitures O' Plenty"
 }

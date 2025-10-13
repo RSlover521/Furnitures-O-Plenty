@@ -1,10 +1,7 @@
 package com.rslover521.furnituresoplenty.registries;
 
-import java.rmi.registry.Registry;
-
-import com.rslover521.ModBlocks.CustomTableBlock;
-import com.rslover521.furnituresoplenty.FurnituresOPlenty;
 import com.rslover521.furnituresoplenty.modFurnitures.CustomDeskBlock;
+import com.rslover521.furnituresoplenty.FurnituresOPlenty;
 
 import biomesoplenty.api.block.BOPWoodTypes;
 import net.minecraft.world.item.BlockItem;
