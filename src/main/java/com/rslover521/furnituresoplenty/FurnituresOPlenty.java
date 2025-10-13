@@ -3,7 +3,9 @@ package com.rslover521.furnituresoplenty;
 import com.mojang.logging.LogUtils;
 import com.rslover521.furnituresoplenty.modFurnitures.ModCreativeTabs;
 import com.rslover521.furnituresoplenty.registries.BOPChairRegistry;
+import com.rslover521.furnituresoplenty.registries.BOPDeskRegistry;
 import com.rslover521.furnituresoplenty.registries.BOPTableRegistry;
+import com.rslover521.furnituresoplenty.registries.BOPToiletRegistry;
 
 import net.minecraft.world.item.Item;
 import net.minecraft.world.level.block.Block;
@@ -36,14 +38,25 @@ public class FurnituresOPlenty {
     	IEventBus modEventBus = FMLJavaModLoadingContext.get().getModEventBus();
     	
     	BOPChairRegistry.BLOCKS.register(modEventBus);
+
     	BOPChairRegistry.ITEMS.register(modEventBus);
     	
     	BOPTableRegistry.BLOCKS.register(modEventBus);
+
     	BOPTableRegistry.ITEMS.register(modEventBus);
+
+        BOPToiletRegistry.BLOCKS.register(modEventBus);
+
+        BOPToiletRegistry.ITEMS.register(modEventBus);
+
+        BOPDeskRegistry.BLOCKS.register(modEventBus);
+        
+        BOPDeskRegistry.ITEMS.register(modEventBus);
     	
     	ModCreativeTabs.register();
     	
     }
+    
     public static void onServerStart(ServerStartingEvent event) {
     	LOGGER.info("Initializing Furnitures O' Plenty and recipes");
     }
