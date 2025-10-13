@@ -8,7 +8,6 @@ import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.state.properties.WoodType;
-import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.RegistryObject;
@@ -57,15 +56,5 @@ public class BOPChairRegistry {
 		ITEMS.register(name + "_chair", () -> 
 				new BlockItem(block.get(), new Item.Properties()));
 		return block;
-	}
-	
-	@SuppressWarnings("removal")
-	public static void registerItem() {
-		ITEMS.register(FMLJavaModLoadingContext.get().getModEventBus());
-	}
-	
-	@SuppressWarnings("removal")
-	public static void registerBlock() {
-		BLOCKS.register(FMLJavaModLoadingContext.get().getModEventBus());
 	}
 }
