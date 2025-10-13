@@ -2,6 +2,7 @@ package com.rslover521.furnituresoplenty.modFurnitures;
 
 import com.rslover521.furnituresoplenty.FurnituresOPlenty;
 import com.rslover521.furnituresoplenty.registries.BOPChairRegistry;
+import com.rslover521.furnituresoplenty.registries.BOPTableRegistry;
 
 import net.minecraft.core.registries.Registries;
 import net.minecraft.network.chat.Component;
@@ -22,9 +23,7 @@ public class ModCreativeTabs {
                     .title(Component.translatable("itemGroup." + FurnituresOPlenty.MODID + ".furnituresoplenty"))
                     .icon(() -> new ItemStack(BOPChairRegistry.MAPLE_CHAIR.get())) // example icon
                     .displayItems((parameters, output) -> {
-                    	
                     	// Chairs
-                    	
                         output.accept(BOPChairRegistry.DEAD_CHAIR.get());
                         output.accept(BOPChairRegistry.EMPYREAL_CHAIR.get());
                         output.accept(BOPChairRegistry.FIR_CHAIR.get());
@@ -38,9 +37,20 @@ public class ModCreativeTabs {
                         output.accept(BOPChairRegistry.REDWOOD_CHAIR.get());
                         output.accept(BOPChairRegistry.UMBRAN_CHAIR.get());
                         output.accept(BOPChairRegistry.WILLOW_CHAIR.get());
-                        
                         // Tables
-                        
+                        output.accept(BOPTableRegistry.DEAD_TABLE.get());
+                        output.accept(BOPTableRegistry.EMPYREAL_TABLE.get());
+                        output.accept(BOPTableRegistry.FIR_TABLE.get());
+                        output.accept(BOPTableRegistry.HELLBARK_TABLE.get());
+                        output.accept(BOPTableRegistry.JACARANDA_TABLE.get());
+                        output.accept(BOPTableRegistry.MAGIC_TABLE.get());
+                        output.accept(BOPTableRegistry.MAHOGANY_TABLE.get());
+                        output.accept(BOPTableRegistry.MAPLE_TABLE.get());
+                        output.accept(BOPTableRegistry.PALM_TABLE.get());
+                        output.accept(BOPTableRegistry.PINE_TABLE.get());
+                        output.accept(BOPTableRegistry.REDWOOD_TABLE.get());
+                        output.accept(BOPTableRegistry.UMBRAN_TABLE.get());
+                        output.accept(BOPTableRegistry.WILLOW_TABLE.get());
                         
                         })
                     .build());

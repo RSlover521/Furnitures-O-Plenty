@@ -1,0 +1,8 @@
+{
+  "variants": {
+    "facing=north": { "model": "furnituresoplenty:block/maple_table", "y": 0 },
+    "facing=east":  { "model": "furnituresoplenty:block/maple_table", "y": 90 },
+    "facing=south": { "model": "furnituresoplenty:block/maple_table", "y": 180 },
+    "facing=west":  { "model": "furnituresoplenty:block/maple_table", "y": 270 }
+  }
+}
