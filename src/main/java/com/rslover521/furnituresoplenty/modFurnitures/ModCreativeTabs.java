@@ -1,8 +1,7 @@
 package com.rslover521.furnituresoplenty.modFurnitures;
 
 import com.rslover521.furnituresoplenty.FurnituresOPlenty;
-import com.rslover521.furnituresoplenty.registries.BOPChairRegistry;
-import com.rslover521.furnituresoplenty.registries.BOPTableRegistry;
+import com.rslover521.furnituresoplenty.registries.*;
 
 import net.minecraft.core.registries.Registries;
 import net.minecraft.network.chat.Component;
@@ -23,6 +22,7 @@ public class ModCreativeTabs {
                     .title(Component.translatable("itemGroup." + FurnituresOPlenty.MODID + ".furnituresoplenty"))
                     .icon(() -> new ItemStack(BOPChairRegistry.MAPLE_CHAIR.get())) // example icon
                     .displayItems((parameters, output) -> {
+
                     	// Chairs
                         output.accept(BOPChairRegistry.DEAD_CHAIR.get());
                         output.accept(BOPChairRegistry.EMPYREAL_CHAIR.get());
@@ -37,6 +37,36 @@ public class ModCreativeTabs {
                         output.accept(BOPChairRegistry.REDWOOD_CHAIR.get());
                         output.accept(BOPChairRegistry.UMBRAN_CHAIR.get());
                         output.accept(BOPChairRegistry.WILLOW_CHAIR.get());
+
+                        // Cutting Boards
+                        output.accept(BOPCuttingBoardRegistry.DEAD_CUTTING_BOARD.get());
+                        output.accept(BOPCuttingBoardRegistry.EMPYREAL_CUTTING_BOARD.get());
+                        output.accept(BOPCuttingBoardRegistry.FIR_CUTTING_BOARD.get());
+                        output.accept(BOPCuttingBoardRegistry.HELLBARK_CUTTING_BOARD.get());
+                        output.accept(BOPCuttingBoardRegistry.JACARANDA_CUTTING_BOARD.get());
+                        output.accept(BOPCuttingBoardRegistry.MAGIC_CUTTING_BOARD.get());
+                        output.accept(BOPCuttingBoardRegistry.MAHOGANY_CUTTING_BOARD.get());
+                        output.accept(BOPCuttingBoardRegistry.MAPLE_CUTTING_BOARD.get());
+                        output.accept(BOPCuttingBoardRegistry.PALM_CUTTING_BOARD.get());
+                        output.accept(BOPCuttingBoardRegistry.PINE_CUTTING_BOARD.get());
+                        output.accept(BOPCuttingBoardRegistry.REDWOOD_CUTTING_BOARD.get());
+                        output.accept(BOPCuttingBoardRegistry.UMBRAN_CUTTING_BOARD.get());
+                        output.accept(BOPCuttingBoardRegistry.WILLOW_CUTTING_BOARD.get());
+
+                        // Desks
+                        output.accept(BOPDeskRegistry.FIR_DESK.get());
+                        output.accept(BOPDeskRegistry.EMPYREAL_DESK.get());
+                        output.accept(BOPDeskRegistry.FIR_DESK.get());
+                        output.accept(BOPDeskRegistry.HELLBARK_DESK.get());
+                        output.accept(BOPDeskRegistry.JACARANDA_DESK.get());
+                        output.accept(BOPDeskRegistry.MAGIC_DESK.get());
+                        output.accept(BOPDeskRegistry.MAHOGANY_DESK.get());
+                        output.accept(BOPDeskRegistry.MAPLE_DESK.get());
+                        output.accept(BOPDeskRegistry.PALM_DESK.get());
+                        output.accept(BOPDeskRegistry.PINE_DESK.get());
+                        output.accept(BOPDeskRegistry.REDWOOD_DESK.get());
+                        output.accept(BOPDeskRegistry.UMBRAN_DESK.get());
+                        output.accept(BOPDeskRegistry.WILLOW_DESK.get());
                         
                         // Tables
                         output.accept(BOPTableRegistry.DEAD_TABLE.get());
