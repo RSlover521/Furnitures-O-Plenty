@@ -1,7 +1,5 @@
 package com.rslover521.furnituresoplenty.registries;
 
-import java.io.IOException;
-
 import com.rslover521.furnituresoplenty.FurnituresOPlenty;
 import com.rslover521.furnituresoplenty.modFurnitures.CustomChairBlock;
 
