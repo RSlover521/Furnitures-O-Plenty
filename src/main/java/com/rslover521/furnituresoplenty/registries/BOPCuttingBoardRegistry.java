@@ -55,6 +55,7 @@ public class BOPCuttingBoardRegistry {
 				new CustomCuttingBoardBlock(woodType));
 		ITEMS.register(name + "_cutting_board", () -> 
 				new BlockItem(block.get(), new Item.Properties()));
+		FurnituresOPlenty.LOGGER.info("Successfully registered block and item for " + name + "_cutting_board");
 		return block;
 	}
 }

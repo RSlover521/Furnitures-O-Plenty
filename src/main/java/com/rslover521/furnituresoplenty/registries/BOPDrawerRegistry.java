@@ -56,6 +56,7 @@ public class BOPDrawerRegistry {
 				new CustomDrawerBlock(woodType));
 		ITEMS.register(name + "_drawer", () -> 
 				new BlockItem(block.get(), new Item.Properties()));
+		FurnituresOPlenty.LOGGER.info("Successfully registered block and item for " + name + "_drawer");
 		return block;
 	}
 }

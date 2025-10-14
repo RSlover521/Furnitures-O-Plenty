@@ -1,5 +1,7 @@
 package com.rslover521.furnituresoplenty.registries;
 
+import java.io.IOException;
+
 import com.rslover521.furnituresoplenty.FurnituresOPlenty;
 import com.rslover521.furnituresoplenty.modFurnitures.CustomChairBlock;
 
@@ -55,6 +57,7 @@ public class BOPChairRegistry {
 				new CustomChairBlock(woodType));
 		ITEMS.register(name + "_chair", () -> 
 				new BlockItem(block.get(), new Item.Properties()));
+		FurnituresOPlenty.LOGGER.info("Successfully registered block and item for " + name + "_chair");
 		return block;
 	}
 }

@@ -55,6 +55,7 @@ public class BOPDeskRegistry {
 				new CustomDeskBlock(woodType));
 		ITEMS.register(name + "_desk", () -> 
 				new BlockItem(block.get(), new Item.Properties()));
+		FurnituresOPlenty.LOGGER.info("Successfully registered block and item for " + name + "_desk");
 		return block;
 	}
 }
