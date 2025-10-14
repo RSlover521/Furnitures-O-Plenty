@@ -55,6 +55,7 @@ public class BOPTableRegistry {
 				new CustomTableBlock(woodType));
 		ITEMS.register(name + "_table", () -> 
 				new BlockItem(block.get(), new Item.Properties()));
+		FurnituresOPlenty.LOGGER.info("Successfully registered block and item for " + name + "_table");
 		return block;
 	}
 }
