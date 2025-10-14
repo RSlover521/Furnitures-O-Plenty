@@ -38,19 +38,15 @@ public class FurnituresOPlenty {
     	IEventBus modEventBus = FMLJavaModLoadingContext.get().getModEventBus();
     	
     	BOPChairRegistry.BLOCKS.register(modEventBus);
-
     	BOPChairRegistry.ITEMS.register(modEventBus);
     	
     	BOPTableRegistry.BLOCKS.register(modEventBus);
-
     	BOPTableRegistry.ITEMS.register(modEventBus);
 
         BOPToiletRegistry.BLOCKS.register(modEventBus);
-
         BOPToiletRegistry.ITEMS.register(modEventBus);
 
         BOPDeskRegistry.BLOCKS.register(modEventBus);
-        
         BOPDeskRegistry.ITEMS.register(modEventBus);
     	
     	ModCreativeTabs.register();
