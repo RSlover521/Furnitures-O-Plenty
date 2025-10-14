@@ -37,6 +37,7 @@ public class ModCreativeTabs {
                         output.accept(BOPChairRegistry.REDWOOD_CHAIR.get());
                         output.accept(BOPChairRegistry.UMBRAN_CHAIR.get());
                         output.accept(BOPChairRegistry.WILLOW_CHAIR.get());
+                        
                         // Tables
                         output.accept(BOPTableRegistry.DEAD_TABLE.get());
                         output.accept(BOPTableRegistry.EMPYREAL_TABLE.get());
