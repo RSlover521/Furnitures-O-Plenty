@@ -42,6 +42,7 @@ public class FurnituresOPlenty {
         BOPDrawerRegistry.BLOCKS.register(modEventBus);
         BOPKitchenDrawerRegistry.BLOCKS.register(modEventBus);
         BOPCuttingBoardRegistry.BLOCKS.register(modEventBus);
+        BOPCrateRegistry.BLOCKS.register(modEventBus);
 
         // Item Registries
         BOPKitchenDrawerRegistry.ITEMS.register(modEventBus);
@@ -51,6 +52,7 @@ public class FurnituresOPlenty {
         BOPChairRegistry.ITEMS.register(modEventBus);
         BOPTableRegistry.ITEMS.register(modEventBus);
         BOPCuttingBoardRegistry.ITEMS.register(modEventBus);
+        BOPCrateRegistry.ITEMS.register(modEventBus);
 
         // Creative Tab Registries
     	ModCreativeTabs.register();
