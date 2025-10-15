@@ -19,7 +19,7 @@ public class ModCreativeTabs {
 
 	public static final RegistryObject<CreativeModeTab> FURNITURE_COMPAT_TAB = CREATIVE_MODE_TABS.register("furnituresoplenty",
             () -> CreativeModeTab.builder()
-                    .title(Component.translatable("itemGroup." + FurnituresOPlenty.MODID + ".furnituresoplenty"))
+                    .title(Component.translatable("itemGroup." + FurnituresOPlenty.MODID))
                     .icon(() -> new ItemStack(BOPChairRegistry.MAPLE_CHAIR.get())) // example icon
                     .displayItems((parameters, output) -> {
 
