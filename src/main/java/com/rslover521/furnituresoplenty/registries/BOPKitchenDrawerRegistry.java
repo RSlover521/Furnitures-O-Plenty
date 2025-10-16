@@ -48,7 +48,6 @@ public class BOPKitchenDrawerRegistry {
 		UMBRAN_KITCHEN_DRAWER = registerKitchenDrawer("umbran", BOPWoodTypes.UMBRAN);
 		HELLBARK_KITCHEN_DRAWER = registerKitchenDrawer("hellbark", BOPWoodTypes.HELLBARK);
 		EMPYREAL_KITCHEN_DRAWER = registerKitchenDrawer("empyreal", BOPWoodTypes.EMPYREAL);
-		
 	}
 
 	private static RegistryObject<Block> registerKitchenDrawer(String name, WoodType woodType) {
