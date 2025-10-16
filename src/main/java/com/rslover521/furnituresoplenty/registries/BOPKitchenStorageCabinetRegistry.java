@@ -1,7 +1,7 @@
 package com.rslover521.furnituresoplenty.registries;
 
 import com.rslover521.furnituresoplenty.FurnituresOPlenty;
-import com.rslover521.furnituresoplenty.modFurnitures.CustomKitchenDrawerBlock;
+import com.rslover521.furnituresoplenty.modFurnitures.CustomKitchenStorageCabinetBlock;
 
 import biomesoplenty.api.block.BOPWoodTypes;
 import net.minecraft.world.item.BlockItem;
@@ -52,7 +52,7 @@ public class BOPKitchenStorageCabinetRegistry {
 
 	private static RegistryObject<Block> registerKitchenStorageCabinets(String name, WoodType woodType) {
 		RegistryObject<Block> block = BLOCKS.register(name + "_kitchen_storage_cabinets", () -> 
-				new CustomKitchenDrawerBlock(woodType));
+				new CustomKitchenStorageCabinetBlock(woodType));
 		ITEMS.register(name + "_kitchen_storage_cabinets", () -> 
 				new BlockItem(block.get(), new Item.Properties()));
 		FurnituresOPlenty.LOGGER.info("Successfully registered block and item for " + name 
