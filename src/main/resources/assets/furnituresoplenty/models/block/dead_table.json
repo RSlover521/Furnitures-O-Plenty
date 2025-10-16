@@ -1,7 +1,7 @@
 {
-  "parent": "refurbished_furniture:block/table",
+  "parent": "refurbished_furniture:block/table/oak_table",
   "textures": {
-    "particle": "biomesoplenty:block/dead_planks",
-    "texture": "furnituresoplenty:block/dead_table"
+    "top": "furnituresoplenty:block/fir_table_top",
+    "legs": "furnituresoplenty:block/fir_table_legs"
   }
 }

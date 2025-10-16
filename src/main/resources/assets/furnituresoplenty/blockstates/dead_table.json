@@ -1,8 +1,5 @@
 {
   "variants": {
-    "facing=north": { "model": "furnituresoplenty:block/dead_table", "y": 0 },
-    "facing=east":  { "model": "furnituresoplenty:block/dead_table", "y": 90 },
-    "facing=south": { "model": "furnituresoplenty:block/dead_table", "y": 180 },
-    "facing=west":  { "model": "furnituresoplenty:block/dead_table", "y": 270 }
+    "": { "model": "refurbished_furniture:block/table/oak_table" }
   }
 }
