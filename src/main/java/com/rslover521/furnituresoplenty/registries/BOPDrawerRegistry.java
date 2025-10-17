@@ -52,11 +52,11 @@ public class BOPDrawerRegistry {
 	}
 
 	private static RegistryObject<Block> registerDrawer(String name, WoodType woodType) {
-		RegistryObject<Block> block = BLOCKS.register(name + "_drawer", () -> 
+		RegistryObject<Block> block = BLOCKS.register(name + "_DRAWER", () -> 
 				new CustomDrawerBlock(woodType));
-		ITEMS.register(name + "_drawer", () -> 
+		ITEMS.register(name + "_DRAWER", () -> 
 				new BlockItem(block.get(), new Item.Properties()));
-		FurnituresOPlenty.LOGGER.info("Successfully registered block and item for " + name + "_drawer");
+		FurnituresOPlenty.LOGGER.info("Successfully registered block and item for " + name + "_DRAWER");
 		return block;
 	}
 }

@@ -23,6 +23,66 @@ public class ModCreativeTabs {
                     .icon(() -> new ItemStack(BOPChairRegistry.MAPLE_CHAIR.get())) // example icon
                     .displayItems((parameters, output) -> {
 
+                        // Basin
+                        output.accept(BOPBasinRegistry.DEAD_BASIN.get());
+                        output.accept(BOPBasinRegistry.EMPYREAL_BASIN.get());
+                        output.accept(BOPBasinRegistry.FIR_BASIN.get());
+                        output.accept(BOPBasinRegistry.HELLBARK_BASIN.get());
+                        output.accept(BOPBasinRegistry.JACARANDA_BASIN.get());
+                        output.accept(BOPBasinRegistry.MAGIC_BASIN.get());
+                        output.accept(BOPBasinRegistry.MAHOGANY_BASIN.get());
+                        output.accept(BOPBasinRegistry.MAPLE_BASIN.get());
+                        output.accept(BOPBasinRegistry.PALM_BASIN.get());
+                        output.accept(BOPBasinRegistry.PINE_BASIN.get());
+                        output.accept(BOPBasinRegistry.REDWOOD_BASIN.get());
+                        output.accept(BOPBasinRegistry.UMBRAN_BASIN.get());
+                        output.accept(BOPBasinRegistry.WILLOW_BASIN.get());
+
+                        // Baths
+                        output.accept(BOPBathRegistry.DEAD_BATH.get());
+                        output.accept(BOPBathRegistry.EMPYREAL_BATH.get());
+                        output.accept(BOPBathRegistry.FIR_BATH.get());
+                        output.accept(BOPBathRegistry.HELLBARK_BATH.get());
+                        output.accept(BOPBathRegistry.JACARANDA_BATH.get());
+                        output.accept(BOPBathRegistry.MAGIC_BATH.get());
+                        output.accept(BOPBathRegistry.MAHOGANY_BATH.get());
+                        output.accept(BOPBathRegistry.MAPLE_BATH.get());
+                        output.accept(BOPBathRegistry.PALM_BATH.get());
+                        output.accept(BOPBathRegistry.PINE_BATH.get());
+                        output.accept(BOPBathRegistry.REDWOOD_BATH.get());
+                        output.accept(BOPBathRegistry.UMBRAN_BATH.get());
+                        output.accept(BOPBathRegistry.WILLOW_BATH.get());
+
+                        // Ceiling Fans (Dark)
+                        output.accept(BOPCeilingFanRegistry.DEAD_DARK_CEILING_FAN.get());
+                        output.accept(BOPCeilingFanRegistry.EMPYREAL_DARK_CEILING_FAN.get());
+                        output.accept(BOPCeilingFanRegistry.FIR_DARK_CEILING_FAN.get());
+                        output.accept(BOPCeilingFanRegistry.HELLBARK_DARK_CEILING_FAN.get());
+                        output.accept(BOPCeilingFanRegistry.JACARANDA_DARK_CEILING_FAN.get());
+                        output.accept(BOPCeilingFanRegistry.MAGIC_DARK_CEILING_FAN.get());
+                        output.accept(BOPCeilingFanRegistry.MAHOGANY_DARK_CEILING_FAN.get());
+                        output.accept(BOPCeilingFanRegistry.MAPLE_DARK_CEILING_FAN.get());
+                        output.accept(BOPCeilingFanRegistry.PALM_DARK_CEILING_FAN.get());
+                        output.accept(BOPCeilingFanRegistry.PINE_DARK_CEILING_FAN.get());
+                        output.accept(BOPCeilingFanRegistry.REDWOOD_LIGHT_CEILING_FAN.get());
+                        output.accept(BOPCeilingFanRegistry.UMBRAN_LIGHT_CEILING_FAN.get());
+                        output.accept(BOPCeilingFanRegistry.WILLOW_DARK_CEILING_FAN.get());
+
+                        // Ceiling Fans (Light)
+                        output.accept(BOPCeilingFanRegistry.DEAD_LIGHT_CEILING_FAN.get());
+                        output.accept(BOPCeilingFanRegistry.EMPYREAL_LIGHT_CEILING_FAN.get());
+                        output.accept(BOPCeilingFanRegistry.FIR_LIGHT_CEILING_FAN.get());
+                        output.accept(BOPCeilingFanRegistry.HELLBARK_LIGHT_CEILING_FAN.get());
+                        output.accept(BOPCeilingFanRegistry.JACARANDA_LIGHT_CEILING_FAN.get());
+                        output.accept(BOPCeilingFanRegistry.MAGIC_LIGHT_CEILING_FAN.get());
+                        output.accept(BOPCeilingFanRegistry.MAHOGANY_LIGHT_CEILING_FAN.get());
+                        output.accept(BOPCeilingFanRegistry.MAPLE_LIGHT_CEILING_FAN.get());
+                        output.accept(BOPCeilingFanRegistry.PALM_LIGHT_CEILING_FAN.get());
+                        output.accept(BOPCeilingFanRegistry.PINE_LIGHT_CEILING_FAN.get());
+                        output.accept(BOPCeilingFanRegistry.REDWOOD_LIGHT_CEILING_FAN.get());
+                        output.accept(BOPCeilingFanRegistry.UMBRAN_LIGHT_CEILING_FAN.get());
+                        output.accept(BOPCeilingFanRegistry.WILLOW_LIGHT_CEILING_FAN.get());
+                        
                     	// Chairs
                         output.accept(BOPChairRegistry.DEAD_CHAIR.get());
                         output.accept(BOPChairRegistry.EMPYREAL_CHAIR.get());
@@ -37,6 +97,21 @@ public class ModCreativeTabs {
                         output.accept(BOPChairRegistry.REDWOOD_CHAIR.get());
                         output.accept(BOPChairRegistry.UMBRAN_CHAIR.get());
                         output.accept(BOPChairRegistry.WILLOW_CHAIR.get());
+
+                        // Crates
+                        output.accept(BOPCrateRegistry.DEAD_CRATE.get());
+                        output.accept(BOPCrateRegistry.EMPYREAL_CRATE.get());
+                        output.accept(BOPCrateRegistry.FIR_CRATE.get());
+                        output.accept(BOPCrateRegistry.HELLBARK_CRATE.get());
+                        output.accept(BOPCrateRegistry.JACARANDA_CRATE.get());
+                        output.accept(BOPCrateRegistry.MAGIC_CRATE.get());
+                        output.accept(BOPCrateRegistry.MAHOGANY_CRATE.get());
+                        output.accept(BOPCrateRegistry.MAPLE_CRATE.get());
+                        output.accept(BOPCrateRegistry.PALM_CRATE.get());
+                        output.accept(BOPCrateRegistry.PINE_CRATE.get());
+                        output.accept(BOPCrateRegistry.REDWOOD_CRATE.get());
+                        output.accept(BOPCrateRegistry.UMBRAN_CRATE.get());
+                        output.accept(BOPCrateRegistry.WILLOW_CRATE.get());
 
                         // Cutting Boards
                         output.accept(BOPCuttingBoardRegistry.DEAD_CUTTING_BOARD.get());
@@ -54,9 +129,9 @@ public class ModCreativeTabs {
                         output.accept(BOPCuttingBoardRegistry.WILLOW_CUTTING_BOARD.get());
 
                         // Desks
+                        output.accept(BOPDeskRegistry.DEAD_DESK.get());
                         output.accept(BOPDeskRegistry.FIR_DESK.get());
                         output.accept(BOPDeskRegistry.EMPYREAL_DESK.get());
-                        output.accept(BOPDeskRegistry.FIR_DESK.get());
                         output.accept(BOPDeskRegistry.HELLBARK_DESK.get());
                         output.accept(BOPDeskRegistry.JACARANDA_DESK.get());
                         output.accept(BOPDeskRegistry.MAGIC_DESK.get());
@@ -67,7 +142,127 @@ public class ModCreativeTabs {
                         output.accept(BOPDeskRegistry.REDWOOD_DESK.get());
                         output.accept(BOPDeskRegistry.UMBRAN_DESK.get());
                         output.accept(BOPDeskRegistry.WILLOW_DESK.get());
+
+                        // Drawers
+                        output.accept(BOPDrawerRegistry.DEAD_DRAWER.get());
+                        output.accept(BOPDrawerRegistry.FIR_DRAWER.get());
+                        output.accept(BOPDrawerRegistry.EMPYREAL_DRAWER.get());
+                        output.accept(BOPDrawerRegistry.HELLBARK_DRAWER.get());
+                        output.accept(BOPDrawerRegistry.JACARANDA_DRAWER.get());
+                        output.accept(BOPDrawerRegistry.MAGIC_DRAWER.get());
+                        output.accept(BOPDrawerRegistry.MAHOGANY_DRAWER.get());
+                        output.accept(BOPDrawerRegistry.MAPLE_DRAWER.get());
+                        output.accept(BOPDrawerRegistry.PALM_DRAWER.get());
+                        output.accept(BOPDrawerRegistry.PINE_DRAWER.get());
+                        output.accept(BOPDrawerRegistry.REDWOOD_DRAWER.get());
+                        output.accept(BOPDrawerRegistry.UMBRAN_DRAWER.get());
+                        output.accept(BOPDrawerRegistry.WILLOW_DRAWER.get());
+
+                        // Kitchen Cabinetries
+                        output.accept(BOPKitchenCabinetryRegistry.DEAD_KITCHEN_CABINETRY.get());
+                        output.accept(BOPKitchenCabinetryRegistry.FIR_KITCHEN_CABINETRY.get());
+                        output.accept(BOPKitchenCabinetryRegistry.EMPYREAL_KITCHEN_CABINETRY.get());
+                        output.accept(BOPKitchenCabinetryRegistry.HELLBARK_KITCHEN_CABINETRY.get());
+                        output.accept(BOPKitchenCabinetryRegistry.JACARANDA_KITCHEN_CABINETRY.get());
+                        output.accept(BOPKitchenCabinetryRegistry.MAGIC_KITCHEN_CABINETRY.get());
+                        output.accept(BOPKitchenCabinetryRegistry.MAHOGANY_KITCHEN_CABINETRY.get());
+                        output.accept(BOPKitchenCabinetryRegistry.MAPLE_KITCHEN_CABINETRY.get());
+                        output.accept(BOPKitchenCabinetryRegistry.PALM_KITCHEN_CABINETRY.get());
+                        output.accept(BOPKitchenCabinetryRegistry.PINE_KITCHEN_CABINETRY.get());
+                        output.accept(BOPKitchenCabinetryRegistry.REDWOOD_KITCHEN_CABINETRY.get());
+                        output.accept(BOPKitchenCabinetryRegistry.UMBRAN_KITCHEN_CABINETRY.get());
+                        output.accept(BOPKitchenCabinetryRegistry.WILLOW_KITCHEN_CABINETRY.get());
+
+                        // Kitchen Drawers
+                        output.accept(BOPKitchenDrawerRegistry.DEAD_KITCHEN_DRAWER.get());
+                        output.accept(BOPKitchenDrawerRegistry.EMPYREAL_KITCHEN_DRAWER.get());
+                        output.accept(BOPKitchenDrawerRegistry.FIR_KITCHEN_DRAWER.get());
+                        output.accept(BOPKitchenDrawerRegistry.HELLBARK_KITCHEN_DRAWER.get());
+                        output.accept(BOPKitchenDrawerRegistry.JACARANDA_KITCHEN_DRAWER.get());
+                        output.accept(BOPKitchenDrawerRegistry.MAGIC_KITCHEN_DRAWER.get());
+                        output.accept(BOPKitchenDrawerRegistry.MAHOGANY_KITCHEN_DRAWER.get());
+                        output.accept(BOPKitchenDrawerRegistry.MAPLE_KITCHEN_DRAWER.get());
+                        output.accept(BOPKitchenDrawerRegistry.PALM_KITCHEN_DRAWER.get());
+                        output.accept(BOPKitchenDrawerRegistry.PINE_KITCHEN_DRAWER.get());
+                        output.accept(BOPKitchenDrawerRegistry.REDWOOD_KITCHEN_DRAWER.get());
+                        output.accept(BOPKitchenDrawerRegistry.UMBRAN_KITCHEN_DRAWER.get());
+                        output.accept(BOPKitchenDrawerRegistry.WILLOW_KITCHEN_DRAWER.get());
+
+                        // Kitchen Sinks
+                        output.accept(BOPKitchenSinkRegistry.DEAD_KITCHEN_SINK.get());
+                        output.accept(BOPKitchenSinkRegistry.EMPYREAL_KITCHEN_SINK.get());
+                        output.accept(BOPKitchenSinkRegistry.FIR_KITCHEN_SINK.get());
+                        output.accept(BOPKitchenSinkRegistry.HELLBARK_KITCHEN_SINK.get());
+                        output.accept(BOPKitchenSinkRegistry.JACARANDA_KITCHEN_SINK.get());
+                        output.accept(BOPKitchenSinkRegistry.MAGIC_KITCHEN_SINK.get());
+                        output.accept(BOPKitchenSinkRegistry.MAHOGANY_KITCHEN_SINK.get());
+                        output.accept(BOPKitchenSinkRegistry.MAPLE_KITCHEN_SINK.get());
+                        output.accept(BOPKitchenSinkRegistry.PALM_KITCHEN_SINK.get());
+                        output.accept(BOPKitchenSinkRegistry.PINE_KITCHEN_SINK.get());
+                        output.accept(BOPKitchenSinkRegistry.REDWOOD_KITCHEN_SINK.get());
+                        output.accept(BOPKitchenSinkRegistry.UMBRAN_KITCHEN_SINK.get());
+                        output.accept(BOPKitchenSinkRegistry.WILLOW_KITCHEN_SINK.get());
+
+                        // Kitchen Storage Cabinet
+                        output.accept(BOPKitchenStorageCabinetRegistry.DEAD_KITCHEN_STORAGE_CABINET.get());
+                        output.accept(BOPKitchenStorageCabinetRegistry.EMPYREAL_KITCHEN_STORAGE_CABINET.get());
+                        output.accept(BOPKitchenStorageCabinetRegistry.FIR_KITCHEN_STORAGE_CABINET.get());
+                        output.accept(BOPKitchenStorageCabinetRegistry.HELLBARK_KITCHEN_STORAGE_CABINET.get());
+                        output.accept(BOPKitchenStorageCabinetRegistry.JACARANDA_KITCHEN_STORAGE_CABINET.get());
+                        output.accept(BOPKitchenStorageCabinetRegistry.MAGIC_KITCHEN_STORAGE_CABINET.get());
+                        output.accept(BOPKitchenStorageCabinetRegistry.MAHOGANY_KITCHEN_STORAGE_CABINET.get());
+                        output.accept(BOPKitchenStorageCabinetRegistry.MAPLE_KITCHEN_STORAGE_CABINET.get());
+                        output.accept(BOPKitchenStorageCabinetRegistry.PALM_KITCHEN_STORAGE_CABINET.get());
+                        output.accept(BOPKitchenStorageCabinetRegistry.PINE_KITCHEN_STORAGE_CABINET.get());
+                        output.accept(BOPKitchenStorageCabinetRegistry.REDWOOD_KITCHEN_STORAGE_CABINET.get());
+                        output.accept(BOPKitchenStorageCabinetRegistry.UMBRAN_KITCHEN_STORAGE_CABINET.get());
+                        output.accept(BOPKitchenStorageCabinetRegistry.WILLOW_KITCHEN_STORAGE_CABINET.get());
                         
+                        // Lattice Fence
+                        output.accept(BOPLatticeFenceRegistry.DEAD_LATTICE_FENCE.get());
+                        output.accept(BOPLatticeFenceRegistry.FIR_LATTICE_FENCE.get());
+                        output.accept(BOPLatticeFenceRegistry.EMPYREAL_LATTICE_FENCE.get());
+                        output.accept(BOPLatticeFenceRegistry.HELLBARK_LATTICE_FENCE.get());
+                        output.accept(BOPLatticeFenceRegistry.JACARANDA_LATTICE_FENCE.get());
+                        output.accept(BOPLatticeFenceRegistry.MAGIC_LATTICE_FENCE.get());
+                        output.accept(BOPLatticeFenceRegistry.MAHOGANY_LATTICE_FENCE.get());
+                        output.accept(BOPLatticeFenceRegistry.MAPLE_LATTICE_FENCE.get());
+                        output.accept(BOPLatticeFenceRegistry.PALM_LATTICE_FENCE.get());
+                        output.accept(BOPLatticeFenceRegistry.PINE_LATTICE_FENCE.get());
+                        output.accept(BOPLatticeFenceRegistry.REDWOOD_LATTICE_FENCE.get());
+                        output.accept(BOPLatticeFenceRegistry.UMBRAN_LATTICE_FENCE.get());
+                        output.accept(BOPLatticeFenceRegistry.WILLOW_LATTICE_FENCE.get());
+
+                        // Lattice Fence Gate
+                        output.accept(BOPLatticeFenceGateRegistry.DEAD_LATTICE_FENCE_GATE.get());
+                        output.accept(BOPLatticeFenceGateRegistry.FIR_LATTICE_FENCE_GATE.get());
+                        output.accept(BOPLatticeFenceGateRegistry.EMPYREAL_LATTICE_FENCE_GATE.get());
+                        output.accept(BOPLatticeFenceGateRegistry.HELLBARK_LATTICE_FENCE_GATE.get());
+                        output.accept(BOPLatticeFenceGateRegistry.JACARANDA_LATTICE_FENCE_GATE.get());
+                        output.accept(BOPLatticeFenceGateRegistry.MAGIC_LATTICE_FENCE_GATE.get());
+                        output.accept(BOPLatticeFenceGateRegistry.MAHOGANY_LATTICE_FENCE_GATE.get());
+                        output.accept(BOPLatticeFenceGateRegistry.MAPLE_LATTICE_FENCE_GATE.get());
+                        output.accept(BOPLatticeFenceGateRegistry.PALM_LATTICE_FENCE_GATE.get());
+                        output.accept(BOPLatticeFenceGateRegistry.PINE_LATTICE_FENCE_GATE.get());
+                        output.accept(BOPLatticeFenceGateRegistry.REDWOOD_LATTICE_FENCE_GATE.get());
+                        output.accept(BOPLatticeFenceGateRegistry.UMBRAN_LATTICE_FENCE_GATE.get());
+                        output.accept(BOPLatticeFenceGateRegistry.WILLOW_LATTICE_FENCE_GATE.get());
+
+                        // Mail Box
+                        output.accept(BOPMailboxRegistry.DEAD_MAIL_BOX.get());
+                        output.accept(BOPMailboxRegistry.EMPYREAL_MAIL_BOX.get());
+                        output.accept(BOPMailboxRegistry.FIR_MAIL_BOX.get());
+                        output.accept(BOPMailboxRegistry.HELLBARK_MAIL_BOX.get());
+                        output.accept(BOPMailboxRegistry.JACARANDA_MAIL_BOX.get());
+                        output.accept(BOPMailboxRegistry.MAGIC_MAIL_BOX.get());
+                        output.accept(BOPMailboxRegistry.MAHOGANY_MAIL_BOX.get());
+                        output.accept(BOPMailboxRegistry.MAPLE_MAIL_BOX.get());
+                        output.accept(BOPMailboxRegistry.PALM_MAIL_BOX.get());
+                        output.accept(BOPMailboxRegistry.PINE_MAIL_BOX.get());
+                        output.accept(BOPMailboxRegistry.REDWOOD_MAIL_BOX.get());
+                        output.accept(BOPMailboxRegistry.UMBRAN_MAIL_BOX.get());
+                        output.accept(BOPMailboxRegistry.WILLOW_MAIL_BOX.get());
+
                         // Tables
                         output.accept(BOPTableRegistry.DEAD_TABLE.get());
                         output.accept(BOPTableRegistry.EMPYREAL_TABLE.get());
