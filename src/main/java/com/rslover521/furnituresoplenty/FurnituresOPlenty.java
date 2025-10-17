@@ -53,6 +53,7 @@ public class FurnituresOPlenty {
         BOPLatticeFenceGateRegistry.BLOCKS.register(modEventBus);
         BOPBasinRegistry.BLOCKS.register(modEventBus);
         BOPKitchenCabinetryRegistry.BLOCKS.register(modEventBus);
+        BOPKitchenSinkRegistry.BLOCKS.register(modEventBus);
 
         // Item Registries
         BOPKitchenDrawerRegistry.ITEMS.register(modEventBus);
@@ -73,6 +74,7 @@ public class FurnituresOPlenty {
         BOPLatticeFenceGateRegistry.ITEMS.register(modEventBus);
         BOPBasinRegistry.ITEMS.register(modEventBus);
         BOPKitchenCabinetryRegistry.ITEMS.register(modEventBus);
+        BOPKitchenSinkRegistry.ITEMS.register(modEventBus);
 
         // Creative Tab Registries
     	ModCreativeTabs.register();
