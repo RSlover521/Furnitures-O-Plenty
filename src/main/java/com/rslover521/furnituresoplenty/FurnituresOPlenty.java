@@ -48,6 +48,9 @@ public class FurnituresOPlenty {
         BOPKitchenStorageCabinetRegistry.BLOCKS.register(modEventBus);
         BOPStorageJarRegistry.BLOCKS.register(modEventBus);
         BOPStorageCabinetRegistry.BLOCKS.register(modEventBus);
+        BOPCeilingFanRegistry.BLOCKS.register(modEventBus);
+        BOPLatticeFenceRegistry.BLOCKS.register(modEventBus);
+        BOPLatticeFenceGateRegistry.BLOCKS.register(modEventBus);
 
         // Item Registries
         BOPKitchenDrawerRegistry.ITEMS.register(modEventBus);
@@ -63,6 +66,9 @@ public class FurnituresOPlenty {
         BOPKitchenStorageCabinetRegistry.ITEMS.register(modEventBus);
         BOPStorageJarRegistry.ITEMS.register(modEventBus);
         BOPStorageCabinetRegistry.ITEMS.register(modEventBus);
+        BOPCeilingFanRegistry.ITEMS.register(modEventBus);
+        BOPLatticeFenceRegistry.ITEMS.register(modEventBus);
+        BOPLatticeFenceGateRegistry.ITEMS.register(modEventBus);
 
         // Creative Tab Registries
     	ModCreativeTabs.register();
