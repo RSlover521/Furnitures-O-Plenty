@@ -56,7 +56,7 @@ public class BOPCrateRegistry {
 				new CustomCrateBlock(woodType));
 		ITEMS.register(name + "_crate", () -> 
 				new BlockItem(block.get(), new Item.Properties()));
-		FurnituresOPlenty.LOGGER.info("Successfully registered block and item for " + name + "_crate");
+		FurnituresOPlenty.LOGGER.info("Successfully registered block and item for " + FurnituresOPlenty.MODID + ":" + name + "_crate");
 		return block;
 	}
 }

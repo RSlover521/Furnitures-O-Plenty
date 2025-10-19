@@ -55,7 +55,7 @@ public class BOPLatticeFenceGateRegistry {
 				new CustomLatticeFenceGateBlock(woodType));
 		ITEMS.register(name + "_lattice_fence_gate", () -> 
 				new BlockItem(block.get(), new Item.Properties()));
-		FurnituresOPlenty.LOGGER.info("Successfully registered block and item for " + name + "_lattice_fence_gate");
+		FurnituresOPlenty.LOGGER.info("Successfully registered block and item for " + FurnituresOPlenty.MODID + ":" + name + "_lattice_fence_gate");
 		return block;
 	}
 }

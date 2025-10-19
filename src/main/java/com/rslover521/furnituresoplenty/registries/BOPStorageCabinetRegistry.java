@@ -55,7 +55,7 @@ public class BOPStorageCabinetRegistry {
 				new CustomStorageCabinetBlock(woodType));
 		ITEMS.register(name + "_storage_cabinets", () -> 
 				new BlockItem(block.get(), new Item.Properties()));
-		FurnituresOPlenty.LOGGER.info("Successfully registered block and item for " + name 
+		FurnituresOPlenty.LOGGER.info("Successfully registered block and item for " + FurnituresOPlenty.MODID + ":" + name 
 				+ "_storage_cabinets");
 		return block;
 	}

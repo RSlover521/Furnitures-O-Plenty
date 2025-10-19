@@ -55,7 +55,7 @@ public class BOPKitchenDrawerRegistry {
 				new CustomKitchenDrawerBlock(woodType));
 		ITEMS.register(name + "_kitchen_drawer", () -> 
 				new BlockItem(block.get(), new Item.Properties()));
-		FurnituresOPlenty.LOGGER.info("Successfully registered block and item for " + name + "_kitchen_drawer");
+		FurnituresOPlenty.LOGGER.info("Successfully registered block and item for " + FurnituresOPlenty.MODID + ":" + name + "_kitchen_drawer");
 		return block;
 	}
 }

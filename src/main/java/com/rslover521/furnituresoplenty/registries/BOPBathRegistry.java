@@ -55,7 +55,7 @@ public class BOPBathRegistry {
 				new CustomBathBlock(woodType));
 		ITEMS.register(name + "_bath", () -> 
 				new BlockItem(block.get(), new Item.Properties()));
-		FurnituresOPlenty.LOGGER.info("Successfully registered block and item for " + name + "_bath");
+		FurnituresOPlenty.LOGGER.info("Successfully registered block and item for " + FurnituresOPlenty.MODID + ":" + name + "_bath");
 		return block;
 	}
 }
