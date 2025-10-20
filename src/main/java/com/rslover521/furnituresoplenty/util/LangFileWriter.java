@@ -11,8 +11,6 @@ import java.util.LinkedHashMap;
 import java.util.Locale;
 import java.util.Map;
 
-import com.rslover521.furnituresoplenty.util.TranslationMapper;
-
 /**
  * Generates en_us.json and zh_cn.json for Furnitures O' Plenty.
  * Uses updated woodTypes and registryTypes arrays.
