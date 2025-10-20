@@ -2,6 +2,7 @@ package com.rslover521.furnituresoplenty.util;
 
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
+import com.rslover521.furnituresoplenty.FurnituresOPlenty;
 
 import java.io.FileWriter;
 import java.io.IOException;
@@ -21,8 +22,7 @@ public class LangFileWriter {
     private static final Gson GSON = new GsonBuilder().setPrettyPrinting().create();
 
     public static void main(String[] args) {
-        String modId = "furnituresoplenty";
-        Path langPath = Path.of("src/main/resources/assets/" + modId + "/lang");
+        Path langPath = Path.of("src/main/resources/assets/" + FurnituresOPlenty.MODID + "/lang");
 
         String[] woodTypes = {
                 "fir", "pine", "maple", "redwood", "mahogany", "jacaranda", 
@@ -37,10 +37,10 @@ public class LangFileWriter {
         };
 
         // English
-        writeLangFile(langPath, modId, woodTypes, registryTypes, "en_us", LangFileWriter::englishMapping);
+        writeLangFile(langPath, FurnituresOPlenty.MODID, woodTypes, registryTypes, "en_us", LangFileWriter::englishMapping);
 
         // Chinese
-        writeLangFile(langPath, modId, woodTypes, registryTypes, "zh_cn", LangFileWriter::chineseMapping);
+        writeLangFile(langPath, FurnituresOPlenty.MODID, woodTypes, registryTypes, "zh_cn", LangFileWriter::chineseMapping);
     }
 
     public static void writeLangFile(Path outputDir, String modId, String[] woodTypes, String[] registryTypes,
