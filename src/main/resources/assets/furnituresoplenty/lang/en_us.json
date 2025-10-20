@@ -19,6 +19,7 @@
   "block.furnituresoplenty.fir_storage_jar": "Fir Storage Jar",
   "block.furnituresoplenty.fir_table": "Fir Table",
   "block.furnituresoplenty.fir_toilet": "Fir Toilet",
+
   "block.furnituresoplenty.pine_basin": "Pine Basin",
   "block.furnituresoplenty.pine_bath": "Pine Bath",
   "block.furnituresoplenty.pine_light_ceiling_fan": "Pine Light Ceiling Fan",
@@ -39,6 +40,7 @@
   "block.furnituresoplenty.pine_storage_jar": "Pine Storage Jar",
   "block.furnituresoplenty.pine_table": "Pine Table",
   "block.furnituresoplenty.pine_toilet": "Pine Toilet",
+
   "block.furnituresoplenty.maple_basin": "Maple Basin",
   "block.furnituresoplenty.maple_bath": "Maple Bath",
   "block.furnituresoplenty.maple_light_ceiling_fan": "Maple Light Ceiling Fan",
@@ -59,6 +61,7 @@
   "block.furnituresoplenty.maple_storage_jar": "Maple Storage Jar",
   "block.furnituresoplenty.maple_table": "Maple Table",
   "block.furnituresoplenty.maple_toilet": "Maple Toilet",
+
   "block.furnituresoplenty.redwood_basin": "Redwood Basin",
   "block.furnituresoplenty.redwood_bath": "Redwood Bath",
   "block.furnituresoplenty.redwood_light_ceiling_fan": "Redwood Light Ceiling Fan",
@@ -79,6 +82,7 @@
   "block.furnituresoplenty.redwood_storage_jar": "Redwood Storage Jar",
   "block.furnituresoplenty.redwood_table": "Redwood Table",
   "block.furnituresoplenty.redwood_toilet": "Redwood Toilet",
+
   "block.furnituresoplenty.mahogany_basin": "Mahogany Basin",
   "block.furnituresoplenty.mahogany_bath": "Mahogany Bath",
   "block.furnituresoplenty.mahogany_light_ceiling_fan": "Mahogany Light Ceiling Fan",
@@ -99,6 +103,7 @@
   "block.furnituresoplenty.mahogany_storage_jar": "Mahogany Storage Jar",
   "block.furnituresoplenty.mahogany_table": "Mahogany Table",
   "block.furnituresoplenty.mahogany_toilet": "Mahogany Toilet",
+
   "block.furnituresoplenty.jacaranda_basin": "Jacaranda Basin",
   "block.furnituresoplenty.jacaranda_bath": "Jacaranda Bath",
   "block.furnituresoplenty.jacaranda_light_ceiling_fan": "Jacaranda Light Ceiling Fan",
@@ -119,6 +124,7 @@
   "block.furnituresoplenty.jacaranda_storage_jar": "Jacaranda Storage Jar",
   "block.furnituresoplenty.jacaranda_table": "Jacaranda Table",
   "block.furnituresoplenty.jacaranda_toilet": "Jacaranda Toilet",
+
   "block.furnituresoplenty.palm_basin": "Palm Basin",
   "block.furnituresoplenty.palm_bath": "Palm Bath",
   "block.furnituresoplenty.palm_light_ceiling_fan": "Palm Light Ceiling Fan",
@@ -139,6 +145,7 @@
   "block.furnituresoplenty.palm_storage_jar": "Palm Storage Jar",
   "block.furnituresoplenty.palm_table": "Palm Table",
   "block.furnituresoplenty.palm_toilet": "Palm Toilet",
+
   "block.furnituresoplenty.willow_basin": "Willow Basin",
   "block.furnituresoplenty.willow_bath": "Willow Bath",
   "block.furnituresoplenty.willow_light_ceiling_fan": "Willow Light Ceiling Fan",
@@ -159,6 +166,7 @@
   "block.furnituresoplenty.willow_storage_jar": "Willow Storage Jar",
   "block.furnituresoplenty.willow_table": "Willow Table",
   "block.furnituresoplenty.willow_toilet": "Willow Toilet",
+
   "block.furnituresoplenty.dead_basin": "Dead Basin",
   "block.furnituresoplenty.dead_bath": "Dead Bath",
   "block.furnituresoplenty.dead_light_ceiling_fan": "Dead Light Ceiling Fan",
@@ -179,6 +187,7 @@
   "block.furnituresoplenty.dead_storage_jar": "Dead Storage Jar",
   "block.furnituresoplenty.dead_table": "Dead Table",
   "block.furnituresoplenty.dead_toilet": "Dead Toilet",
+
   "block.furnituresoplenty.magic_basin": "Magic Basin",
   "block.furnituresoplenty.magic_bath": "Magic Bath",
   "block.furnituresoplenty.magic_light_ceiling_fan": "Magic Light Ceiling Fan",
@@ -199,6 +208,7 @@
   "block.furnituresoplenty.magic_storage_jar": "Magic Storage Jar",
   "block.furnituresoplenty.magic_table": "Magic Table",
   "block.furnituresoplenty.magic_toilet": "Magic Toilet",
+
   "block.furnituresoplenty.umbran_basin": "Umbran Basin",
   "block.furnituresoplenty.umbran_bath": "Umbran Bath",
   "block.furnituresoplenty.umbran_light_ceiling_fan": "Umbran Light Ceiling Fan",
@@ -219,6 +229,7 @@
   "block.furnituresoplenty.umbran_storage_jar": "Umbran Storage Jar",
   "block.furnituresoplenty.umbran_table": "Umbran Table",
   "block.furnituresoplenty.umbran_toilet": "Umbran Toilet",
+
   "block.furnituresoplenty.hellbark_basin": "Hellbark Basin",
   "block.furnituresoplenty.hellbark_bath": "Hellbark Bath",
   "block.furnituresoplenty.hellbark_light_ceiling_fan": "Hellbark Light Ceiling Fan",
@@ -239,6 +250,7 @@
   "block.furnituresoplenty.hellbark_storage_jar": "Hellbark Storage Jar",
   "block.furnituresoplenty.hellbark_table": "Hellbark Table",
   "block.furnituresoplenty.hellbark_toilet": "Hellbark Toilet",
+
   "block.furnituresoplenty.empyreal_basin": "Empyreal Basin",
   "block.furnituresoplenty.empyreal_bath": "Empyreal Bath",
   "block.furnituresoplenty.empyreal_light_ceiling_fan": "Empyreal Light Ceiling Fan",
@@ -259,5 +271,6 @@
   "block.furnituresoplenty.empyreal_storage_jar": "Empyreal Storage Jar",
   "block.furnituresoplenty.empyreal_table": "Empyreal Table",
   "block.furnituresoplenty.empyreal_toilet": "Empyreal Toilet",
+  
   "itemGroup.furnituresoplenty": "Furnitures O' Plenty"
 }
