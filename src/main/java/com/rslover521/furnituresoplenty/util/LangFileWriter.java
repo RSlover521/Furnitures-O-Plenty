@@ -130,8 +130,8 @@ public class LangFileWriter {
             case "kitchen_drawer" -> "厨房抽屉";
             case "kitchen_sink" -> "厨房水池";
             case "kitchen_storage_cabinet" -> "厨房储物柜";
-            case "lattice_fence_gate" -> "格子栅栏门";
-            case "lattice_fence" -> "格子栅栏";
+            case "lattice_fence_gate" -> "格栅门";
+            case "lattice_fence" -> "格栅";
             case "mail_box" -> "邮箱";
             case "storage_cabinet" -> "储物柜";
             case "storage_jar" -> "储物罐";
