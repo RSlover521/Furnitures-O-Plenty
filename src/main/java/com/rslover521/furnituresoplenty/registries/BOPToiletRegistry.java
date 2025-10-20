@@ -55,7 +55,7 @@ public class BOPToiletRegistry {
 				new CustomToiletBlock(woodType));
 		ITEMS.register(name + "_table", () -> 
 				new BlockItem(block.get(), new Item.Properties()));
-		FurnituresOPlenty.LOGGER.info("Successfully registered block and item for " + name + "_toilet");
+		FurnituresOPlenty.LOGGER.info("Successfully registered block and item for " + FurnituresOPlenty.MODID + ":" + name + "_toilet");
 		return block;
 	}
 }

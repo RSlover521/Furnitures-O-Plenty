@@ -55,7 +55,7 @@ public class BOPKitchenSinkRegistry {
 				new CustomKitchenSinkBlock(woodType));
 		ITEMS.register(name + "_kitchen_sink", () -> 
 				new BlockItem(block.get(), new Item.Properties()));
-		FurnituresOPlenty.LOGGER.info("Successfully registered block and item for " + name + "_kitchen_sink");
+		FurnituresOPlenty.LOGGER.info("Successfully registered block and item for " + FurnituresOPlenty.MODID + ":" + name + "_kitchen_sink");
 		return block;
 	}
 }

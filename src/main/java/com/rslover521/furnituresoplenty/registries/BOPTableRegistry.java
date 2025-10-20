@@ -45,7 +45,7 @@ public class BOPTableRegistry {
 		WILLOW_TABLE = registerTable("willow", BOPWoodTypes.WILLOW);
 		DEAD_TABLE = registerTable("dead", BOPWoodTypes.DEAD);
 		MAGIC_TABLE = registerTable("magic", BOPWoodTypes.MAGIC);
-		UMBRAN_TABLE = registerTable("unbran", BOPWoodTypes.UMBRAN);
+		UMBRAN_TABLE = registerTable("umbran", BOPWoodTypes.UMBRAN);
 		HELLBARK_TABLE = registerTable("hellbark", BOPWoodTypes.HELLBARK);
 		EMPYREAL_TABLE = registerTable("empyreal", BOPWoodTypes.EMPYREAL);
 	}
@@ -55,7 +55,7 @@ public class BOPTableRegistry {
 				new CustomTableBlock(woodType));
 		ITEMS.register(name + "_table", () -> 
 				new BlockItem(block.get(), new Item.Properties()));
-		FurnituresOPlenty.LOGGER.info("Successfully registered block and item for " + name + "_table");
+		FurnituresOPlenty.LOGGER.info("Successfully registered block and item for " + FurnituresOPlenty.MODID + ":" + name + "_table");
 		return block;
 	}
 }

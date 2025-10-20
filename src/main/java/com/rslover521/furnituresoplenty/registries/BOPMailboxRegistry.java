@@ -55,7 +55,7 @@ public class BOPMailboxRegistry {
 				new CustomMailboxBlock(woodType));
 		ITEMS.register(name + "_mail_box", () -> 
 				new BlockItem(block.get(), new Item.Properties()));
-		FurnituresOPlenty.LOGGER.info("Successfully registered block and item for " + name + "_mail_box");
+		FurnituresOPlenty.LOGGER.info("Successfully registered block and item for " + FurnituresOPlenty.MODID + ":" + name + "_mail_box");
 		return block;
 	}
 }

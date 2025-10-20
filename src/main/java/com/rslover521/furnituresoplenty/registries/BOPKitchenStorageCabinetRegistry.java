@@ -55,7 +55,7 @@ public class BOPKitchenStorageCabinetRegistry {
 				new CustomKitchenStorageCabinetBlock(woodType));
 		ITEMS.register(name + "_kitchen_storage_cabinet", () -> 
 				new BlockItem(block.get(), new Item.Properties()));
-		FurnituresOPlenty.LOGGER.info("Successfully registered block and item for " + name 
+		FurnituresOPlenty.LOGGER.info("Successfully registered block and item for " + FurnituresOPlenty.MODID + ":" + name 
 				+ "_kitchen_storage_cabinet");
 		return block;
 	}

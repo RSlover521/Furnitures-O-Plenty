@@ -263,6 +263,36 @@ public class ModCreativeTabs {
                         output.accept(BOPMailboxRegistry.UMBRAN_MAIL_BOX.get());
                         output.accept(BOPMailboxRegistry.WILLOW_MAIL_BOX.get());
 
+                        // Storage Cabinet
+                        output.accept(BOPStorageCabinetRegistry.DEAD_STORAGE_CABINET.get());
+                        output.accept(BOPStorageCabinetRegistry.EMPYREAL_STORAGE_CABINET.get());
+                        output.accept(BOPStorageCabinetRegistry.FIR_STORAGE_CABINET.get());
+                        output.accept(BOPStorageCabinetRegistry.HELLBARK_STORAGE_CABINET.get());
+                        output.accept(BOPStorageCabinetRegistry.JACARANDA_STORAGE_CABINET.get());
+                        output.accept(BOPStorageCabinetRegistry.MAGIC_STORAGE_CABINET.get());
+                        output.accept(BOPStorageCabinetRegistry.MAHOGANY_STORAGE_CABINET.get());
+                        output.accept(BOPStorageCabinetRegistry.MAPLE_STORAGE_CABINET.get());
+                        output.accept(BOPStorageCabinetRegistry.PALM_STORAGE_CABINET.get());
+                        output.accept(BOPStorageCabinetRegistry.PINE_STORAGE_CABINET.get());
+                        output.accept(BOPStorageCabinetRegistry.REDWOOD_STORAGE_CABINET.get());
+                        output.accept(BOPStorageCabinetRegistry.UMBRAN_STORAGE_CABINET.get());
+                        output.accept(BOPStorageCabinetRegistry.WILLOW_STORAGE_CABINET.get());
+                        
+                        // Storage Jar
+                        output.accept(BOPStorageJarRegistry.DEAD_STORAGE_JAR.get());
+                        output.accept(BOPStorageJarRegistry.EMPYREAL_STORAGE_JAR.get());
+                        output.accept(BOPStorageJarRegistry.FIR_STORAGE_JAR.get());
+                        output.accept(BOPStorageJarRegistry.HELLBARK_STORAGE_JAR.get());
+                        output.accept(BOPStorageJarRegistry.JACARANDA_STORAGE_JAR.get());
+                        output.accept(BOPStorageJarRegistry.MAGIC_STORAGE_JAR.get());
+                        output.accept(BOPStorageJarRegistry.MAHOGANY_STORAGE_JAR.get());
+                        output.accept(BOPStorageJarRegistry.MAPLE_STORAGE_JAR.get());
+                        output.accept(BOPStorageJarRegistry.PALM_STORAGE_JAR.get());
+                        output.accept(BOPStorageJarRegistry.PINE_STORAGE_JAR.get());
+                        output.accept(BOPStorageJarRegistry.REDWOOD_STORAGE_JAR.get());
+                        output.accept(BOPStorageJarRegistry.UMBRAN_STORAGE_JAR.get());
+                        output.accept(BOPStorageJarRegistry.WILLOW_STORAGE_JAR.get());
+                        
                         // Tables
                         output.accept(BOPTableRegistry.DEAD_TABLE.get());
                         output.accept(BOPTableRegistry.EMPYREAL_TABLE.get());
@@ -277,6 +307,21 @@ public class ModCreativeTabs {
                         output.accept(BOPTableRegistry.REDWOOD_TABLE.get());
                         output.accept(BOPTableRegistry.UMBRAN_TABLE.get());
                         output.accept(BOPTableRegistry.WILLOW_TABLE.get());
+                        
+                        // Toilets
+                        output.accept(BOPToiletRegistry.DEAD_TOILET.get());
+                        output.accept(BOPToiletRegistry.EMPYREAL_TOILET.get());
+                        output.accept(BOPToiletRegistry.FIR_TOILET.get());
+                        output.accept(BOPToiletRegistry.HELLBARK_TOILET.get());
+                        output.accept(BOPToiletRegistry.JACARANDA_TOILET.get());
+                        output.accept(BOPToiletRegistry.MAGIC_TOILET.get());
+                        output.accept(BOPToiletRegistry.MAHOGANY_TOILET.get());
+                        output.accept(BOPToiletRegistry.MAPLE_TOILET.get());
+                        output.accept(BOPToiletRegistry.PALM_TOILET.get());
+                        output.accept(BOPToiletRegistry.PINE_TOILET.get());
+                        output.accept(BOPToiletRegistry.REDWOOD_TOILET.get());
+                        output.accept(BOPToiletRegistry.UMBRAN_TOILET.get());
+                        output.accept(BOPToiletRegistry.WILLOW_TOILET.get());
                         
                         })
                     .build());

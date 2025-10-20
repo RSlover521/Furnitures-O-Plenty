@@ -55,7 +55,7 @@ public class BOPBasinRegistry {
 				new CustomBasinBlock(woodType));
 		ITEMS.register(name + "_basin", () -> 
 				new BlockItem(block.get(), new Item.Properties()));
-		FurnituresOPlenty.LOGGER.info("Successfully registered block and item for " + name + "_basin");
+		FurnituresOPlenty.LOGGER.info("Successfully registered block and item for " + FurnituresOPlenty.MODID + ":" + name + "_basin");
 		return block;
 	}
 }

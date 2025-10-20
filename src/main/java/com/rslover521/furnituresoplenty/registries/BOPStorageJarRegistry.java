@@ -55,7 +55,7 @@ public class BOPStorageJarRegistry {
 				new CustomStorageJarBlock(woodType));
 		ITEMS.register(name + "_storage_jar", () -> 
 				new BlockItem(block.get(), new Item.Properties()));
-		FurnituresOPlenty.LOGGER.info("Successfully registered block and item for " + name + "_storage_jar");
+		FurnituresOPlenty.LOGGER.info("Successfully registered block and item for " + FurnituresOPlenty.MODID + ":" + name + "_storage_jar");
 		return block;
 	}
 }
