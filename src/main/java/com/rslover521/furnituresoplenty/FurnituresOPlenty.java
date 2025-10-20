@@ -25,11 +25,6 @@ public class FurnituresOPlenty {
     // Directly reference a slf4j logger
     public static final Logger LOGGER = LogUtils.getLogger();
     
-    public static final DeferredRegister<Block> BLOCKS = DeferredRegister.create(ForgeRegistries.BLOCKS, MODID);
-    public static final DeferredRegister<Item> ITEMS = DeferredRegister.create(ForgeRegistries.ITEMS, MODID);
-    
-    public static final RegistryObject<Block> EXAMPLE_BLOCK = BLOCKS.register("example", () -> new Block(BlockBehaviour.Properties.of()));
-    
     @SuppressWarnings("removal")
 	public FurnituresOPlenty() {
     	IEventBus modEventBus = FMLJavaModLoadingContext.get().getModEventBus();
