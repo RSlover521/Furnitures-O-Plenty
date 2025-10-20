@@ -4,16 +4,10 @@ import com.mojang.logging.LogUtils;
 import com.rslover521.furnituresoplenty.modFurnitures.ModCreativeTabs;
 import com.rslover521.furnituresoplenty.registries.*;
 
-import net.minecraft.world.item.Item;
-import net.minecraft.world.level.block.Block;
-import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.minecraftforge.event.server.ServerStartingEvent;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
-import net.minecraftforge.registries.DeferredRegister;
-import net.minecraftforge.registries.ForgeRegistries;
-import net.minecraftforge.registries.RegistryObject;
 
 import org.slf4j.Logger;
 
