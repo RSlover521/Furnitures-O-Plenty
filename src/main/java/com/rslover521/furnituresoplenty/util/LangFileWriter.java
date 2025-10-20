@@ -123,12 +123,12 @@ public class LangFileWriter {
             case "dark_ceiling_fan" -> "吊顶风扇（暗）";
             case "chair" -> "椅";
             case "crate" -> "板条箱";
-            case "cutting_board" -> "切菜板";
+            case "cutting_board" -> "砧板";
             case "desk" -> "书桌";
             case "drawer" -> "抽屉";
             case "kitchen_cabinetry" -> "厨房橱柜";
             case "kitchen_drawer" -> "厨房抽屉";
-            case "kitchen_sink" -> "厨房水池";
+            case "kitchen_sink" -> "厨房水槽";
             case "kitchen_storage_cabinet" -> "厨房储物柜";
             case "lattice_fence_gate" -> "格栅门";
             case "lattice_fence" -> "格栅";
