@@ -11,6 +11,8 @@ import java.util.LinkedHashMap;
 import java.util.Locale;
 import java.util.Map;
 
+import com.rslover521.furnituresoplenty.util.TranslationMapper;
+
 /**
  * Generates en_us.json and zh_cn.json for Furnitures O' Plenty.
  * Uses updated woodTypes and registryTypes arrays.
@@ -120,7 +122,7 @@ public class LangFileWriter {
             case "basin" -> "水池";
             case "bath" -> "浴缸";
             case "light_ceiling_fan" -> "吊顶风扇";
-            case "dark_ceiling_fan" -> "暗色吊顶风扇";
+            case "dark_ceiling_fan" -> "吊顶风扇（暗）";
             case "chair" -> "椅";
             case "crate" -> "板条箱";
             case "cutting_board" -> "切菜板";
@@ -139,10 +141,5 @@ public class LangFileWriter {
             case "toilet" -> "马桶";
             default -> capitalizeWords(type).replace("_", "");
         };
-    }
-
-    @FunctionalInterface
-    interface TranslationMapper {
-        String map(String wood, String type);
     }
 }
