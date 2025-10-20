@@ -88,14 +88,14 @@ public class BOPCeilingFanRegistry {
 					new CustomCeilingFanBlock(woodType, MetalType.LIGHT));
 			ITEMS.register(metalType + "_" + wood + "_ceiling_fan", () -> 
 					new BlockItem(block.get(), new Item.Properties()));
-			FurnituresOPlenty.LOGGER.info("Successfully registered block and item for " + metalType + "_" + wood + "_ceiling_fan");
+			FurnituresOPlenty.LOGGER.info("Successfully registered block and item for " + FurnituresOPlenty.MODID + ":" + metalType + "_" + wood + "_ceiling_fan");
 			return block;
 		} else {
 			RegistryObject<Block> block = BLOCKS.register(metalType + "_" + wood + "_ceiling_fan", () -> 
 					new CustomCeilingFanBlock(woodType, MetalType.DARK));
 			ITEMS.register(metalType + "_" + wood + "_ceiling_fan", () -> 
 			new BlockItem(block.get(), new Item.Properties()));
-			FurnituresOPlenty.LOGGER.info("Successfully registered block and item for " + metalType + "_" + wood + "_ceiling_fan");
+			FurnituresOPlenty.LOGGER.info("Successfully registered block and item for " + FurnituresOPlenty.MODID + ":" + metalType + "_" + wood + "_ceiling_fan");
 			return block;
 		}
 	}
