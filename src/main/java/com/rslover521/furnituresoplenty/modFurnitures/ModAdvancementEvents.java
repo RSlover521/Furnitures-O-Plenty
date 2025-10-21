@@ -6,12 +6,13 @@ import net.minecraft.resources.ResourceLocation;
 import net.minecraft.server.level.ServerPlayer;
 import net.minecraftforge.event.entity.player.PlayerEvent;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
-import net.minecraftforge.fml.common.Mod.EventBusSubscriber;
+import net.minecraftforge.fml.common.Mod;
 
-@EventBusSubscriber(modid = FurnituresOPlenty.MODID)
+@Mod.EventBusSubscriber(modid = FurnituresOPlenty.MODID)
 public class ModAdvancementEvents {
 	@SuppressWarnings("removal")
-	private static final ResourceLocation ROOT_ADVANCEMENT = new ResourceLocation("furnituresoplenty", "root");
+	private static final ResourceLocation ROOT_ADVANCEMENT = 
+			new ResourceLocation(FurnituresOPlenty.MODID, "root");
 
 	@SubscribeEvent
 	public static void onPlayerJoin(PlayerEvent.PlayerLoggedInEvent event) {
