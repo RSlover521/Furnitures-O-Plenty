@@ -235,6 +235,6 @@ tasks.withType(JavaCompile).configureEach {
 }
 
 jar {
-	archiveBaseName.set("furnituresoplenty") // Base mod name
-	archiveVersion.set("1.0.0") // Version
+	archiveBaseName.set("${mod_id}-${minecraft_version}") // Base mod name
+	archiveVersion.set(mod_version) // Version
 }
