@@ -44,7 +44,7 @@ public class LangFileWriter {
     }
 
     public static void writeLangFile(Path outputDir, String modId, String[] woodTypes, String[] registryTypes,
-                                     String langCode, TranslationMapper mapper) {
+                                     String langCode, ITranslationMapper mapper) {
         Map<String, String> entries = new LinkedHashMap<>();
 
         for (String wood : woodTypes) {

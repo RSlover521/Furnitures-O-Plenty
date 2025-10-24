@@ -4,12 +4,15 @@ license = "MIT"
 
 [[mods]]
 modId = "furnituresoplenty"
-version = "1.0.1"
+version = "${mod_version}"
 displayName = "Furnitures O' Plenty"
 authors = "RSlover521"
 description = '''
 Adds furniture variants using Biomes O' Plenty woods for Refurbished Furniture.
 '''
+logoFile="assets/${mod_id}/logo.png"
+credits="RSlover521"
+displayURL="https://github.com/RSlover521/Furnitures-O-Plenty"
 
 # Dependencies
 [[dependencies.furnituresoplenty]]

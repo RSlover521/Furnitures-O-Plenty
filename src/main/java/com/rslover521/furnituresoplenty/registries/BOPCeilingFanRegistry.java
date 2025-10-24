@@ -83,7 +83,7 @@ public class BOPCeilingFanRegistry {
 	}
 	
 	private static RegistryObject<Block> registerCeilingFans(String metalType, String wood, WoodType woodType) {
-		if (metalType == "light") {
+		if (metalType.equals("light")) {
 			RegistryObject<Block> block = BLOCKS.register(metalType + "_" + wood + "_ceiling_fan", () -> 
 					new CustomCeilingFanBlock(woodType, MetalType.LIGHT));
 			ITEMS.register(metalType + "_" + wood + "_ceiling_fan", () -> 
