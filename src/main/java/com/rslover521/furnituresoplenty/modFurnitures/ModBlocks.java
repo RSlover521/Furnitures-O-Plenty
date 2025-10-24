@@ -607,21 +607,13 @@ public class ModBlocks {
 	}
 	
 	private static RegistryObject<Block> registerCeilingFans(String metalType, String wood, WoodType woodType) {
-		if (metalType.equals("light")) {
-			RegistryObject<Block> block = BLOCKS.register(metalType + "_" + wood + "_ceiling_fan", () -> 
-					new CustomCeilingFanBlock(woodType, MetalType.LIGHT));
-			ITEMS.register(metalType + "_" + wood + "_ceiling_fan", () -> 
-					new BlockItem(block.get(), new Item.Properties()));
-			FurnituresOPlenty.LOGGER.info("Successfully registered block and item for " + FurnituresOPlenty.MODID + ":" + metalType + "_" + wood + "_ceiling_fan");
-			return block;
-		} else {
-			RegistryObject<Block> block = BLOCKS.register(metalType + "_" + wood + "_ceiling_fan", () -> 
-					new CustomCeilingFanBlock(woodType, MetalType.DARK));
-			ITEMS.register(metalType + "_" + wood + "_ceiling_fan", () -> 
-			new BlockItem(block.get(), new Item.Properties()));
-			FurnituresOPlenty.LOGGER.info("Successfully registered block and item for " + FurnituresOPlenty.MODID + ":" + metalType + "_" + wood + "_ceiling_fan");
-			return block;
-		}
+		MetalType type = metalType.equals("light") ? MetalType.LIGHT : MetalType.DARK;
+		RegistryObject<Block> block = BLOCKS.register(metalType + "_" + wood + "_ceiling_fan", () -> 
+				new CustomCeilingFanBlock(woodType, type));
+		ITEMS.register(metalType + "_" + wood + "_ceiling_fan", () -> 
+				new BlockItem(block.get(), new Item.Properties()));
+		FurnituresOPlenty.LOGGER.info("Successfully registered block and item for " + FurnituresOPlenty.MODID + ":" + metalType + "_" + wood + "_ceiling_fan");
+		return block;
 	}
 
 	private static RegistryObject<Block> registerChair(String name, WoodType woodType) {
@@ -724,7 +716,7 @@ public class ModBlocks {
 		return block;
 	}
 
-	private static RegistryObject<Block> registerMailBox (String name, WoodType woodType) {
+	private static RegistryObject<Block> registerMailBox(String name, WoodType woodType) {
 		RegistryObject<Block> block = BLOCKS.register(name + "_mail_box", () -> 
 				new CustomMailboxBlock(woodType));
 		ITEMS.register(name + "_mail_box", () -> 
