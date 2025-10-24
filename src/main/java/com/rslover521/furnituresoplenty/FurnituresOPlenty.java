@@ -2,7 +2,6 @@ package com.rslover521.furnituresoplenty;
 
 import com.mojang.logging.LogUtils;
 import com.rslover521.furnituresoplenty.modFurnitures.ModCreativeTabs;
-import com.rslover521.furnituresoplenty.registries.*;
 
 import net.minecraftforge.event.server.ServerStartingEvent;
 import net.minecraftforge.eventbus.api.IEventBus;
@@ -23,47 +22,7 @@ public class FurnituresOPlenty {
 	public FurnituresOPlenty() {
     	IEventBus modEventBus = FMLJavaModLoadingContext.get().getModEventBus();
 
-        // Block Registries
-    	BOPChairRegistry.BLOCKS.register(modEventBus);
-    	BOPTableRegistry.BLOCKS.register(modEventBus);
-        BOPToiletRegistry.BLOCKS.register(modEventBus);
-        BOPDeskRegistry.BLOCKS.register(modEventBus);
-        BOPDrawerRegistry.BLOCKS.register(modEventBus);
-        BOPKitchenDrawerRegistry.BLOCKS.register(modEventBus);
-        BOPCuttingBoardRegistry.BLOCKS.register(modEventBus);
-        BOPCrateRegistry.BLOCKS.register(modEventBus);
-        BOPMailboxRegistry.BLOCKS.register(modEventBus);
-        BOPBathRegistry.BLOCKS.register(modEventBus);
-        BOPKitchenStorageCabinetRegistry.BLOCKS.register(modEventBus);
-        BOPStorageJarRegistry.BLOCKS.register(modEventBus);
-        BOPStorageCabinetRegistry.BLOCKS.register(modEventBus);
-        BOPCeilingFanRegistry.BLOCKS.register(modEventBus);
-        BOPLatticeFenceRegistry.BLOCKS.register(modEventBus);
-        BOPLatticeFenceGateRegistry.BLOCKS.register(modEventBus);
-        BOPBasinRegistry.BLOCKS.register(modEventBus);
-        BOPKitchenCabinetryRegistry.BLOCKS.register(modEventBus);
-        BOPKitchenSinkRegistry.BLOCKS.register(modEventBus);
-
-        // Item Registries
-        BOPKitchenDrawerRegistry.ITEMS.register(modEventBus);
-        BOPDrawerRegistry.ITEMS.register(modEventBus);
-        BOPDeskRegistry.ITEMS.register(modEventBus);
-        BOPToiletRegistry.ITEMS.register(modEventBus);
-        BOPChairRegistry.ITEMS.register(modEventBus);
-        BOPTableRegistry.ITEMS.register(modEventBus);
-        BOPCuttingBoardRegistry.ITEMS.register(modEventBus);
-        BOPCrateRegistry.ITEMS.register(modEventBus);
-        BOPMailboxRegistry.ITEMS.register(modEventBus);
-        BOPBathRegistry.ITEMS.register(modEventBus);
-        BOPKitchenStorageCabinetRegistry.ITEMS.register(modEventBus);
-        BOPStorageJarRegistry.ITEMS.register(modEventBus);
-        BOPStorageCabinetRegistry.ITEMS.register(modEventBus);
-        BOPCeilingFanRegistry.ITEMS.register(modEventBus);
-        BOPLatticeFenceRegistry.ITEMS.register(modEventBus);
-        BOPLatticeFenceGateRegistry.ITEMS.register(modEventBus);
-        BOPBasinRegistry.ITEMS.register(modEventBus);
-        BOPKitchenCabinetryRegistry.ITEMS.register(modEventBus);
-        BOPKitchenSinkRegistry.ITEMS.register(modEventBus);
+        
 
         // Creative Tab Registries
     	ModCreativeTabs.register();
