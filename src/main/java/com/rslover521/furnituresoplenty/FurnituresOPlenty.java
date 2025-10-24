@@ -1,6 +1,7 @@
 package com.rslover521.furnituresoplenty;
 
 import com.mojang.logging.LogUtils;
+import com.rslover521.furnituresoplenty.modFurnitures.ModBlocks;
 import com.rslover521.furnituresoplenty.modFurnitures.ModCreativeTabs;
 
 import net.minecraftforge.event.server.ServerStartingEvent;
@@ -19,12 +20,11 @@ public class FurnituresOPlenty {
     public static final Logger LOGGER = LogUtils.getLogger();
     
     @SuppressWarnings("removal")
-	public FurnituresOPlenty() {
-    	IEventBus modEventBus = FMLJavaModLoadingContext.get().getModEventBus();
+	public FurnituresOPlenty(FMLJavaModLoadingContext context) {
+    	IEventBus modEventBus = context.getModEventBus();
 
-        
+        ModBlocks.register(modEventBus);
 
-        // Creative Tab Registries
     	ModCreativeTabs.register();
     	
     }

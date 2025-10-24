@@ -16,10 +16,7 @@ import net.minecraftforge.registries.RegistryObject;
 public class ModBlocks {
 	public static final DeferredRegister<Block> BLOCKS = 
 			DeferredRegister.create(ForgeRegistries.BLOCKS, FurnituresOPlenty.MODID);
-
-	public static final DeferredRegister<Item> ITEMS = 
-			DeferredRegister.create(ForgeRegistries.ITEMS, FurnituresOPlenty.MODID);
-
+			
 	// === All Furniture Blocks in one class
 	public static final RegistryObject<Block> FIR_BASIN;
 	public static final RegistryObject<Block> PINE_BASIN;
