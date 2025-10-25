@@ -8,55 +8,29 @@ import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.state.properties.WoodType;
-import net.minecraftforge.registries.DeferredRegister;
-import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.RegistryObject;
 
 public class BOPKitchenStorageCabinetRegistry {
-	public static final DeferredRegister<Block> BLOCKS = 
-			DeferredRegister.create(ForgeRegistries.BLOCKS, FurnituresOPlenty.MODID);
 
-	public static final DeferredRegister<Item> ITEMS = 
-			DeferredRegister.create(ForgeRegistries.ITEMS, FurnituresOPlenty.MODID);
+    public static final RegistryObject<Block> FIR_KITCHEN_STORAGE_CABINET = registerKitchenStorageCabinet("fir", BOPWoodTypes.FIR);
+    public static final RegistryObject<Block> PINE_KITCHEN_STORAGE_CABINET = registerKitchenStorageCabinet("pine", BOPWoodTypes.PINE);
+    public static final RegistryObject<Block> MAPLE_KITCHEN_STORAGE_CABINET = registerKitchenStorageCabinet("maple", BOPWoodTypes.MAPLE);
+    public static final RegistryObject<Block> REDWOOD_KITCHEN_STORAGE_CABINET = registerKitchenStorageCabinet("redwood", BOPWoodTypes.REDWOOD);
+    public static final RegistryObject<Block> MAHOGANY_KITCHEN_STORAGE_CABINET = registerKitchenStorageCabinet("mahogany", BOPWoodTypes.MAHOGANY);
+    public static final RegistryObject<Block> JACARANDA_KITCHEN_STORAGE_CABINET = registerKitchenStorageCabinet("jacaranda", BOPWoodTypes.JACARANDA);
+    public static final RegistryObject<Block> PALM_KITCHEN_STORAGE_CABINET = registerKitchenStorageCabinet("palm", BOPWoodTypes.PALM);
+    public static final RegistryObject<Block> WILLOW_KITCHEN_STORAGE_CABINET = registerKitchenStorageCabinet("willow", BOPWoodTypes.WILLOW);
+    public static final RegistryObject<Block> DEAD_KITCHEN_STORAGE_CABINET = registerKitchenStorageCabinet("dead", BOPWoodTypes.DEAD);
+    public static final RegistryObject<Block> MAGIC_KITCHEN_STORAGE_CABINET = registerKitchenStorageCabinet("magic", BOPWoodTypes.MAGIC);
+    public static final RegistryObject<Block> UMBRAN_KITCHEN_STORAGE_CABINET = registerKitchenStorageCabinet("umbran", BOPWoodTypes.UMBRAN);
+    public static final RegistryObject<Block> HELLBARK_KITCHEN_STORAGE_CABINET = registerKitchenStorageCabinet("hellbark", BOPWoodTypes.HELLBARK);
+    public static final RegistryObject<Block> EMPYREAL_KITCHEN_STORAGE_CABINET = registerKitchenStorageCabinet("empyreal", BOPWoodTypes.EMPYREAL);
 
-	// === Biomes O' Plenty wood kitchen storage cabinets ===
-	public static final RegistryObject<Block> FIR_KITCHEN_STORAGE_CABINET;
-	public static final RegistryObject<Block> PINE_KITCHEN_STORAGE_CABINET;
-	public static final RegistryObject<Block> MAPLE_KITCHEN_STORAGE_CABINET;
-	public static final RegistryObject<Block> REDWOOD_KITCHEN_STORAGE_CABINET;
-	public static final RegistryObject<Block> MAHOGANY_KITCHEN_STORAGE_CABINET;
-	public static final RegistryObject<Block> JACARANDA_KITCHEN_STORAGE_CABINET;
-	public static final RegistryObject<Block> PALM_KITCHEN_STORAGE_CABINET;
-	public static final RegistryObject<Block> WILLOW_KITCHEN_STORAGE_CABINET;
-	public static final RegistryObject<Block> DEAD_KITCHEN_STORAGE_CABINET;
-	public static final RegistryObject<Block> MAGIC_KITCHEN_STORAGE_CABINET;
-	public static final RegistryObject<Block> UMBRAN_KITCHEN_STORAGE_CABINET;
-	public static final RegistryObject<Block> HELLBARK_KITCHEN_STORAGE_CABINET;
-	public static final RegistryObject<Block> EMPYREAL_KITCHEN_STORAGE_CABINET;
-
-	static {
-		FIR_KITCHEN_STORAGE_CABINET = registerKitchenStorageCabinets("fir", BOPWoodTypes.FIR);
-		PINE_KITCHEN_STORAGE_CABINET = registerKitchenStorageCabinets("pine", BOPWoodTypes.PINE);
-		MAPLE_KITCHEN_STORAGE_CABINET = registerKitchenStorageCabinets("maple", BOPWoodTypes.MAPLE);
-		REDWOOD_KITCHEN_STORAGE_CABINET = registerKitchenStorageCabinets("redwood", BOPWoodTypes.REDWOOD);
-		MAHOGANY_KITCHEN_STORAGE_CABINET = registerKitchenStorageCabinets("mahogany", BOPWoodTypes.MAHOGANY);
-		JACARANDA_KITCHEN_STORAGE_CABINET = registerKitchenStorageCabinets("jacaranda", BOPWoodTypes.JACARANDA);
-		PALM_KITCHEN_STORAGE_CABINET = registerKitchenStorageCabinets("palm", BOPWoodTypes.PALM);
-		WILLOW_KITCHEN_STORAGE_CABINET = registerKitchenStorageCabinets("willow", BOPWoodTypes.WILLOW);
-		DEAD_KITCHEN_STORAGE_CABINET = registerKitchenStorageCabinets("dead", BOPWoodTypes.DEAD);
-		MAGIC_KITCHEN_STORAGE_CABINET = registerKitchenStorageCabinets("magic", BOPWoodTypes.MAGIC);
-		UMBRAN_KITCHEN_STORAGE_CABINET = registerKitchenStorageCabinets("umbran", BOPWoodTypes.UMBRAN);
-		HELLBARK_KITCHEN_STORAGE_CABINET = registerKitchenStorageCabinets("hellbark", BOPWoodTypes.HELLBARK);
-		EMPYREAL_KITCHEN_STORAGE_CABINET = registerKitchenStorageCabinets("empyreal", BOPWoodTypes.EMPYREAL);
-	}
-
-	private static RegistryObject<Block> registerKitchenStorageCabinets(String name, WoodType woodType) {
-		RegistryObject<Block> block = BLOCKS.register(name + "_kitchen_storage_cabinet", () -> 
-				new CustomKitchenStorageCabinetBlock(woodType));
-		ITEMS.register(name + "_kitchen_storage_cabinet", () -> 
-				new BlockItem(block.get(), new Item.Properties()));
-		FurnituresOPlenty.LOGGER.info("Successfully registered block and item for " + FurnituresOPlenty.MODID + ":" + name 
-				+ "_kitchen_storage_cabinet");
-		return block;
-	}
+    private static RegistryObject<Block> registerKitchenStorageCabinet(String wood, WoodType woodType) {
+        RegistryObject<Block> block = ModRegistry.BLOCKS.register(wood + "_kitchen_storage_cabinet",
+            () -> new CustomKitchenStorageCabinetBlock(woodType));
+        ModRegistry.ITEMS.register(wood + "_kitchen_storage_cabinet", () -> new BlockItem(block.get(), new Item.Properties()));
+        FurnituresOPlenty.LOGGER.info("Registered " + wood + "_kitchen_storage_cabinet");
+        return block;
+    }
 }

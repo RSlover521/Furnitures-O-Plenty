@@ -1,7 +1,0 @@
-{
-  "parent": "refurbished_furniture:block/table/oak_table",
-  "textures": {
-    "top": "furnituresoplenty:block/fir_table_top",
-    "legs": "furnituresoplenty:block/fir_table_legs"
-  }
-}
