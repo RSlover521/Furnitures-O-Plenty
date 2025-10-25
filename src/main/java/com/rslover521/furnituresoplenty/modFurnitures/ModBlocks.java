@@ -4,8 +4,6 @@ import com.mrcrayfish.furniture.refurbished.block.MetalType;
 import com.rslover521.furnituresoplenty.FurnituresOPlenty;
 
 import biomesoplenty.api.block.BOPWoodTypes;
-import net.minecraft.world.item.BlockItem;
-import net.minecraft.world.item.Item;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.state.properties.WoodType;
 import net.minecraftforge.eventbus.api.IEventBus;
@@ -298,7 +296,7 @@ public class ModBlocks {
 	public static final RegistryObject<Block> HELLBARK_TOILET;
 	public static final RegistryObject<Block> EMPYREAL_TOILET;
 
-	static {
+	public static void init() {
 		FIR_BASIN = registerBasin("fir", BOPWoodTypes.FIR);
 		PINE_BASIN = registerBasin("pine", BOPWoodTypes.PINE);
 		MAPLE_BASIN = registerBasin("maple", BOPWoodTypes.MAPLE);
