@@ -582,7 +582,6 @@ public class ModBlocks {
 
 	public static void register(IEventBus modEventBus) {
 		BLOCKS.register(modEventBus);
-		ITEMS.register(modEventBus);
 	}
 
 	private static RegistryObject<Block> registerBasin(String name, WoodType woodType) {
