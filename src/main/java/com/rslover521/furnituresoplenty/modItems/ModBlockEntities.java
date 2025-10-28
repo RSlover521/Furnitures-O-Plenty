@@ -1,7 +1,10 @@
 package com.rslover521.furnituresoplenty.modItems;
 
 import com.rslover521.furnituresoplenty.FurnituresOPlenty;
-import com.rslover521.furnituresoplenty.modBlockEntities.CustomBasinBlockEntity;
+import com.rslover521.furnituresoplenty.customBlockEntities.CustomBasinBlockEntity;
+import com.rslover521.furnituresoplenty.customBlockEntities.CustomBathBlockEntity;
+import com.rslover521.furnituresoplenty.customBlockEntities.CustomCeilingFanBlockEntity;
+import com.rslover521.furnituresoplenty.customFurnitures.CustomCeilingFanBlock;
 
 import net.minecraft.world.level.block.entity.BlockEntity;
 import net.minecraft.world.level.block.entity.BlockEntityType;
@@ -32,7 +35,62 @@ public class ModBlockEntities {
                             ModBlocks.EMPYREAL_BASIN.get()
 					).build(null));
 
-	
+	@SuppressWarnings("null")
+	public static final RegistryObject<BlockEntityType<CustomBathBlockEntity>> CUSTOM_BATH = 
+			BLOCK_ENTITIES.register("custom_bath", 
+					() -> BlockEntityType.Builder.of(CustomBathBlockEntity::new, 
+							ModBlocks.DEAD_BATH.get(),
+							ModBlocks.PINE_BATH.get(),
+                    		ModBlocks.MAPLE_BATH.get(),
+                            ModBlocks.REDWOOD_BATH.get(),
+                            ModBlocks.MAHOGANY_BATH.get(),
+                            ModBlocks.JACARANDA_BATH.get(),
+                            ModBlocks.PALM_BATH.get(),
+                            ModBlocks.WILLOW_BATH.get(),
+                            ModBlocks.DEAD_BATH.get(),
+                            ModBlocks.MAGIC_BATH.get(),
+                            ModBlocks.UMBRAN_BATH.get(),
+                            ModBlocks.HELLBARK_BATH.get(),
+                            ModBlocks.EMPYREAL_BATH.get()
+					).build(null));
 
-	
+	@SuppressWarnings("null")
+	public static final RegistryObject<BlockEntityType<CustomCeilingFanBlockEntity>> CUSTOM_CEILING_FAN = 
+			BLOCK_ENTITIES.register("custom_ceiling_fan", 
+					() -> BlockEntityType.Builder.of(CustomCeilingFanBlockEntity::new, 
+
+							// Dark Ceiling Fan
+							ModBlocks.FIR_DARK_CEILING_FAN.get(),
+							ModBlocks.DEAD_DARK_CEILING_FAN.get(),
+							ModBlocks.PINE_DARK_CEILING_FAN.get(),
+                    		ModBlocks.MAPLE_DARK_CEILING_FAN.get(),
+                            ModBlocks.REDWOOD_DARK_CEILING_FAN.get(),
+                            ModBlocks.MAHOGANY_DARK_CEILING_FAN.get(),
+                            ModBlocks.JACARANDA_DARK_CEILING_FAN.get(),
+                            ModBlocks.PALM_DARK_CEILING_FAN.get(),
+                            ModBlocks.WILLOW_DARK_CEILING_FAN.get(),
+                            ModBlocks.DEAD_DARK_CEILING_FAN.get(),
+                            ModBlocks.MAGIC_DARK_CEILING_FAN.get(),
+                            ModBlocks.UMBRAN_DARK_CEILING_FAN.get(),
+                            ModBlocks.HELLBARK_DARK_CEILING_FAN.get(),
+                            ModBlocks.EMPYREAL_DARK_CEILING_FAN.get(),
+
+							// Light Ceiling Fan
+							ModBlocks.FIR_LIGHT_CEILING_FAN.get(),
+							ModBlocks.DEAD_LIGHT_CEILING_FAN.get(),
+							ModBlocks.PINE_LIGHT_CEILING_FAN.get(),
+                    		ModBlocks.MAPLE_LIGHT_CEILING_FAN.get(),
+                            ModBlocks.REDWOOD_LIGHT_CEILING_FAN.get(),
+                            ModBlocks.MAHOGANY_LIGHT_CEILING_FAN.get(),
+                            ModBlocks.JACARANDA_LIGHT_CEILING_FAN.get(),
+                            ModBlocks.PALM_LIGHT_CEILING_FAN.get(),
+                            ModBlocks.WILLOW_LIGHT_CEILING_FAN.get(),
+                            ModBlocks.DEAD_LIGHT_CEILING_FAN.get(),
+                            ModBlocks.MAGIC_LIGHT_CEILING_FAN.get(),
+                            ModBlocks.UMBRAN_LIGHT_CEILING_FAN.get(),
+                            ModBlocks.HELLBARK_LIGHT_CEILING_FAN.get(),
+                            ModBlocks.EMPYREAL_LIGHT_CEILING_FAN.get()
+					).build(null));
+
+
 }

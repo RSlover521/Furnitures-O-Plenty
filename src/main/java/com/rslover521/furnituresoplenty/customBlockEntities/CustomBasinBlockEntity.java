@@ -1,4 +1,4 @@
-package com.rslover521.furnituresoplenty.modBlockEntities;
+package com.rslover521.furnituresoplenty.customBlockEntities;
 
 import com.mrcrayfish.furniture.refurbished.blockentity.BasinBlockEntity;
 
