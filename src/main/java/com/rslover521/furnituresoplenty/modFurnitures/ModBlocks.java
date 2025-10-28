@@ -4,8 +4,6 @@ import com.mrcrayfish.furniture.refurbished.block.MetalType;
 import com.rslover521.furnituresoplenty.FurnituresOPlenty;
 
 import biomesoplenty.api.block.BOPWoodTypes;
-import net.minecraft.world.item.BlockItem;
-import net.minecraft.world.item.Item;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.state.properties.WoodType;
 import net.minecraftforge.eventbus.api.IEventBus;
@@ -18,287 +16,287 @@ public class ModBlocks {
 			DeferredRegister.create(ForgeRegistries.BLOCKS, FurnituresOPlenty.MODID);
 			
 	// === All Furniture Blocks in one class
-	public static final RegistryObject<Block> FIR_BASIN;
-	public static final RegistryObject<Block> PINE_BASIN;
-	public static final RegistryObject<Block> MAPLE_BASIN;
-	public static final RegistryObject<Block> REDWOOD_BASIN;
-	public static final RegistryObject<Block> MAHOGANY_BASIN;
-	public static final RegistryObject<Block> JACARANDA_BASIN;
-	public static final RegistryObject<Block> PALM_BASIN;
-	public static final RegistryObject<Block> WILLOW_BASIN;
-	public static final RegistryObject<Block> DEAD_BASIN;
-	public static final RegistryObject<Block> MAGIC_BASIN;
-	public static final RegistryObject<Block> UMBRAN_BASIN;
-	public static final RegistryObject<Block> HELLBARK_BASIN;
-	public static final RegistryObject<Block> EMPYREAL_BASIN;
+	public static RegistryObject<Block> FIR_BASIN;
+	public static RegistryObject<Block> PINE_BASIN;
+	public static RegistryObject<Block> MAPLE_BASIN;
+	public static RegistryObject<Block> REDWOOD_BASIN;
+	public static RegistryObject<Block> MAHOGANY_BASIN;
+	public static RegistryObject<Block> JACARANDA_BASIN;
+	public static RegistryObject<Block> PALM_BASIN;
+	public static RegistryObject<Block> WILLOW_BASIN;
+	public static RegistryObject<Block> DEAD_BASIN;
+	public static RegistryObject<Block> MAGIC_BASIN;
+	public static RegistryObject<Block> UMBRAN_BASIN;
+	public static RegistryObject<Block> HELLBARK_BASIN;
+	public static RegistryObject<Block> EMPYREAL_BASIN;
 
-	public static final RegistryObject<Block> FIR_BATH;
-	public static final RegistryObject<Block> PINE_BATH;
-	public static final RegistryObject<Block> MAPLE_BATH;
-	public static final RegistryObject<Block> REDWOOD_BATH;
-	public static final RegistryObject<Block> MAHOGANY_BATH;
-	public static final RegistryObject<Block> JACARANDA_BATH;
-	public static final RegistryObject<Block> PALM_BATH;
-	public static final RegistryObject<Block> WILLOW_BATH;
-	public static final RegistryObject<Block> DEAD_BATH;
-	public static final RegistryObject<Block> MAGIC_BATH;
-	public static final RegistryObject<Block> UMBRAN_BATH;
-	public static final RegistryObject<Block> HELLBARK_BATH;
-	public static final RegistryObject<Block> EMPYREAL_BATH;
+	public static RegistryObject<Block> FIR_BATH;
+	public static RegistryObject<Block> PINE_BATH;
+	public static RegistryObject<Block> MAPLE_BATH;
+	public static RegistryObject<Block> REDWOOD_BATH;
+	public static RegistryObject<Block> MAHOGANY_BATH;
+	public static RegistryObject<Block> JACARANDA_BATH;
+	public static RegistryObject<Block> PALM_BATH;
+	public static RegistryObject<Block> WILLOW_BATH;
+	public static RegistryObject<Block> DEAD_BATH;
+	public static RegistryObject<Block> MAGIC_BATH;
+	public static RegistryObject<Block> UMBRAN_BATH;
+	public static RegistryObject<Block> HELLBARK_BATH;
+	public static RegistryObject<Block> EMPYREAL_BATH;
 
-	public static final RegistryObject<Block> FIR_LIGHT_CEILING_FAN;
-	public static final RegistryObject<Block> PINE_LIGHT_CEILING_FAN;
-	public static final RegistryObject<Block> MAPLE_LIGHT_CEILING_FAN;
-	public static final RegistryObject<Block> REDWOOD_LIGHT_CEILING_FAN;
-	public static final RegistryObject<Block> MAHOGANY_LIGHT_CEILING_FAN;
-	public static final RegistryObject<Block> JACARANDA_LIGHT_CEILING_FAN;
-	public static final RegistryObject<Block> PALM_LIGHT_CEILING_FAN;
-	public static final RegistryObject<Block> WILLOW_LIGHT_CEILING_FAN;
-	public static final RegistryObject<Block> DEAD_LIGHT_CEILING_FAN;
-	public static final RegistryObject<Block> MAGIC_LIGHT_CEILING_FAN;
-	public static final RegistryObject<Block> UMBRAN_LIGHT_CEILING_FAN;
-	public static final RegistryObject<Block> HELLBARK_LIGHT_CEILING_FAN;
-	public static final RegistryObject<Block> EMPYREAL_LIGHT_CEILING_FAN;
+	public static RegistryObject<Block> FIR_LIGHT_CEILING_FAN;
+	public static RegistryObject<Block> PINE_LIGHT_CEILING_FAN;
+	public static RegistryObject<Block> MAPLE_LIGHT_CEILING_FAN;
+	public static RegistryObject<Block> REDWOOD_LIGHT_CEILING_FAN;
+	public static RegistryObject<Block> MAHOGANY_LIGHT_CEILING_FAN;
+	public static RegistryObject<Block> JACARANDA_LIGHT_CEILING_FAN;
+	public static RegistryObject<Block> PALM_LIGHT_CEILING_FAN;
+	public static RegistryObject<Block> WILLOW_LIGHT_CEILING_FAN;
+	public static RegistryObject<Block> DEAD_LIGHT_CEILING_FAN;
+	public static RegistryObject<Block> MAGIC_LIGHT_CEILING_FAN;
+	public static RegistryObject<Block> UMBRAN_LIGHT_CEILING_FAN;
+	public static RegistryObject<Block> HELLBARK_LIGHT_CEILING_FAN;
+	public static RegistryObject<Block> EMPYREAL_LIGHT_CEILING_FAN;
 
-	public static final RegistryObject<Block> FIR_DARK_CEILING_FAN;
-	public static final RegistryObject<Block> PINE_DARK_CEILING_FAN;
-	public static final RegistryObject<Block> MAPLE_DARK_CEILING_FAN;
-	public static final RegistryObject<Block> REDWOOD_DARK_CEILING_FAN;
-	public static final RegistryObject<Block> MAHOGANY_DARK_CEILING_FAN;
-	public static final RegistryObject<Block> JACARANDA_DARK_CEILING_FAN;
-	public static final RegistryObject<Block> PALM_DARK_CEILING_FAN;
-	public static final RegistryObject<Block> WILLOW_DARK_CEILING_FAN;
-	public static final RegistryObject<Block> DEAD_DARK_CEILING_FAN;
-	public static final RegistryObject<Block> MAGIC_DARK_CEILING_FAN;
-	public static final RegistryObject<Block> UMBRAN_DARK_CEILING_FAN;
-	public static final RegistryObject<Block> HELLBARK_DARK_CEILING_FAN;
-	public static final RegistryObject<Block> EMPYREAL_DARK_CEILING_FAN;
+	public static RegistryObject<Block> FIR_DARK_CEILING_FAN;
+	public static RegistryObject<Block> PINE_DARK_CEILING_FAN;
+	public static RegistryObject<Block> MAPLE_DARK_CEILING_FAN;
+	public static RegistryObject<Block> REDWOOD_DARK_CEILING_FAN;
+	public static RegistryObject<Block> MAHOGANY_DARK_CEILING_FAN;
+	public static RegistryObject<Block> JACARANDA_DARK_CEILING_FAN;
+	public static RegistryObject<Block> PALM_DARK_CEILING_FAN;
+	public static RegistryObject<Block> WILLOW_DARK_CEILING_FAN;
+	public static RegistryObject<Block> DEAD_DARK_CEILING_FAN;
+	public static RegistryObject<Block> MAGIC_DARK_CEILING_FAN;
+	public static RegistryObject<Block> UMBRAN_DARK_CEILING_FAN;
+	public static RegistryObject<Block> HELLBARK_DARK_CEILING_FAN;
+	public static RegistryObject<Block> EMPYREAL_DARK_CEILING_FAN;
 
-	public static final RegistryObject<Block> FIR_CHAIR;
-	public static final RegistryObject<Block> PINE_CHAIR;
-	public static final RegistryObject<Block> MAPLE_CHAIR;
-	public static final RegistryObject<Block> REDWOOD_CHAIR;
-	public static final RegistryObject<Block> MAHOGANY_CHAIR;
-	public static final RegistryObject<Block> JACARANDA_CHAIR;
-	public static final RegistryObject<Block> PALM_CHAIR;
-	public static final RegistryObject<Block> WILLOW_CHAIR;
-	public static final RegistryObject<Block> DEAD_CHAIR;
-	public static final RegistryObject<Block> MAGIC_CHAIR;
-	public static final RegistryObject<Block> UMBRAN_CHAIR;
-	public static final RegistryObject<Block> HELLBARK_CHAIR;
-	public static final RegistryObject<Block> EMPYREAL_CHAIR;
+	public static RegistryObject<Block> FIR_CHAIR;
+	public static RegistryObject<Block> PINE_CHAIR;
+	public static RegistryObject<Block> MAPLE_CHAIR;
+	public static RegistryObject<Block> REDWOOD_CHAIR;
+	public static RegistryObject<Block> MAHOGANY_CHAIR;
+	public static RegistryObject<Block> JACARANDA_CHAIR;
+	public static RegistryObject<Block> PALM_CHAIR;
+	public static RegistryObject<Block> WILLOW_CHAIR;
+	public static RegistryObject<Block> DEAD_CHAIR;
+	public static RegistryObject<Block> MAGIC_CHAIR;
+	public static RegistryObject<Block> UMBRAN_CHAIR;
+	public static RegistryObject<Block> HELLBARK_CHAIR;
+	public static RegistryObject<Block> EMPYREAL_CHAIR;
 
-	public static final RegistryObject<Block> FIR_CRATE;
-	public static final RegistryObject<Block> PINE_CRATE;
-	public static final RegistryObject<Block> MAPLE_CRATE;
-	public static final RegistryObject<Block> REDWOOD_CRATE;
-	public static final RegistryObject<Block> MAHOGANY_CRATE;
-	public static final RegistryObject<Block> JACARANDA_CRATE;
-	public static final RegistryObject<Block> PALM_CRATE;
-	public static final RegistryObject<Block> WILLOW_CRATE;
-	public static final RegistryObject<Block> DEAD_CRATE;
-	public static final RegistryObject<Block> MAGIC_CRATE;
-	public static final RegistryObject<Block> UMBRAN_CRATE;
-	public static final RegistryObject<Block> HELLBARK_CRATE;
-	public static final RegistryObject<Block> EMPYREAL_CRATE;
+	public static RegistryObject<Block> FIR_CRATE;
+	public static RegistryObject<Block> PINE_CRATE;
+	public static RegistryObject<Block> MAPLE_CRATE;
+	public static RegistryObject<Block> REDWOOD_CRATE;
+	public static RegistryObject<Block> MAHOGANY_CRATE;
+	public static RegistryObject<Block> JACARANDA_CRATE;
+	public static RegistryObject<Block> PALM_CRATE;
+	public static RegistryObject<Block> WILLOW_CRATE;
+	public static RegistryObject<Block> DEAD_CRATE;
+	public static RegistryObject<Block> MAGIC_CRATE;
+	public static RegistryObject<Block> UMBRAN_CRATE;
+	public static RegistryObject<Block> HELLBARK_CRATE;
+	public static RegistryObject<Block> EMPYREAL_CRATE;
 
-	public static final RegistryObject<Block> FIR_CUTTING_BOARD;
-	public static final RegistryObject<Block> PINE_CUTTING_BOARD;
-	public static final RegistryObject<Block> MAPLE_CUTTING_BOARD;
-	public static final RegistryObject<Block> REDWOOD_CUTTING_BOARD;
-	public static final RegistryObject<Block> MAHOGANY_CUTTING_BOARD;
-	public static final RegistryObject<Block> JACARANDA_CUTTING_BOARD;
-	public static final RegistryObject<Block> PALM_CUTTING_BOARD;
-	public static final RegistryObject<Block> WILLOW_CUTTING_BOARD;
-	public static final RegistryObject<Block> DEAD_CUTTING_BOARD;
-	public static final RegistryObject<Block> MAGIC_CUTTING_BOARD;
-	public static final RegistryObject<Block> UMBRAN_CUTTING_BOARD;
-	public static final RegistryObject<Block> HELLBARK_CUTTING_BOARD;
-	public static final RegistryObject<Block> EMPYREAL_CUTTING_BOARD;
+	public static RegistryObject<Block> FIR_CUTTING_BOARD;
+	public static RegistryObject<Block> PINE_CUTTING_BOARD;
+	public static RegistryObject<Block> MAPLE_CUTTING_BOARD;
+	public static RegistryObject<Block> REDWOOD_CUTTING_BOARD;
+	public static RegistryObject<Block> MAHOGANY_CUTTING_BOARD;
+	public static RegistryObject<Block> JACARANDA_CUTTING_BOARD;
+	public static RegistryObject<Block> PALM_CUTTING_BOARD;
+	public static RegistryObject<Block> WILLOW_CUTTING_BOARD;
+	public static RegistryObject<Block> DEAD_CUTTING_BOARD;
+	public static RegistryObject<Block> MAGIC_CUTTING_BOARD;
+	public static RegistryObject<Block> UMBRAN_CUTTING_BOARD;
+	public static RegistryObject<Block> HELLBARK_CUTTING_BOARD;
+	public static RegistryObject<Block> EMPYREAL_CUTTING_BOARD;
 
-	public static final RegistryObject<Block> FIR_DESK;
-	public static final RegistryObject<Block> PINE_DESK;
-	public static final RegistryObject<Block> MAPLE_DESK;
-	public static final RegistryObject<Block> REDWOOD_DESK;
-	public static final RegistryObject<Block> MAHOGANY_DESK;
-	public static final RegistryObject<Block> JACARANDA_DESK;
-	public static final RegistryObject<Block> PALM_DESK; 
-	public static final RegistryObject<Block> WILLOW_DESK;
-	public static final RegistryObject<Block> DEAD_DESK;
-	public static final RegistryObject<Block> MAGIC_DESK;
-	public static final RegistryObject<Block> UMBRAN_DESK;
-	public static final RegistryObject<Block> HELLBARK_DESK;
-	public static final RegistryObject<Block> EMPYREAL_DESK;
+	public static RegistryObject<Block> FIR_DESK;
+	public static RegistryObject<Block> PINE_DESK;
+	public static RegistryObject<Block> MAPLE_DESK;
+	public static RegistryObject<Block> REDWOOD_DESK;
+	public static RegistryObject<Block> MAHOGANY_DESK;
+	public static RegistryObject<Block> JACARANDA_DESK;
+	public static RegistryObject<Block> PALM_DESK; 
+	public static RegistryObject<Block> WILLOW_DESK;
+	public static RegistryObject<Block> DEAD_DESK;
+	public static RegistryObject<Block> MAGIC_DESK;
+	public static RegistryObject<Block> UMBRAN_DESK;
+	public static RegistryObject<Block> HELLBARK_DESK;
+	public static RegistryObject<Block> EMPYREAL_DESK;
 
-	public static final RegistryObject<Block> FIR_DRAWER;
-	public static final RegistryObject<Block> PINE_DRAWER;
-	public static final RegistryObject<Block> MAPLE_DRAWER;
-	public static final RegistryObject<Block> REDWOOD_DRAWER;
-	public static final RegistryObject<Block> MAHOGANY_DRAWER;
-	public static final RegistryObject<Block> JACARANDA_DRAWER;
-	public static final RegistryObject<Block> PALM_DRAWER;
-	public static final RegistryObject<Block> WILLOW_DRAWER;
-	public static final RegistryObject<Block> DEAD_DRAWER;
-	public static final RegistryObject<Block> MAGIC_DRAWER;
-	public static final RegistryObject<Block> UMBRAN_DRAWER;
-	public static final RegistryObject<Block> HELLBARK_DRAWER;
-	public static final RegistryObject<Block> EMPYREAL_DRAWER;
+	public static RegistryObject<Block> FIR_DRAWER;
+	public static RegistryObject<Block> PINE_DRAWER;
+	public static RegistryObject<Block> MAPLE_DRAWER;
+	public static RegistryObject<Block> REDWOOD_DRAWER;
+	public static RegistryObject<Block> MAHOGANY_DRAWER;
+	public static RegistryObject<Block> JACARANDA_DRAWER;
+	public static RegistryObject<Block> PALM_DRAWER;
+	public static RegistryObject<Block> WILLOW_DRAWER;
+	public static RegistryObject<Block> DEAD_DRAWER;
+	public static RegistryObject<Block> MAGIC_DRAWER;
+	public static RegistryObject<Block> UMBRAN_DRAWER;
+	public static RegistryObject<Block> HELLBARK_DRAWER;
+	public static RegistryObject<Block> EMPYREAL_DRAWER;
 
-	public static final RegistryObject<Block> FIR_KITCHEN_CABINETRY;
-	public static final RegistryObject<Block> PINE_KITCHEN_CABINETRY;
-	public static final RegistryObject<Block> MAPLE_KITCHEN_CABINETRY;
-	public static final RegistryObject<Block> REDWOOD_KITCHEN_CABINETRY;
-	public static final RegistryObject<Block> MAHOGANY_KITCHEN_CABINETRY;
-	public static final RegistryObject<Block> JACARANDA_KITCHEN_CABINETRY;
-	public static final RegistryObject<Block> PALM_KITCHEN_CABINETRY;
-	public static final RegistryObject<Block> WILLOW_KITCHEN_CABINETRY;
-	public static final RegistryObject<Block> DEAD_KITCHEN_CABINETRY;
-	public static final RegistryObject<Block> MAGIC_KITCHEN_CABINETRY;
-	public static final RegistryObject<Block> UMBRAN_KITCHEN_CABINETRY;
-	public static final RegistryObject<Block> HELLBARK_KITCHEN_CABINETRY;
-	public static final RegistryObject<Block> EMPYREAL_KITCHEN_CABINETRY;
+	public static RegistryObject<Block> FIR_KITCHEN_CABINETRY;
+	public static RegistryObject<Block> PINE_KITCHEN_CABINETRY;
+	public static RegistryObject<Block> MAPLE_KITCHEN_CABINETRY;
+	public static RegistryObject<Block> REDWOOD_KITCHEN_CABINETRY;
+	public static RegistryObject<Block> MAHOGANY_KITCHEN_CABINETRY;
+	public static RegistryObject<Block> JACARANDA_KITCHEN_CABINETRY;
+	public static RegistryObject<Block> PALM_KITCHEN_CABINETRY;
+	public static RegistryObject<Block> WILLOW_KITCHEN_CABINETRY;
+	public static RegistryObject<Block> DEAD_KITCHEN_CABINETRY;
+	public static RegistryObject<Block> MAGIC_KITCHEN_CABINETRY;
+	public static RegistryObject<Block> UMBRAN_KITCHEN_CABINETRY;
+	public static RegistryObject<Block> HELLBARK_KITCHEN_CABINETRY;
+	public static RegistryObject<Block> EMPYREAL_KITCHEN_CABINETRY;
 
-	public static final RegistryObject<Block> FIR_KITCHEN_DRAWER;
-	public static final RegistryObject<Block> PINE_KITCHEN_DRAWER;
-	public static final RegistryObject<Block> MAPLE_KITCHEN_DRAWER;
-	public static final RegistryObject<Block> REDWOOD_KITCHEN_DRAWER;
-	public static final RegistryObject<Block> MAHOGANY_KITCHEN_DRAWER;
-	public static final RegistryObject<Block> JACARANDA_KITCHEN_DRAWER;
-	public static final RegistryObject<Block> PALM_KITCHEN_DRAWER;
-	public static final RegistryObject<Block> WILLOW_KITCHEN_DRAWER;
-	public static final RegistryObject<Block> DEAD_KITCHEN_DRAWER;
-	public static final RegistryObject<Block> MAGIC_KITCHEN_DRAWER;
-	public static final RegistryObject<Block> UMBRAN_KITCHEN_DRAWER;
-	public static final RegistryObject<Block> HELLBARK_KITCHEN_DRAWER;
-	public static final RegistryObject<Block> EMPYREAL_KITCHEN_DRAWER;
+	public static RegistryObject<Block> FIR_KITCHEN_DRAWER;
+	public static RegistryObject<Block> PINE_KITCHEN_DRAWER;
+	public static RegistryObject<Block> MAPLE_KITCHEN_DRAWER;
+	public static RegistryObject<Block> REDWOOD_KITCHEN_DRAWER;
+	public static RegistryObject<Block> MAHOGANY_KITCHEN_DRAWER;
+	public static RegistryObject<Block> JACARANDA_KITCHEN_DRAWER;
+	public static RegistryObject<Block> PALM_KITCHEN_DRAWER;
+	public static RegistryObject<Block> WILLOW_KITCHEN_DRAWER;
+	public static RegistryObject<Block> DEAD_KITCHEN_DRAWER;
+	public static RegistryObject<Block> MAGIC_KITCHEN_DRAWER;
+	public static RegistryObject<Block> UMBRAN_KITCHEN_DRAWER;
+	public static RegistryObject<Block> HELLBARK_KITCHEN_DRAWER;
+	public static RegistryObject<Block> EMPYREAL_KITCHEN_DRAWER;
 
-	public static final RegistryObject<Block> FIR_KITCHEN_SINK;
-	public static final RegistryObject<Block> PINE_KITCHEN_SINK;
-	public static final RegistryObject<Block> MAPLE_KITCHEN_SINK;
-	public static final RegistryObject<Block> REDWOOD_KITCHEN_SINK;
-	public static final RegistryObject<Block> MAHOGANY_KITCHEN_SINK;
-	public static final RegistryObject<Block> JACARANDA_KITCHEN_SINK;
-	public static final RegistryObject<Block> PALM_KITCHEN_SINK;
-	public static final RegistryObject<Block> WILLOW_KITCHEN_SINK;
-	public static final RegistryObject<Block> DEAD_KITCHEN_SINK;
-	public static final RegistryObject<Block> MAGIC_KITCHEN_SINK;
-	public static final RegistryObject<Block> UMBRAN_KITCHEN_SINK;
-	public static final RegistryObject<Block> HELLBARK_KITCHEN_SINK;
-	public static final RegistryObject<Block> EMPYREAL_KITCHEN_SINK;
+	public static RegistryObject<Block> FIR_KITCHEN_SINK;
+	public static RegistryObject<Block> PINE_KITCHEN_SINK;
+	public static RegistryObject<Block> MAPLE_KITCHEN_SINK;
+	public static RegistryObject<Block> REDWOOD_KITCHEN_SINK;
+	public static RegistryObject<Block> MAHOGANY_KITCHEN_SINK;
+	public static RegistryObject<Block> JACARANDA_KITCHEN_SINK;
+	public static RegistryObject<Block> PALM_KITCHEN_SINK;
+	public static RegistryObject<Block> WILLOW_KITCHEN_SINK;
+	public static RegistryObject<Block> DEAD_KITCHEN_SINK;
+	public static RegistryObject<Block> MAGIC_KITCHEN_SINK;
+	public static RegistryObject<Block> UMBRAN_KITCHEN_SINK;
+	public static RegistryObject<Block> HELLBARK_KITCHEN_SINK;
+	public static RegistryObject<Block> EMPYREAL_KITCHEN_SINK;
 
-	public static final RegistryObject<Block> FIR_KITCHEN_STORAGE_CABINET;
-	public static final RegistryObject<Block> PINE_KITCHEN_STORAGE_CABINET;
-	public static final RegistryObject<Block> MAPLE_KITCHEN_STORAGE_CABINET;
-	public static final RegistryObject<Block> REDWOOD_KITCHEN_STORAGE_CABINET;
-	public static final RegistryObject<Block> MAHOGANY_KITCHEN_STORAGE_CABINET;
-	public static final RegistryObject<Block> JACARANDA_KITCHEN_STORAGE_CABINET;
-	public static final RegistryObject<Block> PALM_KITCHEN_STORAGE_CABINET;
-	public static final RegistryObject<Block> WILLOW_KITCHEN_STORAGE_CABINET;
-	public static final RegistryObject<Block> DEAD_KITCHEN_STORAGE_CABINET;
-	public static final RegistryObject<Block> MAGIC_KITCHEN_STORAGE_CABINET;
-	public static final RegistryObject<Block> UMBRAN_KITCHEN_STORAGE_CABINET;
-	public static final RegistryObject<Block> HELLBARK_KITCHEN_STORAGE_CABINET;
-	public static final RegistryObject<Block> EMPYREAL_KITCHEN_STORAGE_CABINET;
+	public static RegistryObject<Block> FIR_KITCHEN_STORAGE_CABINET;
+	public static RegistryObject<Block> PINE_KITCHEN_STORAGE_CABINET;
+	public static RegistryObject<Block> MAPLE_KITCHEN_STORAGE_CABINET;
+	public static RegistryObject<Block> REDWOOD_KITCHEN_STORAGE_CABINET;
+	public static RegistryObject<Block> MAHOGANY_KITCHEN_STORAGE_CABINET;
+	public static RegistryObject<Block> JACARANDA_KITCHEN_STORAGE_CABINET;
+	public static RegistryObject<Block> PALM_KITCHEN_STORAGE_CABINET;
+	public static RegistryObject<Block> WILLOW_KITCHEN_STORAGE_CABINET;
+	public static RegistryObject<Block> DEAD_KITCHEN_STORAGE_CABINET;
+	public static RegistryObject<Block> MAGIC_KITCHEN_STORAGE_CABINET;
+	public static RegistryObject<Block> UMBRAN_KITCHEN_STORAGE_CABINET;
+	public static RegistryObject<Block> HELLBARK_KITCHEN_STORAGE_CABINET;
+	public static RegistryObject<Block> EMPYREAL_KITCHEN_STORAGE_CABINET;
 
-	public static final RegistryObject<Block> FIR_LATTICE_FENCE_GATE;
-	public static final RegistryObject<Block> PINE_LATTICE_FENCE_GATE;
-	public static final RegistryObject<Block> MAPLE_LATTICE_FENCE_GATE;
-	public static final RegistryObject<Block> REDWOOD_LATTICE_FENCE_GATE;
-	public static final RegistryObject<Block> MAHOGANY_LATTICE_FENCE_GATE;
-	public static final RegistryObject<Block> JACARANDA_LATTICE_FENCE_GATE;
-	public static final RegistryObject<Block> PALM_LATTICE_FENCE_GATE;
-	public static final RegistryObject<Block> WILLOW_LATTICE_FENCE_GATE;
-	public static final RegistryObject<Block> DEAD_LATTICE_FENCE_GATE;
-	public static final RegistryObject<Block> MAGIC_LATTICE_FENCE_GATE;
-	public static final RegistryObject<Block> UMBRAN_LATTICE_FENCE_GATE;
-	public static final RegistryObject<Block> HELLBARK_LATTICE_FENCE_GATE;
-	public static final RegistryObject<Block> EMPYREAL_LATTICE_FENCE_GATE;
+	public static RegistryObject<Block> FIR_LATTICE_FENCE_GATE;
+	public static RegistryObject<Block> PINE_LATTICE_FENCE_GATE;
+	public static RegistryObject<Block> MAPLE_LATTICE_FENCE_GATE;
+	public static RegistryObject<Block> REDWOOD_LATTICE_FENCE_GATE;
+	public static RegistryObject<Block> MAHOGANY_LATTICE_FENCE_GATE;
+	public static RegistryObject<Block> JACARANDA_LATTICE_FENCE_GATE;
+	public static RegistryObject<Block> PALM_LATTICE_FENCE_GATE;
+	public static RegistryObject<Block> WILLOW_LATTICE_FENCE_GATE;
+	public static RegistryObject<Block> DEAD_LATTICE_FENCE_GATE;
+	public static RegistryObject<Block> MAGIC_LATTICE_FENCE_GATE;
+	public static RegistryObject<Block> UMBRAN_LATTICE_FENCE_GATE;
+	public static RegistryObject<Block> HELLBARK_LATTICE_FENCE_GATE;
+	public static RegistryObject<Block> EMPYREAL_LATTICE_FENCE_GATE;
 	
-	public static final RegistryObject<Block> FIR_LATTICE_FENCE;
-	public static final RegistryObject<Block> PINE_LATTICE_FENCE;
-	public static final RegistryObject<Block> MAPLE_LATTICE_FENCE;
-	public static final RegistryObject<Block> REDWOOD_LATTICE_FENCE;
-	public static final RegistryObject<Block> MAHOGANY_LATTICE_FENCE;
-	public static final RegistryObject<Block> JACARANDA_LATTICE_FENCE;
-	public static final RegistryObject<Block> PALM_LATTICE_FENCE;
-	public static final RegistryObject<Block> WILLOW_LATTICE_FENCE;
-	public static final RegistryObject<Block> DEAD_LATTICE_FENCE;
-	public static final RegistryObject<Block> MAGIC_LATTICE_FENCE;
-	public static final RegistryObject<Block> UMBRAN_LATTICE_FENCE;
-	public static final RegistryObject<Block> HELLBARK_LATTICE_FENCE;
-	public static final RegistryObject<Block> EMPYREAL_LATTICE_FENCE;
+	public static RegistryObject<Block> FIR_LATTICE_FENCE;
+	public static RegistryObject<Block> PINE_LATTICE_FENCE;
+	public static RegistryObject<Block> MAPLE_LATTICE_FENCE;
+	public static RegistryObject<Block> REDWOOD_LATTICE_FENCE;
+	public static RegistryObject<Block> MAHOGANY_LATTICE_FENCE;
+	public static RegistryObject<Block> JACARANDA_LATTICE_FENCE;
+	public static RegistryObject<Block> PALM_LATTICE_FENCE;
+	public static RegistryObject<Block> WILLOW_LATTICE_FENCE;
+	public static RegistryObject<Block> DEAD_LATTICE_FENCE;
+	public static RegistryObject<Block> MAGIC_LATTICE_FENCE;
+	public static RegistryObject<Block> UMBRAN_LATTICE_FENCE;
+	public static RegistryObject<Block> HELLBARK_LATTICE_FENCE;
+	public static RegistryObject<Block> EMPYREAL_LATTICE_FENCE;
 
-	public static final RegistryObject<Block> FIR_MAIL_BOX;
-	public static final RegistryObject<Block> PINE_MAIL_BOX;
-	public static final RegistryObject<Block> MAPLE_MAIL_BOX;
-	public static final RegistryObject<Block> REDWOOD_MAIL_BOX;
-	public static final RegistryObject<Block> MAHOGANY_MAIL_BOX;
-	public static final RegistryObject<Block> JACARANDA_MAIL_BOX;
-	public static final RegistryObject<Block> PALM_MAIL_BOX;
-	public static final RegistryObject<Block> WILLOW_MAIL_BOX;
-	public static final RegistryObject<Block> DEAD_MAIL_BOX;
-	public static final RegistryObject<Block> MAGIC_MAIL_BOX;
-	public static final RegistryObject<Block> UMBRAN_MAIL_BOX;
-	public static final RegistryObject<Block> HELLBARK_MAIL_BOX;
-	public static final RegistryObject<Block> EMPYREAL_MAIL_BOX;
+	public static RegistryObject<Block> FIR_MAIL_BOX;
+	public static RegistryObject<Block> PINE_MAIL_BOX;
+	public static RegistryObject<Block> MAPLE_MAIL_BOX;
+	public static RegistryObject<Block> REDWOOD_MAIL_BOX;
+	public static RegistryObject<Block> MAHOGANY_MAIL_BOX;
+	public static RegistryObject<Block> JACARANDA_MAIL_BOX;
+	public static RegistryObject<Block> PALM_MAIL_BOX;
+	public static RegistryObject<Block> WILLOW_MAIL_BOX;
+	public static RegistryObject<Block> DEAD_MAIL_BOX;
+	public static RegistryObject<Block> MAGIC_MAIL_BOX;
+	public static RegistryObject<Block> UMBRAN_MAIL_BOX;
+	public static RegistryObject<Block> HELLBARK_MAIL_BOX;
+	public static RegistryObject<Block> EMPYREAL_MAIL_BOX;
 
-	public static final RegistryObject<Block> FIR_STORAGE_CABINET;
-	public static final RegistryObject<Block> PINE_STORAGE_CABINET;
-	public static final RegistryObject<Block> MAPLE_STORAGE_CABINET;
-	public static final RegistryObject<Block> REDWOOD_STORAGE_CABINET;
-	public static final RegistryObject<Block> MAHOGANY_STORAGE_CABINET;
-	public static final RegistryObject<Block> JACARANDA_STORAGE_CABINET;
-	public static final RegistryObject<Block> PALM_STORAGE_CABINET;
-	public static final RegistryObject<Block> WILLOW_STORAGE_CABINET;
-	public static final RegistryObject<Block> DEAD_STORAGE_CABINET;
-	public static final RegistryObject<Block> MAGIC_STORAGE_CABINET;
-	public static final RegistryObject<Block> UMBRAN_STORAGE_CABINET;
-	public static final RegistryObject<Block> HELLBARK_STORAGE_CABINET;
-	public static final RegistryObject<Block> EMPYREAL_STORAGE_CABINET;
+	public static RegistryObject<Block> FIR_STORAGE_CABINET;
+	public static RegistryObject<Block> PINE_STORAGE_CABINET;
+	public static RegistryObject<Block> MAPLE_STORAGE_CABINET;
+	public static RegistryObject<Block> REDWOOD_STORAGE_CABINET;
+	public static RegistryObject<Block> MAHOGANY_STORAGE_CABINET;
+	public static RegistryObject<Block> JACARANDA_STORAGE_CABINET;
+	public static RegistryObject<Block> PALM_STORAGE_CABINET;
+	public static RegistryObject<Block> WILLOW_STORAGE_CABINET;
+	public static RegistryObject<Block> DEAD_STORAGE_CABINET;
+	public static RegistryObject<Block> MAGIC_STORAGE_CABINET;
+	public static RegistryObject<Block> UMBRAN_STORAGE_CABINET;
+	public static RegistryObject<Block> HELLBARK_STORAGE_CABINET;
+	public static RegistryObject<Block> EMPYREAL_STORAGE_CABINET;
 
-	public static final RegistryObject<Block> FIR_STORAGE_JAR;
-	public static final RegistryObject<Block> PINE_STORAGE_JAR;
-	public static final RegistryObject<Block> MAPLE_STORAGE_JAR;
-	public static final RegistryObject<Block> REDWOOD_STORAGE_JAR;
-	public static final RegistryObject<Block> MAHOGANY_STORAGE_JAR;
-	public static final RegistryObject<Block> JACARANDA_STORAGE_JAR;
-	public static final RegistryObject<Block> PALM_STORAGE_JAR;
-	public static final RegistryObject<Block> WILLOW_STORAGE_JAR;
-	public static final RegistryObject<Block> DEAD_STORAGE_JAR;
-	public static final RegistryObject<Block> MAGIC_STORAGE_JAR;
-	public static final RegistryObject<Block> UMBRAN_STORAGE_JAR;
-	public static final RegistryObject<Block> HELLBARK_STORAGE_JAR;
-	public static final RegistryObject<Block> EMPYREAL_STORAGE_JAR;
+	public static RegistryObject<Block> FIR_STORAGE_JAR;
+	public static RegistryObject<Block> PINE_STORAGE_JAR;
+	public static RegistryObject<Block> MAPLE_STORAGE_JAR;
+	public static RegistryObject<Block> REDWOOD_STORAGE_JAR;
+	public static RegistryObject<Block> MAHOGANY_STORAGE_JAR;
+	public static RegistryObject<Block> JACARANDA_STORAGE_JAR;
+	public static RegistryObject<Block> PALM_STORAGE_JAR;
+	public static RegistryObject<Block> WILLOW_STORAGE_JAR;
+	public static RegistryObject<Block> DEAD_STORAGE_JAR;
+	public static RegistryObject<Block> MAGIC_STORAGE_JAR;
+	public static RegistryObject<Block> UMBRAN_STORAGE_JAR;
+	public static RegistryObject<Block> HELLBARK_STORAGE_JAR;
+	public static RegistryObject<Block> EMPYREAL_STORAGE_JAR;
 
-	public static final RegistryObject<Block> FIR_TABLE;
-	public static final RegistryObject<Block> PINE_TABLE;
-	public static final RegistryObject<Block> MAPLE_TABLE;
-	public static final RegistryObject<Block> REDWOOD_TABLE;
-	public static final RegistryObject<Block> MAHOGANY_TABLE;
-	public static final RegistryObject<Block> JACARANDA_TABLE;
-	public static final RegistryObject<Block> PALM_TABLE;
-	public static final RegistryObject<Block> WILLOW_TABLE;
-	public static final RegistryObject<Block> DEAD_TABLE;
-	public static final RegistryObject<Block> MAGIC_TABLE;
-	public static final RegistryObject<Block> UMBRAN_TABLE;
-	public static final RegistryObject<Block> HELLBARK_TABLE;
-	public static final RegistryObject<Block> EMPYREAL_TABLE;
+	public static RegistryObject<Block> FIR_TABLE;
+	public static RegistryObject<Block> PINE_TABLE;
+	public static RegistryObject<Block> MAPLE_TABLE;
+	public static RegistryObject<Block> REDWOOD_TABLE;
+	public static RegistryObject<Block> MAHOGANY_TABLE;
+	public static RegistryObject<Block> JACARANDA_TABLE;
+	public static RegistryObject<Block> PALM_TABLE;
+	public static RegistryObject<Block> WILLOW_TABLE;
+	public static RegistryObject<Block> DEAD_TABLE;
+	public static RegistryObject<Block> MAGIC_TABLE;
+	public static RegistryObject<Block> UMBRAN_TABLE;
+	public static RegistryObject<Block> HELLBARK_TABLE;
+	public static RegistryObject<Block> EMPYREAL_TABLE;
 
-	public static final RegistryObject<Block> FIR_TOILET;
-	public static final RegistryObject<Block> PINE_TOILET;
-	public static final RegistryObject<Block> MAPLE_TOILET;
-	public static final RegistryObject<Block> REDWOOD_TOILET;
-	public static final RegistryObject<Block> MAHOGANY_TOILET;
-	public static final RegistryObject<Block> JACARANDA_TOILET;
-	public static final RegistryObject<Block> PALM_TOILET;
-	public static final RegistryObject<Block> WILLOW_TOILET;
-	public static final RegistryObject<Block> DEAD_TOILET;
-	public static final RegistryObject<Block> MAGIC_TOILET;
-	public static final RegistryObject<Block> UMBRAN_TOILET;
-	public static final RegistryObject<Block> HELLBARK_TOILET;
-	public static final RegistryObject<Block> EMPYREAL_TOILET;
+	public static RegistryObject<Block> FIR_TOILET;
+	public static RegistryObject<Block> PINE_TOILET;
+	public static RegistryObject<Block> MAPLE_TOILET;
+	public static RegistryObject<Block> REDWOOD_TOILET;
+	public static RegistryObject<Block> MAHOGANY_TOILET;
+	public static RegistryObject<Block> JACARANDA_TOILET;
+	public static RegistryObject<Block> PALM_TOILET;
+	public static RegistryObject<Block> WILLOW_TOILET;
+	public static RegistryObject<Block> DEAD_TOILET;
+	public static RegistryObject<Block> MAGIC_TOILET;
+	public static RegistryObject<Block> UMBRAN_TOILET;
+	public static RegistryObject<Block> HELLBARK_TOILET;
+	public static RegistryObject<Block> EMPYREAL_TOILET;
 
-	static {
+	public static void init() {
 		FIR_BASIN = registerBasin("fir", BOPWoodTypes.FIR);
 		PINE_BASIN = registerBasin("pine", BOPWoodTypes.PINE);
 		MAPLE_BASIN = registerBasin("maple", BOPWoodTypes.MAPLE);
@@ -587,8 +585,6 @@ public class ModBlocks {
 	private static RegistryObject<Block> registerBasin(String name, WoodType woodType) {
 		RegistryObject<Block> block = BLOCKS.register(name + "_basin", () -> 
 				new CustomBasinBlock(woodType));
-		ITEMS.register(name + "_basin", () -> 
-				new BlockItem(block.get(), new Item.Properties()));
 		FurnituresOPlenty.LOGGER.info("Successfully registered block and item for " + FurnituresOPlenty.MODID + ":" + name + "_basin");
 		return block;
 	}
@@ -596,8 +592,6 @@ public class ModBlocks {
 	private static RegistryObject<Block> registerBath(String name, WoodType woodType) {
 		RegistryObject<Block> block = BLOCKS.register(name + "_bath", () -> 
 				new CustomBathBlock(woodType));
-		ITEMS.register(name + "_bath", () -> 
-				new BlockItem(block.get(), new Item.Properties()));
 		FurnituresOPlenty.LOGGER.info("Successfully registered block and item for " + FurnituresOPlenty.MODID + ":" + name + "_bath");
 		return block;
 	}
@@ -606,8 +600,6 @@ public class ModBlocks {
 		MetalType type = metalType.equals("light") ? MetalType.LIGHT : MetalType.DARK;
 		RegistryObject<Block> block = BLOCKS.register(metalType + "_" + wood + "_ceiling_fan", () -> 
 				new CustomCeilingFanBlock(woodType, type));
-		ITEMS.register(metalType + "_" + wood + "_ceiling_fan", () -> 
-				new BlockItem(block.get(), new Item.Properties()));
 		FurnituresOPlenty.LOGGER.info("Successfully registered block and item for " + FurnituresOPlenty.MODID + ":" + metalType + "_" + wood + "_ceiling_fan");
 		return block;
 	}
@@ -615,8 +607,6 @@ public class ModBlocks {
 	private static RegistryObject<Block> registerChair(String name, WoodType woodType) {
 		RegistryObject<Block> block = BLOCKS.register(name + "_chair", () -> 
 				new CustomChairBlock(woodType));
-		ITEMS.register(name + "_chair", () -> 
-				new BlockItem(block.get(), new Item.Properties()));
 		FurnituresOPlenty.LOGGER.info("Successfully registered block and item for " + FurnituresOPlenty.MODID + ":" + name + "_chair");
 		return block;
 	}
@@ -624,8 +614,6 @@ public class ModBlocks {
 	private static RegistryObject<Block> registerCrate(String name, WoodType woodType) {
 		RegistryObject<Block> block = BLOCKS.register(name + "_crate", () -> 
 				new CustomCrateBlock(woodType));
-		ITEMS.register(name + "_crate", () -> 
-				new BlockItem(block.get(), new Item.Properties()));
 		FurnituresOPlenty.LOGGER.info("Successfully registered block and item for " + FurnituresOPlenty.MODID + ":" + name + "_crate");
 		return block;
 	}
@@ -633,8 +621,6 @@ public class ModBlocks {
 	private static RegistryObject<Block> registerCuttingBoard(String name, WoodType woodType) {
 		RegistryObject<Block> block = BLOCKS.register(name + "_cutting_board", () -> 
 				new CustomCuttingBoardBlock(woodType));
-		ITEMS.register(name + "_cutting_board", () -> 
-				new BlockItem(block.get(), new Item.Properties()));
 		FurnituresOPlenty.LOGGER.info("Successfully registered block and item for " + FurnituresOPlenty.MODID + ":" + name + "_cutting_board");
 		return block;
 	}
@@ -642,8 +628,6 @@ public class ModBlocks {
 	private static RegistryObject<Block> registerDesk(String name, WoodType woodType) {
 		RegistryObject<Block> block = BLOCKS.register(name + "_desk", () -> 
 				new CustomDeskBlock(woodType));
-		ITEMS.register(name + "_desk", () -> 
-				new BlockItem(block.get(), new Item.Properties()));
 		FurnituresOPlenty.LOGGER.info("Successfully registered block and item for " + FurnituresOPlenty.MODID + ":" + name + "_desk");
 		return block;
 	}
@@ -651,8 +635,6 @@ public class ModBlocks {
 	private static RegistryObject<Block> registerDrawer(String name, WoodType woodType) {
 		RegistryObject<Block> block = BLOCKS.register(name + "_drawer", () -> 
 				new CustomDrawerBlock(woodType));
-		ITEMS.register(name + "_drawer", () -> 
-				new BlockItem(block.get(), new Item.Properties()));
 		FurnituresOPlenty.LOGGER.info("Successfully registered block and item for " + name + "_drawer");
 		return block;
 	}
@@ -660,8 +642,6 @@ public class ModBlocks {
 	private static RegistryObject<Block> registerKitchenCabinetry(String name, WoodType woodType) {
 		RegistryObject<Block> block = BLOCKS.register(name + "_kitchen_cabinetry", () -> 
 				new CustomKitchenCabinetryBlock(woodType));
-		ITEMS.register(name + "_kitchen_cabinetry", () -> 
-				new BlockItem(block.get(), new Item.Properties()));
 		FurnituresOPlenty.LOGGER.info("Successfully registered block and item for " + FurnituresOPlenty.MODID + ":" + name + "_kitchen_cabinetry");
 		return block;
 	}
@@ -669,8 +649,6 @@ public class ModBlocks {
 	private static RegistryObject<Block> registerKitchenDrawer(String name, WoodType woodType) {
 		RegistryObject<Block> block = BLOCKS.register(name + "_kitchen_drawer", () -> 
 				new CustomKitchenDrawerBlock(woodType));
-		ITEMS.register(name + "_kitchen_drawer", () -> 
-				new BlockItem(block.get(), new Item.Properties()));
 		FurnituresOPlenty.LOGGER.info("Successfully registered block and item for " + FurnituresOPlenty.MODID + ":" + name + "_kitchen_drawer");
 		return block;
 	}
@@ -678,8 +656,6 @@ public class ModBlocks {
 	private static RegistryObject<Block> registerKitchenSink(String name, WoodType woodType) {
 		RegistryObject<Block> block = BLOCKS.register(name + "_kitchen_sink", () -> 
 				new CustomKitchenSinkBlock(woodType));
-		ITEMS.register(name + "_kitchen_sink", () -> 
-				new BlockItem(block.get(), new Item.Properties()));
 		FurnituresOPlenty.LOGGER.info("Successfully registered block and item for " + FurnituresOPlenty.MODID + ":" + name + "_kitchen_sink");
 		return block;
 	}
@@ -687,8 +663,6 @@ public class ModBlocks {
 	private static RegistryObject<Block> registerKitchenStorageCabinets(String name, WoodType woodType) {
 		RegistryObject<Block> block = BLOCKS.register(name + "_kitchen_storage_cabinet", () -> 
 				new CustomKitchenStorageCabinetBlock(woodType));
-		ITEMS.register(name + "_kitchen_storage_cabinet", () -> 
-				new BlockItem(block.get(), new Item.Properties()));
 		FurnituresOPlenty.LOGGER.info("Successfully registered block and item for " + FurnituresOPlenty.MODID + ":" + name 
 				+ "_kitchen_storage_cabinet");
 		return block;
@@ -697,8 +671,6 @@ public class ModBlocks {
 	private static RegistryObject<Block> registerLatticeFenceGate(String name, WoodType woodType) {
 		RegistryObject<Block> block = BLOCKS.register(name + "_lattice_fence_gate", () -> 
 				new CustomLatticeFenceGateBlock(woodType));
-		ITEMS.register(name + "_lattice_fence_gate", () -> 
-				new BlockItem(block.get(), new Item.Properties()));
 		FurnituresOPlenty.LOGGER.info("Successfully registered block and item for " + FurnituresOPlenty.MODID + ":" + name + "_lattice_fence_gate");
 		return block;
 	}
@@ -706,8 +678,6 @@ public class ModBlocks {
 	private static RegistryObject<Block> registerLatticeFences(String name, WoodType woodType) {
 		RegistryObject<Block> block = BLOCKS.register(name + "_lattice_fence", () -> 
 				new CustomLatticeFenceBlock(woodType));
-		ITEMS.register(name + "_lattice_fence", () -> 
-				new BlockItem(block.get(), new Item.Properties()));
 		FurnituresOPlenty.LOGGER.info("Successfully registered block and item for " + FurnituresOPlenty.MODID + ":" + name + "_lattice_fence");
 		return block;
 	}
@@ -715,8 +685,6 @@ public class ModBlocks {
 	private static RegistryObject<Block> registerMailBox(String name, WoodType woodType) {
 		RegistryObject<Block> block = BLOCKS.register(name + "_mail_box", () -> 
 				new CustomMailboxBlock(woodType));
-		ITEMS.register(name + "_mail_box", () -> 
-				new BlockItem(block.get(), new Item.Properties()));
 		FurnituresOPlenty.LOGGER.info("Successfully registered block and item for " + FurnituresOPlenty.MODID + ":" + name + "_mail_box");
 		return block;
 	}
@@ -724,8 +692,6 @@ public class ModBlocks {
 	private static RegistryObject<Block> registerStorageCabinets(String name, WoodType woodType) {
 		RegistryObject<Block> block = BLOCKS.register(name + "_storage_cabinets", () -> 
 				new CustomStorageCabinetBlock(woodType));
-		ITEMS.register(name + "_storage_cabinets", () -> 
-				new BlockItem(block.get(), new Item.Properties()));
 		FurnituresOPlenty.LOGGER.info("Successfully registered block and item for " + FurnituresOPlenty.MODID + ":" + name 
 				+ "_storage_cabinets");
 		return block;
@@ -734,8 +700,6 @@ public class ModBlocks {
 	private static RegistryObject<Block> registerStorageJar(String name, WoodType woodType) {
 		RegistryObject<Block> block = BLOCKS.register(name + "_storage_jar", () -> 
 				new CustomStorageJarBlock(woodType));
-		ITEMS.register(name + "_storage_jar", () -> 
-				new BlockItem(block.get(), new Item.Properties()));
 		FurnituresOPlenty.LOGGER.info("Successfully registered block and item for " + FurnituresOPlenty.MODID + ":" + name + "_storage_jar");
 		return block;
 	}
@@ -743,8 +707,6 @@ public class ModBlocks {
 	private static RegistryObject<Block> registerTable(String name, WoodType woodType) {
 		RegistryObject<Block> block = BLOCKS.register(name + "_table", () -> 
 				new CustomTableBlock(woodType));
-		ITEMS.register(name + "_table", () -> 
-				new BlockItem(block.get(), new Item.Properties()));
 		FurnituresOPlenty.LOGGER.info("Successfully registered block and item for " + FurnituresOPlenty.MODID + ":" + name + "_table");
 		return block;
 	}
@@ -752,8 +714,6 @@ public class ModBlocks {
 	private static RegistryObject<Block> registerToilet(String name, WoodType woodType) {
 		RegistryObject<Block> block = BLOCKS.register(name + "_toilet", () -> 
 				new CustomToiletBlock(woodType));
-		ITEMS.register(name + "_table", () -> 
-				new BlockItem(block.get(), new Item.Properties()));
 		FurnituresOPlenty.LOGGER.info("Successfully registered block and item for " + FurnituresOPlenty.MODID + ":" + name + "_toilet");
 		return block;
 	}

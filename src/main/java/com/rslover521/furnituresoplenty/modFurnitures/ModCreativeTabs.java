@@ -5,7 +5,6 @@ import com.rslover521.furnituresoplenty.FurnituresOPlenty;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.network.chat.Component;
 import net.minecraft.world.item.CreativeModeTab;
-import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.RegistryObject;
@@ -20,7 +19,6 @@ public class ModCreativeTabs {
                     .title(Component.translatable("itemGroup." + FurnituresOPlenty.MODID))
                     .icon(() -> new ItemStack(ModBlocks.MAPLE_CHAIR.get())) // example icon
                     .displayItems((parameters, output) -> {
-
                         // === BASINS ===
                         output.accept(ModBlocks.FIR_BASIN.get());
                         output.accept(ModBlocks.PINE_BASIN.get());

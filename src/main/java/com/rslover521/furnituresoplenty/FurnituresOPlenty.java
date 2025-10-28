@@ -19,12 +19,10 @@ public class FurnituresOPlenty {
     // Directly reference a slf4j logger
     public static final Logger LOGGER = LogUtils.getLogger();
     
-    @SuppressWarnings("removal")
-	public FurnituresOPlenty(FMLJavaModLoadingContext context) {
+    public FurnituresOPlenty(FMLJavaModLoadingContext context) {
     	IEventBus modEventBus = context.getModEventBus();
 
         ModBlocks.register(modEventBus);
-
     	ModCreativeTabs.register();
     	
     }
