@@ -1,25 +1,25 @@
-package com.rslover521.furnituresoplenty.modFurnitures;
+package com.rslover521.furnituresoplenty.customFurnitures;
 
-import com.mrcrayfish.furniture.refurbished.block.BasinBlock;
+import com.mrcrayfish.furniture.refurbished.block.DeskBlock;
 
 import net.minecraft.world.level.block.state.properties.WoodType;
 import net.minecraft.world.level.material.MapColor;
 
-public class CustomBasinBlock extends BasinBlock{
+public class CustomDeskBlock extends DeskBlock {
 	private WoodType woodType;
 	
-	public CustomBasinBlock(WoodType woodType) {
-		super(Properties.of()
-				.mapColor(MapColor.WOOD)
-				.strength(3.0F)
-				);
+	public CustomDeskBlock(WoodType woodType) {
+		super(woodType, Properties.of()
+			.strength(2.0F)
+			.mapColor(MapColor.WOOD)
+		);
 		this.woodType = woodType;
 	}
-	
+
 	public WoodType getWoodType() {
 		return woodType;
 	}
-	
+
 	public void setWoodType(WoodType woodType) {
 		this.woodType = woodType;
 	}

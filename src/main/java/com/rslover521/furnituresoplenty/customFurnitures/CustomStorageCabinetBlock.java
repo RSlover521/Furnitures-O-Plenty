@@ -1,4 +1,4 @@
-package com.rslover521.furnituresoplenty.modFurnitures;
+package com.rslover521.furnituresoplenty.customFurnitures;
 
 import java.util.Map;
 
