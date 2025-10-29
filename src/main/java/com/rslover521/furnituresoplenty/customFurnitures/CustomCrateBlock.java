@@ -1,17 +1,17 @@
-package com.rslover521.furnituresoplenty.modFurnitures;
+package com.rslover521.furnituresoplenty.customFurnitures;
 
-import com.mrcrayfish.furniture.refurbished.block.DeskBlock;
+import com.mrcrayfish.furniture.refurbished.block.CrateBlock;
 
 import net.minecraft.world.level.block.state.properties.WoodType;
 import net.minecraft.world.level.material.MapColor;
 
-public class CustomDeskBlock extends DeskBlock {
+public class CustomCrateBlock extends CrateBlock {
 	private WoodType woodType;
-	
-	public CustomDeskBlock(WoodType woodType) {
+
+	public CustomCrateBlock(WoodType woodType) {
 		super(woodType, Properties.of()
-			.strength(2.0F)
-			.mapColor(MapColor.WOOD)
+				.mapColor(MapColor.WOOD)
+				.strength(2.0F, 3.0F)
 		);
 		this.woodType = woodType;
 	}

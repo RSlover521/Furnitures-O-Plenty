@@ -1,19 +1,18 @@
-package com.rslover521.furnituresoplenty.modFurnitures;
+package com.rslover521.furnituresoplenty.customFurnitures;
 
-import com.mrcrayfish.furniture.refurbished.block.LatticeFenceBlock;
+import com.mrcrayfish.furniture.refurbished.block.KitchenCabinetryBlock;
 
 import net.minecraft.world.level.block.state.properties.WoodType;
 import net.minecraft.world.level.material.MapColor;
 
-public class CustomLatticeFenceBlock extends LatticeFenceBlock {
+public class CustomKitchenCabinetryBlock extends KitchenCabinetryBlock{
 	private WoodType woodType;
-	
-	public CustomLatticeFenceBlock(WoodType woodType) {
-		super(woodType, Properties.of()
+
+	public CustomKitchenCabinetryBlock(WoodType woodType) {
+		super(Properties.of()
 				.mapColor(MapColor.WOOD)
 				.strength(2.0F, 3.0F)
-		);
-		
+				);
 		this.woodType = woodType;
 	}
 	
