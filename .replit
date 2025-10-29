@@ -1,0 +1,29 @@
+modules = ["java-graalvm22.3", "bash"]
+[agent]
+expertMode = true
+
+[nix]
+channel = "stable-25_05"
+
+[workflows]
+runButton = "Project"
+
+[[workflows.workflow]]
+name = "Project"
+mode = "parallel"
+author = "agent"
+
+[[workflows.workflow.tasks]]
+task = "workflow.run"
+args = "Build Mod"
+
+[[workflows.workflow]]
+name = "Build Mod"
+author = "agent"
+
+[[workflows.workflow.tasks]]
+task = "shell.exec"
+args = "echo \"=== Furnitures O' Plenty Build System ===\" && echo \"\" && echo \"This is a Minecraft Forge mod development project.\" && echo \"To build the mod JAR, run: ./gradlew build\" && echo \"\" && echo \"Note: Building requires network access to Mojang servers.\" && echo \"The built JAR will be at: build/libs/furnituresoplenty-1.20.1-1.0.1.jar\" && echo \"\" && echo \"Available Gradle tasks:\" && ./gradlew tasks --no-daemon 2>&1 | head -50 || echo \"Gradle build requires network access to download dependencies.\""
+
+[workflows.workflow.metadata]
+outputType = "console"
