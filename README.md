@@ -12,29 +12,6 @@ Decorate your world, match your biomes, and make your builds truly feel like hom
 
 ---
 
-## 🚀 Development in Replit
-
-This project is set up for mod development in Replit. For detailed setup instructions, see [REPLIT_SETUP.md](REPLIT_SETUP.md).
-
-**Quick Start:**
-- ✅ Edit code, textures, and assets directly in Replit
-- ✅ Use Git for version control and collaboration
-- ⚠️ Building and testing requires a local Minecraft Forge environment
-
-**Build the mod:**
-```bash
-./gradlew build
-```
-Output: `build/libs/furnituresoplenty-1.20.1-1.0.1.jar`
-
-**Requirements for testing:**
-- Minecraft 1.20.1 with Forge 47.4.0
-- Biomes O' Plenty 19.0.0.96+
-- Refurbished Furniture 1.0.14+
-- Framework 0.7.15 & TerraBlender 3.0.1.10
-
----
-
 ## 📦 Features
 
 This mod adds furniture variants for all Biomes O' Plenty wood types:
@@ -47,12 +24,22 @@ This mod adds furniture variants for all Biomes O' Plenty wood types:
 - Baths, Toilets, and Basins
 - Cutting Boards
 
-**Wood Types:** Fir, Pine, Maple, Redwood, Mahogany, Jacaranda, Palm, Willow, Dead, Magic, Umbran, Hellbark, Empyreal
+**Wood Types (From Biomes O' Plenty):** Fir, Pine, Maple, Redwood, Mahogany, Jacaranda, Palm, Willow, Dead, Magic, Umbran, Hellbark, Empyreal
 
 ## 📝 License
 MIT License - See LICENSE.txt for details
 
-## 🔗 Links
+## 🔗 Mod Links
+
+**Official Mod Links**
+- **Modrinth** https://modrinth.com/mod/furnitures-o-plenty
+- **CurseForge** https://www.curseforge.com/minecraft/mc-mods/furnitures-o-plenty
+- 
+**Github Links**
 - **GitHub:** https://github.com/RSlover521/Furnitures-O-Plenty
+- **GitHub Issues** https://github.com/RSlover521/Furnitures-O-Plenty/issues
+
+**Depended Mod Links**
 - **Biomes O' Plenty:** [CurseForge](https://www.curseforge.com/minecraft/mc-mods/biomes-o-plenty)
 - **Refurbished Furniture:** [CurseForge](https://www.curseforge.com/minecraft/mc-mods/refurbished-furniture)
+
