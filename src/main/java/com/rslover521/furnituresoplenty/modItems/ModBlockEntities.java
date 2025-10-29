@@ -4,7 +4,12 @@ import com.rslover521.furnituresoplenty.FurnituresOPlenty;
 import com.rslover521.furnituresoplenty.customBlockEntities.CustomBasinBlockEntity;
 import com.rslover521.furnituresoplenty.customBlockEntities.CustomBathBlockEntity;
 import com.rslover521.furnituresoplenty.customBlockEntities.CustomCeilingFanBlockEntity;
+import com.rslover521.furnituresoplenty.customBlockEntities.CustomCrateBlockEntity;
+import com.rslover521.furnituresoplenty.customBlockEntities.CustomCuttingBoardBlockEntity;
+import com.rslover521.furnituresoplenty.customBlockEntities.CustomDrawerBlockEntity;
 import com.rslover521.furnituresoplenty.customFurnitures.CustomCeilingFanBlock;
+import com.rslover521.furnituresoplenty.customFurnitures.CustomCrateBlock;
+import com.rslover521.furnituresoplenty.customFurnitures.CustomCuttingBoardBlock;
 
 import net.minecraft.world.level.block.entity.BlockEntity;
 import net.minecraft.world.level.block.entity.BlockEntityType;
@@ -58,7 +63,6 @@ public class ModBlockEntities {
 	public static final RegistryObject<BlockEntityType<CustomCeilingFanBlockEntity>> CUSTOM_CEILING_FAN = 
 			BLOCK_ENTITIES.register("custom_ceiling_fan", 
 					() -> BlockEntityType.Builder.of(CustomCeilingFanBlockEntity::new, 
-
 							// Dark Ceiling Fan
 							ModBlocks.FIR_DARK_CEILING_FAN.get(),
 							ModBlocks.DEAD_DARK_CEILING_FAN.get(),
@@ -92,5 +96,62 @@ public class ModBlockEntities {
                             ModBlocks.EMPYREAL_LIGHT_CEILING_FAN.get()
 					).build(null));
 
+    @SuppressWarnings("null")
+    public static final RegistryObject<BlockEntityType<CustomCrateBlockEntity>> CUSTOM_CRATE = 
+            BLOCK_ENTITIES.register("custom_crate",
+                    () -> BlockEntityType.Builder.of(CustomCrateBlockEntity::new, 
+                            ModBlocks.FIR_CRATE.get(),
+                            ModBlocks.PINE_CRATE.get(),
+                            ModBlocks.MAPLE_CRATE.get(),
+                            ModBlocks.REDWOOD_CRATE.get(),
+                            ModBlocks.MAHOGANY_CRATE.get(),
+                            ModBlocks.JACARANDA_CRATE.get(),
+                            ModBlocks.PALM_CRATE.get(),
+                            ModBlocks.WILLOW_CRATE.get(),
+                            ModBlocks.DEAD_CRATE.get(),
+                            ModBlocks.MAGIC_CRATE.get(),
+                            ModBlocks.UMBRAN_CRATE.get(),
+                            ModBlocks.HELLBARK_CRATE.get(),
+                            ModBlocks.EMPYREAL_CRATE.get()
+                    ).build(null));
 
+    @SuppressWarnings("null")
+    public static final RegistryObject<BlockEntityType<CustomCuttingBoardBlockEntity>> CUSTOM_CUTTING_BOARD =
+            BLOCK_ENTITIES.register("custom_cutting_board",
+                    () -> BlockEntityType.Builder.of(CustomCuttingBoardBlockEntity::new, 
+                           ModBlocks.FIR_CUTTING_BOARD.get(),
+                            ModBlocks.PINE_CUTTING_BOARD.get(),
+                            ModBlocks.MAPLE_CUTTING_BOARD.get(),
+                            ModBlocks.REDWOOD_CUTTING_BOARD.get(),
+                            ModBlocks.MAHOGANY_CUTTING_BOARD.get(),
+                            ModBlocks.JACARANDA_CUTTING_BOARD.get(),
+                            ModBlocks.PALM_CUTTING_BOARD.get(),
+                            ModBlocks.WILLOW_CUTTING_BOARD.get(),
+                            ModBlocks.DEAD_CUTTING_BOARD.get(),
+                            ModBlocks.MAGIC_CUTTING_BOARD.get(),
+                            ModBlocks.UMBRAN_CUTTING_BOARD.get(),
+                            ModBlocks.HELLBARK_CUTTING_BOARD.get(),
+                            ModBlocks.EMPYREAL_CUTTING_BOARD.get() 
+                    ).build(null));
+
+    @SuppressWarnings("null")
+    public static final RegistryObject<BlockEntityType<CustomDrawerBlockEntity>> CUSTOM_DRAWER = 
+            BLOCK_ENTITIES.register("custom_drawer", 
+                    () -> BlockEntityType.Builder.of(CustomDrawerBlockEntity::new, 
+                            ModBlocks.FIR_DRAWER.get(),
+                            ModBlocks.PINE_DRAWER.get(),
+                            ModBlocks.MAPLE_DRAWER.get(),
+                            ModBlocks.REDWOOD_DRAWER.get(),
+                            ModBlocks.MAHOGANY_DRAWER.get(),
+                            ModBlocks.JACARANDA_DRAWER.get(),
+                            ModBlocks.PALM_DRAWER.get(),
+                            ModBlocks.WILLOW_DRAWER.get(),
+                            ModBlocks.DEAD_DRAWER.get(),
+                            ModBlocks.MAGIC_DRAWER.get(),
+                            ModBlocks.UMBRAN_DRAWER.get(),
+                            ModBlocks.HELLBARK_DRAWER.get(),
+                            ModBlocks.EMPYREAL_DRAWER.get()
+                    ).build(null));
+
+    
 }
