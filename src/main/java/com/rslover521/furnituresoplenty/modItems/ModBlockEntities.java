@@ -153,5 +153,60 @@ public class ModBlockEntities {
                             ModBlocks.EMPYREAL_DRAWER.get()
                     ).build(null));
 
-    
+	@SuppressWarnings("null")
+	public static final RegistryObject<BlockEntityType<CustomKitchenDrawerBlockEntity>> CUSTOM_KITCHEN_DRAWER = 
+			BLOCK_ENTITIES.register("custom_block_entities", 
+					() -> BlockEntityType.Builder.of(CustomKitchenDrawerBlockEntity::new, 
+							ModBlocks.FIR_KITCHEN_DRAWER.get(),
+                            ModBlocks.PINE_KITCHEN_DRAWER.get(),
+                            ModBlocks.MAPLE_KITCHEN_DRAWER.get(),
+                            ModBlocks.REDWOOD_KITCHEN_DRAWER.get(),
+                            ModBlocks.MAHOGANY_KITCHEN_DRAWER.get(),
+                            ModBlocks.JACARANDA_KITCHEN_DRAWER.get(),
+                            ModBlocks.PALM_KITCHEN_DRAWER.get(),
+                            ModBlocks.WILLOW_KITCHEN_DRAWER.get(),
+                            ModBlocks.DEAD_KITCHEN_DRAWER.get(),
+                            ModBlocks.MAGIC_KITCHEN_DRAWER.get(),
+                            ModBlocks.UMBRAN_KITCHEN_DRAWER.get(),
+                            ModBlocks.HELLBARK_KITCHEN_DRAWER.get(),
+                            ModBlocks.EMPYREAL_KITCHEN_DRAWER.get()
+					).build(null));
+
+	@SuppressWarnings("null")
+	public static final RegistryObject<BlockENtityType<CustomKitchenSinkBlockEntity>> CUSTOM_KITCHEN_SINK = 
+			BLOCK_ENTITIES.register("custom_kitchen_sink", 
+					() -> BlockEntityType.Builder.build(CustomKitchenSinkBlockEntity::new, 
+					ModBlocks.FIR_KITCHEN_SINK.get(),
+                            ModBlocks.PINE_KITCHEN_SINK.get(),
+                            ModBlocks.MAPLE_KITCHEN_SINK.get(),
+                            ModBlocks.REDWOOD_KITCHEN_SINK.get(),
+                            ModBlocks.MAHOGANY_KITCHEN_SINK.get(),
+                            ModBlocks.JACARANDA_KITCHEN_SINK.get(),
+                            ModBlocks.PALM_KITCHEN_SINK.get(),
+                            ModBlocks.WILLOW_KITCHEN_SINK.get(),
+                            ModBlocks.DEAD_KITCHEN_SINK.get(),
+                            ModBlocks.MAGIC_KITCHEN_SINK.get(),
+                            ModBlocks.UMBRAN_KITCHEN_SINK.get(),
+                            ModBlocks.HELLBARK_KITCHEN_SINK.get(),
+                            ModBlocks.EMPYREAL_KITCHEN_SINK.get()
+					).build(null));
+
+	@SuppressWarnings("null")
+	public static final RegistryObject<BlockEntityType<CustomMailboxBlockEntity>> CUSTOM_MAIL_BOX = 
+			BLOCK_ENTITIES.register("custom_mail_box", 
+					() -> BlockEntityType.Builder.of(CustomMailboxBlockEntity::new,
+					 		ModBlocks.FIR_MAIL_BOX.get(),
+                            ModBlocks.PINE_MAIL_BOX.get(),
+                            ModBlocks.MAPLE_MAIL_BOX.get(),
+                            ModBlocks.REDWOOD_MAIL_BOX.get(),
+                            ModBlocks.MAHOGANY_MAIL_BOX.get(),
+                            ModBlocks.JACARANDA_MAIL_BOX.get(),
+                            ModBlocks.PALM_MAIL_BOX.get(),
+                            ModBlocks.WILLOW_MAIL_BOX.get(),
+                            ModBlocks.DEAD_MAIL_BOX.get(),
+                            ModBlocks.MAGIC_MAIL_BOX.get(),
+                            ModBlocks.UMBRAN_MAIL_BOX.get(),
+                            ModBlocks.HELLBARK_MAIL_BOX.get(),
+                            ModBlocks.EMPYREAL_MAIL_BOX.get()
+					).build(null));
 }
