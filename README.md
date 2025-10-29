@@ -32,12 +32,12 @@ MIT License - See LICENSE.txt for details
 ## 🔗 Mod Links
 
 **Official Mod Links**
-- **Modrinth** https://modrinth.com/mod/furnitures-o-plenty
-- **CurseForge** https://www.curseforge.com/minecraft/mc-mods/furnitures-o-plenty
+- **Modrinth** [Modrinth](https://modrinth.com/mod/furnitures-o-plenty)
+- **CurseForge** [CurseForge](https://www.curseforge.com/minecraft/mc-mods/furnitures-o-plenty)
   
 **Github Links**
-- **GitHub:** https://github.com/RSlover521/Furnitures-O-Plenty
-- **GitHub Issues** https://github.com/RSlover521/Furnitures-O-Plenty/issues
+- **GitHub:** [GitHub Repository](https://github.com/RSlover521/Furnitures-O-Plenty)
+- **GitHub Issues** [Issues](https://github.com/RSlover521/Furnitures-O-Plenty/issues)
 
 **Depended Mod Links**
 - **Biomes O' Plenty:** [CurseForge](https://www.curseforge.com/minecraft/mc-mods/biomes-o-plenty)
