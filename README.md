@@ -8,7 +8,7 @@ Furnitures O’ Plenty expands your decorating possibilities by bringing togethe
 
 Decorate your world, match your biomes, and make your builds truly feel like home!
 
-## THIS MOD IS CURRENTLY IN BETA. PLEASE USE IT WISELY
+**THIS MOD IS CURRENTLY IN BETA. PLEASE USE IT WISELY**
 
 ---
 
@@ -26,18 +26,22 @@ This mod adds furniture variants for all Biomes O' Plenty wood types:
 
 **Wood Types (From Biomes O' Plenty):** Fir, Pine, Maple, Redwood, Mahogany, Jacaranda, Palm, Willow, Dead, Magic, Umbran, Hellbark, Empyreal
 
+---
+
 ## 📝 License
 MIT License - See LICENSE.txt for details
+
+---
 
 ## 🔗 Mod Links
 
 **Official Mod Links**
-- **Modrinth** [Furnitures O' Plenty Modrinth](https://modrinth.com/mod/furnitures-o-plenty)
-- **CurseForge** [Furnitures O' Plenty CurseForge](https://www.curseforge.com/minecraft/mc-mods/furnitures-o-plenty)
+- **Modrinth:** [Furnitures O' Plenty Modrinth](https://modrinth.com/mod/furnitures-o-plenty)
+- **CurseForge:** [Furnitures O' Plenty CurseForge](https://www.curseforge.com/minecraft/mc-mods/furnitures-o-plenty)
   
 **Github Links**
 - **GitHub:** [Furnitures O' Plenty GitHub Repository](https://github.com/RSlover521/Furnitures-O-Plenty)
-- **GitHub Issues** [Furnitures O' Plenty Issues](https://github.com/RSlover521/Furnitures-O-Plenty/issues)
+- **GitHub Issues:** [Furnitures O' Plenty Issues](https://github.com/RSlover521/Furnitures-O-Plenty/issues)
 
 **Depended Mod Links**
 - **Biomes O' Plenty:** [Biomes O' Plenty CurseForge](https://www.curseforge.com/minecraft/mc-mods/biomes-o-plenty)
