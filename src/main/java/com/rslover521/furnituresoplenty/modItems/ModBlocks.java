@@ -1,7 +1,26 @@
-package com.rslover521.furnituresoplenty.modFurnitures;
+package com.rslover521.furnituresoplenty.modItems;
 
 import com.mrcrayfish.furniture.refurbished.block.MetalType;
 import com.rslover521.furnituresoplenty.FurnituresOPlenty;
+import com.rslover521.furnituresoplenty.customFurnitures.CustomBasinBlock;
+import com.rslover521.furnituresoplenty.customFurnitures.CustomBathBlock;
+import com.rslover521.furnituresoplenty.customFurnitures.CustomCeilingFanBlock;
+import com.rslover521.furnituresoplenty.customFurnitures.CustomChairBlock;
+import com.rslover521.furnituresoplenty.customFurnitures.CustomCrateBlock;
+import com.rslover521.furnituresoplenty.customFurnitures.CustomCuttingBoardBlock;
+import com.rslover521.furnituresoplenty.customFurnitures.CustomDeskBlock;
+import com.rslover521.furnituresoplenty.customFurnitures.CustomDrawerBlock;
+import com.rslover521.furnituresoplenty.customFurnitures.CustomKitchenCabinetryBlock;
+import com.rslover521.furnituresoplenty.customFurnitures.CustomKitchenDrawerBlock;
+import com.rslover521.furnituresoplenty.customFurnitures.CustomKitchenSinkBlock;
+import com.rslover521.furnituresoplenty.customFurnitures.CustomKitchenStorageCabinetBlock;
+import com.rslover521.furnituresoplenty.customFurnitures.CustomLatticeFenceBlock;
+import com.rslover521.furnituresoplenty.customFurnitures.CustomLatticeFenceGateBlock;
+import com.rslover521.furnituresoplenty.customFurnitures.CustomMailboxBlock;
+import com.rslover521.furnituresoplenty.customFurnitures.CustomStorageCabinetBlock;
+import com.rslover521.furnituresoplenty.customFurnitures.CustomStorageJarBlock;
+import com.rslover521.furnituresoplenty.customFurnitures.CustomTableBlock;
+import com.rslover521.furnituresoplenty.customFurnitures.CustomToiletBlock;
 
 import biomesoplenty.api.block.BOPWoodTypes;
 import net.minecraft.world.level.block.Block;

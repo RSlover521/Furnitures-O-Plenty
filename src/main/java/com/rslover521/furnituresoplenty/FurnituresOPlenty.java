@@ -1,8 +1,8 @@
 package com.rslover521.furnituresoplenty;
 
 import com.mojang.logging.LogUtils;
-import com.rslover521.furnituresoplenty.modFurnitures.ModBlocks;
-import com.rslover521.furnituresoplenty.modFurnitures.ModCreativeTabs;
+import com.rslover521.furnituresoplenty.modItems.ModBlocks;
+import com.rslover521.furnituresoplenty.modItems.ModCreativeTabs;
 
 import net.minecraftforge.event.server.ServerStartingEvent;
 import net.minecraftforge.eventbus.api.IEventBus;

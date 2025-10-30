@@ -6,6 +6,13 @@
       "name": "CreativeTabGenerator",
       "request": "launch",
       "mainClass": "com.rslover521.furnituresoplenty.util.CreativeTabGenerator",
+      "projectName": ""
+    },
+    {
+      "type": "java",
+      "name": "CreativeTabGenerator",
+      "request": "launch",
+      "mainClass": "com.rslover521.furnituresoplenty.util.CreativeTabGenerator",
       "projectName": "Furnitures-O-Plenty"
     },
     {

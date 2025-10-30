@@ -1,4 +1,4 @@
-package com.rslover521.furnituresoplenty.modFurnitures;
+package com.rslover521.furnituresoplenty.customFurnitures;
 
 import com.mrcrayfish.furniture.refurbished.block.TableBlock;
 import net.minecraft.world.level.block.SoundType;

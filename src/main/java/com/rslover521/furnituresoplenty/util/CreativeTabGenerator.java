@@ -39,7 +39,7 @@ public class CreativeTabGenerator {
         registryClassMap.put("table", "BOPTableRegistry");
         registryClassMap.put("toilet", "BOPToiletRegistry");
 
-        for (String type : registryTypes) {
+        /*for (String type : registryTypes) {
             System.out.println("                        // === " + type.replace("_", " ").toUpperCase() + "S ===");
             String registryClass = registryClassMap.get(type);
             String suffix = type.toUpperCase(); // convert to constant form
@@ -48,6 +48,13 @@ public class CreativeTabGenerator {
                 System.out.println("                        output.accept(" + registryClass + "." + constantName + ".get());");
             }
             System.out.println();
+        }*/
+
+        for(String type : registryTypes) {
+            System.out.println();
+            for(String wood : woodTypes) {
+                System.out.println("                            ModBlocks." + wood.toUpperCase() + "_" + type.toUpperCase() + ".get(),");
+            }
         }
     }
 }
