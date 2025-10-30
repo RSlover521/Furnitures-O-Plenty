@@ -209,4 +209,24 @@ public class ModBlockEntities {
                             ModBlocks.HELLBARK_MAIL_BOX.get(),
                             ModBlocks.EMPYREAL_MAIL_BOX.get()
 					).build(null));
+
+    public static final RegistryObject<BlockEntityType<CustomStorageJarBlockEntity>> CUSTOM_STORAGE_JAR =
+            BLOCK_ENTITIES.register("custom_storage_jar",
+                    () -> BlockEntityType.Builder.of(CustomStorageJarBlockEntity::new,
+                            ModBlocks.FIR_STORAGE_JAR.get(),
+                            ModBlocks.PINE_STORAGE_JAR.get(),
+                            ModBlocks.MAPLE_STORAGE_JAR.get(),
+                            ModBlocks.REDWOOD_STORAGE_JAR.get(),
+                            ModBlocks.MAHOGANY_STORAGE_JAR.get(),
+                            ModBlocks.JACARANDA_STORAGE_JAR.get(),
+                            ModBlocks.PALM_STORAGE_JAR.get(),
+                            ModBlocks.WILLOW_STORAGE_JAR.get(),
+                            ModBlocks.DEAD_STORAGE_JAR.get(),
+                            ModBlocks.MAGIC_STORAGE_JAR.get(),
+                            ModBlocks.UMBRAN_STORAGE_JAR.get(),
+                            ModBlocks.HELLBARK_STORAGE_JAR.get(),
+                            ModBlocks.EMPYREAL_STORAGE_JAR.get()
+                    ).build(null));
+
+    
 }
