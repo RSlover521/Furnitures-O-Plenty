@@ -14,7 +14,7 @@ public class ModAdvancementEvents {
 	private static final ResourceLocation ROOT_ADVANCEMENT = 
 			new ResourceLocation(FurnituresOPlenty.MODID, "root");
 
-	@SuppressWarnings({ "null", "null" })
+	@SuppressWarnings("null")
 	@SubscribeEvent
 	public static void onPlayerJoin(PlayerEvent.PlayerLoggedInEvent event) {
 		if(event.getEntity() instanceof ServerPlayer player) {
