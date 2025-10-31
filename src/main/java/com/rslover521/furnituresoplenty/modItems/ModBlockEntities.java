@@ -7,11 +7,12 @@ import com.rslover521.furnituresoplenty.customBlockEntities.CustomCeilingFanBloc
 import com.rslover521.furnituresoplenty.customBlockEntities.CustomCrateBlockEntity;
 import com.rslover521.furnituresoplenty.customBlockEntities.CustomCuttingBoardBlockEntity;
 import com.rslover521.furnituresoplenty.customBlockEntities.CustomDrawerBlockEntity;
-import com.rslover521.furnituresoplenty.customFurnitures.CustomCeilingFanBlock;
-import com.rslover521.furnituresoplenty.customFurnitures.CustomCrateBlock;
-import com.rslover521.furnituresoplenty.customFurnitures.CustomCuttingBoardBlock;
+import com.rslover521.furnituresoplenty.customBlockEntities.CustomKitchenDrawerBlockEntity;
+import com.rslover521.furnituresoplenty.customBlockEntities.CustomKitchenSinkBlockEntity;
+import com.rslover521.furnituresoplenty.customBlockEntities.CustomMailboxBlockEntity;
+import com.rslover521.furnituresoplenty.customBlockEntities.CustomStorageCabinetBlockEntity;
+import com.rslover521.furnituresoplenty.customBlockEntities.CustomStorageJarBlockEntity;
 
-import net.minecraft.world.level.block.entity.BlockEntity;
 import net.minecraft.world.level.block.entity.BlockEntityType;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
@@ -173,9 +174,9 @@ public class ModBlockEntities {
 					).build(null));
 
 	@SuppressWarnings("null")
-	public static final RegistryObject<BlockENtityType<CustomKitchenSinkBlockEntity>> CUSTOM_KITCHEN_SINK = 
+	public static final RegistryObject<BlockEntityType<CustomKitchenSinkBlockEntity>> CUSTOM_KITCHEN_SINK = 
 			BLOCK_ENTITIES.register("custom_kitchen_sink", 
-					() -> BlockEntityType.Builder.build(CustomKitchenSinkBlockEntity::new, 
+					() -> BlockEntityType.Builder.of(CustomKitchenSinkBlockEntity::new, 
 					ModBlocks.FIR_KITCHEN_SINK.get(),
                             ModBlocks.PINE_KITCHEN_SINK.get(),
                             ModBlocks.MAPLE_KITCHEN_SINK.get(),
@@ -210,7 +211,8 @@ public class ModBlockEntities {
                             ModBlocks.EMPYREAL_MAIL_BOX.get()
 					).build(null));
 
-    public static final RegistryObject<BlockEntityType<CustomStorageJarBlockEntity>> CUSTOM_STORAGE_JAR =
+    @SuppressWarnings("null")
+public static final RegistryObject<BlockEntityType<CustomStorageJarBlockEntity>> CUSTOM_STORAGE_JAR =
             BLOCK_ENTITIES.register("custom_storage_jar",
                     () -> BlockEntityType.Builder.of(CustomStorageJarBlockEntity::new,
                             ModBlocks.FIR_STORAGE_JAR.get(),
@@ -228,5 +230,38 @@ public class ModBlockEntities {
                             ModBlocks.EMPYREAL_STORAGE_JAR.get()
                     ).build(null));
 
-    
+    @SuppressWarnings("null")
+public static final RegistryObject<BlockEntityType<CustomStorageCabinetBlockEntity>> CUSTOM_STORAGE_CABINET =
+            BLOCK_ENTITIES.register("custom_storage_cabinet",
+                    () -> BlockEntityType.Builder.of(CustomStorageCabinetBlockEntity::new,
+                            // Kitchen Storage Cabinets
+                            ModBlocks.FIR_KITCHEN_STORAGE_CABINET.get(),
+                            ModBlocks.PINE_KITCHEN_STORAGE_CABINET.get(),
+                            ModBlocks.MAPLE_KITCHEN_STORAGE_CABINET.get(),
+                            ModBlocks.REDWOOD_KITCHEN_STORAGE_CABINET.get(),
+                            ModBlocks.MAHOGANY_KITCHEN_STORAGE_CABINET.get(),
+                            ModBlocks.JACARANDA_KITCHEN_STORAGE_CABINET.get(),
+                            ModBlocks.PALM_KITCHEN_STORAGE_CABINET.get(),
+                            ModBlocks.WILLOW_KITCHEN_STORAGE_CABINET.get(),
+                            ModBlocks.DEAD_KITCHEN_STORAGE_CABINET.get(),
+                            ModBlocks.MAGIC_KITCHEN_STORAGE_CABINET.get(),
+                            ModBlocks.UMBRAN_KITCHEN_STORAGE_CABINET.get(),
+                            ModBlocks.HELLBARK_KITCHEN_STORAGE_CABINET.get(),
+                            ModBlocks.EMPYREAL_KITCHEN_STORAGE_CABINET.get(),
+
+                            // Storage Cabinets
+                            ModBlocks.FIR_STORAGE_CABINET.get(),
+                            ModBlocks.PINE_STORAGE_CABINET.get(),
+                            ModBlocks.MAPLE_STORAGE_CABINET.get(),
+                            ModBlocks.REDWOOD_STORAGE_CABINET.get(),
+                            ModBlocks.MAHOGANY_STORAGE_CABINET.get(),
+                            ModBlocks.JACARANDA_STORAGE_CABINET.get(),
+                            ModBlocks.PALM_STORAGE_CABINET.get(),
+                            ModBlocks.WILLOW_STORAGE_CABINET.get(),
+                            ModBlocks.DEAD_STORAGE_CABINET.get(),
+                            ModBlocks.MAGIC_STORAGE_CABINET.get(),
+                            ModBlocks.UMBRAN_STORAGE_CABINET.get(),
+                            ModBlocks.HELLBARK_STORAGE_CABINET.get(),
+                            ModBlocks.EMPYREAL_STORAGE_CABINET.get()
+                    ).build(null));
 }
