@@ -1,5 +1,7 @@
 package com.rslover521.furnituresoplenty.modItems;
 
+import java.rmi.registry.Registry;
+
 import com.rslover521.furnituresoplenty.FurnituresOPlenty;
 import com.rslover521.furnituresoplenty.customBlockEntities.CustomBasinBlockEntity;
 import com.rslover521.furnituresoplenty.customBlockEntities.CustomBathBlockEntity;
@@ -12,6 +14,8 @@ import com.rslover521.furnituresoplenty.customBlockEntities.CustomKitchenSinkBlo
 import com.rslover521.furnituresoplenty.customBlockEntities.CustomMailboxBlockEntity;
 import com.rslover521.furnituresoplenty.customBlockEntities.CustomStorageCabinetBlockEntity;
 import com.rslover521.furnituresoplenty.customBlockEntities.CustomStorageJarBlockEntity;
+import com.rslover521.furnituresoplenty.customBlockEntities.CustomToiletBlockEntity;
+import com.rslover521.furnituresoplenty.customFurnitures.CustomToiletBlock;
 
 import net.minecraft.world.level.block.entity.BlockEntityType;
 import net.minecraftforge.registries.DeferredRegister;
@@ -155,7 +159,7 @@ public class ModBlockEntities {
                     ).build(null));
 
 	@SuppressWarnings("null")
-	public static final RegistryObject<BlockEntityType<CustomKitchenDrawerBlockEntity>> CUSTOM_KITCHEN_DRAWER = 
+        public static final RegistryObject<BlockEntityType<CustomKitchenDrawerBlockEntity>> CUSTOM_KITCHEN_DRAWER = 
 			BLOCK_ENTITIES.register("custom_block_entities", 
 					() -> BlockEntityType.Builder.of(CustomKitchenDrawerBlockEntity::new, 
 							ModBlocks.FIR_KITCHEN_DRAWER.get(),
@@ -212,7 +216,7 @@ public class ModBlockEntities {
 					).build(null));
 
     @SuppressWarnings("null")
-public static final RegistryObject<BlockEntityType<CustomStorageJarBlockEntity>> CUSTOM_STORAGE_JAR =
+        public static final RegistryObject<BlockEntityType<CustomStorageJarBlockEntity>> CUSTOM_STORAGE_JAR =
             BLOCK_ENTITIES.register("custom_storage_jar",
                     () -> BlockEntityType.Builder.of(CustomStorageJarBlockEntity::new,
                             ModBlocks.FIR_STORAGE_JAR.get(),
@@ -231,7 +235,7 @@ public static final RegistryObject<BlockEntityType<CustomStorageJarBlockEntity>>
                     ).build(null));
 
     @SuppressWarnings("null")
-public static final RegistryObject<BlockEntityType<CustomStorageCabinetBlockEntity>> CUSTOM_STORAGE_CABINET =
+        public static final RegistryObject<BlockEntityType<CustomStorageCabinetBlockEntity>> CUSTOM_STORAGE_CABINET =
             BLOCK_ENTITIES.register("custom_storage_cabinet",
                     () -> BlockEntityType.Builder.of(CustomStorageCabinetBlockEntity::new,
                             // Kitchen Storage Cabinets
@@ -264,4 +268,23 @@ public static final RegistryObject<BlockEntityType<CustomStorageCabinetBlockEnti
                             ModBlocks.HELLBARK_STORAGE_CABINET.get(),
                             ModBlocks.EMPYREAL_STORAGE_CABINET.get()
                     ).build(null));
+
+        @SuppressWarnings("null")
+        public static final RegistryObject<BlockEntityType<CustomToiletBlockEntity>> CUSTOM_TOILET_ENTITIES =
+                BLOCK_ENTITIES.register("custom_toilet_entities",
+                        () -> BlockEntityType.Builder.of(CustomToiletBlockEntity::new,
+                                ModBlocks.FIR_TOILET.get(),
+                                ModBlocks.PINE_TOILET.get(),
+                                ModBlocks.MAPLE_TOILET.get(),
+                                ModBlocks.REDWOOD_TOILET.get(),
+                                ModBlocks.MAHOGANY_TOILET.get(),
+                                ModBlocks.JACARANDA_TOILET.get(),
+                                ModBlocks.PALM_TOILET.get(),
+                                ModBlocks.WILLOW_TOILET.get(),
+                                ModBlocks.DEAD_TOILET.get(),
+                                ModBlocks.MAGIC_TOILET.get(),
+                                ModBlocks.UMBRAN_TOILET.get(),
+                                ModBlocks.HELLBARK_TOILET.get(),
+                                ModBlocks.EMPYREAL_TOILET.get()
+                        ).build(null));
 }
