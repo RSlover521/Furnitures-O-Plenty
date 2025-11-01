@@ -117,7 +117,7 @@ public class ModBlockEntities {
     public static final RegistryObject<BlockEntityType<CustomCuttingBoardBlockEntity>> CUSTOM_CUTTING_BOARD =
             BLOCK_ENTITIES.register("custom_cutting_board",
                     () -> BlockEntityType.Builder.of(CustomCuttingBoardBlockEntity::new, 
-                           ModBlocks.FIR_CUTTING_BOARD.get(),
+                            ModBlocks.FIR_CUTTING_BOARD.get(),
                             ModBlocks.PINE_CUTTING_BOARD.get(),
                             ModBlocks.MAPLE_CUTTING_BOARD.get(),
                             ModBlocks.REDWOOD_CUTTING_BOARD.get(),
@@ -256,7 +256,6 @@ public class ModBlockEntities {
                             ModBlocks.EMPYREAL_STORAGE_CABINET.get()
                     ).build(null));
 
-        @SuppressWarnings("null")
         public static final RegistryObject<BlockEntityType<CustomToiletBlockEntity>> CUSTOM_TOILET_ENTITIES =
                 BLOCK_ENTITIES.register("custom_toilet_entities",
                         () -> BlockEntityType.Builder.of(CustomToiletBlockEntity::new,
