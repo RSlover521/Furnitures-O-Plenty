@@ -49,8 +49,8 @@ private static boolean validateItemName(final Object obj)
         return obj instanceof final String itemName && ForgeRegistries.ITEMS.containsKey(new ResourceLocation(itemName));
     }
 
-    @SuppressWarnings("removal")
-@SubscribeEvent
+    @SuppressWarnings({ "removal", "null" })
+    @SubscribeEvent
     static void onLoad(final ModConfigEvent event)
     {
         logDirtBlock = LOG_DIRT_BLOCK.get();
