@@ -35,7 +35,7 @@ public class ModBlocks {
 			DeferredRegister.create(ForgeRegistries.BLOCKS, FurnituresOPlenty.MODID);
 			
 	// === All Furniture Blocks in one class
-	/*public static RegistryObject<Block> FIR_BASIN;
+	public static RegistryObject<Block> FIR_BASIN;
 	public static RegistryObject<Block> PINE_BASIN;
 	public static RegistryObject<Block> MAPLE_BASIN;
 	public static RegistryObject<Block> REDWOOD_BASIN;
@@ -89,7 +89,7 @@ public class ModBlocks {
 	public static RegistryObject<Block> MAGIC_DARK_CEILING_FAN;
 	public static RegistryObject<Block> UMBRAN_DARK_CEILING_FAN;
 	public static RegistryObject<Block> HELLBARK_DARK_CEILING_FAN;
-	public static RegistryObject<Block> EMPYREAL_DARK_CEILING_FAN;*/
+	public static RegistryObject<Block> EMPYREAL_DARK_CEILING_FAN;
 
 	public static final RegistryObject<Block> FIR_CHAIR;
 	public static final RegistryObject<Block> PINE_CHAIR;
@@ -105,7 +105,7 @@ public class ModBlocks {
 	public static final RegistryObject<Block> HELLBARK_CHAIR;
 	public static final RegistryObject<Block> EMPYREAL_CHAIR;
 
-	/*public static RegistryObject<Block> FIR_CRATE;
+	public static RegistryObject<Block> FIR_CRATE;
 	public static RegistryObject<Block> PINE_CRATE;
 	public static RegistryObject<Block> MAPLE_CRATE;
 	public static RegistryObject<Block> REDWOOD_CRATE;
@@ -285,7 +285,7 @@ public class ModBlocks {
 	public static RegistryObject<Block> MAGIC_STORAGE_JAR;
 	public static RegistryObject<Block> UMBRAN_STORAGE_JAR;
 	public static RegistryObject<Block> HELLBARK_STORAGE_JAR;
-	public static RegistryObject<Block> EMPYREAL_STORAGE_JAR;*/
+	public static RegistryObject<Block> EMPYREAL_STORAGE_JAR;
 
 	public static final RegistryObject<Block> FIR_TABLE;
 	public static final RegistryObject<Block> PINE_TABLE;
@@ -301,7 +301,7 @@ public class ModBlocks {
 	public static final RegistryObject<Block> HELLBARK_TABLE;
 	public static final RegistryObject<Block> EMPYREAL_TABLE;
 
-	/*public static RegistryObject<Block> FIR_TOILET;
+	public static RegistryObject<Block> FIR_TOILET;
 	public static RegistryObject<Block> PINE_TOILET;
 	public static RegistryObject<Block> MAPLE_TOILET;
 	public static RegistryObject<Block> REDWOOD_TOILET;
@@ -313,10 +313,10 @@ public class ModBlocks {
 	public static RegistryObject<Block> MAGIC_TOILET;
 	public static RegistryObject<Block> UMBRAN_TOILET;
 	public static RegistryObject<Block> HELLBARK_TOILET;
-	public static RegistryObject<Block> EMPYREAL_TOILET;*/
+	public static RegistryObject<Block> EMPYREAL_TOILET;
 
 	static {
-		/*FIR_BASIN = registerBasin("fir", BOPWoodTypes.FIR);
+		FIR_BASIN = registerBasin("fir", BOPWoodTypes.FIR);
 		PINE_BASIN = registerBasin("pine", BOPWoodTypes.PINE);
 		MAPLE_BASIN = registerBasin("maple", BOPWoodTypes.MAPLE);
 		REDWOOD_BASIN = registerBasin("redwood", BOPWoodTypes.REDWOOD);
@@ -370,7 +370,7 @@ public class ModBlocks {
 		MAGIC_DARK_CEILING_FAN = registerCeilingFans("dark", "magic", BOPWoodTypes.MAGIC);
 		UMBRAN_DARK_CEILING_FAN = registerCeilingFans("dark", "umbran", BOPWoodTypes.UMBRAN);
 		HELLBARK_DARK_CEILING_FAN = registerCeilingFans("dark", "hellbark", BOPWoodTypes.HELLBARK);
-		EMPYREAL_DARK_CEILING_FAN = registerCeilingFans("dark", "empyreal", BOPWoodTypes.EMPYREAL);*/
+		EMPYREAL_DARK_CEILING_FAN = registerCeilingFans("dark", "empyreal", BOPWoodTypes.EMPYREAL);
 
 		FIR_CHAIR = registerChair("fir", BOPWoodTypes.FIR);
 		PINE_CHAIR = registerChair("pine", BOPWoodTypes.PINE);
@@ -386,7 +386,7 @@ public class ModBlocks {
 		HELLBARK_CHAIR = registerChair("hellbark", BOPWoodTypes.HELLBARK);
 		EMPYREAL_CHAIR = registerChair("empyreal", BOPWoodTypes.EMPYREAL);
 
-		/*FIR_CRATE = registerCrate("fir", BOPWoodTypes.FIR);
+		FIR_CRATE = registerCrate("fir", BOPWoodTypes.FIR);
 		PINE_CRATE = registerCrate ("pine", BOPWoodTypes.PINE);
 		MAPLE_CRATE = registerCrate("maple", BOPWoodTypes.MAPLE);
 		REDWOOD_CRATE = registerCrate("redwood", BOPWoodTypes.REDWOOD);
@@ -566,7 +566,7 @@ public class ModBlocks {
 		MAGIC_STORAGE_JAR = registerStorageJar("magic", BOPWoodTypes.MAGIC);
 		UMBRAN_STORAGE_JAR = registerStorageJar("unbran", BOPWoodTypes.UMBRAN);
 		HELLBARK_STORAGE_JAR = registerStorageJar("hellbark", BOPWoodTypes.HELLBARK);
-		EMPYREAL_STORAGE_JAR = registerStorageJar("empyreal", BOPWoodTypes.EMPYREAL);*/
+		EMPYREAL_STORAGE_JAR = registerStorageJar("empyreal", BOPWoodTypes.EMPYREAL);
 
 		FIR_TABLE = registerTable("fir", BOPWoodTypes.FIR);
 		PINE_TABLE = registerTable("pine", BOPWoodTypes.PINE);
@@ -582,7 +582,7 @@ public class ModBlocks {
 		HELLBARK_TABLE = registerTable("hellbark", BOPWoodTypes.HELLBARK);
 		EMPYREAL_TABLE = registerTable("empyreal", BOPWoodTypes.EMPYREAL);
 
-		/*FIR_TOILET = registerToilet("fir", BOPWoodTypes.FIR);
+		FIR_TOILET = registerToilet("fir", BOPWoodTypes.FIR);
 		PINE_TOILET = registerToilet("pine", BOPWoodTypes.PINE);
 		MAPLE_TOILET = registerToilet("maple", BOPWoodTypes.MAPLE);
 		REDWOOD_TOILET = registerToilet("redwood", BOPWoodTypes.REDWOOD);
@@ -594,8 +594,9 @@ public class ModBlocks {
 		MAGIC_TOILET = registerToilet("magic", BOPWoodTypes.MAGIC);
 		UMBRAN_TOILET = registerToilet("umbran", BOPWoodTypes.UMBRAN);
 		HELLBARK_TOILET = registerToilet("hellbark", BOPWoodTypes.HELLBARK);
-		EMPYREAL_TOILET = registerToilet("empyreal", BOPWoodTypes.EMPYREAL);*/
+		EMPYREAL_TOILET = registerToilet("empyreal", BOPWoodTypes.EMPYREAL);
 	}
+	
 
 	public static void register(IEventBus modEventBus) {
 		BLOCKS.register(modEventBus);
