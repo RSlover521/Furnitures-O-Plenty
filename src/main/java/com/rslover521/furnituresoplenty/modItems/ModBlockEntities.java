@@ -255,22 +255,22 @@ public class ModBlockEntities {
                             ModBlocks.HELLBARK_STORAGE_CABINET.get(),
                             ModBlocks.EMPYREAL_STORAGE_CABINET.get()
                     ).build(null));
-
-        public static final RegistryObject<BlockEntityType<CustomToiletBlockEntity>> CUSTOM_TOILET_ENTITIES =
-                BLOCK_ENTITIES.register("custom_toilet_entities",
-                        () -> BlockEntityType.Builder.of(CustomToiletBlockEntity::new,
-                                ModBlocks.FIR_TOILET.get(),
-                                ModBlocks.PINE_TOILET.get(),
-                                ModBlocks.MAPLE_TOILET.get(),
-                                ModBlocks.REDWOOD_TOILET.get(),
-                                ModBlocks.MAHOGANY_TOILET.get(),
-                                ModBlocks.JACARANDA_TOILET.get(),
-                                ModBlocks.PALM_TOILET.get(),
-                                ModBlocks.WILLOW_TOILET.get(),
-                                ModBlocks.DEAD_TOILET.get(),
-                                ModBlocks.MAGIC_TOILET.get(),
-                                ModBlocks.UMBRAN_TOILET.get(),
-                                ModBlocks.HELLBARK_TOILET.get(),
-                                ModBlocks.EMPYREAL_TOILET.get()
-                        ).build(null));
+    
+    public static final RegistryObject<BlockEntityType<CustomToiletBlockEntity>> CUSTOM_TOILET = 
+    		BLOCK_ENTITIES.register("custom_toilet_entities", 
+    				() -> BlockEntityType.Builder.of(CustomToiletBlockEntity::new,
+    						ModBlocks.FIR_TOILET.get(),
+                            ModBlocks.PINE_TOILET.get(),
+                            ModBlocks.MAPLE_TOILET.get(),
+                            ModBlocks.REDWOOD_TOILET.get(),
+                            ModBlocks.MAHOGANY_TOILET.get(),
+                            ModBlocks.JACARANDA_TOILET.get(),
+                            ModBlocks.PALM_TOILET.get(),
+                            ModBlocks.WILLOW_TOILET.get(),
+                            ModBlocks.DEAD_TOILET.get(),
+                            ModBlocks.MAGIC_TOILET.get(),
+                            ModBlocks.UMBRAN_TOILET.get(),
+                            ModBlocks.HELLBARK_TOILET.get(),
+                            ModBlocks.EMPYREAL_TOILET.get()
+                     ).build(null));
 }
