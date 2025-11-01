@@ -17,6 +17,10 @@ author = "agent"
 task = "workflow.run"
 args = "Build Mod"
 
+[[workflows.workflow.tasks]]
+task = "workflow.run"
+args = "Mod Info"
+
 [[workflows.workflow]]
 name = "Build Mod"
 author = "agent"
@@ -24,6 +28,61 @@ author = "agent"
 [[workflows.workflow.tasks]]
 task = "shell.exec"
 args = "echo \"=== Furnitures O' Plenty Build System ===\" && echo \"\" && echo \"This is a Minecraft Forge mod development project.\" && echo \"To build the mod JAR, run: ./gradlew build\" && echo \"\" && echo \"Note: Building requires network access to Mojang servers.\" && echo \"The built JAR will be at: build/libs/furnituresoplenty-1.20.1-1.0.1.jar\" && echo \"\" && echo \"Available Gradle tasks:\" && ./gradlew tasks --no-daemon 2>&1 | head -50 || echo \"Gradle build requires network access to download dependencies.\""
+
+[workflows.workflow.metadata]
+outputType = "console"
+
+[[workflows.workflow]]
+name = "Mod Info"
+author = "agent"
+
+[[workflows.workflow.tasks]]
+task = "shell.exec"
+args = """
+cat << 'EOF'
+╔══════════════════════════════════════════════════════════════╗
+║         Furnitures O' Plenty - Minecraft Forge Mod           ║
+║                    Version 1.0.1 (Beta)                       ║
+╚══════════════════════════════════════════════════════════════╝
+
+📋 Project Status:
+   ✅ Source code ready for editing
+   ✅ Gradle wrapper configured (v8.8)
+   ✅ Git version control active
+   ❌ Cannot build in Replit (network restrictions)
+
+🎯 Use Replit For:
+   • Editing Java source files
+   • Modifying textures & models
+   • Updating recipes & configurations
+   • Version control & collaboration
+   • Code review
+
+🏗️ Build Requirements (Local Machine):
+   • Java 17 JDK
+   • Internet access to Mojang servers
+   • ~500MB download for dependencies
+
+📚 Quick Commands:
+   
+   View setup guide:
+   cat GRADLE_SETUP_GUIDE.md
+   
+   View project structure:
+   cat replit.md
+   
+   List source files:
+   ls -la src/main/java/com/rslover521/furnituresoplenty/
+
+🔧 To Build Locally:
+   ./gradlew build
+   
+   Output JAR:
+   build/libs/furnituresoplenty-1.20.1-1.0.1.jar
+
+📖 Full documentation: See GRADLE_SETUP_GUIDE.md
+EOF
+"""
 
 [workflows.workflow.metadata]
 outputType = "console"
