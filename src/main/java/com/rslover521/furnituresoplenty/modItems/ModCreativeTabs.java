@@ -14,7 +14,8 @@ public class ModCreativeTabs {
 	public static final DeferredRegister<CreativeModeTab> CREATIVE_MODE_TABS = 
 			DeferredRegister.create(Registries.CREATIVE_MODE_TAB, FurnituresOPlenty.MODID);
 
-	public static final RegistryObject<CreativeModeTab> FURNITURE_COMPAT_TAB = CREATIVE_MODE_TABS.register("furnituresoplenty",
+	@SuppressWarnings("null")
+    public static final RegistryObject<CreativeModeTab> FURNITURE_COMPAT_TAB = CREATIVE_MODE_TABS.register("furnituresoplenty",
             () -> CreativeModeTab.builder()
                     .title(Component.translatable("itemGroup." + FurnituresOPlenty.MODID))
                     .icon(() -> new ItemStack(ModBlocks.MAPLE_CHAIR.get())) // example icon

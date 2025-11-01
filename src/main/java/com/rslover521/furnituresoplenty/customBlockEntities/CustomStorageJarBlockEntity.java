@@ -1,8 +1,7 @@
 package com.rslover521.furnituresoplenty.customBlockEntities;
 
-import com.rslover521.furnituresoplenty.blockEntities.ModBlockEntities;
-
-import com.mrcrayfish.furniture.block.entity.StorageJarBlockEntity;
+import com.mrcrayfish.furniture.refurbished.blockentity.StorageJarBlockEntity;
+import com.rslover521.furnituresoplenty.modItems.ModBlockEntities;
 
 import net.minecraft.core.BlockPos;
 import net.minecraft.world.level.block.state.BlockState;
