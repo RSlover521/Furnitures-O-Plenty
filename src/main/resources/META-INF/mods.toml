@@ -8,7 +8,7 @@ version = "${mod_version}"
 displayName = "Furnitures O' Plenty"
 authors = "RSlover521"
 description = '''
-Adds furniture variants using Biomes O' Plenty woods for Refurbished Furniture.
+A beautiful furniture mod combining MrCrayfish and Biomes O' Plenty aesthetics.
 '''
 credits="RSlover521"
 logoFile="assets/${mod_id}/furnituresoplenty_icon.png"
