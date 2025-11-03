@@ -1,1 +1,7 @@
-{}
+{
+  "parent": "refurbished_furniture:block/table",
+  "textures": {
+    "particle": "biomesoplenty:block/magic_planks",
+    "texture": "furnituresoplenty:block/magic_table"
+  }
+}

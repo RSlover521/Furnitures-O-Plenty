@@ -3,6 +3,20 @@
   "configurations": [
     {
       "type": "java",
+      "name": "JsonValidator",
+      "request": "launch",
+      "mainClass": "com.rslover521.furnituresoplenty.util.JsonValidator",
+      "projectName": "Furnitures-O-Plenty"
+    },
+    {
+      "type": "java",
+      "name": "FurnitureOPlentyTableGenerator",
+      "request": "launch",
+      "mainClass": "com.rslover521.furnituresoplenty.util.FurnitureOPlentyTableGenerator",
+      "projectName": "Furnitures-O-Plenty"
+    },
+    {
+      "type": "java",
       "name": "CreativeTabGenerator",
       "request": "launch",
       "mainClass": "com.rslover521.furnituresoplenty.util.CreativeTabGenerator",
