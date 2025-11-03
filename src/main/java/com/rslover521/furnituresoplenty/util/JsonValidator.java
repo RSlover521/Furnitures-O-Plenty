@@ -34,6 +34,8 @@ public class JsonValidator {
        		}
 		}
 
+		System.out.println("-----------------------------------\nSummary:");
+
 		if(allValid) { 
 			System.out.println("✅ All valid. Good to go!"); 
 		} else { 

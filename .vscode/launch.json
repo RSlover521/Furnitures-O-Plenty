@@ -3,6 +3,13 @@
   "configurations": [
     {
       "type": "java",
+      "name": "DeskModelGenerator",
+      "request": "launch",
+      "mainClass": "com.rslover521.furnituresoplenty.util.DeskModelGenerator",
+      "projectName": "Furnitures-O-Plenty"
+    },
+    {
+      "type": "java",
       "name": "JsonValidator",
       "request": "launch",
       "mainClass": "com.rslover521.furnituresoplenty.util.JsonValidator",
