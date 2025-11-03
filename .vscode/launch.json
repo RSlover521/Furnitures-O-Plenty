@@ -3,6 +3,20 @@
   "configurations": [
     {
       "type": "java",
+      "name": "StorageJarGenerator",
+      "request": "launch",
+      "mainClass": "com.rslover521.furnituresoplenty.util.StorageJarGenerator",
+      "projectName": "Furnitures-O-Plenty"
+    },
+    {
+      "type": "java",
+      "name": "MailBoxGenerator",
+      "request": "launch",
+      "mainClass": "com.rslover521.furnituresoplenty.util.MailBoxGenerator",
+      "projectName": "Furnitures-O-Plenty"
+    },
+    {
+      "type": "java",
       "name": "CuttingBoardGenerator",
       "request": "launch",
       "mainClass": "com.rslover521.furnituresoplenty.util.CuttingBoardGenerator",

@@ -24,9 +24,9 @@ public class JsonValidator {
         	for (File file : dir.listFiles((d, name) -> name.endsWith(".json"))) {
             	try (FileReader reader = new FileReader(file)) {
                 	JsonParser.parseReader(reader);
-                	System.out.println(file.getName() + " ✅ valid");
+                	System.out.println(file.getName() + " ✅ Valid");
             	} catch (JsonSyntaxException | IOException e) {
-                	System.err.println(file.getName() + " ❌ invalid");
+                	System.err.println(file.getName() + " ❌ Invalid");
 					allValid = false;
 					invalidFiles.add(file.getName());
                 	e.printStackTrace();
