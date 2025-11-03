@@ -1,1 +1,7 @@
-{}
+{
+  "parent": "furnituresoplenty:block/cutting_board",
+  "textures": {
+    "particle": "biomesoplenty:block/dead_planks",
+    "texture": "furnituresoplenty:block/dead_cutting_board"
+  }
+}

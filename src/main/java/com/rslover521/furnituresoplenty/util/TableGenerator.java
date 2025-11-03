@@ -4,7 +4,7 @@ import java.io.File;
 import java.io.FileWriter;
 import java.io.IOException;
 
-public class FurnitureOPlentyTableGenerator {
+public class TableGenerator {
 
     private static final String MODID = "furnituresoplenty";
 
