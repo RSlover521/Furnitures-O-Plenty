@@ -1,7 +1,5 @@
 package com.rslover521.furnituresoplenty.modItems;
 
-import java.rmi.registry.Registry;
-
 import com.rslover521.furnituresoplenty.FurnituresOPlenty;
 import com.rslover521.furnituresoplenty.customBlockEntities.CustomBasinBlockEntity;
 import com.rslover521.furnituresoplenty.customBlockEntities.CustomBathBlockEntity;
@@ -12,9 +10,9 @@ import com.rslover521.furnituresoplenty.customBlockEntities.CustomDrawerBlockEnt
 import com.rslover521.furnituresoplenty.customBlockEntities.CustomKitchenDrawerBlockEntity;
 import com.rslover521.furnituresoplenty.customBlockEntities.CustomKitchenSinkBlockEntity;
 import com.rslover521.furnituresoplenty.customBlockEntities.CustomMailboxBlockEntity;
-import com.rslover521.furnituresoplenty.customBlockEntities.CustomStorageCabinetBlockEntity;
 import com.rslover521.furnituresoplenty.customBlockEntities.CustomStorageJarBlockEntity;
 import com.rslover521.furnituresoplenty.customBlockEntities.CustomToiletBlockEntity;
+import com.rslover521.furnituresoplenty.customBlockEntities.CustomStorageCabinetBlockEntity;
 import net.minecraft.world.level.block.entity.BlockEntityType;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;

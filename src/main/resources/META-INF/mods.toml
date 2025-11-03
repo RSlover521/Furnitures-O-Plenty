@@ -10,9 +10,11 @@ authors = "RSlover521"
 description = '''
 Adds furniture variants using Biomes O' Plenty woods for Refurbished Furniture.
 '''
-logoFile="assets/${mod_id}/logo.png"
 credits="RSlover521"
+logoFile="assets/${mod_id}/furnituresoplenty_icon.png"
+bannerFile="assets/${mod_id}/furnituresoplenty_banner.png"
 displayURL="https://github.com/RSlover521/Furnitures-O-Plenty"
+issuesURL="https://github.com/RSlover521/Furnitures-O-Plenty/issues"
 
 # Dependencies
 [[dependencies.furnituresoplenty]]
