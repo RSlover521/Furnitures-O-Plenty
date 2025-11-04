@@ -1,6 +1,7 @@
 package com.rslover521.furnituresoplenty;
 
 import com.mojang.logging.LogUtils;
+import com.rslover521.furnituresoplenty.modItems.ModBlockEntities;
 import com.rslover521.furnituresoplenty.modItems.ModBlocks;
 import com.rslover521.furnituresoplenty.modItems.ModCreativeTabs;
 
@@ -25,6 +26,8 @@ public class FurnituresOPlenty {
 
         ModBlocks.register(modEventBus);
         ModCreativeTabs.register();
+        
+        ModBlockEntities.BLOCK_ENTITIES.register(modEventBus);
 
         // Defer init until after registries exist
         context.getModEventBus().addListener(this::commonSetup);

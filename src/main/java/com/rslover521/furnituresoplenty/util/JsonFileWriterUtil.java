@@ -182,8 +182,6 @@ public class JsonFileWriterUtil {
         }
         """.formatted(wood);
         write(BASE_PATH + "models/block/" + wood + "_" + type + ".json", json);
-        
-        write(BASE_PATH + "models/block/" + wood + "_" + type + ".json", json);
     }
 
     private static void generateItemModel(String wood, String type) {
