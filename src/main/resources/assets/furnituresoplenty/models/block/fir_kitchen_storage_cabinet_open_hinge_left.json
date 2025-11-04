@@ -1,0 +1,7 @@
+{
+  "parent": "furnituresoplenty:block/kitchen_storage_cabinet_open_hinge_left",
+  "textures": {
+    "particle": "furnituresoplenty:block/fir_particle",
+    "texture": "furnituresoplenty:block/fir_kitchen_storage_cabinet"
+  }
+}

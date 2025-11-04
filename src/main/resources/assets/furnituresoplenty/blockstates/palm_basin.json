@@ -1,1 +1,8 @@
-{}
+{
+  "variants": {
+    "facing=east": { "model": "furnituresoplenty:block/palm_basin", "y": 90 },
+    "facing=north": { "model": "furnituresoplenty:block/palm_basin" },
+    "facing=south": { "model": "furnituresoplenty:block/palm_basin", "y": 180 },
+    "facing=west": { "model": "furnituresoplenty:block/palm_basin", "y": 270 }
+  }
+}

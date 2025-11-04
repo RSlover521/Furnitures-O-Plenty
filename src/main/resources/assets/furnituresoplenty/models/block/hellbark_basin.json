@@ -1,1 +1,7 @@
-{}
+{
+  "parent": "furnituresoplenty:block/basin",
+  "textures": {
+    "particle": "biomesoplenty:block/hellbark_particle",
+    "texture": "furnituresoplenty:block/hellbark_basin"
+  }
+}

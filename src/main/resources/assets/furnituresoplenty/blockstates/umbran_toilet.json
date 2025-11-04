@@ -1,1 +1,8 @@
-{}
+{
+  "variants": {
+    "facing=east":  { "model": "furnituresoplenty:block/umbran_toilet", "y": 90 },
+    "facing=north": { "model": "furnituresoplenty:block/umbran_toilet" },
+    "facing=south": { "model": "furnituresoplenty:block/umbran_toilet", "y": 180 },
+    "facing=west":  { "model": "furnituresoplenty:block/umbran_toilet", "y": 270 }
+  }
+}

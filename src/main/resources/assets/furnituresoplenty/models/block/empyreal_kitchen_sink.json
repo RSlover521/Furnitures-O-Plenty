@@ -1,1 +1,7 @@
-{}
+{
+  "parent": "furnituresoplenty:block/kitchen_sink",
+  "textures": {
+    "particle": "biomesoplenty:block/empyreal_planks",
+    "texture": "furnituresoplenty:block/empyreal_kitchen_sink"
+  }
+}

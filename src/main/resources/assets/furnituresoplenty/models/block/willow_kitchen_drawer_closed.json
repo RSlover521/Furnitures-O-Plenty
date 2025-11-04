@@ -1,0 +1,7 @@
+{
+  "parent": "furnituresoplenty:block/kitchen_drawer_closed",
+  "textures": {
+    "particle": "furnituresoplenty:block/willow_particle",
+    "texture": "furnituresoplenty:block/willow_kitchen_drawer"
+  }
+}
