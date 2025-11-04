@@ -3,6 +3,48 @@
   "configurations": [
     {
       "type": "java",
+      "name": "StorageJarGenerator",
+      "request": "launch",
+      "mainClass": "com.rslover521.furnituresoplenty.util.StorageJarGenerator",
+      "projectName": "Furnitures-O-Plenty"
+    },
+    {
+      "type": "java",
+      "name": "MailBoxGenerator",
+      "request": "launch",
+      "mainClass": "com.rslover521.furnituresoplenty.util.MailBoxGenerator",
+      "projectName": "Furnitures-O-Plenty"
+    },
+    {
+      "type": "java",
+      "name": "CuttingBoardGenerator",
+      "request": "launch",
+      "mainClass": "com.rslover521.furnituresoplenty.util.CuttingBoardGenerator",
+      "projectName": "Furnitures-O-Plenty"
+    },
+    {
+      "type": "java",
+      "name": "DeskModelGenerator",
+      "request": "launch",
+      "mainClass": "com.rslover521.furnituresoplenty.util.DeskModelGenerator",
+      "projectName": "Furnitures-O-Plenty"
+    },
+    {
+      "type": "java",
+      "name": "JsonValidator",
+      "request": "launch",
+      "mainClass": "com.rslover521.furnituresoplenty.util.JsonValidator",
+      "projectName": "Furnitures-O-Plenty"
+    },
+    {
+      "type": "java",
+      "name": "FurnitureOPlentyTableGenerator",
+      "request": "launch",
+      "mainClass": "com.rslover521.furnituresoplenty.util.FurnitureOPlentyTableGenerator",
+      "projectName": "Furnitures-O-Plenty"
+    },
+    {
+      "type": "java",
       "name": "CreativeTabGenerator",
       "request": "launch",
       "mainClass": "com.rslover521.furnituresoplenty.util.CreativeTabGenerator",
