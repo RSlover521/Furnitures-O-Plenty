@@ -1,0 +1,7 @@
+{
+  "parent": "furnituresoplenty:block/desk",
+  "textures": {
+    "particle": "biomesoplenty:block/jacaranda_planks",
+    "texture": "furnituresoplenty:block/jacaranda_desk"
+  }
+}

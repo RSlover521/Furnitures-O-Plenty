@@ -1,0 +1,7 @@
+{
+  "parent": "furnituresoplenty:block/mail_box",
+  "textures": {
+    "particle": "biomesoplenty:block/empyreal_planks",
+    "texture": "furnituresoplenty:block/empyreal_mail_box"
+  }
+}

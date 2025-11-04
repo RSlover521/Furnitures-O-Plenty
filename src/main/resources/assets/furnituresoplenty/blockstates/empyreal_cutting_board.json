@@ -1,0 +1,8 @@
+{
+  "variants": {
+    "facing=east": {"model": "furnituresoplenty:block/empyreal_cutting_board","y":90},
+    "facing=north": {"model": "furnituresoplenty:block/empyreal_cutting_board"},
+    "facing=south": {"model": "furnituresoplenty:block/empyreal_cutting_board","y":180},
+    "facing=west": {"model": "furnituresoplenty:block/empyreal_cutting_board","y":270}
+  }
+}

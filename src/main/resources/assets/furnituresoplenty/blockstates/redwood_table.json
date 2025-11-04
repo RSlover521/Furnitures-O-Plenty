@@ -1,0 +1,20 @@
+{
+  "variants": {
+    "east=false,north=false,south=false,west=false": { "model": "furnituresoplenty:block/redwood_table" },
+    "east=true,north=false,south=false,west=false": { "model": "furnituresoplenty:block/redwood_table_west" },
+    "east=false,north=true,south=false,west=false": { "model": "furnituresoplenty:block/redwood_table_south" },
+    "east=true,north=true,south=false,west=false": { "model": "furnituresoplenty:block/redwood_table_south_west" },
+    "east=false,north=false,south=true,west=false": { "model": "furnituresoplenty:block/redwood_table_north" },
+    "east=true,north=false,south=true,west=false": { "model": "furnituresoplenty:block/redwood_table_west_north" },
+    "east=false,north=true,south=true,west=false": { "model": "furnituresoplenty:block/redwood_table_north_south" },
+    "east=true,north=true,south=true,west=false": { "model": "furnituresoplenty:block/redwood_table_south_west_north" },
+    "east=false,north=false,south=false,west=true": { "model": "furnituresoplenty:block/redwood_table_east" },
+    "east=true,north=false,south=false,west=true": { "model": "furnituresoplenty:block/redwood_table_east_west" },
+    "east=false,north=true,south=false,west=true": { "model": "furnituresoplenty:block/redwood_table_east_south" },
+    "east=true,north=true,south=false,west=true": { "model": "furnituresoplenty:block/redwood_table_east_south_west" },
+    "east=false,north=false,south=true,west=true": { "model": "furnituresoplenty:block/redwood_table_north_east" },
+    "east=true,north=false,south=true,west=true": { "model": "furnituresoplenty:block/redwood_table_west_north_east" },
+    "east=false,north=true,south=true,west=true": { "model": "furnituresoplenty:block/redwood_table_north_east_south" },
+    "east=true,north=true,south=true,west=true": { "model": "furnituresoplenty:block/redwood_table_north_east_south_west" }
+  }
+}
