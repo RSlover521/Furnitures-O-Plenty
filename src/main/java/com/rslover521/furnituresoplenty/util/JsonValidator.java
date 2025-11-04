@@ -16,6 +16,8 @@ public class JsonValidator {
 			"src/main/resources/assets/furnituresoplenty/models/block"
 		};
 
+		int count = 0;
+
 		ArrayList<String> invalidFiles = new ArrayList<>();
 
 		for(String fileDir : allDirectories) {
@@ -25,10 +27,12 @@ public class JsonValidator {
             	try (FileReader reader = new FileReader(file)) {
                 	JsonParser.parseReader(reader);
                 	System.out.println(file.getName() + " ✅ Valid");
+					count ++;
             	} catch (JsonSyntaxException | IOException e) {
                 	System.err.println(file.getName() + " ❌ Invalid");
 					allValid = false;
 					invalidFiles.add(file.getName());
+					count ++;
                 	e.printStackTrace();
             	}
        		}
@@ -37,9 +41,11 @@ public class JsonValidator {
 		System.out.println("-----------------------------------\nSummary:");
 
 		if(allValid) { 
-			System.out.println("✅ All valid. Good to go!"); 
+			System.out.println("✅ All valid. Good to go! \nScanned " + count + " files in total."); 
 		} else { 
-			System.out.println("❌ Not all valid. Please check the console for any file errors.\nHere is a list of invalid files: ");
+			System.out.println("❌ Not all valid. Please check the console for any file errors. " + 
+			"\nScanned " + count + " files in total." +
+				"\nHere is a list of invalid files: ");
 			for(String dir : invalidFiles) {
 				System.out.println(dir);
 			} 

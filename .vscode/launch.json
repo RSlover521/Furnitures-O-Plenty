@@ -3,6 +3,27 @@
   "configurations": [
     {
       "type": "java",
+      "name": "CrateGenerator",
+      "request": "launch",
+      "mainClass": "com.rslover521.furnituresoplenty.util.CrateGenerator",
+      "projectName": "Furnitures-O-Plenty"
+    },
+    {
+      "type": "java",
+      "name": "LatticeFenceGateGenerator",
+      "request": "launch",
+      "mainClass": "com.rslover521.furnituresoplenty.util.LatticeFenceGateGenerator",
+      "projectName": "Furnitures-O-Plenty"
+    },
+    {
+      "type": "java",
+      "name": "LatticeFenceGenerator",
+      "request": "launch",
+      "mainClass": "com.rslover521.furnituresoplenty.util.LatticeFenceGenerator",
+      "projectName": "Furnitures-O-Plenty"
+    },
+    {
+      "type": "java",
       "name": "StorageJarGenerator",
       "request": "launch",
       "mainClass": "com.rslover521.furnituresoplenty.util.StorageJarGenerator",
