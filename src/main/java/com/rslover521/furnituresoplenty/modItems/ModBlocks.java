@@ -508,7 +508,7 @@ public class ModBlocks {
 		WILLOW_LATTICE_FENCE_GATE = registerLatticeFenceGate("willow", BOPWoodTypes.WILLOW);
 		DEAD_LATTICE_FENCE_GATE = registerLatticeFenceGate("dead", BOPWoodTypes.DEAD);
 		MAGIC_LATTICE_FENCE_GATE = registerLatticeFenceGate("magic", BOPWoodTypes.MAGIC);
-		UMBRAN_LATTICE_FENCE_GATE = registerLatticeFenceGate("unbran", BOPWoodTypes.UMBRAN);
+		UMBRAN_LATTICE_FENCE_GATE = registerLatticeFenceGate("umbran", BOPWoodTypes.UMBRAN);
 		HELLBARK_LATTICE_FENCE_GATE = registerLatticeFenceGate("hellbark", BOPWoodTypes.HELLBARK);
 		EMPYREAL_LATTICE_FENCE_GATE = registerLatticeFenceGate("empyreal", BOPWoodTypes.EMPYREAL);
 
@@ -522,7 +522,7 @@ public class ModBlocks {
 		WILLOW_LATTICE_FENCE = registerLatticeFences("willow", BOPWoodTypes.WILLOW);
 		DEAD_LATTICE_FENCE = registerLatticeFences("dead", BOPWoodTypes.DEAD);
 		MAGIC_LATTICE_FENCE = registerLatticeFences("magic", BOPWoodTypes.MAGIC);
-		UMBRAN_LATTICE_FENCE = registerLatticeFences("unbran", BOPWoodTypes.UMBRAN);
+		UMBRAN_LATTICE_FENCE = registerLatticeFences("umbran", BOPWoodTypes.UMBRAN);
 		HELLBARK_LATTICE_FENCE = registerLatticeFences("hellbark", BOPWoodTypes.HELLBARK);
 		EMPYREAL_LATTICE_FENCE = registerLatticeFences("empyreal", BOPWoodTypes.EMPYREAL);
 
@@ -536,7 +536,7 @@ public class ModBlocks {
 		WILLOW_MAIL_BOX = registerMailBox("willow", BOPWoodTypes.WILLOW);
 		DEAD_MAIL_BOX = registerMailBox("dead", BOPWoodTypes.DEAD);
 		MAGIC_MAIL_BOX = registerMailBox("magic", BOPWoodTypes.MAGIC);
-		UMBRAN_MAIL_BOX = registerMailBox("unbran", BOPWoodTypes.UMBRAN);
+		UMBRAN_MAIL_BOX = registerMailBox("umbran", BOPWoodTypes.UMBRAN);
 		HELLBARK_MAIL_BOX = registerMailBox("hellbark", BOPWoodTypes.HELLBARK);
 		EMPYREAL_MAIL_BOX = registerMailBox("empyreal", BOPWoodTypes.EMPYREAL);
 
@@ -564,7 +564,7 @@ public class ModBlocks {
 		WILLOW_STORAGE_JAR = registerStorageJar("willow", BOPWoodTypes.WILLOW);
 		DEAD_STORAGE_JAR = registerStorageJar("dead", BOPWoodTypes.DEAD);
 		MAGIC_STORAGE_JAR = registerStorageJar("magic", BOPWoodTypes.MAGIC);
-		UMBRAN_STORAGE_JAR = registerStorageJar("unbran", BOPWoodTypes.UMBRAN);
+		UMBRAN_STORAGE_JAR = registerStorageJar("umbran", BOPWoodTypes.UMBRAN);
 		HELLBARK_STORAGE_JAR = registerStorageJar("hellbark", BOPWoodTypes.HELLBARK);
 		EMPYREAL_STORAGE_JAR = registerStorageJar("empyreal", BOPWoodTypes.EMPYREAL);
 
