@@ -13,7 +13,10 @@ public class JsonValidator {
 		String[] allDirectories = {
 			"src/main/resources/assets/furnituresoplenty/models/item",
 			"src/main/resources/assets/furnituresoplenty/blockstates",
-			"src/main/resources/assets/furnituresoplenty/models/block"
+			"src/main/resources/assets/furnituresoplenty/models/block",
+			"src/main/resources/assets/furnituresoplenty/lang",
+			"src/main/resources/data/furnituresoplenty/recipes",
+			"src/main/resources/data/furnituresoplenty/advancements"
 		};
 
 		int count = 0;
@@ -21,7 +24,8 @@ public class JsonValidator {
 		ArrayList<String> invalidFiles = new ArrayList<>();
 
 		for(String fileDir : allDirectories) {
-			System.out.println("Checking: " + fileDir + "......");
+			System.out.println("-----------------------------------");
+			System.out.println("Checking: " + fileDir + "...");
 			File dir = new File(fileDir);
         	for (File file : dir.listFiles((d, name) -> name.endsWith(".json"))) {
             	try (FileReader reader = new FileReader(file)) {
