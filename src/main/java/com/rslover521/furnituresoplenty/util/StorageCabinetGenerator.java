@@ -13,8 +13,6 @@ public class StorageCabinetGenerator {
             "palm", "willow", "dead", "magic", "umbran", "hellbark", "empyreal"
     };
 
-    private static final String[] HINGES = {"left", "right"};
-
     public static void main(String[] args) {
         Path output = Path.of("src/main/resources/");
 
