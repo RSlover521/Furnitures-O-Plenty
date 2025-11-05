@@ -15,16 +15,22 @@ Decorate your world, match your biomes, and make your builds truly feel like hom
 ## 📦 Features
 
 This mod adds furniture variants for all Biomes O' Plenty wood types:
-- Chairs, Tables, and Desks
-- Storage Cabinets and Drawers
-- Kitchen Cabinets and Sinks
 - Crates and Storage Jars
+- Chairs, Tables, and Desks
 - Ceiling Fans and Mailboxes
-- Lattice Fences and Gates
 - Baths, Toilets, and Basins
-- Cutting Boards
+- Storage Cabinets and Drawers
+- Lattice Fences and Lattice Fence Gates
+- Kitchen Cabinetry, Kitchen Drawers and Kitchen Sinks
+- Cutting Boards, Kitchen Cabinets, and Kitchen Storage Cabinets
 
 **Wood Types (From Biomes O' Plenty):** Fir, Pine, Maple, Redwood, Mahogany, Jacaranda, Palm, Willow, Dead, Magic, Umbran, Hellbark, Empyreal
+
+---
+
+## 🌏 Avaliable Languages: 
+- English (US)
+- Chinese (Simplified, Credit to ChengBubble)
 
 ---
 
