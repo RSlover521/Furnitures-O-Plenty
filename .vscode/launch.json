@@ -3,6 +3,13 @@
   "configurations": [
     {
       "type": "java",
+      "name": "RecipeGenerator",
+      "request": "launch",
+      "mainClass": "com.rslover521.furnituresoplenty.util.RecipeGenerator",
+      "projectName": "Furnitures-O-Plenty"
+    },
+    {
+      "type": "java",
       "name": "EmptyJsonCleaner",
       "request": "launch",
       "mainClass": "com.rslover521.furnituresoplenty.util.EmptyJsonCleaner",
