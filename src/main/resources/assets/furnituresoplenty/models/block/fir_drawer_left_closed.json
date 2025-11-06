@@ -1,0 +1,7 @@
+{
+  "parent": "furnituresoplenty:block/drawer_left_closed",
+  "textures": {
+    "particle": "biomesoplenty:block/fir_planks",
+    "texture": "furnituresoplenty:block/fir_drawer"
+  }
+}

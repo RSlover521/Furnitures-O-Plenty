@@ -1,1 +1,6 @@
-{}
+{
+  "variants": {
+    "open=false": { "model": "furnituresoplenty:block/willow_crate_closed" },
+    "open=true":  { "model": "furnituresoplenty:block/willow_crate_open" }
+  }
+}

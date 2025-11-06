@@ -1,1 +1,6 @@
-{}
+{
+  "parent": "furnituresoplenty:item/lattice_fence",
+  "textures": {
+    "texture": "furnituresoplenty:block/hellbark_lattice_fence"
+  }
+}

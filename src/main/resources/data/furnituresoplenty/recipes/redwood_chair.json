@@ -1,0 +1,8 @@
+{
+  "type": "refurbished_furniture:workbench_constructing",
+  "materials": [
+    { "count": 4, "item": "minecraft:redwood_planks" }
+  ],
+  "result": "furnituresoplenty:redwood_chair",
+  "show_notification": false
+}

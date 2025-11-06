@@ -1,1 +1,15 @@
-{}
+{
+  "variants": {
+    "facing=east,type=bottom": { "model": "furnituresoplenty:block/mahogany_bath_bottom", "y": 90 },
+    "facing=east,type=head":   { "model": "furnituresoplenty:block/mahogany_bath_head",   "y": 90 },
+
+    "facing=north,type=bottom": { "model": "furnituresoplenty:block/mahogany_bath_bottom" },
+    "facing=north,type=head":   { "model": "furnituresoplenty:block/mahogany_bath_head" },
+
+    "facing=south,type=bottom": { "model": "furnituresoplenty:block/mahogany_bath_bottom", "y": 180 },
+    "facing=south,type=head":   { "model": "furnituresoplenty:block/mahogany_bath_head",   "y": 180 },
+
+    "facing=west,type=bottom":  { "model": "furnituresoplenty:block/mahogany_bath_bottom", "y": 270 },
+    "facing=west,type=head":    { "model": "furnituresoplenty:block/mahogany_bath_head",   "y": 270 }
+  }
+}

@@ -1,0 +1,8 @@
+{
+  "type": "refurbished_furniture:workbench_constructing",
+  "materials": [
+    { "count": 8, "item": "minecraft:empyreal_planks" }
+  ],
+  "result": "furnituresoplenty:empyreal_mail_box",
+  "show_notification": false
+}

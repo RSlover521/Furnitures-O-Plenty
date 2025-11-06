@@ -1,0 +1,9 @@
+{
+  "type": "refurbished_furniture:workbench_constructing",
+  "materials": [
+    { "count": 2, "item": "minecraft:willow_planks" },
+    { "count": 1, "item": "minecraft:glass" }
+  ],
+  "result": "furnituresoplenty:willow_storage_jar",
+  "show_notification": false
+}

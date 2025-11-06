@@ -1,0 +1,7 @@
+{
+  "parent": "furnituresoplenty:block/ceiling_fan_base_off",
+  "textures": {
+    "particle": "furnituresoplenty:block/light_particle",
+    "texture": "furnituresoplenty:block/redwood_light_ceiling_fan"
+  }
+}

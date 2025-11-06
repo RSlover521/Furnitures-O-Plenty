@@ -1,1 +1,7 @@
-{}
+{
+  "parent": "furnituresoplenty:block/basin",
+  "textures": {
+    "particle": "biomesoplenty:block/willow_particle",
+    "texture": "furnituresoplenty:block/willow_basin"
+  }
+}

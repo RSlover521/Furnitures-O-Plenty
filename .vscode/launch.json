@@ -3,6 +3,118 @@
   "configurations": [
     {
       "type": "java",
+      "name": "RecipeGenerator",
+      "request": "launch",
+      "mainClass": "com.rslover521.furnituresoplenty.util.RecipeGenerator",
+      "projectName": "Furnitures-O-Plenty"
+    },
+    {
+      "type": "java",
+      "name": "EmptyJsonCleaner",
+      "request": "launch",
+      "mainClass": "com.rslover521.furnituresoplenty.util.EmptyJsonCleaner",
+      "projectName": "Furnitures-O-Plenty"
+    },
+    {
+      "type": "java",
+      "name": "CeilingFanGenerator",
+      "request": "launch",
+      "mainClass": "com.rslover521.furnituresoplenty.util.CeilingFanGenerator",
+      "projectName": "Furnitures-O-Plenty"
+    },
+    {
+      "type": "java",
+      "name": "StorageCabinetGenerator",
+      "request": "launch",
+      "mainClass": "com.rslover521.furnituresoplenty.util.StorageCabinetGenerator",
+      "projectName": "Furnitures-O-Plenty"
+    },
+    {
+      "type": "java",
+      "name": "KitchenCabinetryGenerator",
+      "request": "launch",
+      "mainClass": "com.rslover521.furnituresoplenty.util.KitchenCabinetryGenerator",
+      "projectName": "Furnitures-O-Plenty"
+    },
+    {
+      "type": "java",
+      "name": "CabinetGenerator",
+      "request": "launch",
+      "mainClass": "com.rslover521.furnituresoplenty.util.CabinetGenerator",
+      "projectName": "Furnitures-O-Plenty"
+    },
+    {
+      "type": "java",
+      "name": "KitchenStorageCabinetGenerator",
+      "request": "launch",
+      "mainClass": "com.rslover521.furnituresoplenty.util.KitchenStorageCabinetGenerator",
+      "projectName": "Furnitures-O-Plenty"
+    },
+    {
+      "type": "java",
+      "name": "DrawerGenerator",
+      "request": "launch",
+      "mainClass": "com.rslover521.furnituresoplenty.util.DrawerGenerator",
+      "projectName": "Furnitures-O-Plenty"
+    },
+    {
+      "type": "java",
+      "name": "KitchenDrawerGenerator",
+      "request": "launch",
+      "mainClass": "com.rslover521.furnituresoplenty.util.KitchenDrawerGenerator",
+      "projectName": "Furnitures-O-Plenty"
+    },
+    {
+      "type": "java",
+      "name": "ToiletGenerator",
+      "request": "launch",
+      "mainClass": "com.rslover521.furnituresoplenty.util.ToiletGenerator",
+      "projectName": "Furnitures-O-Plenty"
+    },
+    {
+      "type": "java",
+      "name": "BathGenerator",
+      "request": "launch",
+      "mainClass": "com.rslover521.furnituresoplenty.util.BathGenerator",
+      "projectName": "Furnitures-O-Plenty"
+    },
+    {
+      "type": "java",
+      "name": "KitchenSinkGenerator",
+      "request": "launch",
+      "mainClass": "com.rslover521.furnituresoplenty.util.KitchenSinkGenerator",
+      "projectName": "Furnitures-O-Plenty"
+    },
+    {
+      "type": "java",
+      "name": "BasinGenerator",
+      "request": "launch",
+      "mainClass": "com.rslover521.furnituresoplenty.util.BasinGenerator",
+      "projectName": "Furnitures-O-Plenty"
+    },
+    {
+      "type": "java",
+      "name": "CrateGenerator",
+      "request": "launch",
+      "mainClass": "com.rslover521.furnituresoplenty.util.CrateGenerator",
+      "projectName": "Furnitures-O-Plenty"
+    },
+    {
+      "type": "java",
+      "name": "LatticeFenceGateGenerator",
+      "request": "launch",
+      "mainClass": "com.rslover521.furnituresoplenty.util.LatticeFenceGateGenerator",
+      "projectName": "Furnitures-O-Plenty"
+    },
+    {
+      "type": "java",
+      "name": "LatticeFenceGenerator",
+      "request": "launch",
+      "mainClass": "com.rslover521.furnituresoplenty.util.LatticeFenceGenerator",
+      "projectName": "Furnitures-O-Plenty"
+    },
+    {
+      "type": "java",
       "name": "StorageJarGenerator",
       "request": "launch",
       "mainClass": "com.rslover521.furnituresoplenty.util.StorageJarGenerator",

@@ -1,1 +1,25 @@
-{}
+{
+  "multipart": [
+    {
+      "apply": {
+        "model": "furnituresoplenty:block/umbran_lattice_fence_center"
+      }
+    },
+    {
+      "when": { "north": "true" },
+      "apply": { "model": "furnituresoplenty:block/umbran_lattice_fence_connection", "y": 180 }
+    },
+    {
+      "when": { "east": "true" },
+      "apply": { "model": "furnituresoplenty:block/umbran_lattice_fence_connection", "y": 270 }
+    },
+    {
+      "when": { "south": "true" },
+      "apply": { "model": "furnituresoplenty:block/umbran_lattice_fence_connection" }
+    },
+    {
+      "when": { "west": "true" },
+      "apply": { "model": "furnituresoplenty:block/umbran_lattice_fence_connection", "y": 90 }
+    }
+  ]
+}

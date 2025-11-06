@@ -1,1 +1,7 @@
-{}
+{
+  "parent": "furnituresoplenty:block/lattice_fence_gate_closed",
+  "textures": {
+    "particle": "furnituresoplenty:block/hellbark_particle",
+    "texture": "furnituresoplenty:block/hellbark_lattice_fence_gate"
+  }
+}

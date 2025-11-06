@@ -1,1 +1,6 @@
-{}
+{
+  "parent": "furnituresoplenty:item/ceiling_fan",
+  "textures": {
+    "texture": "furnituresoplenty:block/hellbark_light_ceiling_fan"
+  }
+}

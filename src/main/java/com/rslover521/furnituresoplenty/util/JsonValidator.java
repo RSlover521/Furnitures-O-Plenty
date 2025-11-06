@@ -13,22 +13,30 @@ public class JsonValidator {
 		String[] allDirectories = {
 			"src/main/resources/assets/furnituresoplenty/models/item",
 			"src/main/resources/assets/furnituresoplenty/blockstates",
-			"src/main/resources/assets/furnituresoplenty/models/block"
+			"src/main/resources/assets/furnituresoplenty/models/block",
+			"src/main/resources/assets/furnituresoplenty/lang",
+			"src/main/resources/data/furnituresoplenty/recipes",
+			"src/main/resources/data/furnituresoplenty/advancements"
 		};
+
+		int count = 0;
 
 		ArrayList<String> invalidFiles = new ArrayList<>();
 
 		for(String fileDir : allDirectories) {
-			System.out.println("Checking: " + fileDir + "......");
+			System.out.println("-----------------------------------");
+			System.out.println("Checking: " + fileDir + "...");
 			File dir = new File(fileDir);
         	for (File file : dir.listFiles((d, name) -> name.endsWith(".json"))) {
             	try (FileReader reader = new FileReader(file)) {
                 	JsonParser.parseReader(reader);
                 	System.out.println(file.getName() + " ✅ Valid");
+					count ++;
             	} catch (JsonSyntaxException | IOException e) {
                 	System.err.println(file.getName() + " ❌ Invalid");
 					allValid = false;
 					invalidFiles.add(file.getName());
+					count ++;
                 	e.printStackTrace();
             	}
        		}
@@ -37,9 +45,11 @@ public class JsonValidator {
 		System.out.println("-----------------------------------\nSummary:");
 
 		if(allValid) { 
-			System.out.println("✅ All valid. Good to go!"); 
+			System.out.println("✅ All valid. Good to go! \nScanned " + count + " files in total."); 
 		} else { 
-			System.out.println("❌ Not all valid. Please check the console for any file errors.\nHere is a list of invalid files: ");
+			System.out.println("❌ Not all valid. Please check the console for any file errors. " + 
+			"\nScanned " + count + " files in total." +
+				"\nHere is a list of invalid files: ");
 			for(String dir : invalidFiles) {
 				System.out.println(dir);
 			} 
