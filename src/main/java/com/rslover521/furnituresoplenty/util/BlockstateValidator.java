@@ -19,8 +19,6 @@ public class BlockstateValidator {
     private static final String MOD_ID = "furnituresoplenty";
     private static final Path ASSETS_PATH = Paths.get("src/main/resources/assets/furnituresoplenty");
 
-    private static final Gson GSON = new GsonBuilder().setPrettyPrinting().create();
-
     public static void main(String[] args) throws IOException {
         Path blockstatesDir = ASSETS_PATH.resolve("blockstates");
 
