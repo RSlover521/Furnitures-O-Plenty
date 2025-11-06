@@ -3,6 +3,69 @@
   "configurations": [
     {
       "type": "java",
+      "name": "DeleteOldStorageCabinetModels",
+      "request": "launch",
+      "mainClass": "com.rslover521.furnituresoplenty.util.DeleteOldStorageCabinetModels",
+      "projectName": "Furnitures-O-Plenty"
+    },
+    {
+      "type": "java",
+      "name": "DeleteOldStorageCabinets",
+      "request": "launch",
+      "mainClass": "com.rslover521.furnituresoplenty.util.DeleteOldStorageCabinets",
+      "projectName": "Furnitures-O-Plenty"
+    },
+    {
+      "type": "java",
+      "name": "ChairGenerator",
+      "request": "launch",
+      "mainClass": "com.rslover521.furnituresoplenty.util.ChairGenerator",
+      "projectName": "Furnitures-O-Plenty"
+    },
+    {
+      "type": "java",
+      "name": "ChairBlockstateGenerator",
+      "request": "launch",
+      "mainClass": "com.rslover521.furnituresoplenty.util.ChairBlockstateGenerator",
+      "projectName": "Furnitures-O-Plenty"
+    },
+    {
+      "type": "java",
+      "name": "TableGenerator",
+      "request": "launch",
+      "mainClass": "com.rslover521.furnituresoplenty.util.TableGenerator",
+      "projectName": "Furnitures-O-Plenty"
+    },
+    {
+      "type": "java",
+      "name": "DeskGenerator",
+      "request": "launch",
+      "mainClass": "com.rslover521.furnituresoplenty.util.DeskGenerator",
+      "projectName": "Furnitures-O-Plenty"
+    },
+    {
+      "type": "java",
+      "name": "EmptyJsonGenerator",
+      "request": "launch",
+      "mainClass": "com.rslover521.furnituresoplenty.util.EmptyJsonGenerator",
+      "projectName": "Furnitures-O-Plenty"
+    },
+    {
+      "type": "java",
+      "name": "DeleteCabinetFiles",
+      "request": "launch",
+      "mainClass": "com.rslover521.furnituresoplenty.util.DeleteCabinetFiles",
+      "projectName": "Furnitures-O-Plenty"
+    },
+    {
+      "type": "java",
+      "name": "BlockstateValidator",
+      "request": "launch",
+      "mainClass": "com.rslover521.furnituresoplenty.util.BlockstateValidator",
+      "projectName": "Furnitures-O-Plenty"
+    },
+    {
+      "type": "java",
       "name": "RecipeGenerator",
       "request": "launch",
       "mainClass": "com.rslover521.furnituresoplenty.util.RecipeGenerator",
