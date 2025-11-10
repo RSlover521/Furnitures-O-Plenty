@@ -1,0 +1,9 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    { "item": "furnituresoplenty:maple_light_ceiling_fan" },
+    { "item": "minecraft:black_dye" }
+  ],
+  "result": { "item": "refurbished_furniture:maple_dark_ceiling_fan" }
+}

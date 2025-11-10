@@ -1,1 +1,6 @@
-{}
+{
+  "parent": "furnituresoplenty:item/ceiling_fan",
+  "textures": {
+    "texture": "furnituresoplenty:block/mahogany_light_ceiling_fan"
+  }
+}

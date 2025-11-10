@@ -1,0 +1,7 @@
+{
+  "parent": "furnituresoplenty:block/drawer_right_open",
+  "textures": {
+    "particle": "furnituresoplenty:block/pine_particle",
+    "texture": "furnituresoplenty:block/pine_drawer"
+  }
+}

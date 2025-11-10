@@ -21,7 +21,7 @@ public class ModCreativeTabs {
                     .icon(() -> new ItemStack(ModBlocks.MAPLE_CHAIR.get())) // example icon
                     .displayItems((parameters, output) -> {
                         // === BASINS ===
-                        /*output.accept(ModBlocks.FIR_BASIN.get());
+                        output.accept(ModBlocks.FIR_BASIN.get());
                         output.accept(ModBlocks.PINE_BASIN.get());
                         output.accept(ModBlocks.MAPLE_BASIN.get());
                         output.accept(ModBlocks.REDWOOD_BASIN.get());
@@ -78,7 +78,7 @@ public class ModCreativeTabs {
                         output.accept(ModBlocks.MAGIC_DARK_CEILING_FAN.get());
                         output.accept(ModBlocks.UMBRAN_DARK_CEILING_FAN.get());
                         output.accept(ModBlocks.HELLBARK_DARK_CEILING_FAN.get());
-                        output.accept(ModBlocks.EMPYREAL_DARK_CEILING_FAN.get());*/
+                        output.accept(ModBlocks.EMPYREAL_DARK_CEILING_FAN.get());
 
                         // === CHAIRS ===
                         output.accept(ModBlocks.FIR_CHAIR.get().asItem().getDefaultInstance());
@@ -96,7 +96,7 @@ public class ModCreativeTabs {
                         output.accept(ModBlocks.EMPYREAL_CHAIR.get().asItem().getDefaultInstance());
 
                         // === CRATES ===
-                        /*output.accept(ModBlocks.FIR_CRATE.get());
+                        output.accept(ModBlocks.FIR_CRATE.get());
                         output.accept(ModBlocks.PINE_CRATE.get());
                         output.accept(ModBlocks.MAPLE_CRATE.get());
                         output.accept(ModBlocks.REDWOOD_CRATE.get());
@@ -288,7 +288,7 @@ public class ModCreativeTabs {
                         output.accept(ModBlocks.MAGIC_STORAGE_JAR.get());
                         output.accept(ModBlocks.UMBRAN_STORAGE_JAR.get());
                         output.accept(ModBlocks.HELLBARK_STORAGE_JAR.get());
-                        output.accept(ModBlocks.EMPYREAL_STORAGE_JAR.get());*/
+                        output.accept(ModBlocks.EMPYREAL_STORAGE_JAR.get());
 
                         // === TABLES ===
                         output.accept(ModBlocks.FIR_TABLE.get().asItem().getDefaultInstance());
@@ -305,7 +305,7 @@ public class ModCreativeTabs {
                         output.accept(ModBlocks.HELLBARK_TABLE.get().asItem().getDefaultInstance());
                         output.accept(ModBlocks.EMPYREAL_TABLE.get().asItem().getDefaultInstance());
 
-                        /*// === TOILETS ===
+                        // === TOILETS ===
                         output.accept(ModBlocks.FIR_TOILET.get());
                         output.accept(ModBlocks.PINE_TOILET.get());
                         output.accept(ModBlocks.MAPLE_TOILET.get());
@@ -318,7 +318,7 @@ public class ModCreativeTabs {
                         output.accept(ModBlocks.MAGIC_TOILET.get());
                         output.accept(ModBlocks.UMBRAN_TOILET.get());
                         output.accept(ModBlocks.HELLBARK_TOILET.get());
-                        output.accept(ModBlocks.EMPYREAL_TOILET.get());*/
+                        output.accept(ModBlocks.EMPYREAL_TOILET.get());
                         
                         })
                     .build());

@@ -1,1 +1,6 @@
-{}
+{
+  "variants": {
+    "open=false": { "model": "furnituresoplenty:block/palm_crate_closed" },
+    "open=true":  { "model": "furnituresoplenty:block/palm_crate_open" }
+  }
+}

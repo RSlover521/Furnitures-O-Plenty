@@ -1,1 +1,12 @@
-{}
+{
+  "variants": {
+    "facing=east,open=false": { "model": "furnituresoplenty:block/redwood_kitchen_drawer_closed", "y": 90 },
+    "facing=east,open=true":  { "model": "furnituresoplenty:block/redwood_kitchen_drawer_open", "y": 90 },
+    "facing=north,open=false": { "model": "furnituresoplenty:block/redwood_kitchen_drawer_closed" },
+    "facing=north,open=true":  { "model": "furnituresoplenty:block/redwood_kitchen_drawer_open" },
+    "facing=south,open=false": { "model": "furnituresoplenty:block/redwood_kitchen_drawer_closed", "y": 180 },
+    "facing=south,open=true":  { "model": "furnituresoplenty:block/redwood_kitchen_drawer_open", "y": 180 },
+    "facing=west,open=false":  { "model": "furnituresoplenty:block/redwood_kitchen_drawer_closed", "y": 270 },
+    "facing=west,open=true":   { "model": "furnituresoplenty:block/redwood_kitchen_drawer_open", "y": 270 }
+  }
+}

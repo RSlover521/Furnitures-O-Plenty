@@ -1,0 +1,8 @@
+{
+  "type": "refurbished_furniture:workbench_constructing",
+  "materials": [
+    { "count": 8, "item": "minecraft:pine_planks" }
+  ],
+  "result": "furnituresoplenty:pine_light_ceiling_fan",
+  "show_notification": false
+}

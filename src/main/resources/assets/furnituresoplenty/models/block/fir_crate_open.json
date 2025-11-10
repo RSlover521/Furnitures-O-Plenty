@@ -1,0 +1,7 @@
+{
+  "parent": "furnituresoplenty:block/crate_open",
+  "textures": {
+    "particle": "furnituresoplenty:block/fir_particle",
+    "texture": "furnituresoplenty:block/fir_crate"
+  }
+}

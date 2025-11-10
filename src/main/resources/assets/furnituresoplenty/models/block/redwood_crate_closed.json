@@ -1,0 +1,7 @@
+{
+  "parent": "furnituresoplenty:block/crate_closed",
+  "textures": {
+    "particle": "biomesoplenty:block/redwood_planks",
+    "texture": "furnituresoplenty:block/redwood_crate"
+  }
+}

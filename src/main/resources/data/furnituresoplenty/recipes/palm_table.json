@@ -1,0 +1,8 @@
+{
+  "type": "refurbished_furniture:workbench_constructing",
+  "materials": [
+    { "count": 6, "item": "minecraft:palm_planks" }
+  ],
+  "result": "furnituresoplenty:palm_table",
+  "show_notification": false
+}

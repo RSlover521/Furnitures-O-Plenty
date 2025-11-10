@@ -1,0 +1,7 @@
+{
+  "parent": "furnituresoplenty:block/kitchen_cabinetry_inside_corner_left",
+  "textures": {
+    "particle": "biomesoplenty:block/dead_planks",
+    "texture": "furnituresoplenty:block/dead_kitchen_cabinetry"
+  }
+}
