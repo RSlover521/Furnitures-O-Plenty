@@ -8,23 +8,22 @@ import java.io.IOException;
 import java.util.HashMap;
 import java.util.Map;
 
-/*
+/**
  * TEXTURING COLORS (hue, saturation, brightness) DIFFERENCES FROM BIRCH:
  * fir: (0, -55, -30) 
  * pine: (64, 37, -51) 
- * maple: (-34, 0, -39) 
+ * maple: (-34, 0, -20) 
  * redwood: (-44, 70, -20) 
- * mahogany: (-84, 30, -24) 
- * jacaranda: (0, -100, 30) 
+ * mahogany: (-84, 30, -10) 
+ * jacaranda: (0, -100, 40) 
  * palm: (7, 61, -22) 
- * willow: (79, -23, --27) 
+ * willow: (79, -23, -27) 
  * dead: (-180, -100, -20) 
  * magic: (-163, 0, 0) 
  * umbran: (-160, 5, -65) 
- * hellbark: (-132, 34, -93) 
- * empyreal: (-132, 34, -52)
- * 
-*/
+ * hellbark: (-57, 34, -93) 
+ * empyreal: (-132, 34, -30)
+**/
 
 public class WoodTextureRecolorer {
 
