@@ -9,7 +9,7 @@ import java.util.HashMap;
 import java.util.Map;
 
 /*
- * TEXTURING COLORS:
+ * TEXTURING COLORS (hue, saturation, brightness) DIFFERENCES FROM BIRCH:
  * fir: (0, -55, -30) 
  * pine: (64, 37, -51) 
  * maple: (-34, 0, -39) 
