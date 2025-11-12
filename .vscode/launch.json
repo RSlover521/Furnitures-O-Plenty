@@ -3,6 +3,13 @@
   "configurations": [
     {
       "type": "java",
+      "name": "TextureValidator",
+      "request": "launch",
+      "mainClass": "com.rslover521.furnituresoplenty.util.TextureValidator",
+      "projectName": "Furnitures-O-Plenty"
+    },
+    {
+      "type": "java",
       "name": "WoodTextureRecolorer",
       "request": "launch",
       "mainClass": "com.rslover521.furnituresoplenty.util.WoodTextureRecolorer",
