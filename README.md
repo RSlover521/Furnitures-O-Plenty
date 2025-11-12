@@ -35,7 +35,8 @@ This mod adds furniture variants for all Biomes O' Plenty wood types:
 ---
 
 ## 📝 License
-MIT License - See LICENSE.txt for details
+- MIT License - See LICENSE.txt for details
+- GNU Lesser General Public License - See LICENSE.txt for details
 
 ---
 
