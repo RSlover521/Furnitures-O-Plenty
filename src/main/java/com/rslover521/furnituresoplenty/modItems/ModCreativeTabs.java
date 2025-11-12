@@ -5,7 +5,7 @@ import com.rslover521.furnituresoplenty.FurnituresOPlenty;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.network.chat.Component;
 import net.minecraft.world.item.CreativeModeTab;
-import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
+import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.RegistryObject;
 import net.minecraft.world.item.ItemStack;
@@ -14,8 +14,7 @@ public class ModCreativeTabs {
 	public static final DeferredRegister<CreativeModeTab> CREATIVE_MODE_TABS = 
 			DeferredRegister.create(Registries.CREATIVE_MODE_TAB, FurnituresOPlenty.MODID);
 
-	@SuppressWarnings("null")
-    public static final RegistryObject<CreativeModeTab> FURNITURE_COMPAT_TAB = CREATIVE_MODE_TABS.register("furnituresoplenty",
+	public static final RegistryObject<CreativeModeTab> FURNITURE_COMPAT_TAB = CREATIVE_MODE_TABS.register("furnituresoplenty",
             () -> CreativeModeTab.builder()
                     .title(Component.translatable("itemGroup." + FurnituresOPlenty.MODID))
                     .icon(() -> new ItemStack(ModBlocks.MAPLE_CHAIR.get())) // example icon
@@ -323,8 +322,7 @@ public class ModCreativeTabs {
                         })
                     .build());
 	
-	@SuppressWarnings("removal")
-	public static void register() {
-		CREATIVE_MODE_TABS.register(FMLJavaModLoadingContext.get().getModEventBus());
+	public static void register(IEventBus eventBus) {
+		CREATIVE_MODE_TABS.register(eventBus);
 	}
 }

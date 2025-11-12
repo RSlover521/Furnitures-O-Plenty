@@ -25,9 +25,9 @@ public class FurnituresOPlenty {
         IEventBus modEventBus = context.getModEventBus();
 
         ModBlocks.register(modEventBus);
-        ModCreativeTabs.register();
+        ModCreativeTabs.register(modEventBus);
         
-        ModBlockEntities.BLOCK_ENTITIES.register(modEventBus);
+        ModBlockEntities.register(modEventBus);
 
         // Defer init until after registries exist
         context.getModEventBus().addListener(this::commonSetup);
