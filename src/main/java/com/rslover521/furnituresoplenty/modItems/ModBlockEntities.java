@@ -14,6 +14,7 @@ import com.rslover521.furnituresoplenty.customBlockEntities.CustomStorageJarBloc
 import com.rslover521.furnituresoplenty.customBlockEntities.CustomToiletBlockEntity;
 import com.rslover521.furnituresoplenty.customBlockEntities.CustomStorageCabinetBlockEntity;
 import net.minecraft.world.level.block.entity.BlockEntityType;
+import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.RegistryObject;
@@ -271,4 +272,8 @@ public class ModBlockEntities {
                             ModBlocks.HELLBARK_TOILET.get(),
                             ModBlocks.EMPYREAL_TOILET.get()
                      ).build(null));
+
+        public static void register(IEventBus eventBus) {
+                BLOCK_ENTITIES.register(eventBus);
+        }
 }
