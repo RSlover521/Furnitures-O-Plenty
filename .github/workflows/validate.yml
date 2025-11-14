@@ -43,5 +43,5 @@ jobs:
         run: |
           CLASSPATH=$(echo "$CLASSPATH_B64" | base64 --decode)
           export CLASSPATH
-          cd tools/validator
+          cd util/validators
           ./run.sh
