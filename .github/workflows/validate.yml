@@ -31,7 +31,7 @@ jobs:
       - name: Build mod
         run: ./gradlew build --no-daemon
 
-      - name: Compile & Run Validator
+      - name: Run validator
         run: |
           chmod +x run.sh
           ./run.sh
