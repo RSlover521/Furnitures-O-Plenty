@@ -7,10 +7,9 @@ import java.util.*;
 
 public class ModValidator {
 
-    // Your mod ID
     private static final String MOD_ID = "furnituresoplenty";
 
-    // List of external mod namespaces to ignore
+    // External mods to ignore
     private static final Set<String> EXTERNAL_MODS = Set.of(
             "minecraft",
             "biomesoplenty",
@@ -19,7 +18,6 @@ public class ModValidator {
             "terrablender"
     );
 
-    // Paths to check
     private static final Path RESOURCES_DIR = Paths.get("src/main/resources/assets", MOD_ID);
     private static final Path MODELS_BLOCK = RESOURCES_DIR.resolve("models/block");
     private static final Path MODELS_ITEM = RESOURCES_DIR.resolve("models/item");
@@ -27,34 +25,44 @@ public class ModValidator {
 
     public static void main(String[] args) throws IOException {
         System.out.println("Starting mod validator...");
+        boolean failed = false;
 
-        validateFolder(MODELS_BLOCK);
-        validateFolder(MODELS_ITEM);
+        failed |= validateFolder(MODELS_BLOCK);
+        failed |= validateFolder(MODELS_ITEM);
 
-        System.out.println("Validation complete.");
-    }
-
-    private static void validateFolder(Path folder) throws IOException {
-        if (!Files.exists(folder)) return;
-
-        try (DirectoryStream<Path> stream = Files.newDirectoryStream(folder, "*.json")) {
-            for (Path f : stream) {
-                validateJsonFile(f);
-            }
+        if (failed) {
+            System.out.println("Validation finished: MISSING FILES DETECTED!");
+            System.exit(1); // fail CI if missing files
+        } else {
+            System.out.println("Validation finished: ALL FILES OK!");
         }
     }
 
-    private static void validateJsonFile(Path f) {
+    private static boolean validateFolder(Path folder) throws IOException {
+        boolean missingFound = false;
+        if (!Files.exists(folder)) return missingFound;
+
+        try (DirectoryStream<Path> stream = Files.newDirectoryStream(folder, "*.json")) {
+            for (Path f : stream) {
+                boolean fileFailed = validateJsonFile(f);
+                if (fileFailed) missingFound = true;
+            }
+        }
+        return missingFound;
+    }
+
+    private static boolean validateJsonFile(Path f) {
+        boolean failed = false;
         try (Reader reader = Files.newBufferedReader(f)) {
             JsonElement elem = JsonParser.parseReader(reader);
             if (!elem.isJsonObject()) {
                 System.out.println("[Invalid JSON] " + f.getFileName());
-                return;
+                return true;
             }
 
             JsonObject json = elem.getAsJsonObject();
 
-            // Validate parent
+            // Parent check
             if (json.has("parent")) {
                 String parent = json.get("parent").getAsString();
                 if (!isExternalNamespace(parent)) {
@@ -69,31 +77,35 @@ public class ModValidator {
                     }
                     if (!Files.exists(parentPath)) {
                         System.out.println("[Missing parent] In " + f.getFileName() + " → " + parentPath);
+                        failed = true;
                     }
                 }
             }
 
-            // Validate textures
+            // Textures check
             if (json.has("textures")) {
                 JsonObject textures = json.getAsJsonObject("textures");
                 for (String key : textures.keySet()) {
                     String tex = textures.get(key).getAsString();
                     if (isExternalNamespace(tex)) continue;
 
-                    // Resolve internal path
                     if (!tex.contains(":")) tex = MOD_ID + ":" + tex;
                     String texPathStr = tex.split(":", 2)[1];
                     Path texPath = TEXTURES.resolve(texPathStr + ".png");
 
                     if (!Files.exists(texPath)) {
                         System.out.println("[Missing texture] " + f.getFileName() + " → " + texPath);
+                        failed = true;
                     }
                 }
             }
 
         } catch (Exception e) {
             System.out.println("[Error reading JSON] " + f.getFileName() + " → " + e.getMessage());
+            failed = true;
         }
+
+        return failed;
     }
 
     private static boolean isExternalNamespace(String str) {
