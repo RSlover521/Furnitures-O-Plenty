@@ -31,11 +31,11 @@ jobs:
       - name: Run Gradle build
         run: ./gradlew build --no-daemon
 
-      - name: Setup validator classpath (encoded)
-        id: classpath
+      - name: Setup validator classpath
         run: |
           RAW_CP=$(./gradlew -q printClasspath)
-          echo "CLASSPATH_B64=$(echo "$RAW_CP" | base64 -w0)" >> $GITHUB_ENV
+          ENCODED=$(echo -n "$RAW_CP" | base64)
+          echo "CLASSPATH_B64=$ENCODED" >> $GITHUB_ENV
 
       - name: Run custom validator
         env:
@@ -43,5 +43,4 @@ jobs:
         run: |
           CLASSPATH=$(echo "$CLASSPATH_B64" | base64 --decode)
           export CLASSPATH
-          cd util/validators
           ./run.sh
