@@ -33,7 +33,7 @@ jobs:
 
       - name: Setup validator classpath
         run: |
-          ./gradlew -q printClasspath > classpath.txt
+          ./gradlew -q printClasspath --console=plain | tail -n 1 > classpath.txt
 
       - name: Run custom validator
         run: |
