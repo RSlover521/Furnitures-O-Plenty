@@ -39,4 +39,5 @@ jobs:
         run: |
           CLASSPATH=$(cat classpath.txt)
           export CLASSPATH
+          chmod +x run.sh
           ./run.sh
