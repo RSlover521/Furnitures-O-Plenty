@@ -238,3 +238,10 @@ jar {
 	archiveBaseName.set("${mod_id}-${minecraft_version}") // Base mod name
 	archiveVersion.set(mod_version) // Version
 }
+
+task printClasspath {
+    doLast {
+        println sourceSets.main.runtimeClasspath.asPath
+    }
+}
+

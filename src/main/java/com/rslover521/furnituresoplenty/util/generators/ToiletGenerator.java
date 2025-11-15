@@ -1,0 +1,78 @@
+package com.rslover521.furnituresoplenty.util.generators;
+
+import java.io.IOException;
+import java.nio.file.Files;
+import java.nio.file.Path;
+
+public class ToiletGenerator {
+
+    private static final String MOD_ID = "furnituresoplenty";
+
+    private static final String[] WOOD_TYPES = {
+            "fir", "pine", "maple", "redwood", "mahogany", "jacaranda",
+            "palm", "willow", "dead", "magic", "umbran", "hellbark", "empyreal"
+    };
+
+    public static void main(String[] args) {
+        Path output = Path.of("src/main/resources/");
+
+        try {
+            for (String wood : WOOD_TYPES) {
+                generateBlockstate(output, wood);
+                generateBlockModel(output, wood);
+                generateItemModel(output, wood);
+            }
+            System.out.println("✅ Toilet JSONs generated for all wood types!");
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+    }
+
+    private static void generateBlockstate(Path output, String wood) throws IOException {
+        String json = """
+        {
+          "variants": {
+            "facing=east":  { "model": "%MODID%:block/%WOOD%_toilet", "y": 90 },
+            "facing=north": { "model": "%MODID%:block/%WOOD%_toilet" },
+            "facing=south": { "model": "%MODID%:block/%WOOD%_toilet", "y": 180 },
+            "facing=west":  { "model": "%MODID%:block/%WOOD%_toilet", "y": 270 }
+          }
+        }
+        """.replace("%MODID%", MOD_ID)
+           .replace("%WOOD%", wood);
+
+        Path path = output.resolve("assets/" + MOD_ID + "/blockstates/" + wood + "_toilet.json");
+        Files.createDirectories(path.getParent());
+        Files.writeString(path, json);
+    }
+
+    private static void generateBlockModel(Path output, String wood) throws IOException {
+        String json = """
+        {
+          "parent": "%MODID%:block/toilet",
+          "textures": {
+            "particle": "biomesoplenty:block/%WOOD%_planks",
+            "texture": "%MODID%:block/%WOOD%_toilet"
+          }
+        }
+        """.replace("%MODID%", MOD_ID)
+           .replace("%WOOD%", wood);
+
+        Path path = output.resolve("assets/" + MOD_ID + "/models/block/" + wood + "_toilet.json");
+        Files.createDirectories(path.getParent());
+        Files.writeString(path, json);
+    }
+
+    private static void generateItemModel(Path output, String wood) throws IOException {
+        String json = """
+        {
+          "parent": "%MODID%:block/%WOOD%_toilet"
+        }
+        """.replace("%MODID%", MOD_ID)
+           .replace("%WOOD%", wood);
+
+        Path path = output.resolve("assets/" + MOD_ID + "/models/item/" + wood + "_toilet.json");
+        Files.createDirectories(path.getParent());
+        Files.writeString(path, json);
+    }
+}

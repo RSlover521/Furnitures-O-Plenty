@@ -5,7 +5,7 @@ import com.rslover521.furnituresoplenty.FurnituresOPlenty;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.network.chat.Component;
 import net.minecraft.world.item.CreativeModeTab;
-import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
+import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.RegistryObject;
 import net.minecraft.world.item.ItemStack;
@@ -322,8 +322,7 @@ public class ModCreativeTabs {
                         })
                     .build());
 	
-	@SuppressWarnings("removal")
-	public static void register() {
-		CREATIVE_MODE_TABS.register(FMLJavaModLoadingContext.get().getModEventBus());
+	public static void register(IEventBus eventBus) {
+		CREATIVE_MODE_TABS.register(eventBus);
 	}
 }
