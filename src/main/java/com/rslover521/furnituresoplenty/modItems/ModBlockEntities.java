@@ -17,7 +17,7 @@ import net.minecraft.world.level.block.entity.BlockEntityType;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.RegistryObject;
-@SuppressWarnings("null")
+
 public class ModBlockEntities {
 	public static final DeferredRegister<BlockEntityType<?>> BLOCK_ENTITIES = 
 			DeferredRegister.create(ForgeRegistries.BLOCK_ENTITY_TYPES, FurnituresOPlenty.MODID);
@@ -149,7 +149,7 @@ public class ModBlockEntities {
                     ).build(null));
 
 	public static final RegistryObject<BlockEntityType<CustomKitchenDrawerBlockEntity>> CUSTOM_KITCHEN_DRAWER = 
-			BLOCK_ENTITIES.register("custom_block_entities", 
+			BLOCK_ENTITIES.register("custom_kitchen_drawer", 
 					() -> BlockEntityType.Builder.of(CustomKitchenDrawerBlockEntity::new, 
 							ModBlocks.FIR_KITCHEN_DRAWER.get(),
                             ModBlocks.PINE_KITCHEN_DRAWER.get(),
@@ -255,7 +255,7 @@ public class ModBlockEntities {
                     ).build(null));
     
     public static final RegistryObject<BlockEntityType<CustomToiletBlockEntity>> CUSTOM_TOILET = 
-    		BLOCK_ENTITIES.register("custom_toilet_entities", 
+    		BLOCK_ENTITIES.register("custom_toilet", 
     				() -> BlockEntityType.Builder.of(CustomToiletBlockEntity::new,
     						ModBlocks.FIR_TOILET.get(),
                             ModBlocks.PINE_TOILET.get(),

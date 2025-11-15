@@ -9,7 +9,7 @@ import java.util.HashMap;
 import java.util.Map;
 
 /*
- * TEXTURING COLORS:
+ * TEXTURING COLORS (hue, saturation, lightness):
  * fir: (0, -55, -30) 
  * pine: (64, 37, -51) 
  * maple: (-34, 0, -39) 
@@ -23,82 +23,114 @@ import java.util.Map;
  * umbran: (-160, 5, -65) 
  * hellbark: (-132, 34, -93) 
  * empyreal: (-132, 34, -52)
- * 
 */
 
 public class WoodTextureRecolorer {
 
-    private static final String[] WOOD_TYPES = {
-            "fir", "pine", "maple", "redwood", "mahogany", "jacaranda",
-            "palm", "willow", "dead", "magic", "umbran", "hellbark", "empyreal"
-    };
+    private static final Map<String, float[]> WOOD_HSL_ADJUSTMENTS = new HashMap<>();
 
-    // Map each wood type to its target color (example RGBs, adjust to your palette)
-    private static final Map<String, Color> WOOD_COLORS = new HashMap<>();
     static {
-        WOOD_COLORS.put("fir", new Color(120, 80, 70));          // a little gray
-        WOOD_COLORS.put("pine", new Color(80, 120, 60));         // more green
-        WOOD_COLORS.put("maple", new Color(120, 70, 40));        // darker, like jungle but darker
-        WOOD_COLORS.put("redwood", new Color(160, 30, 30));      // more red, pure red tone
-        WOOD_COLORS.put("mahogany", new Color(160, 60, 90));     // a bit more light magenta
-        WOOD_COLORS.put("jacaranda", new Color(240, 240, 240));  // mostly white
-        WOOD_COLORS.put("palm", new Color(200, 180, 70));        // more yellow
-        WOOD_COLORS.put("willow", new Color(60, 90, 50));        // darker green
-        WOOD_COLORS.put("dead", new Color(120, 120, 120));       // less contrast, gray-ish
-        WOOD_COLORS.put("magic", new Color(90, 50, 140));        // unchanged
-        WOOD_COLORS.put("umbran", new Color(40, 40, 80));        // darker blue
-        WOOD_COLORS.put("hellbark", new Color(60, 30, 80));      // darker purple
-        WOOD_COLORS.put("empyreal", new Color(200, 180, 220));   // unchanged
+        WOOD_HSL_ADJUSTMENTS.put("fir", new float[]{0, -55, -30});
+        WOOD_HSL_ADJUSTMENTS.put("pine", new float[]{64, 37, -51});
+        WOOD_HSL_ADJUSTMENTS.put("maple", new float[]{-34, 0, -39});
+        WOOD_HSL_ADJUSTMENTS.put("redwood", new float[]{-44, 70, -20});
+        WOOD_HSL_ADJUSTMENTS.put("mahogany", new float[]{-84, 30, -24});
+        WOOD_HSL_ADJUSTMENTS.put("jacaranda", new float[]{0, -100, 30});
+        WOOD_HSL_ADJUSTMENTS.put("palm", new float[]{7, 61, -22});
+        WOOD_HSL_ADJUSTMENTS.put("willow", new float[]{79, -23, -27});
+        WOOD_HSL_ADJUSTMENTS.put("dead", new float[]{-180, -100, -20});
+        WOOD_HSL_ADJUSTMENTS.put("magic", new float[]{-163, 0, 0});
+        WOOD_HSL_ADJUSTMENTS.put("umbran", new float[]{-160, 5, -65});
+        WOOD_HSL_ADJUSTMENTS.put("hellbark", new float[]{-132, 34, -93});
+        WOOD_HSL_ADJUSTMENTS.put("empyreal", new float[]{-132, 34, -52});
     }
 
     public static void main(String[] args) throws IOException {
-        File inputFile = new File("src/main/resources/assets/furnituresoplenty/textures/block/birch_table.png"); // base Birch table
-        BufferedImage baseImage = ImageIO.read(inputFile);
+        File input = new File("src/main/resources/assets/furnituresoplenty/textures/block/birch_table.png");
+        BufferedImage baseImage = ImageIO.read(input);
 
-        File outputFolder = new File("src/main/resources/assets/furnituresoplenty/textures/recolored");
-        if (!outputFolder.exists()) outputFolder.mkdirs();
+        // Define output directory
+        File outputDir = new File("src/main/resources/assets/furnituresoplenty/textures/block");
+        outputDir.mkdirs(); // create directories if missing
 
-        for (String wood : WOOD_TYPES) {
-            Color targetColor = WOOD_COLORS.get(wood);
-            BufferedImage recolored = recolorTexture(baseImage, targetColor);
-            File outputFile = new File(outputFolder, wood + "_table.png");
+        for (String wood : WOOD_HSL_ADJUSTMENTS.keySet()) {
+            float[] adj = WOOD_HSL_ADJUSTMENTS.get(wood);
+            BufferedImage recolored = recolor(baseImage, adj[0], adj[1], adj[2]);
+            File outputFile = new File(outputDir, wood + "_table.png");
             ImageIO.write(recolored, "png", outputFile);
-            System.out.println("Generated: " + outputFile.getName());
+            System.out.println("Generated " + outputFile.getPath());
         }
 
-        System.out.println("All textures recolored!");
+        System.out.println("All recolors generated to: " + outputDir.getPath());
     }
 
-    private static BufferedImage recolorTexture(BufferedImage image, Color targetColor) {
-        int width = image.getWidth();
-        int height = image.getHeight();
-        BufferedImage result = new BufferedImage(width, height, BufferedImage.TYPE_INT_ARGB);
+    private static BufferedImage recolor(BufferedImage img, float hueShift, float satAdjust, float lightAdjust) {
+        BufferedImage result = new BufferedImage(img.getWidth(), img.getHeight(), BufferedImage.TYPE_INT_ARGB);
 
-        // Compute target hue in HSB
-        float[] targetHSB = Color.RGBtoHSB(targetColor.getRed(), targetColor.getGreen(), targetColor.getBlue(), null);
+        for (int y = 0; y < img.getHeight(); y++) {
+            for (int x = 0; x < img.getWidth(); x++) {
+                int rgb = img.getRGB(x, y);
+                Color color = new Color(rgb, true);
 
-        for (int y = 0; y < height; y++) {
-            for (int x = 0; x < width; x++) {
-                int argb = image.getRGB(x, y);
-                Color pixel = new Color(argb, true);
-
-                // Skip fully transparent pixels
-                if (pixel.getAlpha() == 0) {
-                    result.setRGB(x, y, argb);
+                if (color.getAlpha() == 0) { // skip transparent pixels
+                    result.setRGB(x, y, rgb);
                     continue;
                 }
 
-                // Convert pixel to HSB
-                float[] hsb = Color.RGBtoHSB(pixel.getRed(), pixel.getGreen(), pixel.getBlue(), null);
+                float[] hsl = rgbToHsl(color.getRed(), color.getGreen(), color.getBlue());
 
-                // Replace hue with target hue, keep original saturation & brightness
-                int newRGB = Color.HSBtoRGB(targetHSB[0], hsb[1], hsb[2]);
-                Color newColor = new Color(newRGB);
-                // Preserve alpha
-                Color finalColor = new Color(newColor.getRed(), newColor.getGreen(), newColor.getBlue(), pixel.getAlpha());
-                result.setRGB(x, y, finalColor.getRGB());
+                hsl[0] = (hsl[0] + hueShift + 360) % 360f;
+                hsl[1] = clamp(hsl[1] + satAdjust / 100f, 0f, 1f);
+                hsl[2] = clamp(hsl[2] + lightAdjust / 100f, 0f, 1f);
+
+                int newRgb = hslToRgb(hsl[0], hsl[1], hsl[2], color.getAlpha());
+                result.setRGB(x, y, newRgb);
             }
         }
+
         return result;
+    }
+
+    private static float[] rgbToHsl(int r, int g, int b) {
+        float rf = r / 255f, gf = g / 255f, bf = b / 255f;
+        float max = Math.max(rf, Math.max(gf, bf));
+        float min = Math.min(rf, Math.min(gf, bf));
+        float h, s, l = (max + min) / 2f;
+
+        if (max == min) {
+            h = s = 0f;
+        } else {
+            float d = max - min;
+            s = l > 0.5f ? d / (2f - max - min) : d / (max + min);
+            if (max == rf) h = (gf - bf) / d + (gf < bf ? 6f : 0f);
+            else if (max == gf) h = (bf - rf) / d + 2f;
+            else h = (rf - gf) / d + 4f;
+            h *= 60f;
+        }
+        return new float[]{h, s, l};
+    }
+
+    private static int hslToRgb(float h, float s, float l, int alpha) {
+        float c = (1 - Math.abs(2 * l - 1)) * s;
+        float x = c * (1 - Math.abs((h / 60f) % 2 - 1));
+        float m = l - c / 2f;
+
+        float rf, gf, bf;
+        if (h < 60) { rf = c; gf = x; bf = 0; }
+        else if (h < 120) { rf = x; gf = c; bf = 0; }
+        else if (h < 180) { rf = 0; gf = c; bf = x; }
+        else if (h < 240) { rf = 0; gf = x; bf = c; }
+        else if (h < 300) { rf = x; gf = 0; bf = c; }
+        else { rf = c; gf = 0; bf = x; }
+
+        int r = Math.round(clamp((rf + m) * 255, 0, 255));
+        int g = Math.round(clamp((gf + m) * 255, 0, 255));
+        int b = Math.round(clamp((bf + m) * 255, 0, 255));
+
+        return new Color(r, g, b, alpha).getRGB();
+    }
+
+    private static float clamp(float val, float min, float max) {
+        return Math.max(min, Math.min(max, val));
     }
 }
