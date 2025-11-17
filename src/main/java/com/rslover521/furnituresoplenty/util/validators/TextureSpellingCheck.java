@@ -4,6 +4,10 @@ import java.io.File;
 import java.util.ArrayList;
 
 public class TextureSpellingCheck {
+    public static void main(String[] args) {
+        run();
+    }
+
     public static void run() {
         String folderPath = "src/main/resources/assets/furnituresoplenty/textures/block";
         File root = new File(folderPath);
