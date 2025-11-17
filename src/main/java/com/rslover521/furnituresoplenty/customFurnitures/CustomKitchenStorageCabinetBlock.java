@@ -1,15 +1,15 @@
 package com.rslover521.furnituresoplenty.customFurnitures;
 
-import com.mrcrayfish.furniture.refurbished.block.KitchenStorageCabinetBlock;
+import com.mrcrayfish.furniture.refurbished.block.WoodenKitchenStorageCabinetBlock;
 
+import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.minecraft.world.level.block.state.properties.WoodType;
-import net.minecraft.world.level.material.MapColor;
 
-public class CustomKitchenStorageCabinetBlock extends KitchenStorageCabinetBlock {
+public class CustomKitchenStorageCabinetBlock extends WoodenKitchenStorageCabinetBlock {
 	private WoodType woodType;
 
-	public CustomKitchenStorageCabinetBlock(WoodType woodType) {
-		super(Properties.of().mapColor(MapColor.WOOD).strength(2.0F, 3.0F));
+	public CustomKitchenStorageCabinetBlock(WoodType woodType, BlockBehaviour.Properties properties) {
+		super(woodType, properties);
 		this.woodType = woodType;
 	}
 

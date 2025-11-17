@@ -1,18 +1,15 @@
 package com.rslover521.furnituresoplenty.customFurnitures;
 
-import com.mrcrayfish.furniture.refurbished.block.KitchenSinkBlock;
+import com.mrcrayfish.furniture.refurbished.block.WoodenKitchenSinkBlock;
 
+import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.minecraft.world.level.block.state.properties.WoodType;
-import net.minecraft.world.level.material.MapColor;
 
-public class CustomKitchenSinkBlock extends KitchenSinkBlock {
+public class CustomKitchenSinkBlock extends WoodenKitchenSinkBlock {
 	private WoodType woodType;
 	
-	public CustomKitchenSinkBlock(WoodType woodType) {
-		super(Properties.of()
-				.mapColor(MapColor.WOOD)
-				.strength(2.0F, 3.0F)
-				);
+	public CustomKitchenSinkBlock(WoodType woodType, BlockBehaviour.Properties properties) {
+		super(woodType, properties);
 		this.woodType = woodType;
 	}
 	

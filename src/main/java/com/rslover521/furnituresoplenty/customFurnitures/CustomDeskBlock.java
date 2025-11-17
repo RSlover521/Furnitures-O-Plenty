@@ -2,17 +2,14 @@ package com.rslover521.furnituresoplenty.customFurnitures;
 
 import com.mrcrayfish.furniture.refurbished.block.DeskBlock;
 
+import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.minecraft.world.level.block.state.properties.WoodType;
-import net.minecraft.world.level.material.MapColor;
 
 public class CustomDeskBlock extends DeskBlock {
 	private WoodType woodType;
 	
-	public CustomDeskBlock(WoodType woodType) {
-		super(woodType, Properties.of()
-			.strength(2.0F)
-			.mapColor(MapColor.WOOD)
-		);
+	public CustomDeskBlock(WoodType woodType, BlockBehaviour.Properties properties) {
+		super(woodType, properties);
 		this.woodType = woodType;
 	}
 
