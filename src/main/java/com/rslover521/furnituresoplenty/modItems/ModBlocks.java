@@ -37,6 +37,65 @@ import net.minecraftforge.registries.RegistryObject;
 import static java.util.Map.entry;
 
 public class ModBlocks {
+	
+	// Current Error:
+	/*A detailed walkthrough of the error, its code path and all known details is as follows:
+		---------------------------------------------------------------------------------------
+
+		-- Head --
+		Thread: Render thread
+		Suspected Mods: NONE
+		Stacktrace:
+			at java.util.Objects.requireNonNull(Objects.java:209) ~[?:?] {re:mixin}
+		-- MOD furnituresoplenty --
+		Details:
+			Caused by 0: java.lang.ExceptionInInitializerError
+				at com.rslover521.furnituresoplenty.FurnituresOPlenty.<init>(FurnituresOPlenty.java:27) ~[furnituresoplenty-1.20.1-1.0.1.jar%23296!/:1.0.1] {re:classloading}
+				at jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method) ~[?:?] {}
+				at jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77) ~[?:?] {}
+				at jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45) ~[?:?] {}
+				at java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500) ~[?:?] {}
+				at java.lang.reflect.Constructor.newInstance(Constructor.java:481) ~[?:?] {}
+				at net.minecraftforge.fml.javafmlmod.FMLModContainer.constructMod(FMLModContainer.java:77) ~[javafmllanguage-1.20.1-47.4.0.jar%23330!/:?] {}
+				at net.minecraftforge.fml.ModContainer.lambda$buildTransitionHandler$5(ModContainer.java:126) ~[fmlcore-1.20.1-47.4.0.jar%23329!/:?] {}
+				at java.util.concurrent.CompletableFuture$AsyncRun.run(CompletableFuture.java:1804) ~[?:?] {}
+				at java.util.concurrent.CompletableFuture$AsyncRun.exec(CompletableFuture.java:1796) ~[?:?] {}
+				at java.util.concurrent.ForkJoinTask.doExec(ForkJoinTask.java:373) ~[?:?] {}
+				at java.util.concurrent.ForkJoinPool$WorkQueue.topLevelExec(ForkJoinPool.java:1182) ~[?:?] {}
+				at java.util.concurrent.ForkJoinPool.scan(ForkJoinPool.java:1655) ~[?:?] {re:computing_frames}
+				at java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:1622) ~[?:?] {re:computing_frames}
+				at java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:165) ~[?:?] {}
+
+			Mod File: /D:/.minecraft/mods/furnituresoplenty-1.20.1-1.0.1.jar
+			Failure message: Furnitures O' Plenty (furnituresoplenty) has failed to load correctly
+				java.lang.ExceptionInInitializerError: null
+			Mod Version: 1.0.1
+			Mod Issue URL: NOT PROVIDED
+			Exception message: java.lang.NullPointerException
+		Stacktrace:
+			at java.util.Objects.requireNonNull(Objects.java:209) ~[?:?] {re:mixin}
+			at java.util.KeyValueHolder.<init>(KeyValueHolder.java:62) ~[?:?] {}
+			at java.util.Map.entry(Map.java:1709) ~[?:?] {re:mixin}
+			at com.rslover521.furnituresoplenty.modItems.ModBlocks.<clinit>(ModBlocks.java:42) ~[furnituresoplenty-1.20.1-1.0.1.jar%23296!/:1.0.1] {re:classloading}
+			at com.rslover521.furnituresoplenty.FurnituresOPlenty.<init>(FurnituresOPlenty.java:27) ~[furnituresoplenty-1.20.1-1.0.1.jar%23296!/:1.0.1] {re:classloading}
+			at jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method) ~[?:?] {}
+			at jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77) ~[?:?] {}
+			at jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45) ~[?:?] {}
+			at java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500) ~[?:?] {}
+			at java.lang.reflect.Constructor.newInstance(Constructor.java:481) ~[?:?] {}
+			at net.minecraftforge.fml.javafmlmod.FMLModContainer.constructMod(FMLModContainer.java:77) ~[javafmllanguage-1.20.1-47.4.0.jar%23330!/:?] {}
+			at net.minecraftforge.fml.ModContainer.lambda$buildTransitionHandler$5(ModContainer.java:126) ~[fmlcore-1.20.1-47.4.0.jar%23329!/:?] {}
+			at java.util.concurrent.CompletableFuture$AsyncRun.run(CompletableFuture.java:1804) ~[?:?] {}
+			at java.util.concurrent.CompletableFuture$AsyncRun.exec(CompletableFuture.java:1796) ~[?:?] {}
+			at java.util.concurrent.ForkJoinTask.doExec(ForkJoinTask.java:373) ~[?:?] {}
+			at java.util.concurrent.ForkJoinPool$WorkQueue.topLevelExec(ForkJoinPool.java:1182) ~[?:?] {}
+			at java.util.concurrent.ForkJoinPool.scan(ForkJoinPool.java:1655) ~[?:?] {re:computing_frames}
+			at java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:1622) ~[?:?] {re:computing_frames}
+			at java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:165) ~[?:?] {}
+			*/
+
+
+	
 	// Util Map
 	public static final Map<WoodType, Block> BOP_PLANKS_BY_WOOD = Map.ofEntries(
 			entry(BOPWoodTypes.FIR, BOPBlocks.FIR_PLANKS),
@@ -46,14 +105,13 @@ public class ModBlocks {
 	        entry(BOPWoodTypes.MAHOGANY, BOPBlocks.MAHOGANY_PLANKS),
 	        entry(BOPWoodTypes.JACARANDA, BOPBlocks.JACARANDA_PLANKS),
 	        entry(BOPWoodTypes.PALM, BOPBlocks.PALM_PLANKS),
-	        entry(BOPWoodTypes.WILLOW, BOPBlocks.WILLOW_PLANKS),
 	        entry(BOPWoodTypes.DEAD, BOPBlocks.DEAD_PLANKS),
 	        entry(BOPWoodTypes.MAGIC, BOPBlocks.MAGIC_PLANKS),
+	        entry(BOPWoodTypes.WILLOW, BOPBlocks.WILLOW_PLANKS),
 	        entry(BOPWoodTypes.UMBRAN, BOPBlocks.UMBRAN_PLANKS),
 	        entry(BOPWoodTypes.HELLBARK, BOPBlocks.HELLBARK_PLANKS),
 	        entry(BOPWoodTypes.EMPYREAL, BOPBlocks.EMPYREAL_PLANKS)
 	);
-
 	
 	public static final DeferredRegister<Block> BLOCKS = 
 			DeferredRegister.create(ForgeRegistries.BLOCKS, FurnituresOPlenty.MODID);
