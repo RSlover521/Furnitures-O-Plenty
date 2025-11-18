@@ -1,6 +1,7 @@
 package com.rslover521.furnituresoplenty.modItems;
 
 import java.util.Map;
+import java.util.function.Supplier;
 
 import com.mrcrayfish.furniture.refurbished.block.MetalType;
 import com.rslover521.furnituresoplenty.FurnituresOPlenty;
@@ -97,20 +98,20 @@ public class ModBlocks {
 
 	
 	// Util Map
-	public static final Map<WoodType, Block> BOP_PLANKS_BY_WOOD = Map.ofEntries(
-			entry(BOPWoodTypes.FIR, BOPBlocks.FIR_PLANKS),
-			entry(BOPWoodTypes.PINE, BOPBlocks.PINE_PLANKS),
-			entry(BOPWoodTypes.MAPLE, BOPBlocks.MAPLE_PLANKS),
-	        entry(BOPWoodTypes.REDWOOD, BOPBlocks.REDWOOD_PLANKS),
-	        entry(BOPWoodTypes.MAHOGANY, BOPBlocks.MAHOGANY_PLANKS),
-	        entry(BOPWoodTypes.JACARANDA, BOPBlocks.JACARANDA_PLANKS),
-	        entry(BOPWoodTypes.PALM, BOPBlocks.PALM_PLANKS),
-	        entry(BOPWoodTypes.DEAD, BOPBlocks.DEAD_PLANKS),
-	        entry(BOPWoodTypes.MAGIC, BOPBlocks.MAGIC_PLANKS),
-	        entry(BOPWoodTypes.WILLOW, BOPBlocks.WILLOW_PLANKS),
-	        entry(BOPWoodTypes.UMBRAN, BOPBlocks.UMBRAN_PLANKS),
-	        entry(BOPWoodTypes.HELLBARK, BOPBlocks.HELLBARK_PLANKS),
-	        entry(BOPWoodTypes.EMPYREAL, BOPBlocks.EMPYREAL_PLANKS)
+	public static final Map<WoodType, Supplier<Block>> BOP_PLANKS_BY_WOOD = Map.ofEntries(
+			entry(BOPWoodTypes.FIR, () -> BOPBlocks.FIR_PLANKS),
+			entry(BOPWoodTypes.PINE, () -> BOPBlocks.PINE_PLANKS),
+			entry(BOPWoodTypes.MAPLE, () -> BOPBlocks.MAPLE_PLANKS),
+	        entry(BOPWoodTypes.REDWOOD, () -> BOPBlocks.REDWOOD_PLANKS),
+	        entry(BOPWoodTypes.MAHOGANY, () -> BOPBlocks.MAHOGANY_PLANKS),
+	        entry(BOPWoodTypes.JACARANDA, () -> BOPBlocks.JACARANDA_PLANKS),
+	        entry(BOPWoodTypes.PALM, () -> BOPBlocks.PALM_PLANKS),
+	        entry(BOPWoodTypes.DEAD, () -> BOPBlocks.DEAD_PLANKS),
+	        entry(BOPWoodTypes.MAGIC, () -> BOPBlocks.MAGIC_PLANKS),
+	        entry(BOPWoodTypes.WILLOW, () -> BOPBlocks.WILLOW_PLANKS),
+	        entry(BOPWoodTypes.UMBRAN, () -> BOPBlocks.UMBRAN_PLANKS),
+	        entry(BOPWoodTypes.HELLBARK, () -> BOPBlocks.HELLBARK_PLANKS),
+	        entry(BOPWoodTypes.EMPYREAL, () -> BOPBlocks.EMPYREAL_PLANKS)
 	);
 	
 	public static final DeferredRegister<Block> BLOCKS = 
@@ -685,272 +686,291 @@ public class ModBlocks {
 	}
 
 	private static RegistryObject<Block> registerBasin(String name, WoodType woodType) {
-	    RegistryObject<Block> block = BLOCKS.register(name + "_basin", () -> {
-	        Block planks = BOP_PLANKS_BY_WOOD.get(woodType);
-	        if (planks == null)
-	            throw new IllegalArgumentException("Unknown planks for wood type: " + woodType);
+        RegistryObject<Block> block = BLOCKS.register(name + "_basin", () -> {
+            Supplier<Block> plankSupplier = BOP_PLANKS_BY_WOOD.get(woodType);
+            if (plankSupplier == null)
+                throw new IllegalArgumentException("Unknown planks for wood type: " + woodType);
 
-	        return new CustomBasinBlock(woodType, BlockBehaviour.Properties.copy(planks));
-	    });
+            // Unwrap the supplier here, when the registry is actually ready
+            Block planks = plankSupplier.get(); 
+            return new CustomBasinBlock(woodType, BlockBehaviour.Properties.copy(planks));
+        });
 
-	    FurnituresOPlenty.LOGGER.info("Successfully registered block and item for "
-	            + FurnituresOPlenty.MODID + ":" + name + "_basin");
-	    return block;
-	}
+        FurnituresOPlenty.LOGGER.info("Successfully registered block and item for "
+                + FurnituresOPlenty.MODID + ":" + name + "_basin");
+        return block;
+    }
 
-	private static RegistryObject<Block> registerBath(String name, WoodType woodType) {
-	    RegistryObject<Block> block = BLOCKS.register(name + "_bath", () -> {
-	        Block planks = BOP_PLANKS_BY_WOOD.get(woodType);
-	        if (planks == null)
-	            throw new IllegalArgumentException("Unknown planks for wood type: " + woodType);
+    private static RegistryObject<Block> registerBath(String name, WoodType woodType) {
+        RegistryObject<Block> block = BLOCKS.register(name + "_bath", () -> {
+            Supplier<Block> plankSupplier = BOP_PLANKS_BY_WOOD.get(woodType);
+            if (plankSupplier == null)
+                throw new IllegalArgumentException("Unknown planks for wood type: " + woodType);
 
-	        return new CustomBathBlock(woodType, BlockBehaviour.Properties.copy(planks));
-	    });
+            Block planks = plankSupplier.get();
+            return new CustomBathBlock(woodType, BlockBehaviour.Properties.copy(planks));
+        });
 
-	    FurnituresOPlenty.LOGGER.info("Successfully registered block and item for "
-	            + FurnituresOPlenty.MODID + ":" + name + "_bath");
-	    return block;
-	}
+        FurnituresOPlenty.LOGGER.info("Successfully registered block and item for "
+                + FurnituresOPlenty.MODID + ":" + name + "_bath");
+        return block;
+    }
 
-	private static RegistryObject<Block> registerCeilingFans(String metalType, String wood, WoodType woodType) {
-	    MetalType type = metalType.equals("light") ? MetalType.LIGHT : MetalType.DARK;
+    private static RegistryObject<Block> registerCeilingFans(String metalType, String wood, WoodType woodType) {
+        // Assuming MetalType is an enum or class you have access to
+        MetalType type = metalType.equals("light") ? MetalType.LIGHT : MetalType.DARK;
 
-	    RegistryObject<Block> block = BLOCKS.register(metalType + "_" + wood + "_ceiling_fan", () -> {
-	        Block planks = BOP_PLANKS_BY_WOOD.get(woodType);
-	        if (planks == null)
-	            throw new IllegalArgumentException("Unknown planks for wood type: " + woodType);
+        RegistryObject<Block> block = BLOCKS.register(metalType + "_" + wood + "_ceiling_fan", () -> {
+            Supplier<Block> plankSupplier = BOP_PLANKS_BY_WOOD.get(woodType);
+            if (plankSupplier == null)
+                throw new IllegalArgumentException("Unknown planks for wood type: " + woodType);
 
-	        return new CustomCeilingFanBlock(woodType, type, BlockBehaviour.Properties.copy(planks));
-	    });
+            Block planks = plankSupplier.get();
+            return new CustomCeilingFanBlock(woodType, type, BlockBehaviour.Properties.copy(planks));
+        });
 
-	    FurnituresOPlenty.LOGGER.info("Successfully registered block and item for "
-	            + FurnituresOPlenty.MODID + ":" + metalType + "_" + wood + "_ceiling_fan");
-	    return block;
-	}
+        FurnituresOPlenty.LOGGER.info("Successfully registered block and item for "
+                + FurnituresOPlenty.MODID + ":" + metalType + "_" + wood + "_ceiling_fan");
+        return block;
+    }
 
-	private static RegistryObject<Block> registerChair(String name, WoodType woodType) {
-	    RegistryObject<Block> block = BLOCKS.register(name + "_chair", () -> {
-	        Block planks = BOP_PLANKS_BY_WOOD.get(woodType);
-	        if (planks == null)
-	            throw new IllegalArgumentException("Unknown planks for wood type: " + woodType);
+    private static RegistryObject<Block> registerChair(String name, WoodType woodType) {
+        RegistryObject<Block> block = BLOCKS.register(name + "_chair", () -> {
+            Supplier<Block> plankSupplier = BOP_PLANKS_BY_WOOD.get(woodType);
+            if (plankSupplier == null)
+                throw new IllegalArgumentException("Unknown planks for wood type: " + woodType);
 
-	        return new CustomChairBlock(woodType, BlockBehaviour.Properties.copy(planks));
-	    });
+            Block planks = plankSupplier.get();
+            return new CustomChairBlock(woodType, BlockBehaviour.Properties.copy(planks));
+        });
 
-	    FurnituresOPlenty.LOGGER.info("Successfully registered block and item for "
-	            + FurnituresOPlenty.MODID + ":" + name + "_chair");
-	    return block;
-	}
+        FurnituresOPlenty.LOGGER.info("Successfully registered block and item for "
+                + FurnituresOPlenty.MODID + ":" + name + "_chair");
+        return block;
+    }
 
-	private static RegistryObject<Block> registerCrate(String name, WoodType woodType) {
-	    RegistryObject<Block> block = BLOCKS.register(name + "_crate", () -> {
-	        Block planks = BOP_PLANKS_BY_WOOD.get(woodType);
-	        if (planks == null)
-	            throw new IllegalArgumentException("Unknown planks for wood type: " + woodType);
+    private static RegistryObject<Block> registerCrate(String name, WoodType woodType) {
+        RegistryObject<Block> block = BLOCKS.register(name + "_crate", () -> {
+            Supplier<Block> plankSupplier = BOP_PLANKS_BY_WOOD.get(woodType);
+            if (plankSupplier == null)
+                throw new IllegalArgumentException("Unknown planks for wood type: " + woodType);
 
-	        return new CustomCrateBlock(woodType, BlockBehaviour.Properties.copy(planks));
-	    });
+            Block planks = plankSupplier.get();
+            return new CustomCrateBlock(woodType, BlockBehaviour.Properties.copy(planks));
+        });
 
-	    FurnituresOPlenty.LOGGER.info("Successfully registered block and item for "
-	            + FurnituresOPlenty.MODID + ":" + name + "_crate");
-	    return block;
-	}
+        FurnituresOPlenty.LOGGER.info("Successfully registered block and item for "
+                + FurnituresOPlenty.MODID + ":" + name + "_crate");
+        return block;
+    }
 
-	private static RegistryObject<Block> registerCuttingBoard(String name, WoodType woodType) {
-	    RegistryObject<Block> block = BLOCKS.register(name + "_cutting_board", () -> {
-	        Block planks = BOP_PLANKS_BY_WOOD.get(woodType);
-	        if (planks == null)
-	            throw new IllegalArgumentException("Unknown planks for wood type: " + woodType);
+    private static RegistryObject<Block> registerCuttingBoard(String name, WoodType woodType) {
+        RegistryObject<Block> block = BLOCKS.register(name + "_cutting_board", () -> {
+            Supplier<Block> plankSupplier = BOP_PLANKS_BY_WOOD.get(woodType);
+            if (plankSupplier == null)
+                throw new IllegalArgumentException("Unknown planks for wood type: " + woodType);
 
-	        return new CustomCuttingBoardBlock(woodType, BlockBehaviour.Properties.copy(planks));
-	    });
+            Block planks = plankSupplier.get();
+            return new CustomCuttingBoardBlock(woodType, BlockBehaviour.Properties.copy(planks));
+        });
 
-	    FurnituresOPlenty.LOGGER.info("Successfully registered block and item for "
-	            + FurnituresOPlenty.MODID + ":" + name + "_cutting_board");
-	    return block;
-	}
+        FurnituresOPlenty.LOGGER.info("Successfully registered block and item for "
+                + FurnituresOPlenty.MODID + ":" + name + "_cutting_board");
+        return block;
+    }
 
-	private static RegistryObject<Block> registerDesk(String name, WoodType woodType) {
-	    RegistryObject<Block> block = BLOCKS.register(name + "_desk", () -> {
-	        Block planks = BOP_PLANKS_BY_WOOD.get(woodType);
-	        if (planks == null)
-	            throw new IllegalArgumentException("Unknown planks for wood type: " + woodType);
+    private static RegistryObject<Block> registerDesk(String name, WoodType woodType) {
+        RegistryObject<Block> block = BLOCKS.register(name + "_desk", () -> {
+            Supplier<Block> plankSupplier = BOP_PLANKS_BY_WOOD.get(woodType);
+            if (plankSupplier == null)
+                throw new IllegalArgumentException("Unknown planks for wood type: " + woodType);
 
-	        return new CustomDeskBlock(woodType, BlockBehaviour.Properties.copy(planks));
-	    });
+            Block planks = plankSupplier.get();
+            return new CustomDeskBlock(woodType, BlockBehaviour.Properties.copy(planks));
+        });
 
-	    FurnituresOPlenty.LOGGER.info("Successfully registered block and item for "
-	            + FurnituresOPlenty.MODID + ":" + name + "_desk");
-	    return block;
-	}
+        FurnituresOPlenty.LOGGER.info("Successfully registered block and item for "
+                + FurnituresOPlenty.MODID + ":" + name + "_desk");
+        return block;
+    }
 
-	private static RegistryObject<Block> registerDrawer(String name, WoodType woodType) {
-	    RegistryObject<Block> block = BLOCKS.register(name + "_drawer", () -> {
-	        Block planks = BOP_PLANKS_BY_WOOD.get(woodType);
-	        if (planks == null)
-	            throw new IllegalArgumentException("Unknown planks for wood type: " + woodType);
+    private static RegistryObject<Block> registerDrawer(String name, WoodType woodType) {
+        RegistryObject<Block> block = BLOCKS.register(name + "_drawer", () -> {
+            Supplier<Block> plankSupplier = BOP_PLANKS_BY_WOOD.get(woodType);
+            if (plankSupplier == null)
+                throw new IllegalArgumentException("Unknown planks for wood type: " + woodType);
 
-	        return new CustomDrawerBlock(woodType, BlockBehaviour.Properties.copy(planks));
-	    });
+            Block planks = plankSupplier.get();
+            return new CustomDrawerBlock(woodType, BlockBehaviour.Properties.copy(planks));
+        });
 
-	    FurnituresOPlenty.LOGGER.info("Successfully registered block and item for "
-	            + FurnituresOPlenty.MODID + ":" + name + "_drawer");
-	    return block;
-	}
+        FurnituresOPlenty.LOGGER.info("Successfully registered block and item for "
+                + FurnituresOPlenty.MODID + ":" + name + "_drawer");
+        return block;
+    }
 
-	private static RegistryObject<Block> registerKitchenCabinetry(String name, WoodType woodType) {
-	    RegistryObject<Block> block = BLOCKS.register(name + "_kitchen_cabinetry", () -> {
-	        Block planks = BOP_PLANKS_BY_WOOD.get(woodType);
-	        if (planks == null)
-	            throw new IllegalArgumentException("Unknown planks for wood type: " + woodType);
+    private static RegistryObject<Block> registerKitchenCabinetry(String name, WoodType woodType) {
+        RegistryObject<Block> block = BLOCKS.register(name + "_kitchen_cabinetry", () -> {
+            Supplier<Block> plankSupplier = BOP_PLANKS_BY_WOOD.get(woodType);
+            if (plankSupplier == null)
+                throw new IllegalArgumentException("Unknown planks for wood type: " + woodType);
 
-	        return new CustomKitchenCabinetryBlock(woodType, BlockBehaviour.Properties.copy(planks));
-	    });
+            Block planks = plankSupplier.get();
+            return new CustomKitchenCabinetryBlock(woodType, BlockBehaviour.Properties.copy(planks));
+        });
 
-	    FurnituresOPlenty.LOGGER.info("Successfully registered block and item for "
-	            + FurnituresOPlenty.MODID + ":" + name + "_kitchen_cabinetry");
-	    return block;
-	}
+        FurnituresOPlenty.LOGGER.info("Successfully registered block and item for "
+                + FurnituresOPlenty.MODID + ":" + name + "_kitchen_cabinetry");
+        return block;
+    }
 
-	private static RegistryObject<Block> registerKitchenDrawer(String name, WoodType woodType) {
-	    RegistryObject<Block> block = BLOCKS.register(name + "_kitchen_drawer", () -> {
-	        Block planks = BOP_PLANKS_BY_WOOD.get(woodType);
-	        if (planks == null)
-	            throw new IllegalArgumentException("Unknown planks for wood type: " + woodType);
+    private static RegistryObject<Block> registerKitchenDrawer(String name, WoodType woodType) {
+        RegistryObject<Block> block = BLOCKS.register(name + "_kitchen_drawer", () -> {
+            Supplier<Block> plankSupplier = BOP_PLANKS_BY_WOOD.get(woodType);
+            if (plankSupplier == null)
+                throw new IllegalArgumentException("Unknown planks for wood type: " + woodType);
 
-	        return new CustomKitchenDrawerBlock(woodType, BlockBehaviour.Properties.copy(planks));
-	    });
+            Block planks = plankSupplier.get();
+            return new CustomKitchenDrawerBlock(woodType, BlockBehaviour.Properties.copy(planks));
+        });
 
-	    FurnituresOPlenty.LOGGER.info("Successfully registered block and item for "
-	            + FurnituresOPlenty.MODID + ":" + name + "_kitchen_drawer");
-	    return block;
-	}
+        FurnituresOPlenty.LOGGER.info("Successfully registered block and item for "
+                + FurnituresOPlenty.MODID + ":" + name + "_kitchen_drawer");
+        return block;
+    }
 
-	private static RegistryObject<Block> registerKitchenSink(String name, WoodType woodType) {
-	    RegistryObject<Block> block = BLOCKS.register(name + "_kitchen_sink", () -> {
-	        Block planks = BOP_PLANKS_BY_WOOD.get(woodType);
-	        if (planks == null)
-	            throw new IllegalArgumentException("Unknown planks for wood type: " + woodType);
+    private static RegistryObject<Block> registerKitchenSink(String name, WoodType woodType) {
+        RegistryObject<Block> block = BLOCKS.register(name + "_kitchen_sink", () -> {
+            Supplier<Block> plankSupplier = BOP_PLANKS_BY_WOOD.get(woodType);
+            if (plankSupplier == null)
+                throw new IllegalArgumentException("Unknown planks for wood type: " + woodType);
 
-	        return new CustomKitchenSinkBlock(woodType, BlockBehaviour.Properties.copy(planks));
-	    });
+            Block planks = plankSupplier.get();
+            return new CustomKitchenSinkBlock(woodType, BlockBehaviour.Properties.copy(planks));
+        });
 
-	    FurnituresOPlenty.LOGGER.info("Successfully registered block and item for "
-	            + FurnituresOPlenty.MODID + ":" + name + "_kitchen_sink");
-	    return block;
-	}
+        FurnituresOPlenty.LOGGER.info("Successfully registered block and item for "
+                + FurnituresOPlenty.MODID + ":" + name + "_kitchen_sink");
+        return block;
+    }
 
-	private static RegistryObject<Block> registerKitchenStorageCabinets(String name, WoodType woodType) {
-	    RegistryObject<Block> block = BLOCKS.register(name + "_kitchen_storage_cabinet", () -> {
-	        Block planks = BOP_PLANKS_BY_WOOD.get(woodType);
-	        if (planks == null)
-	            throw new IllegalArgumentException("Unknown planks for wood type: " + woodType);
+    private static RegistryObject<Block> registerKitchenStorageCabinets(String name, WoodType woodType) {
+        RegistryObject<Block> block = BLOCKS.register(name + "_kitchen_storage_cabinet", () -> {
+            Supplier<Block> plankSupplier = BOP_PLANKS_BY_WOOD.get(woodType);
+            if (plankSupplier == null)
+                throw new IllegalArgumentException("Unknown planks for wood type: " + woodType);
 
-	        return new CustomKitchenStorageCabinetBlock(woodType, BlockBehaviour.Properties.copy(planks));
-	    });
+            Block planks = plankSupplier.get();
+            return new CustomKitchenStorageCabinetBlock(woodType, BlockBehaviour.Properties.copy(planks));
+        });
 
-	    FurnituresOPlenty.LOGGER.info("Successfully registered block and item for "
-	            + FurnituresOPlenty.MODID + ":" + name + "_kitchen_storage_cabinet");
-	    return block;
-	}
+        FurnituresOPlenty.LOGGER.info("Successfully registered block and item for "
+                + FurnituresOPlenty.MODID + ":" + name + "_kitchen_storage_cabinet");
+        return block;
+    }
 
-	private static RegistryObject<Block> registerLatticeFenceGate(String name, WoodType woodType) {
-	    RegistryObject<Block> block = BLOCKS.register(name + "_lattice_fence_gate", () -> {
-	        Block planks = BOP_PLANKS_BY_WOOD.get(woodType);
-	        if (planks == null)
-	            throw new IllegalArgumentException("Unknown planks for wood type: " + woodType);
+    private static RegistryObject<Block> registerLatticeFenceGate(String name, WoodType woodType) {
+        RegistryObject<Block> block = BLOCKS.register(name + "_lattice_fence_gate", () -> {
+            Supplier<Block> plankSupplier = BOP_PLANKS_BY_WOOD.get(woodType);
+            if (plankSupplier == null)
+                throw new IllegalArgumentException("Unknown planks for wood type: " + woodType);
 
-	        return new CustomLatticeFenceGateBlock(woodType, BlockBehaviour.Properties.copy(planks));
-	    });
+            Block planks = plankSupplier.get();
+            return new CustomLatticeFenceGateBlock(woodType, BlockBehaviour.Properties.copy(planks));
+        });
 
-	    FurnituresOPlenty.LOGGER.info("Successfully registered block and item for "
-	            + FurnituresOPlenty.MODID + ":" + name + "_lattice_fence_gate");
-	    return block;
-	}
+        FurnituresOPlenty.LOGGER.info("Successfully registered block and item for "
+                + FurnituresOPlenty.MODID + ":" + name + "_lattice_fence_gate");
+        return block;
+    }
 
-	private static RegistryObject<Block> registerLatticeFences(String name, WoodType woodType) {
-	    RegistryObject<Block> block = BLOCKS.register(name + "_lattice_fence", () -> {
-	        Block planks = BOP_PLANKS_BY_WOOD.get(woodType);
-	        if (planks == null)
-	            throw new IllegalArgumentException("Unknown planks for wood type: " + woodType);
+    private static RegistryObject<Block> registerLatticeFences(String name, WoodType woodType) {
+        RegistryObject<Block> block = BLOCKS.register(name + "_lattice_fence", () -> {
+            Supplier<Block> plankSupplier = BOP_PLANKS_BY_WOOD.get(woodType);
+            if (plankSupplier == null)
+                throw new IllegalArgumentException("Unknown planks for wood type: " + woodType);
 
-	        return new CustomLatticeFenceBlock(woodType, BlockBehaviour.Properties.copy(planks));
-	    });
+            Block planks = plankSupplier.get();
+            return new CustomLatticeFenceBlock(woodType, BlockBehaviour.Properties.copy(planks));
+        });
 
-	    FurnituresOPlenty.LOGGER.info("Successfully registered block and item for "
-	            + FurnituresOPlenty.MODID + ":" + name + "_lattice_fence");
-	    return block;
-	}
+        FurnituresOPlenty.LOGGER.info("Successfully registered block and item for "
+                + FurnituresOPlenty.MODID + ":" + name + "_lattice_fence");
+        return block;
+    }
 
-	private static RegistryObject<Block> registerMailBox(String name, WoodType woodType) {
-	    RegistryObject<Block> block = BLOCKS.register(name + "_mail_box", () -> {
-	        Block planks = BOP_PLANKS_BY_WOOD.get(woodType);
-	        if (planks == null)
-	            throw new IllegalArgumentException("Unknown planks for wood type: " + woodType);
+    private static RegistryObject<Block> registerMailBox(String name, WoodType woodType) {
+        RegistryObject<Block> block = BLOCKS.register(name + "_mail_box", () -> {
+            Supplier<Block> plankSupplier = BOP_PLANKS_BY_WOOD.get(woodType);
+            if (plankSupplier == null)
+                throw new IllegalArgumentException("Unknown planks for wood type: " + woodType);
 
-	        return new CustomMailboxBlock(woodType, BlockBehaviour.Properties.copy(planks));
-	    });
+            Block planks = plankSupplier.get();
+            return new CustomMailboxBlock(woodType, BlockBehaviour.Properties.copy(planks));
+        });
 
-	    FurnituresOPlenty.LOGGER.info("Successfully registered block and item for "
-	            + FurnituresOPlenty.MODID + ":" + name + "_mail_box");
-	    return block;
-	}
+        FurnituresOPlenty.LOGGER.info("Successfully registered block and item for "
+                + FurnituresOPlenty.MODID + ":" + name + "_mail_box");
+        return block;
+    }
 
-	private static RegistryObject<Block> registerStorageCabinets(String name, WoodType woodType) {
-	    RegistryObject<Block> block = BLOCKS.register(name + "_storage_cabinets", () -> {
-	        Block planks = BOP_PLANKS_BY_WOOD.get(woodType);
-	        if (planks == null)
-	            throw new IllegalArgumentException("Unknown planks for wood type: " + woodType);
+    private static RegistryObject<Block> registerStorageCabinets(String name, WoodType woodType) {
+        RegistryObject<Block> block = BLOCKS.register(name + "_storage_cabinets", () -> {
+            Supplier<Block> plankSupplier = BOP_PLANKS_BY_WOOD.get(woodType);
+            if (plankSupplier == null)
+                throw new IllegalArgumentException("Unknown planks for wood type: " + woodType);
 
-	        return new CustomStorageCabinetBlock(woodType, BlockBehaviour.Properties.copy(planks));
-	    });
+            Block planks = plankSupplier.get();
+            return new CustomStorageCabinetBlock(woodType, BlockBehaviour.Properties.copy(planks));
+        });
 
-	    FurnituresOPlenty.LOGGER.info("Successfully registered block and item for "
-	            + FurnituresOPlenty.MODID + ":" + name + "_storage_cabinets");
-	    return block;
-	}
+        FurnituresOPlenty.LOGGER.info("Successfully registered block and item for "
+                + FurnituresOPlenty.MODID + ":" + name + "_storage_cabinets");
+        return block;
+    }
 
-	private static RegistryObject<Block> registerStorageJar(String name, WoodType woodType) {
-	    RegistryObject<Block> block = BLOCKS.register(name + "_storage_jar", () -> {
-	        Block planks = BOP_PLANKS_BY_WOOD.get(woodType);
-	        if (planks == null)
-	            throw new IllegalArgumentException("Unknown planks for wood type: " + woodType);
+    private static RegistryObject<Block> registerStorageJar(String name, WoodType woodType) {
+        RegistryObject<Block> block = BLOCKS.register(name + "_storage_jar", () -> {
+            Supplier<Block> plankSupplier = BOP_PLANKS_BY_WOOD.get(woodType);
+            if (plankSupplier == null)
+                throw new IllegalArgumentException("Unknown planks for wood type: " + woodType);
 
-	        return new CustomStorageJarBlock(woodType, BlockBehaviour.Properties.copy(planks));
-	    });
+            Block planks = plankSupplier.get();
+            return new CustomStorageJarBlock(woodType, BlockBehaviour.Properties.copy(planks));
+        });
 
-	    FurnituresOPlenty.LOGGER.info("Successfully registered block and item for "
-	            + FurnituresOPlenty.MODID + ":" + name + "_storage_jar");
-	    return block;
-	}
+        FurnituresOPlenty.LOGGER.info("Successfully registered block and item for "
+                + FurnituresOPlenty.MODID + ":" + name + "_storage_jar");
+        return block;
+    }
 
-	private static RegistryObject<Block> registerTable(String name, WoodType woodType) {
-	    RegistryObject<Block> block = BLOCKS.register(name + "_table", () -> {
-	        Block planks = BOP_PLANKS_BY_WOOD.get(woodType);
-	        if (planks == null)
-	            throw new IllegalArgumentException("Unknown planks for wood type: " + woodType);
+    private static RegistryObject<Block> registerTable(String name, WoodType woodType) {
+        RegistryObject<Block> block = BLOCKS.register(name + "_table", () -> {
+            Supplier<Block> plankSupplier = BOP_PLANKS_BY_WOOD.get(woodType);
+            if (plankSupplier == null)
+                throw new IllegalArgumentException("Unknown planks for wood type: " + woodType);
 
-	        return new CustomTableBlock(woodType, BlockBehaviour.Properties.copy(planks));
-	    });
+            Block planks = plankSupplier.get();
+            return new CustomTableBlock(woodType, BlockBehaviour.Properties.copy(planks));
+        });
 
-	    FurnituresOPlenty.LOGGER.info("Successfully registered block and item for "
-	            + FurnituresOPlenty.MODID + ":" + name + "_table");
-	    return block;
-	}
+        FurnituresOPlenty.LOGGER.info("Successfully registered block and item for "
+                + FurnituresOPlenty.MODID + ":" + name + "_table");
+        return block;
+    }
 
-	private static RegistryObject<Block> registerToilet(String name, WoodType woodType) {
-	    RegistryObject<Block> block = BLOCKS.register(name + "_toilet", () -> {
-	        Block planks = BOP_PLANKS_BY_WOOD.get(woodType);
-	        if (planks == null)
-	            throw new IllegalArgumentException("Unknown planks for wood type: " + woodType);
+    private static RegistryObject<Block> registerToilet(String name, WoodType woodType) {
+        RegistryObject<Block> block = BLOCKS.register(name + "_toilet", () -> {
+            Supplier<Block> plankSupplier = BOP_PLANKS_BY_WOOD.get(woodType);
+            if (plankSupplier == null)
+                throw new IllegalArgumentException("Unknown planks for wood type: " + woodType);
 
-	        return new CustomToiletBlock(woodType, BlockBehaviour.Properties.copy(planks));
-	    });
+            Block planks = plankSupplier.get();
+            return new CustomToiletBlock(woodType, BlockBehaviour.Properties.copy(planks));
+        });
 
-	    FurnituresOPlenty.LOGGER.info("Successfully registered block and item for "
-	            + FurnituresOPlenty.MODID + ":" + name + "_toilet");
-	    return block;
-	}
-
-
+        FurnituresOPlenty.LOGGER.info("Successfully registered block and item for "
+                + FurnituresOPlenty.MODID + ":" + name + "_toilet");
+        return block;
+    }
 }
