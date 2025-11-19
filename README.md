@@ -56,8 +56,7 @@ Furniture variants for all Biomes O' Plenty wood types:
 
 ## 📝 License
 
-- MIT License — See [`LICENSE.txt`](LICENSE.txt) for details  
-- GNU Lesser General Public License — See [`LICENSE.txt`](LICENSE.txt) for details
+- MIT License — See [`LICENSE.txt`](LICENSE.txt) for details
 
 ---
 
