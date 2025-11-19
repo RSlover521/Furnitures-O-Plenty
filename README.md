@@ -6,7 +6,7 @@
   <a href="https://github.com/RSlover521/Furnitures-O-Plenty/releases">
     <img alt="Latest Release" src="https://img.shields.io/github/v/release/RSlover521/Furnitures-O-Plenty?style=for-the-badge">
   </a>
-  <a href="https://github.com/RSlover521/Furnitures-O-Plenty/blob/main/LICENSE.txt">
+  <a href="https://github.com/RSlover52111/Furnitures-O-Plenty/blob/main/LICENSE.txt">
     <img alt="License" src="https://img.shields.io/github/license/RSlover521/Furnitures-O-Plenty?style=for-the-badge">
   </a>
   <a href="https://github.com/RSlover521/Furnitures-O-Plenty/issues">
