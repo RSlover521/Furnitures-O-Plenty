@@ -41,3 +41,4 @@ jobs:
           export CLASSPATH
           chmod +x run.sh
           ./run.sh
+          ./gradlew runClient --no-daemon
