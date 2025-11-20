@@ -5,6 +5,7 @@ import com.rslover521.furnituresoplenty.FurnituresOPlenty;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.server.level.ServerPlayer;
 import net.minecraftforge.event.entity.player.PlayerEvent;
+import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.fml.common.Mod;
 
@@ -27,5 +28,9 @@ public class ModAdvancementEvents {
 				}
 			}
 		}
+	}
+
+	public static void register(IEventBus eventBus) {
+		eventBus.register(eventBus);
 	}
 }
