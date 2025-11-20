@@ -3,11 +3,17 @@
 </p>
 
 <p align="center">
+  <a href="https://github.com/RSlover521/Furnitures-O-Plenty">
+    <img alt="GitHub Repository" src="https://img.shields.io/badge/GitHub-Repository-181717?style=for-the-badge&logo=github&color=salmon">
+  </a>
   <a href="https://github.com/RSlover521/Furnitures-O-Plenty/releases">
     <img alt="Latest Release" src="https://img.shields.io/github/v/release/RSlover521/Furnitures-O-Plenty?style=for-the-badge&logo=github&color=745E96">
   </a>
   <a href="https://github.com/RSlover521/Furnitures-O-Plenty/blob/main/LICENSE.txt">
     <img alt="License" src="https://img.shields.io/github/license/RSlover521/Furnitures-O-Plenty?style=for-the-badge&logo=github&color=red">
+  </a>
+  <a href="https://github.com/RSlover521/Furnitures-O-Plenty/discussions">
+    <img alt="Discussions" src="https://img.shields.io/github/discussions/RSlover521/Furnitures-O-Plenty?style=for-the-badge&color=blue&logo=github">
   </a>
   <a href="https://github.com/RSlover521/Furnitures-O-Plenty/issues">
     <img alt="Open Issues" src="https://img.shields.io/github/issues/RSlover521/Furnitures-O-Plenty?style=for-the-badge&logo=github&color=yellow">
