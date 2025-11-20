@@ -1,0 +1,7 @@
+{
+  "parent": "refurbished_furniture:block/table",
+  "textures": {
+    "particle": "biomesoplenty:block/redwood_planks",
+    "texture": "furnituresoplenty:block/redwood_table"
+  }
+}

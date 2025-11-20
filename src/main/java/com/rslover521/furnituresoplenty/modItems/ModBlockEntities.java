@@ -1,7 +1,5 @@
 package com.rslover521.furnituresoplenty.modItems;
 
-import java.rmi.registry.Registry;
-
 import com.rslover521.furnituresoplenty.FurnituresOPlenty;
 import com.rslover521.furnituresoplenty.customBlockEntities.CustomBasinBlockEntity;
 import com.rslover521.furnituresoplenty.customBlockEntities.CustomBathBlockEntity;
@@ -12,11 +10,9 @@ import com.rslover521.furnituresoplenty.customBlockEntities.CustomDrawerBlockEnt
 import com.rslover521.furnituresoplenty.customBlockEntities.CustomKitchenDrawerBlockEntity;
 import com.rslover521.furnituresoplenty.customBlockEntities.CustomKitchenSinkBlockEntity;
 import com.rslover521.furnituresoplenty.customBlockEntities.CustomMailboxBlockEntity;
-import com.rslover521.furnituresoplenty.customBlockEntities.CustomStorageCabinetBlockEntity;
 import com.rslover521.furnituresoplenty.customBlockEntities.CustomStorageJarBlockEntity;
 import com.rslover521.furnituresoplenty.customBlockEntities.CustomToiletBlockEntity;
-import com.rslover521.furnituresoplenty.customFurnitures.CustomToiletBlock;
-
+import com.rslover521.furnituresoplenty.customBlockEntities.CustomStorageCabinetBlockEntity;
 import net.minecraft.world.level.block.entity.BlockEntityType;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
@@ -26,7 +22,6 @@ public class ModBlockEntities {
 	public static final DeferredRegister<BlockEntityType<?>> BLOCK_ENTITIES = 
 			DeferredRegister.create(ForgeRegistries.BLOCK_ENTITY_TYPES, FurnituresOPlenty.MODID);
 
-	@SuppressWarnings("null")
 	public static final RegistryObject<BlockEntityType<CustomBasinBlockEntity>> CUSTOM_BASIN = 
 			BLOCK_ENTITIES.register("custom_basin", 
 					() -> BlockEntityType.Builder.of(CustomBasinBlockEntity::new, 
@@ -45,7 +40,6 @@ public class ModBlockEntities {
                             ModBlocks.EMPYREAL_BASIN.get()
 					).build(null));
 
-	@SuppressWarnings("null")
 	public static final RegistryObject<BlockEntityType<CustomBathBlockEntity>> CUSTOM_BATH = 
 			BLOCK_ENTITIES.register("custom_bath", 
 					() -> BlockEntityType.Builder.of(CustomBathBlockEntity::new, 
@@ -64,7 +58,6 @@ public class ModBlockEntities {
                             ModBlocks.EMPYREAL_BATH.get()
 					).build(null));
 
-	@SuppressWarnings("null")
 	public static final RegistryObject<BlockEntityType<CustomCeilingFanBlockEntity>> CUSTOM_CEILING_FAN = 
 			BLOCK_ENTITIES.register("custom_ceiling_fan", 
 					() -> BlockEntityType.Builder.of(CustomCeilingFanBlockEntity::new, 
@@ -101,7 +94,6 @@ public class ModBlockEntities {
                             ModBlocks.EMPYREAL_LIGHT_CEILING_FAN.get()
 					).build(null));
 
-    @SuppressWarnings("null")
     public static final RegistryObject<BlockEntityType<CustomCrateBlockEntity>> CUSTOM_CRATE = 
             BLOCK_ENTITIES.register("custom_crate",
                     () -> BlockEntityType.Builder.of(CustomCrateBlockEntity::new, 
@@ -120,11 +112,10 @@ public class ModBlockEntities {
                             ModBlocks.EMPYREAL_CRATE.get()
                     ).build(null));
 
-    @SuppressWarnings("null")
     public static final RegistryObject<BlockEntityType<CustomCuttingBoardBlockEntity>> CUSTOM_CUTTING_BOARD =
             BLOCK_ENTITIES.register("custom_cutting_board",
                     () -> BlockEntityType.Builder.of(CustomCuttingBoardBlockEntity::new, 
-                           ModBlocks.FIR_CUTTING_BOARD.get(),
+                            ModBlocks.FIR_CUTTING_BOARD.get(),
                             ModBlocks.PINE_CUTTING_BOARD.get(),
                             ModBlocks.MAPLE_CUTTING_BOARD.get(),
                             ModBlocks.REDWOOD_CUTTING_BOARD.get(),
@@ -139,7 +130,6 @@ public class ModBlockEntities {
                             ModBlocks.EMPYREAL_CUTTING_BOARD.get() 
                     ).build(null));
 
-    @SuppressWarnings("null")
     public static final RegistryObject<BlockEntityType<CustomDrawerBlockEntity>> CUSTOM_DRAWER = 
             BLOCK_ENTITIES.register("custom_drawer", 
                     () -> BlockEntityType.Builder.of(CustomDrawerBlockEntity::new, 
@@ -158,8 +148,7 @@ public class ModBlockEntities {
                             ModBlocks.EMPYREAL_DRAWER.get()
                     ).build(null));
 
-	@SuppressWarnings("null")
-        public static final RegistryObject<BlockEntityType<CustomKitchenDrawerBlockEntity>> CUSTOM_KITCHEN_DRAWER = 
+	public static final RegistryObject<BlockEntityType<CustomKitchenDrawerBlockEntity>> CUSTOM_KITCHEN_DRAWER = 
 			BLOCK_ENTITIES.register("custom_block_entities", 
 					() -> BlockEntityType.Builder.of(CustomKitchenDrawerBlockEntity::new, 
 							ModBlocks.FIR_KITCHEN_DRAWER.get(),
@@ -177,7 +166,6 @@ public class ModBlockEntities {
                             ModBlocks.EMPYREAL_KITCHEN_DRAWER.get()
 					).build(null));
 
-	@SuppressWarnings("null")
 	public static final RegistryObject<BlockEntityType<CustomKitchenSinkBlockEntity>> CUSTOM_KITCHEN_SINK = 
 			BLOCK_ENTITIES.register("custom_kitchen_sink", 
 					() -> BlockEntityType.Builder.of(CustomKitchenSinkBlockEntity::new, 
@@ -196,7 +184,6 @@ public class ModBlockEntities {
                             ModBlocks.EMPYREAL_KITCHEN_SINK.get()
 					).build(null));
 
-	@SuppressWarnings("null")
 	public static final RegistryObject<BlockEntityType<CustomMailboxBlockEntity>> CUSTOM_MAIL_BOX = 
 			BLOCK_ENTITIES.register("custom_mail_box", 
 					() -> BlockEntityType.Builder.of(CustomMailboxBlockEntity::new,
@@ -215,8 +202,7 @@ public class ModBlockEntities {
                             ModBlocks.EMPYREAL_MAIL_BOX.get()
 					).build(null));
 
-    @SuppressWarnings("null")
-        public static final RegistryObject<BlockEntityType<CustomStorageJarBlockEntity>> CUSTOM_STORAGE_JAR =
+    public static final RegistryObject<BlockEntityType<CustomStorageJarBlockEntity>> CUSTOM_STORAGE_JAR =
             BLOCK_ENTITIES.register("custom_storage_jar",
                     () -> BlockEntityType.Builder.of(CustomStorageJarBlockEntity::new,
                             ModBlocks.FIR_STORAGE_JAR.get(),
@@ -234,8 +220,7 @@ public class ModBlockEntities {
                             ModBlocks.EMPYREAL_STORAGE_JAR.get()
                     ).build(null));
 
-    @SuppressWarnings("null")
-        public static final RegistryObject<BlockEntityType<CustomStorageCabinetBlockEntity>> CUSTOM_STORAGE_CABINET =
+    public static final RegistryObject<BlockEntityType<CustomStorageCabinetBlockEntity>> CUSTOM_STORAGE_CABINET =
             BLOCK_ENTITIES.register("custom_storage_cabinet",
                     () -> BlockEntityType.Builder.of(CustomStorageCabinetBlockEntity::new,
                             // Kitchen Storage Cabinets
@@ -268,23 +253,22 @@ public class ModBlockEntities {
                             ModBlocks.HELLBARK_STORAGE_CABINET.get(),
                             ModBlocks.EMPYREAL_STORAGE_CABINET.get()
                     ).build(null));
-
-        @SuppressWarnings("null")
-        public static final RegistryObject<BlockEntityType<CustomToiletBlockEntity>> CUSTOM_TOILET_ENTITIES =
-                BLOCK_ENTITIES.register("custom_toilet_entities",
-                        () -> BlockEntityType.Builder.of(CustomToiletBlockEntity::new,
-                                ModBlocks.FIR_TOILET.get(),
-                                ModBlocks.PINE_TOILET.get(),
-                                ModBlocks.MAPLE_TOILET.get(),
-                                ModBlocks.REDWOOD_TOILET.get(),
-                                ModBlocks.MAHOGANY_TOILET.get(),
-                                ModBlocks.JACARANDA_TOILET.get(),
-                                ModBlocks.PALM_TOILET.get(),
-                                ModBlocks.WILLOW_TOILET.get(),
-                                ModBlocks.DEAD_TOILET.get(),
-                                ModBlocks.MAGIC_TOILET.get(),
-                                ModBlocks.UMBRAN_TOILET.get(),
-                                ModBlocks.HELLBARK_TOILET.get(),
-                                ModBlocks.EMPYREAL_TOILET.get()
-                        ).build(null));
+    
+    public static final RegistryObject<BlockEntityType<CustomToiletBlockEntity>> CUSTOM_TOILET = 
+    		BLOCK_ENTITIES.register("custom_toilet_entities", 
+    				() -> BlockEntityType.Builder.of(CustomToiletBlockEntity::new,
+    						ModBlocks.FIR_TOILET.get(),
+                            ModBlocks.PINE_TOILET.get(),
+                            ModBlocks.MAPLE_TOILET.get(),
+                            ModBlocks.REDWOOD_TOILET.get(),
+                            ModBlocks.MAHOGANY_TOILET.get(),
+                            ModBlocks.JACARANDA_TOILET.get(),
+                            ModBlocks.PALM_TOILET.get(),
+                            ModBlocks.WILLOW_TOILET.get(),
+                            ModBlocks.DEAD_TOILET.get(),
+                            ModBlocks.MAGIC_TOILET.get(),
+                            ModBlocks.UMBRAN_TOILET.get(),
+                            ModBlocks.HELLBARK_TOILET.get(),
+                            ModBlocks.EMPYREAL_TOILET.get()
+                     ).build(null));
 }

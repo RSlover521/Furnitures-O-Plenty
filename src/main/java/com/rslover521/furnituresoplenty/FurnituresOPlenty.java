@@ -7,6 +7,7 @@ import com.rslover521.furnituresoplenty.modItems.ModCreativeTabs;
 import net.minecraftforge.event.server.ServerStartingEvent;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.fml.common.Mod;
+import net.minecraftforge.fml.event.lifecycle.FMLCommonSetupEvent;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 
 import org.slf4j.Logger;
@@ -20,10 +21,16 @@ public class FurnituresOPlenty {
     public static final Logger LOGGER = LogUtils.getLogger();
     
     public FurnituresOPlenty(FMLJavaModLoadingContext context) {
-    	IEventBus modEventBus = context.getModEventBus();
+        IEventBus modEventBus = context.getModEventBus();
 
         ModBlocks.register(modEventBus);
-    	ModCreativeTabs.register();
+        ModCreativeTabs.register();
+
+        // Defer init until after registries exist
+        context.getModEventBus().addListener(this::commonSetup);
+    }
+
+    private void commonSetup(final FMLCommonSetupEvent event) {
     	
     }
     
