@@ -64,8 +64,9 @@ Furniture variants for all Biomes O' Plenty wood types:
 
 1. Download your preferred version from **[CurseForge](https://www.curseforge.com/minecraft/mc-mods/furnitures-o-plenty)** or **[Modrinth](https://modrinth.com/mod/furnitures-o-plenty)**.  
 2. Make sure you have **Minecraft Forge** installed for your Minecraft version.  
-3. Place the mod `.jar` file into your `mods` folder.  
-4. Launch Minecraft and enjoy your new furniture!
+3. Place the mod `.jar` file into your `mods` folder located inside your `.minecraft` files.  
+4. Installed the correct mod dependencies: **[Biomes O' Plenty](https://www.curseforge.com/minecraft/mc-mods/biomes-o-plenty) (Version: 1.0.14 or above)** and **[Refurbished Furniture](https://www.curseforge.com/minecraft/mc-mods/refurbished-furniture) (Version 19.0.0.90 or above)**. Make sure you installed their mod dependencies as well. You can check their dependencies in their mod descriptions.
+5. Launch Minecraft and enjoy your new furniture!
 
 ---
 
