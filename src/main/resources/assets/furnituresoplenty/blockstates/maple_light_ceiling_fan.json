@@ -1,1 +1,8 @@
-{}
+{
+  "variants": {
+            "lit=false,powered=false": { "model": "furnituresoplenty:block/maple_light_ceiling_fan_base_off" },
+            "lit=false,powered=true": { "model": "furnituresoplenty:block/maple_light_ceiling_fan_base_off" },
+            "lit=true,powered=false": { "model": "furnituresoplenty:block/maple_light_ceiling_fan_base_off" },
+            "lit=true,powered=true": { "model": "furnituresoplenty:block/maple_light_ceiling_fan_base_on" }
+  }
+}

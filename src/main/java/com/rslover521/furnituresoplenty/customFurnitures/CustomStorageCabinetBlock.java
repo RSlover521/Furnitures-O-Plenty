@@ -1,23 +1,15 @@
 package com.rslover521.furnituresoplenty.customFurnitures;
 
-import java.util.Map;
+import com.mrcrayfish.furniture.refurbished.block.WoodenStorageCabinetBlock;
 
-import com.google.common.collect.ImmutableList;
-import com.mrcrayfish.furniture.refurbished.block.StorageCabinetBlock;
-
-import net.minecraft.world.level.block.state.BlockState;
+import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.minecraft.world.level.block.state.properties.WoodType;
-import net.minecraft.world.level.material.MapColor;
-import net.minecraft.world.phys.shapes.VoxelShape;
 
-public class CustomStorageCabinetBlock extends StorageCabinetBlock {
+public class CustomStorageCabinetBlock extends WoodenStorageCabinetBlock {
 	private WoodType woodType;
 
-	public CustomStorageCabinetBlock(WoodType woodType) {
-		super(Properties.of()
-				.mapColor(MapColor.WOOD)
-				.strength(2.0F, 3.0F)
-		);
+	public CustomStorageCabinetBlock(WoodType woodType, BlockBehaviour.Properties properties) {
+		super(woodType, properties);
 		this.woodType = woodType;
 	}
 
@@ -27,10 +19,5 @@ public class CustomStorageCabinetBlock extends StorageCabinetBlock {
 
 	public void setWoodType(WoodType woodType) {
 		this.woodType = woodType;
-	}
-
-	@Override
-	protected Map<BlockState, VoxelShape> generateShapes(ImmutableList<BlockState> arg0) {
-		return shapes;
 	}
 }

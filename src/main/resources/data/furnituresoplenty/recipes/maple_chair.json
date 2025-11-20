@@ -1,20 +1,8 @@
 {
-  "type": "minecraft:crafting_shaped",
-  "pattern": [
-    "P P",
-    "PPP",
-    "W W"
+  "type": "refurbished_furniture:workbench_constructing",
+  "materials": [
+    { "count": 4, "item": "minecraft:maple_planks" }
   ],
-  "key": {
-    "P": {
-      "item": "biomesoplenty:maple_planks"
-    },
-    "W": {
-      "item": "minecraft:stick"
-    }
-  },
-  "result": {
-    "item": "furnituresoplenty:maple_chair",
-    "count": 1
-  }
+  "result": "furnituresoplenty:maple_chair",
+  "show_notification": false
 }

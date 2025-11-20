@@ -1,0 +1,8 @@
+{
+  "type": "refurbished_furniture:workbench_constructing",
+  "materials": [
+    { "count": 2, "item": "minecraft:hellbark_planks" }
+  ],
+  "result": "furnituresoplenty:hellbark_cutting_board",
+  "show_notification": false
+}

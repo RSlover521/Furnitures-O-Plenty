@@ -1,0 +1,9 @@
+{
+  "type": "refurbished_furniture:workbench_constructing",
+  "materials": [
+    { "count": 8, "item": "minecraft:maple_planks" },
+    { "count": 1, "item": "minecraft:iron_ingot" }
+  ],
+  "result": { "count": 2, "item": "furnituresoplenty:maple_storage_cabinet" },
+  "show_notification": false
+}

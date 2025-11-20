@@ -1,1 +1,12 @@
-{}
+{
+  "variants": {
+    "enabled=false,facing=east": {"model":"furnituresoplenty:block/hellbark_mail_box","y":90},
+    "enabled=false,facing=north": {"model":"furnituresoplenty:block/hellbark_mail_box"},
+    "enabled=false,facing=south": {"model":"furnituresoplenty:block/hellbark_mail_box","y":180},
+    "enabled=false,facing=west": {"model":"furnituresoplenty:block/hellbark_mail_box","y":270},
+    "enabled=true,facing=east": {"model":"furnituresoplenty:block/hellbark_mail_box_unchecked","y":90},
+    "enabled=true,facing=north": {"model":"furnituresoplenty:block/hellbark_mail_box_unchecked"},
+    "enabled=true,facing=south": {"model":"furnituresoplenty:block/hellbark_mail_box_unchecked","y":180},
+    "enabled=true,facing=west": {"model":"furnituresoplenty:block/hellbark_mail_box_unchecked","y":270}
+  }
+}

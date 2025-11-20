@@ -1,19 +1,15 @@
 package com.rslover521.furnituresoplenty.customFurnitures;
 
-import com.mrcrayfish.furniture.refurbished.block.BasinBlock;
+import com.mrcrayfish.furniture.refurbished.block.WoodenBasinBlock;
 
+import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.minecraft.world.level.block.state.properties.WoodType;
-import net.minecraft.world.level.material.MapColor;
 
-public class CustomBasinBlock extends BasinBlock{
+public class CustomBasinBlock extends WoodenBasinBlock{
 	private WoodType woodType;
 	
-	public CustomBasinBlock(WoodType woodType) {
-		super(Properties.of()
-				.mapColor(MapColor.WOOD)
-				.strength(3.0F)
-				);
-		this.woodType = woodType;
+	public CustomBasinBlock(WoodType woodType, BlockBehaviour.Properties properties) {
+		super(woodType, properties);
 	}
 	
 	public WoodType getWoodType() {

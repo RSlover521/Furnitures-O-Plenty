@@ -1,15 +1,14 @@
 package com.rslover521.furnituresoplenty.customFurnitures;
 
-import com.mrcrayfish.furniture.refurbished.block.BathBlock;
+import com.mrcrayfish.furniture.refurbished.block.WoodenBathBlock;
 
+import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.minecraft.world.level.block.state.properties.WoodType;
 
-public class CustomBathBlock extends BathBlock {
+public class CustomBathBlock extends WoodenBathBlock {
 	private WoodType woodType;
-	public CustomBathBlock(WoodType woodType) {
-		super(Properties.of()
-				.strength(2.0F, 3.0F)
-		);
+	public CustomBathBlock(WoodType woodType, BlockBehaviour.Properties properties) {
+		super(woodType, properties);
 		this.woodType = woodType;
 	}
 

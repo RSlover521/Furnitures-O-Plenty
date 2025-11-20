@@ -1,1 +1,7 @@
-{}
+{
+  "parent": "furnituresoplenty:block/kitchen_sink",
+  "textures": {
+    "particle": "biomesoplenty:block/jacaranda_planks",
+    "texture": "furnituresoplenty:block/jacaranda_kitchen_sink"
+  }
+}

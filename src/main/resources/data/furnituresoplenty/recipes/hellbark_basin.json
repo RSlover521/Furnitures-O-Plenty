@@ -1,0 +1,11 @@
+{
+  "type": "refurbished_furniture:workbench_constructing",
+  "materials": [
+    { "count": 3, "item": "minecraft:hellbark_planks" },
+    { "count": 4, "item": "minecraft:quartz_block" },
+    { "count": 2, "item": "minecraft:iron_ingot" },
+    { "count": 1, "item": "minecraft:copper_ingot" }
+  ],
+  "result": "furnituresoplenty:hellbark_basin",
+  "show_notification": false
+}

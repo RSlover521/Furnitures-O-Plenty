@@ -1,0 +1,7 @@
+{
+  "parent": "furnituresoplenty:block/lattice_fence_gate_open",
+  "textures": {
+    "particle": "furnituresoplenty:block/empyreal_particle",
+    "texture": "furnituresoplenty:block/empyreal_lattice_fence_gate"
+  }
+}

@@ -1,13 +1,14 @@
 package com.rslover521.furnituresoplenty.customFurnitures;
 
-import com.mrcrayfish.furniture.refurbished.block.KitchenDrawerBlock;
+import com.mrcrayfish.furniture.refurbished.block.WoodenKitchenDrawerBlock;
 
+import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.minecraft.world.level.block.state.properties.WoodType;
 
-public class CustomKitchenDrawerBlock extends KitchenDrawerBlock {
+public class CustomKitchenDrawerBlock extends WoodenKitchenDrawerBlock {
 	private WoodType woodType;
-	public CustomKitchenDrawerBlock(WoodType woodType) {
-		super(Properties.of().strength(2.0F, 3.0F));
+	public CustomKitchenDrawerBlock(WoodType woodType, BlockBehaviour.Properties properties) {
+		super(woodType, properties);
 		this.woodType = woodType;
 	}
 

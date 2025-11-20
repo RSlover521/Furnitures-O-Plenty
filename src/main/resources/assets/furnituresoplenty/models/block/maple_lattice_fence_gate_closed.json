@@ -1,0 +1,7 @@
+{
+  "parent": "furnituresoplenty:block/lattice_fence_gate_closed",
+  "textures": {
+    "particle": "biomesoplenty:block/maple_planks",
+    "texture": "furnituresoplenty:block/maple_lattice_fence_gate"
+  }
+}

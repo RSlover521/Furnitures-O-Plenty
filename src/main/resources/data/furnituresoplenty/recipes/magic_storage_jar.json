@@ -1,0 +1,9 @@
+{
+  "type": "refurbished_furniture:workbench_constructing",
+  "materials": [
+    { "count": 2, "item": "minecraft:magic_planks" },
+    { "count": 1, "item": "minecraft:glass" }
+  ],
+  "result": "furnituresoplenty:magic_storage_jar",
+  "show_notification": false
+}

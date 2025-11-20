@@ -1,1 +1,8 @@
-{}
+{
+  "variants": {
+    "facing=east":  { "model": "furnituresoplenty:block/dead_toilet", "y": 90 },
+    "facing=north": { "model": "furnituresoplenty:block/dead_toilet" },
+    "facing=south": { "model": "furnituresoplenty:block/dead_toilet", "y": 180 },
+    "facing=west":  { "model": "furnituresoplenty:block/dead_toilet", "y": 270 }
+  }
+}

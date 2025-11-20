@@ -1,1 +1,20 @@
-{}
+{
+  "variants": {
+    "facing=east,left=false,right=false": {"model": "furnituresoplenty:block/pine_desk","y":90},
+    "facing=east,left=false,right=true":  {"model": "furnituresoplenty:block/pine_desk_right","y":90},
+    "facing=east,left=true,right=false":  {"model": "furnituresoplenty:block/pine_desk_left","y":90},
+    "facing=east,left=true,right=true":   {"model": "furnituresoplenty:block/pine_desk_middle","y":90},
+    "facing=north,left=false,right=false":{"model": "furnituresoplenty:block/pine_desk"},
+    "facing=north,left=false,right=true": {"model": "furnituresoplenty:block/pine_desk_right"},
+    "facing=north,left=true,right=false": {"model": "furnituresoplenty:block/pine_desk_left"},
+    "facing=north,left=true,right=true":  {"model": "furnituresoplenty:block/pine_desk_middle"},
+    "facing=south,left=false,right=false":{"model": "furnituresoplenty:block/pine_desk","y":180},
+    "facing=south,left=false,right=true": {"model": "furnituresoplenty:block/pine_desk_right","y":180},
+    "facing=south,left=true,right=false": {"model": "furnituresoplenty:block/pine_desk_left","y":180},
+    "facing=south,left=true,right=true":  {"model": "furnituresoplenty:block/pine_desk_middle","y":180},
+    "facing=west,left=false,right=false": {"model": "furnituresoplenty:block/pine_desk","y":270},
+    "facing=west,left=false,right=true":  {"model": "furnituresoplenty:block/pine_desk_right","y":270},
+    "facing=west,left=true,right=false":  {"model": "furnituresoplenty:block/pine_desk_left","y":270},
+    "facing=west,left=true,right=true":   {"model": "furnituresoplenty:block/pine_desk_middle","y":270}
+  }
+}

@@ -1,1 +1,39 @@
-{}
+{
+  "variants": {
+    "facing=east,left=false,open=false,right=false": { "model": "furnituresoplenty:block/willow_drawer_closed", "y": 90 },
+    "facing=east,left=false,open=false,right=true":  { "model": "furnituresoplenty:block/willow_drawer_right_closed", "y": 90 },
+    "facing=east,left=false,open=true,right=false":  { "model": "furnituresoplenty:block/willow_drawer_open", "y": 90 },
+    "facing=east,left=false,open=true,right=true":   { "model": "furnituresoplenty:block/willow_drawer_right_open", "y": 90 },
+    "facing=east,left=true,open=false,right=false":  { "model": "furnituresoplenty:block/willow_drawer_left_closed", "y": 90 },
+    "facing=east,left=true,open=false,right=true":   { "model": "furnituresoplenty:block/willow_drawer_middle_closed", "y": 90 },
+    "facing=east,left=true,open=true,right=false":   { "model": "furnituresoplenty:block/willow_drawer_left_open", "y": 90 },
+    "facing=east,left=true,open=true,right=true":    { "model": "furnituresoplenty:block/willow_drawer_middle_open", "y": 90 },
+
+    "facing=north,left=false,open=false,right=false": { "model": "furnituresoplenty:block/willow_drawer_closed" },
+    "facing=north,left=false,open=false,right=true":  { "model": "furnituresoplenty:block/willow_drawer_right_closed" },
+    "facing=north,left=false,open=true,right=false":  { "model": "furnituresoplenty:block/willow_drawer_open" },
+    "facing=north,left=false,open=true,right=true":   { "model": "furnituresoplenty:block/willow_drawer_right_open" },
+    "facing=north,left=true,open=false,right=false":  { "model": "furnituresoplenty:block/willow_drawer_left_closed" },
+    "facing=north,left=true,open=false,right=true":   { "model": "furnituresoplenty:block/willow_drawer_middle_closed" },
+    "facing=north,left=true,open=true,right=false":   { "model": "furnituresoplenty:block/willow_drawer_left_open" },
+    "facing=north,left=true,open=true,right=true":    { "model": "furnituresoplenty:block/willow_drawer_middle_open" },
+
+    "facing=south,left=false,open=false,right=false": { "model": "furnituresoplenty:block/willow_drawer_closed", "y": 180 },
+    "facing=south,left=false,open=false,right=true":  { "model": "furnituresoplenty:block/willow_drawer_right_closed", "y": 180 },
+    "facing=south,left=false,open=true,right=false":  { "model": "furnituresoplenty:block/willow_drawer_open", "y": 180 },
+    "facing=south,left=false,open=true,right=true":   { "model": "furnituresoplenty:block/willow_drawer_right_open", "y": 180 },
+    "facing=south,left=true,open=false,right=false":  { "model": "furnituresoplenty:block/willow_drawer_left_closed", "y": 180 },
+    "facing=south,left=true,open=false,right=true":   { "model": "furnituresoplenty:block/willow_drawer_middle_closed", "y": 180 },
+    "facing=south,left=true,open=true,right=false":   { "model": "furnituresoplenty:block/willow_drawer_left_open", "y": 180 },
+    "facing=south,left=true,open=true,right=true":    { "model": "furnituresoplenty:block/willow_drawer_middle_open", "y": 180 },
+
+    "facing=west,left=false,open=false,right=false":  { "model": "furnituresoplenty:block/willow_drawer_closed", "y": 270 },
+    "facing=west,left=false,open=false,right=true":   { "model": "furnituresoplenty:block/willow_drawer_right_closed", "y": 270 },
+    "facing=west,left=false,open=true,right=false":   { "model": "furnituresoplenty:block/willow_drawer_open", "y": 270 },
+    "facing=west,left=false,open=true,right=true":    { "model": "furnituresoplenty:block/willow_drawer_right_open", "y": 270 },
+    "facing=west,left=true,open=false,right=false":   { "model": "furnituresoplenty:block/willow_drawer_left_closed", "y": 270 },
+    "facing=west,left=true,open=false,right=true":    { "model": "furnituresoplenty:block/willow_drawer_middle_closed", "y": 270 },
+    "facing=west,left=true,open=true,right=false":    { "model": "furnituresoplenty:block/willow_drawer_left_open", "y": 270 },
+    "facing=west,left=true,open=true,right=true":     { "model": "furnituresoplenty:block/willow_drawer_middle_open", "y": 270 }
+  }
+}

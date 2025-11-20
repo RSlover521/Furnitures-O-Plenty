@@ -1,0 +1,7 @@
+{
+  "parent": "furnituresoplenty:block/lattice_fence_center",
+  "textures": {
+    "particle": "biomesoplenty:block/empyreal_planks",
+    "texture": "furnituresoplenty:block/empyreal_lattice_fence"
+  }
+}
