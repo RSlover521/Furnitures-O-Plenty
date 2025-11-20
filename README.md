@@ -1,16 +1,22 @@
 <p align="center">
-  <img width="287" height="144" alt="mod_banner" src="https://github.com/user-attachments/assets/c31069de-3111-47ac-9528-dfcb07f453e8" />
+  <img width="287" height="144" alt="mod_banner" src="https://github.com/user-attachments/assets/c31069de-3111-47ac-9528-dfcb07f453e8"/>
 </p>
 
 <p align="center">
   <a href="https://github.com/RSlover521/Furnitures-O-Plenty/releases">
-    <img alt="Latest Release" src="https://img.shields.io/github/v/release/RSlover521/Furnitures-O-Plenty?style=for-the-badge">
+    <img alt="Latest Release" src="https://img.shields.io/github/v/release/RSlover521/Furnitures-O-Plenty?style=for-the-badge&color=purple">
   </a>
-  <a href="https://github.com/RSlover52111/Furnitures-O-Plenty/blob/main/LICENSE.txt">
-    <img alt="License" src="https://img.shields.io/github/license/RSlover521/Furnitures-O-Plenty?style=for-the-badge">
+  <a href="https://github.com/RSlover521/Furnitures-O-Plenty/blob/main/LICENSE.txt">
+    <img alt="License" src="https://img.shields.io/github/license/RSlover521/Furnitures-O-Plenty?style=for-the-badge&color=red">
   </a>
   <a href="https://github.com/RSlover521/Furnitures-O-Plenty/issues">
-    <img alt="Open Issues" src="https://img.shields.io/github/issues/RSlover521/Furnitures-O-Plenty?style=for-the-badge">
+    <img alt="Open Issues" src="https://img.shields.io/github/issues/RSlover521/Furnitures-O-Plenty?style=for-the-badge&color=yellow">
+  </a>
+  <a href="https://modrinth.com/mod/furnitures-o-plenty">
+    <img alt="Modrinth Downloads" src="https://img.shields.io/modrinth/dt/furnitures-o-plenty?style=for-the-badge&color=limegreen&logo=modrinth&logoColor=limegreen">
+  </a>
+  <a href="https://www.curseforge.com/minecraft/mc-mods/furnitures-o-plenty">
+    <img alt="CurseForge Downloads" src="https://img.shields.io/curseforge/dt/1363774?style=for-the-badge&color=orange&logo=curseforge&logoColor=orange">
   </a>
 </p>
 
@@ -30,8 +36,11 @@ Decorate your world, match your biomes, and make your builds truly feel like hom
 
 ---
 
-## 📦 Features
+## 📦 Overview
 
+**This mod of Minecraft combines every wood type from Biomes O' Plenty to the furnitures from Mr.Crayfish's Refurbished Furniture mod.**
+
+## 🪑 Mod Features Details
 Furniture variants for all Biomes O' Plenty wood types:
 
 - Crates and Storage Jars  
@@ -70,7 +79,7 @@ Furniture variants for all Biomes O' Plenty wood types:
 
 ---
 
-## 🔗 Mod Links
+### 🔗 Mod Links
 
 ### Official Pages
 - [Modrinth](https://modrinth.com/mod/furnitures-o-plenty)  
