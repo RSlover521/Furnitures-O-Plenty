@@ -4,7 +4,7 @@
 
 <p align="center">
   <a href="https://github.com/RSlover521/Furnitures-O-Plenty">
-    <img alt="GitHub Repository" src="https://img.shields.io/badge/GitHub-Repository-181717?style=for-the-badge&logo=github&color=cyan">
+    <img alt="GitHub Repository" src="https://img.shields.io/badge/GitHub-Repository-181717?style=for-the-badge&logo=github&color=darkcyan">
   </a>
   <a href="https://github.com/RSlover521/Furnitures-O-Plenty/releases">
     <img alt="Latest Release" src="https://img.shields.io/github/v/release/RSlover521/Furnitures-O-Plenty?style=for-the-badge&logo=github&color=745E96">
