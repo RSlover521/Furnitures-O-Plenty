@@ -2,6 +2,12 @@
 set -e
 
 echo "Compiling ModValidator..."
+mkdir -p out
+
+# Compile all .java files in the validators package
+javac -cp "$CLASSPATH" -d out src/main/java/com/rslover521/furnituresoplenty/util/validators/ModValidator.java
+
 echo "Running ModValidator..."
-cd /workspaces/Furnitures-O-Plenty ; /usr/bin/env /usr/local/sdkman/candidates/java/17.0.15-ms/bin/java @/tmp/cp_6pdy4t72o292ss76ms9thnapm.argfile com.rslover521.furnituresoplenty.util.validators.ModValidator
-echo "Mod validation completed."
+# Run using full package name
+java -cp out:$CLASSPATH com.rslover521.furnituresoplenty.util.validators.ModValidator
+echo "ModValidator finished."
