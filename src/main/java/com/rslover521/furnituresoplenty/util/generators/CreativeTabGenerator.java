@@ -19,7 +19,7 @@ public class CreativeTabGenerator {
             String suffix = type.toUpperCase(); // convert to constant form
             for (String wood : woodTypes) {
                 String constantName = wood.toUpperCase() + "_" + suffix;
-                System.out.println("                        output.accept(new ItemStack(ModBlocks." + constantName + ".get()));");
+                System.out.println("                        output.accept(ModItems." + constantName + ".get());");
             }
             System.out.println();
         }
