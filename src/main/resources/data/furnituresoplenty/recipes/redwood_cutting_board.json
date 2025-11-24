@@ -1,8 +1,0 @@
-{
-  "type": "refurbished_furniture:workbench_constructing",
-  "materials": [
-    { "count": 2, "item": "minecraft:redwood_planks" }
-  ],
-  "result": "furnituresoplenty:redwood_cutting_board",
-  "show_notification": false
-}

@@ -1,8 +1,5 @@
 package com.rslover521.furnituresoplenty.util.generators;
 
-import java.util.HashMap;
-import java.util.Map;
-
 public class CreativeTabGenerator {
     public static void main(String[] args) {
         String[] woodTypes = {
@@ -17,44 +14,14 @@ public class CreativeTabGenerator {
             "mail_box", "storage_cabinet", "storage_jar", "table", "toilet"
         };
 
-        Map<String, String> registryClassMap = new HashMap<>();
-        registryClassMap.put("basin", "BOPBasinRegistry");
-        registryClassMap.put("bath", "BOPBathRegistry");
-        registryClassMap.put("light_ceiling_fan", "BOPCeilingFanRegistry");
-        registryClassMap.put("dark_ceiling_fan", "BOPCeilingFanRegistry");
-        registryClassMap.put("chair", "BOPChairRegistry");
-        registryClassMap.put("crate", "BOPCrateRegistry");
-        registryClassMap.put("cutting_board", "BOPCuttingBoardRegistry");
-        registryClassMap.put("desk", "BOPDeskRegistry");
-        registryClassMap.put("drawer", "BOPDrawerRegistry");
-        registryClassMap.put("kitchen_cabinetry", "BOPKitchenCabinetryRegistry");
-        registryClassMap.put("kitchen_drawer", "BOPKitchenDrawerRegistry");
-        registryClassMap.put("kitchen_sink", "BOPKitchenSinkRegistry");
-        registryClassMap.put("kitchen_storage_cabinet", "BOPKitchenStorageCabinetRegistry");
-        registryClassMap.put("lattice_fence_gate", "BOPLatticeFenceGateRegistry");
-        registryClassMap.put("lattice_fence", "BOPLatticeFenceRegistry");
-        registryClassMap.put("mail_box", "BOPMailboxRegistry");
-        registryClassMap.put("storage_cabinet", "BOPStorageCabinetRegistry");
-        registryClassMap.put("storage_jar", "BOPStorageJarRegistry");
-        registryClassMap.put("table", "BOPTableRegistry");
-        registryClassMap.put("toilet", "BOPToiletRegistry");
-
-        /*for (String type : registryTypes) {
+        for (String type : registryTypes) {
             System.out.println("                        // === " + type.replace("_", " ").toUpperCase() + "S ===");
-            String registryClass = registryClassMap.get(type);
             String suffix = type.toUpperCase(); // convert to constant form
             for (String wood : woodTypes) {
                 String constantName = wood.toUpperCase() + "_" + suffix;
-                System.out.println("                        output.accept(" + registryClass + "." + constantName + ".get());");
+                System.out.println("                        output.accept(new ItemStack(ModBlocks." + constantName + ".get()));");
             }
             System.out.println();
-        }*/
-
-        for(String type : registryTypes) {
-            System.out.println();
-            for(String wood : woodTypes) {
-                System.out.println("                            ModBlocks." + wood.toUpperCase() + "_" + type.toUpperCase() + ".get(),");
-            }
         }
     }
 }

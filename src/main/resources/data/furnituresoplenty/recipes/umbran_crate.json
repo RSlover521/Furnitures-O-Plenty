@@ -1,8 +1,0 @@
-{
-  "type": "refurbished_furniture:workbench_constructing",
-  "materials": [
-    { "count": 8, "item": "minecraft:umbran_planks" }
-  ],
-  "result": "furnituresoplenty:umbran_crate",
-  "show_notification": false
-}

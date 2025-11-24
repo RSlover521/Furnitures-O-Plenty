@@ -1,8 +1,0 @@
-{
-  "type": "refurbished_furniture:workbench_constructing",
-  "materials": [
-    { "count": 8, "item": "minecraft:jacaranda_planks" }
-  ],
-  "result": "furnituresoplenty:jacaranda_crate",
-  "show_notification": false
-}

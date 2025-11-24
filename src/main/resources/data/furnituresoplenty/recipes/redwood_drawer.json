@@ -1,8 +1,0 @@
-{
-  "type": "refurbished_furniture:workbench_constructing",
-  "materials": [
-    { "count": 10, "item": "minecraft:redwood_planks" }
-  ],
-  "result": "furnituresoplenty:redwood_drawer",
-  "show_notification": false
-}

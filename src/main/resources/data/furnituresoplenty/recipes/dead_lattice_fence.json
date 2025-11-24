@@ -1,9 +1,0 @@
-{
-  "type": "refurbished_furniture:workbench_constructing",
-  "materials": [
-    { "count": 4, "item": "minecraft:dead_planks" },
-    { "count": 4, "item": "minecraft:stick" }
-  ],
-  "result": { "count": 3, "item": "furnituresoplenty:dead_lattice_fence" },
-  "show_notification": false
-}

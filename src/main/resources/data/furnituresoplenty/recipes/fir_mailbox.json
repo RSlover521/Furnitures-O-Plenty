@@ -1,8 +1,0 @@
-{
-  "type": "refurbished_furniture:workbench_constructing",
-  "materials": [
-    { "count": 8, "item": "minecraft:fir_planks" }
-  ],
-  "result": "furnituresoplenty:fir_mail_box",
-  "show_notification": false
-}
