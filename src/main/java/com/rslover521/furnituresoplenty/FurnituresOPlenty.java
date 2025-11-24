@@ -5,6 +5,7 @@ import com.rslover521.furnituresoplenty.core.ModAdvancementEvents;
 import com.rslover521.furnituresoplenty.core.ModBlockEntities;
 import com.rslover521.furnituresoplenty.core.ModBlocks;
 import com.rslover521.furnituresoplenty.core.ModCreativeTabs;
+import com.rslover521.furnituresoplenty.core.ModItems;
 
 import net.minecraftforge.event.server.ServerStartingEvent;
 import net.minecraftforge.eventbus.api.IEventBus;
@@ -32,6 +33,8 @@ public class FurnituresOPlenty {
         ModBlockEntities.register(modEventBus);
 
         ModAdvancementEvents.register(modEventBus);
+        
+        ModItems.register(modEventBus);
 
         // Defer init until after registries exist
         context.getModEventBus().addListener(this::commonSetup);

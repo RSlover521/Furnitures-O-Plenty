@@ -4,6 +4,7 @@ import com.rslover521.furnituresoplenty.FurnituresOPlenty;
 
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.Item;
+import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.RegistryObject;
@@ -310,4 +311,8 @@ public class ModItems {
     public static final RegistryObject<Item> UMBRAN_TOILET = ITEMS.register("umbran_toilet", () -> new BlockItem(ModBlocks.UMBRAN_TOILET.get(), new Item.Properties()));
     public static final RegistryObject<Item> HELLBARK_TOILET = ITEMS.register("hellbark_toilet", () -> new BlockItem(ModBlocks.HELLBARK_TOILET.get(), new Item.Properties()));
     public static final RegistryObject<Item> EMPYREAL_TOILET = ITEMS.register("empyreal_toilet", () -> new BlockItem(ModBlocks.EMPYREAL_TOILET.get(), new Item.Properties()));
+    
+    public static void register(IEventBus eventBus) {
+    	ITEMS.register(eventBus);
+    }
 }
