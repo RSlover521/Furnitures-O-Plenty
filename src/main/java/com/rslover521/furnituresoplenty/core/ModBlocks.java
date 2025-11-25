@@ -662,7 +662,7 @@ public class ModBlocks {
         // Assuming MetalType is an enum or class you have access to
         MetalType type = metalType.equals("light") ? MetalType.LIGHT : MetalType.DARK;
 
-        RegistryObject<Block> block = BLOCKS.register(metalType + "_" + wood + "_ceiling_fan", () -> {
+        RegistryObject<Block> block = BLOCKS.register(wood + "_" + type.getName() + "_ceiling_fan", () -> { 
             Supplier<Block> plankSupplier = BOP_PLANKS_BY_WOOD.get(woodType);
             if (plankSupplier == null)
                 throw new IllegalArgumentException("Unknown planks for wood type: " + woodType);
