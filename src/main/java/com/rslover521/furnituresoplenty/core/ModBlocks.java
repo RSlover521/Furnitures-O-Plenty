@@ -55,10 +55,10 @@ public class ModBlocks {
 	        entry(BOPWoodTypes.HELLBARK, () -> BOPBlocks.HELLBARK_PLANKS),
 	        entry(BOPWoodTypes.EMPYREAL, () -> BOPBlocks.EMPYREAL_PLANKS)
 	);
-	
-	public static final DeferredRegister<Block> BLOCKS = 
+
+	public static final DeferredRegister<Block> BLOCKS =
 			DeferredRegister.create(ForgeRegistries.BLOCKS, FurnituresOPlenty.MODID);
-			
+
 	// === All Furniture Blocks in one class
 	public static final RegistryObject<Block> FIR_BASIN;
 	public static final RegistryObject<Block> PINE_BASIN;
@@ -101,7 +101,7 @@ public class ModBlocks {
 	public static final RegistryObject<Block> UMBRAN_LIGHT_CEILING_FAN;
 	public static final RegistryObject<Block> HELLBARK_LIGHT_CEILING_FAN;
 	public static final RegistryObject<Block> EMPYREAL_LIGHT_CEILING_FAN;
-	
+
 	public static final RegistryObject<Block> FIR_DARK_CEILING_FAN;
 	public static final RegistryObject<Block> PINE_DARK_CEILING_FAN;
 	public static final RegistryObject<Block> MAPLE_DARK_CEILING_FAN;
@@ -164,7 +164,7 @@ public class ModBlocks {
 	public static final RegistryObject<Block> REDWOOD_DESK;
 	public static final RegistryObject<Block> MAHOGANY_DESK;
 	public static final RegistryObject<Block> JACARANDA_DESK;
-	public static final RegistryObject<Block> PALM_DESK; 
+	public static final RegistryObject<Block> PALM_DESK;
 	public static final RegistryObject<Block> WILLOW_DESK;
 	public static final RegistryObject<Block> DEAD_DESK;
 	public static final RegistryObject<Block> MAGIC_DESK;
@@ -255,7 +255,7 @@ public class ModBlocks {
 	public static final RegistryObject<Block> UMBRAN_LATTICE_FENCE_GATE;
 	public static final RegistryObject<Block> HELLBARK_LATTICE_FENCE_GATE;
 	public static final RegistryObject<Block> EMPYREAL_LATTICE_FENCE_GATE;
-	
+
 	public static final RegistryObject<Block> FIR_LATTICE_FENCE;
 	public static final RegistryObject<Block> PINE_LATTICE_FENCE;
 	public static final RegistryObject<Block> MAPLE_LATTICE_FENCE;
@@ -382,7 +382,7 @@ public class ModBlocks {
 		UMBRAN_LIGHT_CEILING_FAN = registerCeilingFans("light", "umbran", BOPWoodTypes.UMBRAN);
 		HELLBARK_LIGHT_CEILING_FAN = registerCeilingFans("light", "hellbark", BOPWoodTypes.HELLBARK);
 		EMPYREAL_LIGHT_CEILING_FAN = registerCeilingFans("light", "empyreal", BOPWoodTypes.EMPYREAL);
-		
+
 		FIR_DARK_CEILING_FAN = registerCeilingFans("dark", "fir", BOPWoodTypes.FIR);
 		PINE_DARK_CEILING_FAN = registerCeilingFans("dark", "pine", BOPWoodTypes.PINE);
 		MAPLE_DARK_CEILING_FAN = registerCeilingFans("dark", "maple", BOPWoodTypes.MAPLE);
@@ -621,7 +621,7 @@ public class ModBlocks {
 		HELLBARK_TOILET = registerToilet("hellbark", BOPWoodTypes.HELLBARK);
 		EMPYREAL_TOILET = registerToilet("empyreal", BOPWoodTypes.EMPYREAL);
 	}
-	
+
 
 	public static void register(IEventBus modEventBus) {
 		BLOCKS.register(modEventBus);
@@ -634,7 +634,7 @@ public class ModBlocks {
                 throw new IllegalArgumentException("Unknown planks for wood type: " + woodType);
 
             // Unwrap the supplier here, when the registry is actually ready
-            Block planks = plankSupplier.get(); 
+            Block planks = plankSupplier.get();
             return new CustomBasinBlock(woodType, BlockBehaviour.Properties.copy(planks));
         });
 
@@ -662,7 +662,7 @@ public class ModBlocks {
         // Assuming MetalType is an enum or class you have access to
         MetalType type = metalType.equals("light") ? MetalType.LIGHT : MetalType.DARK;
 
-        RegistryObject<Block> block = BLOCKS.register(wood + "_" + type.getName() + "_ceiling_fan", () -> { 
+        RegistryObject<Block> block = BLOCKS.register(wood + "_" + type.getName() + "_ceiling_fan", () -> {
             Supplier<Block> plankSupplier = BOP_PLANKS_BY_WOOD.get(woodType);
             if (plankSupplier == null)
                 throw new IllegalArgumentException("Unknown planks for wood type: " + woodType);
@@ -857,7 +857,7 @@ public class ModBlocks {
     }
 
     private static RegistryObject<Block> registerStorageCabinets(String name, WoodType woodType) {
-        RegistryObject<Block> block = BLOCKS.register(name + "_storage_cabinets", () -> {
+        RegistryObject<Block> block = BLOCKS.register(name + "_storage_cabinet", () -> {
             Supplier<Block> plankSupplier = BOP_PLANKS_BY_WOOD.get(woodType);
             if (plankSupplier == null)
                 throw new IllegalArgumentException("Unknown planks for wood type: " + woodType);
@@ -867,7 +867,7 @@ public class ModBlocks {
         });
 
         FurnituresOPlenty.LOGGER.info("Successfully registered block and item for "
-                + FurnituresOPlenty.MODID + ":" + name + "_storage_cabinets");
+                + FurnituresOPlenty.MODID + ":" + name + "_storage_cabinet");
         return block;
     }
 

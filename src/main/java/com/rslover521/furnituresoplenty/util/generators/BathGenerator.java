@@ -76,7 +76,7 @@ public class BathGenerator {
         {
           "parent": "%MODID%:block/bath_head",
           "textures": {
-            "particle": "%MODID%:block/%WOOD%_particle",
+            "particle": "%MODID%:block/%WOOD%_planks",
             "texture": "%MODID%:block/%WOOD%_bath"
           }
         }

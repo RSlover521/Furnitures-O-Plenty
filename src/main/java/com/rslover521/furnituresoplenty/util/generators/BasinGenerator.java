@@ -51,7 +51,7 @@ public class BasinGenerator {
         {
           "parent": "%MODID%:block/basin",
           "textures": {
-            "particle": "biomesoplenty:block/%WOOD%_particle",
+            "particle": "biomesoplenty:block/%WOOD%_planks",
             "texture": "%MODID%:block/%WOOD%_basin"
           }
         }
