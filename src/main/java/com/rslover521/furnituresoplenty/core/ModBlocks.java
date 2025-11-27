@@ -29,8 +29,11 @@ import biomesoplenty.api.block.BOPBlocks;
 import biomesoplenty.api.block.BOPWoodTypes;
 
 import net.minecraft.world.level.block.Block;
+import net.minecraft.world.level.block.SoundType;
 import net.minecraft.world.level.block.state.BlockBehaviour;
+import net.minecraft.world.level.block.state.properties.NoteBlockInstrument;
 import net.minecraft.world.level.block.state.properties.WoodType;
+
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
@@ -626,7 +629,7 @@ public class ModBlocks {
 	public static void register(IEventBus modEventBus) {
 		BLOCKS.register(modEventBus);
 	}
-
+	
 	private static RegistryObject<Block> registerBasin(String name, WoodType woodType) {
         RegistryObject<Block> block = BLOCKS.register(name + "_basin", () -> {
             Supplier<Block> plankSupplier = BOP_PLANKS_BY_WOOD.get(woodType);
@@ -635,7 +638,11 @@ public class ModBlocks {
 
             // Unwrap the supplier here, when the registry is actually ready
             Block planks = plankSupplier.get();
-            return new CustomBasinBlock(woodType, BlockBehaviour.Properties.copy(planks));
+            return new CustomBasinBlock(woodType, BlockBehaviour.Properties.of()
+            		.mapColor(planks.defaultMapColor())
+            		.instrument(NoteBlockInstrument.BASS)
+            		.strength(3.5F)
+            		.sound(SoundType.STONE));
         });
 
         FurnituresOPlenty.LOGGER.info("Successfully registered block and item for "
@@ -683,7 +690,11 @@ public class ModBlocks {
                 throw new IllegalArgumentException("Unknown planks for wood type: " + woodType);
 
             Block planks = plankSupplier.get();
-            return new CustomChairBlock(woodType, BlockBehaviour.Properties.copy(planks));
+            return new CustomChairBlock(woodType, BlockBehaviour.Properties.of().mapColor(planks.defaultMapColor())
+            		.instrument(NoteBlockInstrument.BASS)
+            		.strength(2.0F)
+            		.sound(SoundType.WOOD)
+            		.ignitedByLava());
         });
 
         FurnituresOPlenty.LOGGER.info("Successfully registered block and item for "
@@ -720,7 +731,7 @@ public class ModBlocks {
                 + FurnituresOPlenty.MODID + ":" + name + "_cutting_board");
         return block;
     }
-
+    
     private static RegistryObject<Block> registerDesk(String name, WoodType woodType) {
         RegistryObject<Block> block = BLOCKS.register(name + "_desk", () -> {
             Supplier<Block> plankSupplier = BOP_PLANKS_BY_WOOD.get(woodType);
@@ -728,7 +739,13 @@ public class ModBlocks {
                 throw new IllegalArgumentException("Unknown planks for wood type: " + woodType);
 
             Block planks = plankSupplier.get();
-            return new CustomDeskBlock(woodType, BlockBehaviour.Properties.copy(planks));
+            return new CustomDeskBlock(woodType, BlockBehaviour.Properties.of()
+            		.mapColor(planks.defaultMapColor())
+            		.instrument(NoteBlockInstrument.BASS)
+            		.strength(2.0F)
+            		.sound(SoundType.WOOD)
+            		.ignitedByLava()
+            		.forceSolidOn());
         });
 
         FurnituresOPlenty.LOGGER.info("Successfully registered block and item for "
@@ -743,14 +760,20 @@ public class ModBlocks {
                 throw new IllegalArgumentException("Unknown planks for wood type: " + woodType);
 
             Block planks = plankSupplier.get();
-            return new CustomDrawerBlock(woodType, BlockBehaviour.Properties.copy(planks));
+            return new CustomDrawerBlock(woodType, BlockBehaviour.Properties.of()
+            		.mapColor(planks.defaultMapColor())
+            		.instrument(NoteBlockInstrument.BASS)
+            		.strength(2.5F)
+            		.sound(SoundType.WOOD)
+            		.ignitedByLava()
+            		.forceSolidOn());
         });
 
         FurnituresOPlenty.LOGGER.info("Successfully registered block and item for "
                 + FurnituresOPlenty.MODID + ":" + name + "_drawer");
         return block;
     }
-
+    
     private static RegistryObject<Block> registerKitchenCabinetry(String name, WoodType woodType) {
         RegistryObject<Block> block = BLOCKS.register(name + "_kitchen_cabinetry", () -> {
             Supplier<Block> plankSupplier = BOP_PLANKS_BY_WOOD.get(woodType);
@@ -758,7 +781,13 @@ public class ModBlocks {
                 throw new IllegalArgumentException("Unknown planks for wood type: " + woodType);
 
             Block planks = plankSupplier.get();
-            return new CustomKitchenCabinetryBlock(woodType, BlockBehaviour.Properties.copy(planks));
+            return new CustomKitchenCabinetryBlock(woodType, BlockBehaviour.Properties.of()
+            		.mapColor(planks.defaultMapColor())
+            		.instrument(NoteBlockInstrument.BASS)
+            		.strength(2.0F)
+            		.sound(SoundType.WOOD)
+            		.ignitedByLava()
+            		.forceSolidOn());
         });
 
         FurnituresOPlenty.LOGGER.info("Successfully registered block and item for "
@@ -773,7 +802,13 @@ public class ModBlocks {
                 throw new IllegalArgumentException("Unknown planks for wood type: " + woodType);
 
             Block planks = plankSupplier.get();
-            return new CustomKitchenDrawerBlock(woodType, BlockBehaviour.Properties.copy(planks));
+            return new CustomKitchenDrawerBlock(woodType, BlockBehaviour.Properties.of()
+            		.mapColor(planks.defaultMapColor())
+            		.instrument(NoteBlockInstrument.BASS)
+            		.strength(2.5F)
+            		.sound(SoundType.WOOD)
+            		.ignitedByLava()
+            		.forceSolidOn());
         });
 
         FurnituresOPlenty.LOGGER.info("Successfully registered block and item for "
@@ -788,7 +823,13 @@ public class ModBlocks {
                 throw new IllegalArgumentException("Unknown planks for wood type: " + woodType);
 
             Block planks = plankSupplier.get();
-            return new CustomKitchenSinkBlock(woodType, BlockBehaviour.Properties.copy(planks));
+            return new CustomKitchenSinkBlock(woodType, BlockBehaviour.Properties.of()
+            		.mapColor(planks.defaultMapColor())
+            		.instrument(NoteBlockInstrument.BASS)
+            		.strength(2.5F)
+            		.sound(SoundType.WOOD)
+            		.ignitedByLava()
+            		.forceSolidOn());
         });
 
         FurnituresOPlenty.LOGGER.info("Successfully registered block and item for "
@@ -803,7 +844,13 @@ public class ModBlocks {
                 throw new IllegalArgumentException("Unknown planks for wood type: " + woodType);
 
             Block planks = plankSupplier.get();
-            return new CustomKitchenStorageCabinetBlock(woodType, BlockBehaviour.Properties.copy(planks));
+            return new CustomKitchenStorageCabinetBlock(woodType, BlockBehaviour.Properties.of()
+            		.mapColor(planks.defaultMapColor())
+            		.instrument(NoteBlockInstrument.BASS)
+            		.strength(2.5F)
+            		.sound(SoundType.WOOD)
+            		.ignitedByLava()
+            		.forceSolidOn());
         });
 
         FurnituresOPlenty.LOGGER.info("Successfully registered block and item for "
@@ -818,7 +865,12 @@ public class ModBlocks {
                 throw new IllegalArgumentException("Unknown planks for wood type: " + woodType);
 
             Block planks = plankSupplier.get();
-            return new CustomLatticeFenceGateBlock(woodType, BlockBehaviour.Properties.copy(planks));
+            return new CustomLatticeFenceGateBlock(woodType, BlockBehaviour.Properties.of()
+            		.mapColor(planks.defaultMapColor())
+            		.instrument(NoteBlockInstrument.BASS)
+            		.strength(2.0F)
+            		.sound(SoundType.WOOD)
+            		.ignitedByLava());
         });
 
         FurnituresOPlenty.LOGGER.info("Successfully registered block and item for "
@@ -833,7 +885,13 @@ public class ModBlocks {
                 throw new IllegalArgumentException("Unknown planks for wood type: " + woodType);
 
             Block planks = plankSupplier.get();
-            return new CustomLatticeFenceBlock(woodType, BlockBehaviour.Properties.copy(planks));
+            return new CustomLatticeFenceBlock(woodType, BlockBehaviour.Properties.of()
+            		.mapColor(planks.defaultMapColor())
+            		.instrument(NoteBlockInstrument.BASS)
+            		.strength(2.0F)
+            		.sound(SoundType.WOOD)
+            		.ignitedByLava()
+            		.forceSolidOn());
         });
 
         FurnituresOPlenty.LOGGER.info("Successfully registered block and item for "
@@ -848,14 +906,18 @@ public class ModBlocks {
                 throw new IllegalArgumentException("Unknown planks for wood type: " + woodType);
 
             Block planks = plankSupplier.get();
-            return new CustomMailboxBlock(woodType, BlockBehaviour.Properties.copy(planks));
+            return new CustomMailboxBlock(woodType, BlockBehaviour.Properties.of()
+            		.mapColor(planks.defaultMapColor())
+            		.instrument(NoteBlockInstrument.BASS)
+            		.strength(2.5F)
+            		.sound(SoundType.WOOD));
         });
 
         FurnituresOPlenty.LOGGER.info("Successfully registered block and item for "
                 + FurnituresOPlenty.MODID + ":" + name + "_mail_box");
         return block;
     }
-
+    
     private static RegistryObject<Block> registerStorageCabinets(String name, WoodType woodType) {
         RegistryObject<Block> block = BLOCKS.register(name + "_storage_cabinet", () -> {
             Supplier<Block> plankSupplier = BOP_PLANKS_BY_WOOD.get(woodType);
@@ -863,7 +925,13 @@ public class ModBlocks {
                 throw new IllegalArgumentException("Unknown planks for wood type: " + woodType);
 
             Block planks = plankSupplier.get();
-            return new CustomStorageCabinetBlock(woodType, BlockBehaviour.Properties.copy(planks));
+            return new CustomStorageCabinetBlock(woodType, BlockBehaviour.Properties.of()
+            		.mapColor(planks.defaultMapColor())
+            		.instrument(NoteBlockInstrument.BASS)
+            		.strength(2.5F)
+            		.sound(SoundType.WOOD)
+            		.ignitedByLava()
+            		.forceSolidOn());
         });
 
         FurnituresOPlenty.LOGGER.info("Successfully registered block and item for "
@@ -878,14 +946,18 @@ public class ModBlocks {
                 throw new IllegalArgumentException("Unknown planks for wood type: " + woodType);
 
             Block planks = plankSupplier.get();
-            return new CustomStorageJarBlock(woodType, BlockBehaviour.Properties.copy(planks));
+            return new CustomStorageJarBlock(woodType, BlockBehaviour.Properties.of()
+            		.mapColor(planks.defaultMapColor())
+            		.instrument(NoteBlockInstrument.HAT)
+            		.strength(1.0F)
+            		.sound(SoundType.GLASS));
         });
 
         FurnituresOPlenty.LOGGER.info("Successfully registered block and item for "
                 + FurnituresOPlenty.MODID + ":" + name + "_storage_jar");
         return block;
     }
-
+    	
     private static RegistryObject<Block> registerTable(String name, WoodType woodType) {
         RegistryObject<Block> block = BLOCKS.register(name + "_table", () -> {
             Supplier<Block> plankSupplier = BOP_PLANKS_BY_WOOD.get(woodType);
@@ -893,14 +965,20 @@ public class ModBlocks {
                 throw new IllegalArgumentException("Unknown planks for wood type: " + woodType);
 
             Block planks = plankSupplier.get();
-            return new CustomTableBlock(woodType, BlockBehaviour.Properties.copy(planks));
+            return new CustomTableBlock(woodType, BlockBehaviour.Properties.of()
+            		.mapColor(planks.defaultMapColor())
+            		.instrument(NoteBlockInstrument.BASS)
+            		.strength(2.0F)
+            		.sound(SoundType.WOOD)
+            		.ignitedByLava()
+            		.forceSolidOn());
         });
 
         FurnituresOPlenty.LOGGER.info("Successfully registered block and item for "
                 + FurnituresOPlenty.MODID + ":" + name + "_table");
         return block;
     }
-
+    
     private static RegistryObject<Block> registerToilet(String name, WoodType woodType) {
         RegistryObject<Block> block = BLOCKS.register(name + "_toilet", () -> {
             Supplier<Block> plankSupplier = BOP_PLANKS_BY_WOOD.get(woodType);
@@ -908,7 +986,10 @@ public class ModBlocks {
                 throw new IllegalArgumentException("Unknown planks for wood type: " + woodType);
 
             Block planks = plankSupplier.get();
-            return new CustomToiletBlock(woodType, BlockBehaviour.Properties.copy(planks));
+            return new CustomToiletBlock(woodType, BlockBehaviour.Properties.of()
+            		.mapColor(planks.defaultMapColor())
+            		.strength(3.5F)
+            		.sound(SoundType.STONE));
         });
 
         FurnituresOPlenty.LOGGER.info("Successfully registered block and item for "
