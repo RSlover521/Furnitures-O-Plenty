@@ -3,6 +3,7 @@ package com.rslover521.furnituresoplenty.core;
 import java.util.Map;
 import java.util.function.Supplier;
 
+import com.mrcrayfish.furniture.refurbished.block.CeilingFanBlock;
 import com.mrcrayfish.furniture.refurbished.block.MetalType;
 import com.rslover521.furnituresoplenty.FurnituresOPlenty;
 import com.rslover521.furnituresoplenty.customFurnitures.CustomBasinBlock;
@@ -29,6 +30,7 @@ import biomesoplenty.api.block.BOPBlocks;
 import biomesoplenty.api.block.BOPWoodTypes;
 
 import net.minecraft.world.level.block.Block;
+import net.minecraft.world.level.block.NoteBlock;
 import net.minecraft.world.level.block.SoundType;
 import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.minecraft.world.level.block.state.properties.NoteBlockInstrument;
@@ -629,7 +631,7 @@ public class ModBlocks {
 	public static void register(IEventBus modEventBus) {
 		BLOCKS.register(modEventBus);
 	}
-	
+
 	private static RegistryObject<Block> registerBasin(String name, WoodType woodType) {
         RegistryObject<Block> block = BLOCKS.register(name + "_basin", () -> {
             Supplier<Block> plankSupplier = BOP_PLANKS_BY_WOOD.get(woodType);
@@ -657,7 +659,10 @@ public class ModBlocks {
                 throw new IllegalArgumentException("Unknown planks for wood type: " + woodType);
 
             Block planks = plankSupplier.get();
-            return new CustomBathBlock(woodType, BlockBehaviour.Properties.copy(planks));
+            return new CustomBathBlock(woodType, BlockBehaviour.Properties.of()
+                    .mapColor(planks.defaultMapColor())
+                    .strength(3.5F)
+                    .sound(SoundType.STONE));
         });
 
         FurnituresOPlenty.LOGGER.info("Successfully registered block and item for "
@@ -675,7 +680,11 @@ public class ModBlocks {
                 throw new IllegalArgumentException("Unknown planks for wood type: " + woodType);
 
             Block planks = plankSupplier.get();
-            return new CustomCeilingFanBlock(woodType, type, BlockBehaviour.Properties.copy(planks));
+            return new CustomCeilingFanBlock(woodType, type, BlockBehaviour.Properties.of()
+                    .mapColor(planks.defaultMapColor())
+                    .strength(0.8F)
+                    .sound(SoundType.WOOD)
+                    .lightLevel(CeilingFanBlock::light));
         });
 
         FurnituresOPlenty.LOGGER.info("Successfully registered block and item for "
@@ -709,7 +718,13 @@ public class ModBlocks {
                 throw new IllegalArgumentException("Unknown planks for wood type: " + woodType);
 
             Block planks = plankSupplier.get();
-            return new CustomCrateBlock(woodType, BlockBehaviour.Properties.copy(planks));
+            return new CustomCrateBlock(woodType, BlockBehaviour.Properties.of()
+                    .mapColor(planks.defaultMapColor())
+                    .instrument(NoteBlockInstrument.BASS)
+                    .strength(2.5F)
+                    .sound(SoundType.WOOD)
+                    .ignitedByLava()
+                    .forceSolidOn());
         });
 
         FurnituresOPlenty.LOGGER.info("Successfully registered block and item for "
@@ -724,14 +739,18 @@ public class ModBlocks {
                 throw new IllegalArgumentException("Unknown planks for wood type: " + woodType);
 
             Block planks = plankSupplier.get();
-            return new CustomCuttingBoardBlock(woodType, BlockBehaviour.Properties.copy(planks));
+            return new CustomCuttingBoardBlock(woodType, BlockBehaviour.Properties.of()
+                    .mapColor(planks.defaultMapColor())
+                    .instrument(NoteBlockInstrument.BASS)
+                    .strength(1.5F)
+                    .sound(SoundType.WOOD));
         });
 
         FurnituresOPlenty.LOGGER.info("Successfully registered block and item for "
                 + FurnituresOPlenty.MODID + ":" + name + "_cutting_board");
         return block;
     }
-    
+
     private static RegistryObject<Block> registerDesk(String name, WoodType woodType) {
         RegistryObject<Block> block = BLOCKS.register(name + "_desk", () -> {
             Supplier<Block> plankSupplier = BOP_PLANKS_BY_WOOD.get(woodType);
@@ -773,7 +792,7 @@ public class ModBlocks {
                 + FurnituresOPlenty.MODID + ":" + name + "_drawer");
         return block;
     }
-    
+
     private static RegistryObject<Block> registerKitchenCabinetry(String name, WoodType woodType) {
         RegistryObject<Block> block = BLOCKS.register(name + "_kitchen_cabinetry", () -> {
             Supplier<Block> plankSupplier = BOP_PLANKS_BY_WOOD.get(woodType);
@@ -917,7 +936,7 @@ public class ModBlocks {
                 + FurnituresOPlenty.MODID + ":" + name + "_mail_box");
         return block;
     }
-    
+
     private static RegistryObject<Block> registerStorageCabinets(String name, WoodType woodType) {
         RegistryObject<Block> block = BLOCKS.register(name + "_storage_cabinet", () -> {
             Supplier<Block> plankSupplier = BOP_PLANKS_BY_WOOD.get(woodType);
@@ -957,7 +976,7 @@ public class ModBlocks {
                 + FurnituresOPlenty.MODID + ":" + name + "_storage_jar");
         return block;
     }
-    	
+
     private static RegistryObject<Block> registerTable(String name, WoodType woodType) {
         RegistryObject<Block> block = BLOCKS.register(name + "_table", () -> {
             Supplier<Block> plankSupplier = BOP_PLANKS_BY_WOOD.get(woodType);
@@ -978,7 +997,7 @@ public class ModBlocks {
                 + FurnituresOPlenty.MODID + ":" + name + "_table");
         return block;
     }
-    
+
     private static RegistryObject<Block> registerToilet(String name, WoodType woodType) {
         RegistryObject<Block> block = BLOCKS.register(name + "_toilet", () -> {
             Supplier<Block> plankSupplier = BOP_PLANKS_BY_WOOD.get(woodType);
