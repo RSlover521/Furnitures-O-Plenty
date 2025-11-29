@@ -1,6 +1,3 @@
 {
-  "parent": "furnituresoplenty:item/bath",
-  "textures": {
-    "texture": "furnituresoplenty:block/jacaranda_bath"
-  }
+  "parent": "furnituresoplenty:block/jacaranda_bath"
 }

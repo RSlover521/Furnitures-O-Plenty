@@ -1,6 +1,3 @@
 {
-  "parent": "furnituresoplenty:item/ceiling_fan",
-  "textures": {
-    "texture": "furnituresoplenty:block/dead_dark_ceiling_fan"
-  }
+  "parent": "furnituresoplenty:block/dead_dark_ceiling_fan"
 }

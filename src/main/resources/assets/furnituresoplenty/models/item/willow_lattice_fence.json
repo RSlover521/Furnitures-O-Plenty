@@ -1,6 +1,3 @@
 {
-  "parent": "furnituresoplenty:item/lattice_fence",
-  "textures": {
-    "texture": "furnituresoplenty:block/willow_lattice_fence"
-  }
+  "parent": "furnituresoplenty:block/willow_lattice_fence"
 }

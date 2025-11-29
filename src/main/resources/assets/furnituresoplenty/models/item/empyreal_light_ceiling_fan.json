@@ -1,6 +1,3 @@
 {
-  "parent": "furnituresoplenty:item/ceiling_fan",
-  "textures": {
-    "texture": "furnituresoplenty:block/empyreal_light_ceiling_fan"
-  }
+  "parent": "furnituresoplenty:block/empyreal_light_ceiling_fan"
 }

@@ -1,7 +1,7 @@
 {
   "parent": "furnituresoplenty:block/bath_head",
   "textures": {
-    "particle": "furnituresoplenty:block/jacaranda_particle",
+    "particle": "furnituresoplenty:block/jacaranda_planks",
     "texture": "furnituresoplenty:block/jacaranda_bath"
   }
 }

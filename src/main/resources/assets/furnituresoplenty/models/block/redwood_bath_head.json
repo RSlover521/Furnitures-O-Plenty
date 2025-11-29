@@ -1,7 +1,7 @@
 {
   "parent": "furnituresoplenty:block/bath_head",
   "textures": {
-    "particle": "furnituresoplenty:block/redwood_particle",
+    "particle": "furnituresoplenty:block/redwood_planks",
     "texture": "furnituresoplenty:block/redwood_bath"
   }
 }

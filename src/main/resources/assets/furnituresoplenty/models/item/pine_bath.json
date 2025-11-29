@@ -1,6 +1,3 @@
 {
-  "parent": "furnituresoplenty:item/bath",
-  "textures": {
-    "texture": "furnituresoplenty:block/pine_bath"
-  }
+  "parent": "furnituresoplenty:block/pine_bath"
 }
