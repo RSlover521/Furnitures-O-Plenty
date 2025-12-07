@@ -64,7 +64,7 @@ public class CeilingFanGenerator {
         {
           "parent": "%MODID%:block/ceiling_fan_base_%STATE%",
           "textures": {
-            "particle": "%MODID%:block/%TYPE%_particle",
+            "particle": "biomesoplenty:block/%WOOD%_planks",
             "texture": "%MODID%:block/%WOOD%_%TYPE%_ceiling_fan"
           }
         }

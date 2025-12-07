@@ -1,7 +1,7 @@
 {
   "parent": "furnituresoplenty:block/ceiling_fan_base_off",
   "textures": {
-    "particle": "furnituresoplenty:block/light_particle",
+    "particle": "biomesoplenty:block/maple_planks",
     "texture": "furnituresoplenty:block/maple_light_ceiling_fan"
   }
 }
