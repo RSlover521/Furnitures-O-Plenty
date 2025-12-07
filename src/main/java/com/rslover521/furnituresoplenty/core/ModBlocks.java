@@ -30,7 +30,6 @@ import biomesoplenty.api.block.BOPBlocks;
 import biomesoplenty.api.block.BOPWoodTypes;
 
 import net.minecraft.world.level.block.Block;
-import net.minecraft.world.level.block.NoteBlock;
 import net.minecraft.world.level.block.SoundType;
 import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.minecraft.world.level.block.state.properties.NoteBlockInstrument;

@@ -104,7 +104,10 @@ public class LatticeFenceGenerator {
     private static void generateItemModel(Path output, String wood) throws IOException {
         String json = """
         {
-          "parent": "%MODID%:block/%WOOD%_lattice_fence"
+          "parent": "%MODID%:item/lattice_fence",
+          "textures": {
+            "texture": "%MODID%:block/%WOOD%_lattice_fence"
+          }
         }
         """
         .replace("%MODID%", MOD_ID)
