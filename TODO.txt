@@ -1,8 +1,9 @@
 TODO LIST (IN PRIORITY)
 
-- fix storage cabinet missing texture issue
-- fix table texture issue
-- fix ceiling fan (no blades)
+- fix item models (done, worked, except storage cabinets)
+- fix storage cabinet missing texture issue (done, havent tested yet)
+- fix table texture issue (done in root repository)
+- fix ceiling fan no blades texture issue (in progress...)
 - add loot tables to all blocks
 - release 1.0.1 (still beta)
 

@@ -671,7 +671,6 @@ public class ModBlocks {
     }
 
     private static RegistryObject<Block> registerCeilingFans(String metalType, String wood, WoodType woodType) {
-        // Assuming MetalType is an enum or class you have access to
         MetalType type = metalType.equals("light") ? MetalType.LIGHT : MetalType.DARK;
 
         RegistryObject<Block> block = BLOCKS.register(wood + "_" + type.getName() + "_ceiling_fan", () -> {
