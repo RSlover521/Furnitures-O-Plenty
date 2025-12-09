@@ -1,0 +1,18 @@
+TODO LIST (IN PRIORITY)
+
+- fix storage cabinet missing texture issue
+- fix table texture issue
+- fix ceiling fan (no blades)
+- add loot tables to all blocks
+- release 1.0.1 (still beta)
+
+-----
+
+- add recipes for all blocks
+- fix rendering issues (water rendering on certain blocks)
+- release 1.1.0 (official release)
+
+----- 
+
+- any more bugs appear in issues link
+- release 1.1.1.
