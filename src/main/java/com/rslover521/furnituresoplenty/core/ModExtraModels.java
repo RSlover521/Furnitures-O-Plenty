@@ -78,6 +78,6 @@ public class ModExtraModels {
         return MODELS.get(name);
     }
 
-    public void register(IEventBus eventBus) {
+    public static void register(IEventBus eventBus) {
     }
 }
