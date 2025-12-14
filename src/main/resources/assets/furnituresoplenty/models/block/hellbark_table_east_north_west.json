@@ -1,0 +1,7 @@
+{
+  "parent": "refurbished_furniture:block/table_east_north_west",
+  "textures": {
+    "particle": "biomesoplenty:block/hellbark_planks",
+    "texture": "furnituresoplenty:block/hellbark_table"
+  }
+}

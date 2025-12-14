@@ -7,31 +7,22 @@ import java.io.IOException;
 public class TableGenerator {
 
     private static final String MODID = "furnituresoplenty";
-
     private static int count = 0;
 
     private static final String[] WOOD_TYPES = {
-            "fir", "pine", "maple", "redwood", "mahogany", "jacaranda",
-            "palm", "willow", "dead", "magic", "umbran", "hellbark", "empyreal"
+        "fir", "pine", "maple", "redwood", "mahogany", "jacaranda",
+        "palm", "willow", "dead", "magic", "umbran", "hellbark", "empyreal"
     };
 
-    // Furniture type
     private static final String FURNITURE = "table";
+    private static final String[] DIRS = { "east", "north", "south", "west" };
 
     private static final File BLOCKSTATE_DIR =
-            new File("src/main/resources/assets/" + MODID + "/blockstates");
+        new File("src/main/resources/assets/" + MODID + "/blockstates");
     private static final File BLOCK_MODEL_DIR =
-            new File("src/main/resources/assets/" + MODID + "/models/block");
+        new File("src/main/resources/assets/" + MODID + "/models/block");
     private static final File ITEM_MODEL_DIR =
-            new File("src/main/resources/assets/" + MODID + "/models/item");
-
-    // All 16 combinations in Refurbished naming style
-    private static final String[] VARIANT_NAMES = {
-            "", "west", "south", "south_west", "north", "west_north",
-            "north_south", "south_west_north", "east", "east_west",
-            "east_south", "east_south_west", "north_east", "west_north_east",
-            "north_east_south", "north_east_south_west"
-    };
+        new File("src/main/resources/assets/" + MODID + "/models/item");
 
     public static void main(String[] args) {
         BLOCKSTATE_DIR.mkdirs();
@@ -42,38 +33,47 @@ public class TableGenerator {
             generateTable(wood);
         }
 
-        System.out.println("✅ All table JSONs for Furniture-O-Plenty generated! " + count + " files wrote!");
+        System.out.println("Done! Generated " + count + " files.");
     }
 
     private static void generateTable(String wood) {
         String baseName = wood + "_" + FURNITURE;
 
-        for (int i = 0; i < 16; i++) {
-            String variantSuffix = VARIANT_NAMES[i].isEmpty() ? "" : "_" + VARIANT_NAMES[i];
-            String modelName = baseName + variantSuffix;
-            generateBlockModel(modelName, wood, VARIANT_NAMES[i]);
+        // Generate 16 block models
+        for (int mask = 0; mask < 16; mask++) {
+            String suffix = getVariantSuffix(mask);
+            String modelName = suffix.isEmpty() ? baseName : baseName + "_" + suffix;
+            generateBlockModel(modelName, wood, suffix);
         }
 
         generateBlockstate(baseName);
-
         generateItemModel(baseName);
     }
 
     private static void generateBlockstate(String baseName) {
-        String[] directions = {"east", "north", "south", "west"};
         StringBuilder json = new StringBuilder("{\n  \"variants\": {\n");
 
-        for (int i = 0; i < 16; i++) {
+        for (int mask = 0; mask < 16; mask++) {
             StringBuilder props = new StringBuilder();
-            for (int d = 0; d < 4; d++) {
+
+            for (int i = 0; i < DIRS.length; i++) {
                 if (props.length() > 0) props.append(",");
-                props.append(directions[d]).append("=").append((i & (1 << d)) != 0);
+                props.append(DIRS[i]).append("=")
+                    .append((mask & (1 << i)) != 0);
             }
 
-            String variantSuffix = VARIANT_NAMES[i].isEmpty() ? "" : "_" + VARIANT_NAMES[i];
-            json.append("    \"").append(props).append("\": { \"model\": \"")
-                    .append(MODID).append(":block/").append(baseName).append(variantSuffix).append("\" }");
-            if (i < 15) json.append(",");
+            String suffix = getVariantSuffix(mask);
+            String modelName = suffix.isEmpty() ? baseName : baseName + "_" + suffix;
+
+            json.append("    \"")
+                .append(props)
+                .append("\": { \"model\": \"")
+                .append(MODID)
+                .append(":block/")
+                .append(modelName)
+                .append("\" }");
+
+            if (mask < 15) json.append(",");
             json.append("\n");
         }
 
@@ -82,7 +82,10 @@ public class TableGenerator {
     }
 
     private static void generateBlockModel(String name, String wood, String variant) {
-        String parentName = variant.isEmpty() ? FURNITURE : FURNITURE + "_" + variant;
+        String parent = variant.isEmpty()
+            ? FURNITURE
+            : FURNITURE + "_" + variant;
+
         String json = """
                 {
                   "parent": "refurbished_furniture:block/%1$s",
@@ -91,7 +94,8 @@ public class TableGenerator {
                     "texture": "furnituresoplenty:block/%2$s_table"
                   }
                 }
-                """.formatted(parentName, wood);
+                """.formatted(parent, wood);
+
         write(new File(BLOCK_MODEL_DIR, name + ".json"), json);
     }
 
@@ -101,16 +105,29 @@ public class TableGenerator {
                   "parent": "furnituresoplenty:block/%1$s"
                 }
                 """.formatted(baseName);
+
         write(new File(ITEM_MODEL_DIR, baseName + ".json"), json);
+    }
+
+    private static String getVariantSuffix(int mask) {
+        StringBuilder suffix = new StringBuilder();
+
+        for (int i = 0; i < DIRS.length; i++) {
+            if ((mask & (1 << i)) != 0) {
+                if (!suffix.isEmpty()) suffix.append("_");
+                suffix.append(DIRS[i]);
+            }
+        }
+
+        return suffix.toString();
     }
 
     private static void write(File file, String content) {
         try (FileWriter writer = new FileWriter(file)) {
             writer.write(content);
+            count++;
             System.out.println("Generated: " + file.getPath());
-            count ++;
         } catch (IOException e) {
-            System.err.println("Error writing: " + file.getPath());
             e.printStackTrace();
         }
     }

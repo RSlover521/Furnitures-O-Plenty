@@ -1,7 +1,7 @@
 {
   "parent": "furnituresoplenty:block/bath_head",
   "textures": {
-    "particle": "furnituresoplenty:block/willow_planks",
+    "particle": "biomesoplenty:block/willow_planks",
     "texture": "furnituresoplenty:block/willow_bath"
   }
 }
