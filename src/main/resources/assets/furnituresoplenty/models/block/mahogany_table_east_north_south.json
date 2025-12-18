@@ -1,5 +1,5 @@
 {
-  "parent": "refurbished_furniture:block/table_east_north_south",
+  "parent": "furnituresoplenty:block/table_east_north_south",
   "textures": {
     "particle": "biomesoplenty:block/mahogany_planks",
     "texture": "furnituresoplenty:block/mahogany_table"

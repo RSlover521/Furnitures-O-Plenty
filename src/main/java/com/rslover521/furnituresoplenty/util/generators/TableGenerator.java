@@ -3,19 +3,34 @@ package com.rslover521.furnituresoplenty.util.generators;
 import java.io.File;
 import java.io.FileWriter;
 import java.io.IOException;
+import java.util.LinkedHashMap;
+import java.util.Map;
 
-public class TableGenerator {
+public final class TableGenerator {
 
     private static final String MODID = "furnituresoplenty";
-    private static int count = 0;
+    private static final String FURNITURE = "table";
 
     private static final String[] WOOD_TYPES = {
         "fir", "pine", "maple", "redwood", "mahogany", "jacaranda",
         "palm", "willow", "dead", "magic", "umbran", "hellbark", "empyreal"
     };
 
-    private static final String FURNITURE = "table";
-    private static final String[] DIRS = { "east", "north", "south", "west" };
+    /*
+     * Block BooleanProperty order (EXACT)
+     * This MUST match the order used in the Block class.
+     */
+    private static final String[] BLOCK_PROPS = {
+        "east", "north", "south", "west"
+    };
+
+    /*
+     * Parent model naming order (CANONICAL)
+     * This MUST match Refurbished Furniture parent filenames.
+     */
+    private static final String[] MODEL_ORDER = {
+        "north", "east", "south", "west"
+    };
 
     private static final File BLOCKSTATE_DIR =
         new File("src/main/resources/assets/" + MODID + "/blockstates");
@@ -24,53 +39,56 @@ public class TableGenerator {
     private static final File ITEM_MODEL_DIR =
         new File("src/main/resources/assets/" + MODID + "/models/item");
 
+    private static int generatedFiles = 0;
+
     public static void main(String[] args) {
         BLOCKSTATE_DIR.mkdirs();
         BLOCK_MODEL_DIR.mkdirs();
         ITEM_MODEL_DIR.mkdirs();
 
         for (String wood : WOOD_TYPES) {
-            generateTable(wood);
+            generateForWood(wood);
         }
 
-        System.out.println("Done! Generated " + count + " files.");
+        System.out.println("Generation complete. Files written: " + generatedFiles);
     }
 
-    private static void generateTable(String wood) {
+    /* ====================================================================== */
+    /*  Generation                                                            */
+    /* ====================================================================== */
+
+    private static void generateForWood(String wood) {
         String baseName = wood + "_" + FURNITURE;
 
-        // Generate 16 block models
         for (int mask = 0; mask < 16; mask++) {
-            String suffix = getVariantSuffix(mask);
+            String suffix = buildModelSuffix(mask);
             String modelName = suffix.isEmpty() ? baseName : baseName + "_" + suffix;
-            generateBlockModel(modelName, wood, suffix);
+            writeBlockModel(modelName, wood, suffix);
         }
 
-        generateBlockstate(baseName);
-        generateItemModel(baseName);
+        writeBlockstate(baseName);
+        writeItemModel(baseName);
     }
 
-    private static void generateBlockstate(String baseName) {
-        StringBuilder json = new StringBuilder("{\n  \"variants\": {\n");
+    /* ====================================================================== */
+    /*  Blockstate                                                            */
+    /* ====================================================================== */
+
+    private static void writeBlockstate(String baseName) {
+        StringBuilder json = new StringBuilder();
+        json.append("{\n  \"variants\": {\n");
 
         for (int mask = 0; mask < 16; mask++) {
-            StringBuilder props = new StringBuilder();
-
-            for (int i = 0; i < DIRS.length; i++) {
-                if (props.length() > 0) props.append(",");
-                props.append(DIRS[i]).append("=")
-                    .append((mask & (1 << i)) != 0);
-            }
-
-            String suffix = getVariantSuffix(mask);
-            String modelName = suffix.isEmpty() ? baseName : baseName + "_" + suffix;
+            String stateKey = buildBlockstateKey(mask);
+            String suffix = buildModelSuffix(mask);
+            String model = suffix.isEmpty() ? baseName : baseName + "_" + suffix;
 
             json.append("    \"")
-                .append(props)
+                .append(stateKey)
                 .append("\": { \"model\": \"")
                 .append(MODID)
                 .append(":block/")
-                .append(modelName)
+                .append(model)
                 .append("\" }");
 
             if (mask < 15) json.append(",");
@@ -78,57 +96,92 @@ public class TableGenerator {
         }
 
         json.append("  }\n}");
-        write(new File(BLOCKSTATE_DIR, baseName + ".json"), json.toString());
+        writeFile(new File(BLOCKSTATE_DIR, baseName + ".json"), json.toString());
     }
 
-    private static void generateBlockModel(String name, String wood, String variant) {
-        String parent = variant.isEmpty()
+    private static String buildBlockstateKey(int mask) {
+        StringBuilder key = new StringBuilder();
+
+        for (int bit = 0; bit < BLOCK_PROPS.length; bit++) {
+            if (bit > 0) key.append(",");
+            key.append(BLOCK_PROPS[bit])
+                .append("=")
+                .append((mask & (1 << bit)) != 0);
+        }
+
+        return key.toString();
+    }
+
+    /* ====================================================================== */
+    /*  Models                                                                */
+    /* ====================================================================== */
+
+    private static void writeBlockModel(String name, String wood, String suffix) {
+        String parent = suffix.isEmpty()
             ? FURNITURE
-            : FURNITURE + "_" + variant;
+            : FURNITURE + "_" + suffix;
 
         String json = """
-                {
-                  "parent": "refurbished_furniture:block/%1$s",
-                  "textures": {
-                    "particle": "biomesoplenty:block/%2$s_planks",
-                    "texture": "furnituresoplenty:block/%2$s_table"
-                  }
-                }
-                """.formatted(parent, wood);
+            {
+              "parent": "refurbished_furniture:block/%1$s",
+              "textures": {
+                "particle": "biomesoplenty:block/%2$s_planks",
+                "texture": "furnituresoplenty:block/%2$s_table"
+              }
+            }
+            """.formatted(parent, wood);
 
-        write(new File(BLOCK_MODEL_DIR, name + ".json"), json);
+        writeFile(new File(BLOCK_MODEL_DIR, name + ".json"), json);
     }
 
-    private static void generateItemModel(String baseName) {
+    private static void writeItemModel(String baseName) {
         String json = """
-                {
-                  "parent": "furnituresoplenty:block/%1$s"
-                }
-                """.formatted(baseName);
+            {
+              "parent": "furnituresoplenty:block/%1$s"
+            }
+            """.formatted(baseName);
 
-        write(new File(ITEM_MODEL_DIR, baseName + ".json"), json);
+        writeFile(new File(ITEM_MODEL_DIR, baseName + ".json"), json);
     }
 
-    private static String getVariantSuffix(int mask) {
+    /* ====================================================================== */
+    /*  Suffix logic (CORE FIX)                                                */
+    /* ====================================================================== */
+
+    private static String buildModelSuffix(int mask) {
+        Map<String, Boolean> connections = new LinkedHashMap<>();
+
+        // Decode mask using BLOCK_PROPS order
+        for (int bit = 0; bit < BLOCK_PROPS.length; bit++) {
+            connections.put(
+                BLOCK_PROPS[bit],
+                (mask & (1 << bit)) != 0
+            );
+        }
+
+        // Emit suffix in MODEL_ORDER
         StringBuilder suffix = new StringBuilder();
-
-        for (int i = 0; i < DIRS.length; i++) {
-            if ((mask & (1 << i)) != 0) {
+        for (String dir : MODEL_ORDER) {
+            if (connections.get(dir)) {
                 if (!suffix.isEmpty()) suffix.append("_");
-                suffix.append(DIRS[i]);
+                suffix.append(dir);
             }
         }
 
         return suffix.toString();
     }
 
-    private static void write(File file, String content) {
+    /* ====================================================================== */
+    /*  IO                                                                    */
+    /* ====================================================================== */
+
+    private static void writeFile(File file, String content) {
         try (FileWriter writer = new FileWriter(file)) {
             writer.write(content);
-            count++;
+            generatedFiles++;
             System.out.println("Generated: " + file.getPath());
         } catch (IOException e) {
-            e.printStackTrace();
+            throw new RuntimeException("Failed to write " + file, e);
         }
     }
 }
