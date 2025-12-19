@@ -258,5 +258,7 @@
   "block.furnituresoplenty.empyreal_storage_cabinet": "Empyreal Storage Cabinet",
   "block.furnituresoplenty.empyreal_storage_jar": "Empyreal Storage Jar",
   "block.furnituresoplenty.empyreal_table": "Empyreal Table",
-  "block.furnituresoplenty.empyreal_toilet": "Empyreal Toilet"
+  "block.furnituresoplenty.empyreal_toilet": "Empyreal Toilet",
+
+  "itemGroup.furnituresoplenty": "Furnitures O' Plenty"
 }
