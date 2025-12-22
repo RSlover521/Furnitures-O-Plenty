@@ -1,0 +1,8 @@
+{
+  "type": "refurbished_furniture:workbench_constructing",
+  "materials": [
+    { "count": 8, "item": "minecraft:empyreal_planks" }
+  ],
+  "result": { "item": "furnituresoplenty:empyreal_light_ceiling_fan", "count": 1 },
+  "show_notification": false
+}

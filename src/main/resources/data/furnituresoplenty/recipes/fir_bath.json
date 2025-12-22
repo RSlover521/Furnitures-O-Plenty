@@ -1,0 +1,11 @@
+{
+  "type": "refurbished_furniture:workbench_constructing",
+  "materials": [
+    { "count": 5, "item": "minecraft:fir_planks" },
+    { "count": 8, "item": "minecraft:quartz_block" },
+    { "count": 2, "item": "minecraft:iron_ingot" },
+    { "count": 1, "item": "minecraft:copper_ingot" }
+  ],
+  "result": { "item": "furnituresoplenty:fir_bath", "count": 1 },
+  "show_notification": false
+}

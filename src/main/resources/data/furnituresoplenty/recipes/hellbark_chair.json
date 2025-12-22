@@ -1,0 +1,8 @@
+{
+  "type": "refurbished_furniture:workbench_constructing",
+  "materials": [
+    { "count": 4, "item": "minecraft:hellbark_planks" }
+  ],
+  "result": { "item": "furnituresoplenty:hellbark_chair", "count": 1 },
+  "show_notification": false
+}

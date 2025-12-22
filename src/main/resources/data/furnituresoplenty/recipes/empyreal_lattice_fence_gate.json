@@ -1,0 +1,9 @@
+{
+  "type": "refurbished_furniture:workbench_constructing",
+  "materials": [
+    { "count": 2, "item": "minecraft:empyreal_planks" },
+    { "count": 4, "item": "minecraft:stick" }
+  ],
+  "result": { "item": "furnituresoplenty:empyreal_lattice_fence_gate", "count": 1 },
+  "show_notification": false
+}

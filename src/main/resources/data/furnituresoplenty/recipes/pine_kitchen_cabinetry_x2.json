@@ -1,0 +1,9 @@
+{
+  "type": "refurbished_furniture:workbench_constructing",
+  "materials": [
+    { "count": 8, "item": "minecraft:pine_planks" },
+    { "count": 1, "item": "minecraft:white_dye" }
+  ],
+  "result": { "item": "furnituresoplenty:pine_kitchen_cabinetry", "count": 2 },
+  "show_notification": false
+}

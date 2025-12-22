@@ -1,0 +1,8 @@
+{
+  "type": "refurbished_furniture:workbench_constructing",
+  "materials": [
+    { "count": 8, "item": "minecraft:palm_planks" }
+  ],
+  "result": { "item": "furnituresoplenty:palm_light_ceiling_fan", "count": 1 },
+  "show_notification": false
+}

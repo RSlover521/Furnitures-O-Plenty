@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    { "item": "furnituresoplenty:magic_light_ceiling_fan" },
+    { "item": "minecraft:black_dye" }
+  ],
+  "result": {
+    "item": "furnituresoplenty:magic_dark_ceiling_fan",
+    "count": 1
+  }
+}

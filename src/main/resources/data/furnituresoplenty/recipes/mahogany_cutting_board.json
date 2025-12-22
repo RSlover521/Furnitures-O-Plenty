@@ -1,0 +1,8 @@
+{
+  "type": "refurbished_furniture:workbench_constructing",
+  "materials": [
+    { "count": 2, "item": "minecraft:mahogany_planks" }
+  ],
+  "result": { "item": "furnituresoplenty:mahogany_cutting_board", "count": 1 },
+  "show_notification": false
+}
