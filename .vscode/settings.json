@@ -42,7 +42,7 @@
 
     // --- Minecraft / Java LS fixes ---
     "java.configuration.inferredSourceRoots": [],
-    "java.project.explorer.showNonJavaResources": true,
+    "java.project.explorer.showNonJavaResources": false,
     "java.import.exclusions": [
         "**/jdk/nashorn/**"
     ],
