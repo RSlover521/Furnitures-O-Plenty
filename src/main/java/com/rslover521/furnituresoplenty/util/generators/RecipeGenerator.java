@@ -8,7 +8,6 @@ public class RecipeGenerator {
 
     private static final String WORKBENCH_TYPE = "refurbished_furniture:workbench_constructing";
     private static final String RESULT_MOD_ID = "furnituresoplenty";
-    private static final String BOP_MOD_ID = "biomesoplenty";
 
     private static final String[] WOOD_TYPES = {
             "fir", "pine", "maple", "redwood", "mahogany", "jacaranda",
@@ -236,7 +235,7 @@ public class RecipeGenerator {
 
         String finalResult = result
                 .replace("%WOOD%", wood)
-                .replace("%MODID%", MOD_ID);
+                .replace("%MODID%", RESULT_MOD_ID);
 
         sb.append("  \"result\": \"").append(finalResult).append("\",\n");
         sb.append("  \"show_notification\": ").append(showNotification).append("\n");
