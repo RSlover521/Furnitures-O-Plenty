@@ -6,11 +6,9 @@ import java.nio.file.Path;
 
 public class RecipeGenerator {
 
-    // Your mod
-    private static final String MOD_ID = "furnituresoplenty";
-
-    // External recipe type (DO NOT CHANGE)
-    private static final String RECIPE_TYPE = "refurbished_furniture:workbench_constructing";
+    private static final String WORKBENCH_TYPE = "refurbished_furniture:workbench_constructing";
+    private static final String RESULT_MOD_ID = "furnituresoplenty";
+    private static final String BOP_MOD_ID = "biomesoplenty";
 
     private static final String[] WOOD_TYPES = {
             "fir", "pine", "maple", "redwood", "mahogany", "jacaranda",
@@ -43,7 +41,7 @@ public class RecipeGenerator {
       ],
       "result": { "item": "%MODID%:%WOOD%_dark_ceiling_fan" }
     }
-    """.replace("%MODID%", MOD_ID).replace("%WOOD%", wood);
+    """.replace("%MODID%", RESULT_MOD_ID).replace("%WOOD%", wood);
     write(output, wood + "_dark_ceiling_fan.json", darkFan);
 
     // 2. Light ceiling fan
@@ -220,8 +218,7 @@ public class RecipeGenerator {
 
     private static String constructWorkbenchRecipe(String[][] materials, String result, boolean showNotification, String wood) {
         StringBuilder sb = new StringBuilder();
-
-        sb.append("{\n  \"type\": \"").append(RECIPE_TYPE).append("\",\n");
+        sb.append("{\n  \"type\": \"").append(WORKBENCH_TYPE).append("\",\n");
         sb.append("  \"materials\": [\n");
 
         for (int i = 0; i < materials.length; i++) {
