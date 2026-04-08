@@ -8,13 +8,13 @@ version = "${mod_version}"
 displayName = "Furnitures O' Plenty"
 authors = "RSlover521"
 description = '''
-A beautiful furniture mod combining MrCrayfish and Biomes O' Plenty aesthetics.
+A beautiful furniture mod combining Refurbished Furniture and Biomes O' Plenty aesthetics.
 '''
 credits="RSlover521"
-logoFile="assets/${mod_id}/furnituresoplenty_icon.png"
-bannerFile="assets/${mod_id}/furnituresoplenty_banner.png"
-displayURL="https://github.com/RSlover521/Furnitures-O-Plenty"
-issuesURL="https://github.com/RSlover521/Furnitures-O-Plenty/issues"
+logoFile="furnituresoplenty_icon.png"
+bannerFile="furnituresoplenty_banner.png"
+displayURL="https://www.curseforge.com/minecraft/mc-mods/furnitures-o-plenty"
+issueTrackerURL="https://github.com/RSlover521/Furnitures-O-Plenty/issues"
 
 # Dependencies
 [[dependencies.furnituresoplenty]]

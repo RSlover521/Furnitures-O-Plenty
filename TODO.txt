@@ -1,8 +1,8 @@
 TODO LIST (IN PRIORITY)
 
-- fix item models (done, worked, except storage cabinets)
-- fix storage cabinet missing texture issue (done, havent tested yet)
-- fix table texture issue (done in root repository)
+- fix item models (done, worked)
+- fix storage cabinet missing texture issue (done)
+- fix table texture issue (in progress)
 - release 1.0.1 beta (creative mode only)
 
 -----

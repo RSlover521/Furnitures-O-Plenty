@@ -76,7 +76,7 @@ public class BathGenerator {
         {
           "parent": "%MODID%:block/bath_head",
           "textures": {
-            "particle": "%MODID%:block/%WOOD%_planks",
+            "particle": "biomesoplenty:block/%WOOD%_planks",
             "texture": "%MODID%:block/%WOOD%_bath"
           }
         }
@@ -91,7 +91,10 @@ public class BathGenerator {
     private static void generateItemModel(Path output, String wood) throws IOException {
         String json = """
         {
-          "parent": "%MODID%:block/%WOOD%_bath"
+          "parent": "%MODID%:item/bath",
+          "textures": {
+            "texture": "%MODID%:block/%WOOD%_bath"
+          }
         }
         """.replace("%MODID%", MOD_ID)
            .replace("%WOOD%", wood);

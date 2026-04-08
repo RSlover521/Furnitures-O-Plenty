@@ -73,7 +73,7 @@ public class KitchenDrawerGenerator {
         {
           "parent": "%MODID%:block/kitchen_drawer_closed",
           "textures": {
-            "particle": "%MODID%:block/%WOOD%_particle",
+            "particle": "biomesoplenty:block/%WOOD%_planks",
             "texture": "%MODID%:block/%WOOD%_kitchen_drawer"
           }
         }

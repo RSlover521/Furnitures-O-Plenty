@@ -1,7 +1,7 @@
 {
   "parent": "furnituresoplenty:block/bath_head",
   "textures": {
-    "particle": "furnituresoplenty:block/umbran_planks",
+    "particle": "biomesoplenty:block/umbran_planks",
     "texture": "furnituresoplenty:block/umbran_bath"
   }
 }

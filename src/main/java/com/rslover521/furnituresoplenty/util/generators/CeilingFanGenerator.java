@@ -64,7 +64,7 @@ public class CeilingFanGenerator {
         {
           "parent": "%MODID%:block/ceiling_fan_base_%STATE%",
           "textures": {
-            "particle": "%MODID%:block/%TYPE%_particle",
+            "particle": "biomesoplenty:block/%WOOD%_planks",
             "texture": "%MODID%:block/%WOOD%_%TYPE%_ceiling_fan"
           }
         }
@@ -81,7 +81,10 @@ public class CeilingFanGenerator {
     private static void generateItemModel(Path output, String wood, String type) throws IOException {
         String json = """
         {
-          "parent": "%MODID%:block/%WOOD%_%TYPE%_ceiling_fan"
+          "parent": "%MODID%:item/ceiling_fan",
+          "textures": {
+            "texture": "%MODID%:block/%WOOD%_%TYPE%_ceiling_fan"
+          }
         }
         """.replace("%MODID%", MOD_ID)
            .replace("%WOOD%", wood)

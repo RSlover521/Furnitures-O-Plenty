@@ -1,0 +1,7 @@
+{
+  "parent": "furnituresoplenty:block/table_east_north_south_west",
+  "textures": {
+    "particle": "biomesoplenty:block/willow_planks",
+    "texture": "furnituresoplenty:block/willow_table"
+  }
+}

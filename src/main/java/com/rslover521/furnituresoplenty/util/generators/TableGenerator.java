@@ -3,35 +3,61 @@ package com.rslover521.furnituresoplenty.util.generators;
 import java.io.File;
 import java.io.FileWriter;
 import java.io.IOException;
+import java.util.HashMap;
+import java.util.Map;
 
 public class TableGenerator {
 
     private static final String MODID = "furnituresoplenty";
-
     private static int count = 0;
 
     private static final String[] WOOD_TYPES = {
-            "fir", "pine", "maple", "redwood", "mahogany", "jacaranda",
-            "palm", "willow", "dead", "magic", "umbran", "hellbark", "empyreal"
+        "fir", "pine", "maple", "redwood", "mahogany", "jacaranda",
+        "palm", "willow", "dead", "magic", "umbran", "hellbark", "empyreal"
     };
 
-    // Furniture type
-    private static final String FURNITURE = "table";
+    /* ------------------------------------------------------------------ */
+    /* Bit layout:
+       bit 0 = north
+       bit 1 = east
+       bit 2 = south
+       bit 3 = west
+    */
+    private static final Map<Integer, String> SUFFIX_MAP = new HashMap<>();
+
+    static {
+        SUFFIX_MAP.put(0b0000, "");
+
+        SUFFIX_MAP.put(0b0001, "north");
+        SUFFIX_MAP.put(0b0010, "east");
+        SUFFIX_MAP.put(0b0100, "south");
+        SUFFIX_MAP.put(0b1000, "west");
+
+        SUFFIX_MAP.put(0b1010, "east_west");
+        SUFFIX_MAP.put(0b0101, "north_south");
+
+        SUFFIX_MAP.put(0b0011, "north_east");
+        SUFFIX_MAP.put(0b0111, "north_east_south");
+        SUFFIX_MAP.put(0b1111, "north_east_south_west");
+
+        SUFFIX_MAP.put(0b0110, "east_south");
+        SUFFIX_MAP.put(0b1110, "east_south_west");
+
+        SUFFIX_MAP.put(0b1100, "south_west");
+        SUFFIX_MAP.put(0b1101, "south_west_north");
+
+        SUFFIX_MAP.put(0b1001, "west_north");
+        SUFFIX_MAP.put(0b1011, "west_north_east");
+    }
+
+    /* ------------------------------------------------------------------ */
 
     private static final File BLOCKSTATE_DIR =
-            new File("src/main/resources/assets/" + MODID + "/blockstates");
+        new File("src/main/resources/assets/" + MODID + "/blockstates");
     private static final File BLOCK_MODEL_DIR =
-            new File("src/main/resources/assets/" + MODID + "/models/block");
+        new File("src/main/resources/assets/" + MODID + "/models/block");
     private static final File ITEM_MODEL_DIR =
-            new File("src/main/resources/assets/" + MODID + "/models/item");
-
-    // All 16 combinations in Refurbished naming style
-    private static final String[] VARIANT_NAMES = {
-            "", "west", "south", "south_west", "north", "west_north",
-            "north_south", "south_west_north", "east", "east_west",
-            "east_south", "east_south_west", "north_east", "west_north_east",
-            "north_east_south", "north_east_south_west"
-    };
+        new File("src/main/resources/assets/" + MODID + "/models/item");
 
     public static void main(String[] args) {
         BLOCKSTATE_DIR.mkdirs();
@@ -42,75 +68,108 @@ public class TableGenerator {
             generateTable(wood);
         }
 
-        System.out.println("✅ All table JSONs for Furniture-O-Plenty generated! " + count + " files wrote!");
+        System.out.println("Done! Generated " + count + " files.");
     }
 
-    private static void generateTable(String wood) {
-        String baseName = wood + "_" + FURNITURE;
+    /* ------------------------------------------------------------------ */
 
-        for (int i = 0; i < 16; i++) {
-            String variantSuffix = VARIANT_NAMES[i].isEmpty() ? "" : "_" + VARIANT_NAMES[i];
-            String modelName = baseName + variantSuffix;
-            generateBlockModel(modelName, wood, VARIANT_NAMES[i]);
+    private static void generateTable(String wood) {
+        String baseName = wood + "_table";
+
+        for (int mask = 0; mask < 16; mask++) {
+            String suffix = SUFFIX_MAP.get(mask);
+            String modelName = suffix.isEmpty()
+                ? baseName
+                : baseName + "_" + suffix;
+
+            generateBlockModel(modelName, suffix, wood);
         }
 
         generateBlockstate(baseName);
-
         generateItemModel(baseName);
     }
 
+    /* ------------------------------------------------------------------ */
+
     private static void generateBlockstate(String baseName) {
-        String[] directions = {"east", "north", "south", "west"};
-        StringBuilder json = new StringBuilder("{\n  \"variants\": {\n");
+        StringBuilder json = new StringBuilder("""
+        {
+          "variants": {
+        """);
 
-        for (int i = 0; i < 16; i++) {
-            StringBuilder props = new StringBuilder();
-            for (int d = 0; d < 4; d++) {
-                if (props.length() > 0) props.append(",");
-                props.append(directions[d]).append("=").append((i & (1 << d)) != 0);
-            }
+        for (int mask = 0; mask < 16; mask++) {
+            boolean north = (mask & 0b0001) != 0;
+            boolean east  = (mask & 0b0010) != 0;
+            boolean south = (mask & 0b0100) != 0;
+            boolean west  = (mask & 0b1000) != 0;
 
-            String variantSuffix = VARIANT_NAMES[i].isEmpty() ? "" : "_" + VARIANT_NAMES[i];
-            json.append("    \"").append(props).append("\": { \"model\": \"")
-                    .append(MODID).append(":block/").append(baseName).append(variantSuffix).append("\" }");
-            if (i < 15) json.append(",");
+            String suffix = SUFFIX_MAP.get(mask);
+            String modelName = suffix.isEmpty()
+                ? baseName
+                : baseName + "_" + suffix;
+
+            json.append("    \"")
+                .append("north=").append(north).append(",")
+                .append("east=").append(east).append(",")
+                .append("south=").append(south).append(",")
+                .append("west=").append(west)
+                .append("\": { \"model\": \"")
+                .append(MODID).append(":block/")
+                .append(modelName)
+                .append("\" }");
+
+            if (mask < 15) json.append(",");
             json.append("\n");
         }
 
-        json.append("  }\n}");
+        json.append("""
+          }
+        }
+        """);
+
         write(new File(BLOCKSTATE_DIR, baseName + ".json"), json.toString());
     }
 
-    private static void generateBlockModel(String name, String wood, String variant) {
-        String parentName = variant.isEmpty() ? FURNITURE : FURNITURE + "_" + variant;
+    /* ------------------------------------------------------------------ */
+
+    private static void generateBlockModel(String name, String suffix, String wood) {
+        String parent = suffix.isEmpty()
+            ? "table"
+            : "table_" + suffix;
+
         String json = """
-                {
-                  "parent": "refurbished_furniture:block/%1$s",
-                  "textures": {
-                    "particle": "biomesoplenty:block/%2$s_planks",
-                    "texture": "furnituresoplenty:block/%2$s_table"
-                  }
-                }
-                """.formatted(parentName, wood);
+        {
+          "parent": "refurbished_furniture:block/%s",
+          "textures": {
+            "particle": "biomesoplenty:block/%s_planks",
+            "texture": "furnituresoplenty:block/%s_table"
+          }
+        }
+        """.formatted(parent, wood, wood);
+
         write(new File(BLOCK_MODEL_DIR, name + ".json"), json);
     }
 
+    /* ------------------------------------------------------------------ */
+
     private static void generateItemModel(String baseName) {
         String json = """
-                {
-                  "parent": "furnituresoplenty:block/%1$s"
-                }
-                """.formatted(baseName);
+        {
+          "parent": "%s:block/%s"
+        }
+        """.formatted(MODID, baseName);
+
         write(new File(ITEM_MODEL_DIR, baseName + ".json"), json);
     }
+
+    /* ------------------------------------------------------------------ */
 
     private static void write(File file, String content) {
         try (FileWriter writer = new FileWriter(file)) {
             writer.write(content);
+            count++;
             System.out.println("Generated: " + file.getPath());
-            count ++;
         } catch (IOException e) {
-            System.err.println("Error writing: " + file.getPath());
             e.printStackTrace();
         }
     }

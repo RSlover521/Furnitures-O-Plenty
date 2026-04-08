@@ -1,7 +1,7 @@
 {
   "parent": "furnituresoplenty:block/kitchen_drawer_closed",
   "textures": {
-    "particle": "furnituresoplenty:block/jacaranda_particle",
+    "particle": "biomesoplenty:block/jacaranda_planks",
     "texture": "furnituresoplenty:block/jacaranda_kitchen_drawer"
   }
 }

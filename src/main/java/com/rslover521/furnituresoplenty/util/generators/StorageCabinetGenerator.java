@@ -86,7 +86,7 @@ public class StorageCabinetGenerator {
         // Use open_hinge_right as the default item model
         String json = """
         {
-            "parent": "refurbished_furniture:block/%WOOD%_cabinet_closed_hinge_left"
+            "parent": "furnituresoplenty:block/%WOOD%_cabinet_closed_hinge_left"
         }
         """.replace("%WOOD%", wood);
 
