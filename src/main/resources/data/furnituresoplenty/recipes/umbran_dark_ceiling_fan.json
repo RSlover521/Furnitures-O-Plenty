@@ -5,8 +5,5 @@
     { "item": "furnituresoplenty:umbran_light_ceiling_fan" },
     { "item": "minecraft:black_dye" }
   ],
-  "result": {
-    "item": "furnituresoplenty:umbran_dark_ceiling_fan",
-    "count": 1
-  }
+  "result": { "item": "furnituresoplenty:umbran_dark_ceiling_fan" }
 }

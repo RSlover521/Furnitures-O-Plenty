@@ -1,8 +1,8 @@
 {
   "type": "refurbished_furniture:workbench_constructing",
   "materials": [
-    { "count": 6, "item": "minecraft:maple_planks" }
+    { "count": 6, "item": "biomesoplenty:maple_planks" }
   ],
-  "result": { "item": "furnituresoplenty:maple_desk", "count": 1 },
+  "result": "furnituresoplenty:maple_desk",
   "show_notification": false
 }

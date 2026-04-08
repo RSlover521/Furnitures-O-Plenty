@@ -1,8 +1,8 @@
 {
   "type": "refurbished_furniture:workbench_constructing",
   "materials": [
-    { "count": 4, "item": "minecraft:willow_planks" }
+    { "count": 4, "item": "biomesoplenty:willow_planks" }
   ],
-  "result": { "item": "furnituresoplenty:willow_chair", "count": 1 },
+  "result": "furnituresoplenty:willow_chair",
   "show_notification": false
 }

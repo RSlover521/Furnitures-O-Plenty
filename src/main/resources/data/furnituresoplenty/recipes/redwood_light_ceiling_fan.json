@@ -1,8 +1,8 @@
 {
   "type": "refurbished_furniture:workbench_constructing",
   "materials": [
-    { "count": 8, "item": "minecraft:redwood_planks" }
+    { "count": 8, "item": "biomesoplenty:redwood_planks" }
   ],
-  "result": { "item": "furnituresoplenty:redwood_light_ceiling_fan", "count": 1 },
+  "result": "furnituresoplenty:redwood_light_ceiling_fan",
   "show_notification": false
 }

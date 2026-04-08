@@ -3,201 +3,245 @@ package com.rslover521.furnituresoplenty.util.generators;
 import java.io.IOException;
 import java.nio.file.Files;
 import java.nio.file.Path;
-import java.util.List;
 
 public class RecipeGenerator {
 
-    /* Your mod namespace (where recipes live) */
-    private static final String MOD_ID = "furnituresoplenty";
+    private static final String WORKBENCH_TYPE = "refurbished_furniture:workbench_constructing";
+    private static final String RESULT_MOD_ID = "furnituresoplenty";
 
-    /* Refurbished Furniture namespace (recipe serializer owner) */
-    private static final String RF_MOD_ID = "refurbished_furniture";
-
-    private static final List<String> WOOD_TYPES = List.of(
-        "fir", "pine", "maple", "redwood", "mahogany", "jacaranda",
-        "palm", "willow", "dead", "magic", "umbran", "hellbark", "empyreal"
-    );
-
-    /* Strongly-typed material definition */
-    private record Material(int count, String item) {}
+    private static final String[] WOOD_TYPES = {
+            "fir", "pine", "maple", "redwood", "mahogany", "jacaranda",
+            "palm", "willow", "dead", "magic", "umbran", "hellbark", "empyreal"
+    };
 
     public static void main(String[] args) {
-        Path output = Path.of("")
-            .toAbsolutePath()
-            .resolve("src/main/resources/data/" + MOD_ID + "/recipes");
+        Path output = Path.of("src/main/resources/data/furnituresoplenty/recipes/");
 
         try {
             for (String wood : WOOD_TYPES) {
                 generateRecipes(output, wood);
             }
-            System.out.println("All recipes generated successfully.");
+            System.out.println("✅ All recipes generated!");
         } catch (IOException e) {
-            throw new RuntimeException("Failed to generate recipes", e);
+            e.printStackTrace();
         }
     }
 
     private static void generateRecipes(Path output, String wood) throws IOException {
 
-        /* 1. Dark ceiling fan (shapeless) */
-        write(output, wood + "_dark_ceiling_fan.json", """
-        {
-          "type": "minecraft:crafting_shapeless",
-          "category": "misc",
-          "ingredients": [
-            { "item": "%s:%s_light_ceiling_fan" },
-            { "item": "minecraft:black_dye" }
-          ],
-          "result": {
-            "item": "%s:%s_dark_ceiling_fan",
-            "count": 1
-          }
-        }
-        """.formatted(MOD_ID, wood, MOD_ID, wood));
-
-        /* 2. Light ceiling fan */
-        write(output, wood + "_light_ceiling_fan.json",
-            workbench(
-                wood,
-                "%s:%s_light_ceiling_fan".formatted(MOD_ID, wood),
-                1,
-                false,
-                new Material(8, "minecraft:%WOOD%_planks")
-            )
-        );
-
-        /* Furniture recipes */
-
-        recipe(output, wood, "toilet", 1,
-            new Material(3, "minecraft:%WOOD%_planks"),
-            new Material(5, "minecraft:quartz_block"),
-            new Material(1, "minecraft:iron_ingot"),
-            new Material(1, "minecraft:copper_ingot")
-        );
-
-        recipe(output, wood, "table", 1,
-            new Material(6, "minecraft:%WOOD%_planks")
-        );
-
-        recipe(output, wood, "storage_jar", 1,
-            new Material(2, "minecraft:%WOOD%_planks"),
-            new Material(1, "minecraft:glass")
-        );
-
-        recipe(output, wood, "storage_cabinet", 2,
-            new Material(8, "minecraft:%WOOD%_planks"),
-            new Material(1, "minecraft:iron_ingot")
-        );
-
-        recipe(output, wood, "mail_box", 1,
-            new Material(8, "minecraft:%WOOD%_planks")
-        );
-
-        recipe(output, wood, "lattice_fence", 3,
-            new Material(4, "minecraft:%WOOD%_planks"),
-            new Material(4, "minecraft:stick")
-        );
-
-        recipe(output, wood, "lattice_fence_gate", 1,
-            new Material(2, "minecraft:%WOOD%_planks"),
-            new Material(4, "minecraft:stick")
-        );
-
-        recipe(output, wood, "kitchen_storage_cabinet", 2,
-            new Material(12, "minecraft:%WOOD%_planks"),
-            new Material(1, "minecraft:white_dye")
-        );
-
-        recipe(output, wood, "kitchen_sink", 1,
-            new Material(10, "minecraft:%WOOD%_planks"),
-            new Material(1, "minecraft:copper_ingot"),
-            new Material(1, "minecraft:quartz_block"),
-            new Material(1, "minecraft:white_dye")
-        );
-
-        recipe(output, wood, "kitchen_drawer", 2,
-            new Material(12, "minecraft:%WOOD%_planks"),
-            new Material(1, "minecraft:white_dye")
-        );
-
-        recipe(output, wood, "kitchen_cabinetry", 2,
-            new Material(8, "minecraft:%WOOD%_planks"),
-            new Material(1, "minecraft:white_dye")
-        );
-
-        recipe(output, wood, "drawer", 1,
-            new Material(10, "minecraft:%WOOD%_planks")
-        );
-
-        recipe(output, wood, "desk", 1,
-            new Material(6, "minecraft:%WOOD%_planks")
-        );
-
-        recipe(output, wood, "cutting_board", 1,
-            new Material(2, "minecraft:%WOOD%_planks")
-        );
-
-        recipe(output, wood, "crate", 1,
-            new Material(8, "minecraft:%WOOD%_planks")
-        );
-
-        recipe(output, wood, "chair", 1,
-            new Material(4, "minecraft:%WOOD%_planks")
-        );
-
-        recipe(output, wood, "bath", 1,
-            new Material(5, "minecraft:%WOOD%_planks"),
-            new Material(8, "minecraft:quartz_block"),
-            new Material(2, "minecraft:iron_ingot"),
-            new Material(1, "minecraft:copper_ingot")
-        );
-
-        recipe(output, wood, "basin", 1,
-            new Material(3, "minecraft:%WOOD%_planks"),
-            new Material(4, "minecraft:quartz_block"),
-            new Material(2, "minecraft:iron_ingot"),
-            new Material(1, "minecraft:copper_ingot")
-        );
+    // 1. Dark ceiling fan (vanilla)
+    String darkFan = """
+    {
+      "type": "minecraft:crafting_shapeless",
+      "category": "misc",
+      "ingredients": [
+        { "item": "%MODID%:%WOOD%_light_ceiling_fan" },
+        { "item": "minecraft:black_dye" }
+      ],
+      "result": { "item": "%MODID%:%WOOD%_dark_ceiling_fan" }
     }
+    """.replace("%MODID%", RESULT_MOD_ID).replace("%WOOD%", wood);
+    write(output, wood + "_dark_ceiling_fan.json", darkFan);
 
-    /* Generic furniture recipe helper */
-    private static void recipe(Path output, String wood, String name, int count, Material... materials)
-        throws IOException {
+    // 2. Light ceiling fan
+    write(output, wood + "_light_ceiling_fan.json", constructWorkbenchRecipe(
+            new String[][]{
+                    {"8", "biomesoplenty:%WOOD%_planks"}
+            },
+            "%MODID%:%WOOD%_light_ceiling_fan", false, wood
+    ));
 
-        String file = wood + "_" + name + (count > 1 ? "_x" + count : "") + ".json";
-        String result = "%s:%s_%s".formatted(MOD_ID, wood, name);
+    // 3. Toilet
+    write(output, wood + "_toilet.json", constructWorkbenchRecipe(
+            new String[][]{
+                    {"3", "biomesoplenty:%WOOD%_planks"},
+                    {"5", "minecraft:quartz_block"},
+                    {"1", "minecraft:iron_ingot"},
+                    {"1", "minecraft:copper_ingot"}
+            },
+            "%MODID%:%WOOD%_toilet", false, wood
+    ));
 
-        write(output, file, workbench(wood, result, count, false, materials));
-    }
+    // 4. Table
+    write(output, wood + "_table.json", constructWorkbenchRecipe(
+            new String[][]{
+                    {"6", "biomesoplenty:%WOOD%_planks"}
+            },
+            "%MODID%:%WOOD%_table", false, wood
+    ));
 
-    /* Workbench recipe builder */
-    private static String workbench(String wood, String result, int count, boolean showNotification,
-                                    Material... materials) {
+    // 5. Storage Jar
+    write(output, wood + "_storage_jar.json", constructWorkbenchRecipe(
+            new String[][]{
+                    {"2", "biomesoplenty:%WOOD%_planks"},
+                    {"1", "minecraft:glass"}
+            },
+            "%MODID%:%WOOD%_storage_jar", false, wood
+    ));
 
-        StringBuilder json = new StringBuilder();
-        json.append("{\n");
-        json.append("  \"type\": \"").append(RF_MOD_ID).append(":workbench_constructing\",\n");
-        json.append("  \"materials\": [\n");
+    // 6. Storage Cabinet
+    write(output, wood + "_storage_cabinet.json", constructWorkbenchRecipe(
+            new String[][]{
+                    {"8", "biomesoplenty:%WOOD%_planks"},
+                    {"1", "minecraft:iron_ingot"}
+            },
+            "%MODID%:%WOOD%_storage_cabinet", false, wood
+    ));
+
+    // 7. Mailbox
+    write(output, wood + "_mail_box.json", constructWorkbenchRecipe(
+            new String[][]{
+                    {"8", "biomesoplenty:%WOOD%_planks"}
+            },
+            "%MODID%:%WOOD%_mail_box", false, wood
+    ));
+
+    // 8. Lattice Fence
+    write(output, wood + "_lattice_fence.json", constructWorkbenchRecipe(
+            new String[][]{
+                    {"4", "biomesoplenty:%WOOD%_planks"},
+                    {"4", "minecraft:stick"}
+            },
+            "%MODID%:%WOOD%_lattice_fence", false, wood
+    ));
+
+    // 9. Lattice Fence Gate
+    write(output, wood + "_lattice_fence_gate.json", constructWorkbenchRecipe(
+            new String[][]{
+                    {"2", "biomesoplenty:%WOOD%_planks"},
+                    {"4", "minecraft:stick"}
+            },
+            "%MODID%:%WOOD%_lattice_fence_gate", false, wood
+    ));
+
+    // 10. Kitchen Storage Cabinet
+    write(output, wood + "_kitchen_storage_cabinet.json", constructWorkbenchRecipe(
+            new String[][]{
+                    {"12", "biomesoplenty:%WOOD%_planks"},
+                    {"1", "minecraft:white_dye"}
+            },
+            "%MODID%:%WOOD%_kitchen_storage_cabinet", false, wood
+    ));
+
+    // 11. Kitchen Sink
+    write(output, wood + "_kitchen_sink.json", constructWorkbenchRecipe(
+            new String[][]{
+                    {"10", "biomesoplenty:%WOOD%_planks"},
+                    {"1", "minecraft:copper_ingot"},
+                    {"1", "minecraft:quartz_block"},
+                    {"1", "minecraft:white_dye"}
+            },
+            "%MODID%:%WOOD%_kitchen_sink", false, wood
+    ));
+
+    // 12. Kitchen Drawer
+    write(output, wood + "_kitchen_drawer.json", constructWorkbenchRecipe(
+            new String[][]{
+                    {"12", "biomesoplenty:%WOOD%_planks"},
+                    {"1", "minecraft:white_dye"}
+            },
+            "%MODID%:%WOOD%_kitchen_drawer", false, wood
+    ));
+
+    // 13. Kitchen Cabinetry
+    write(output, wood + "_kitchen_cabinetry.json", constructWorkbenchRecipe(
+            new String[][]{
+                    {"8", "biomesoplenty:%WOOD%_planks"},
+                    {"1", "minecraft:white_dye"}
+            },
+            "%MODID%:%WOOD%_kitchen_cabinetry", false, wood
+    ));
+
+    // 14. Drawer
+    write(output, wood + "_drawer.json", constructWorkbenchRecipe(
+            new String[][]{
+                    {"10", "biomesoplenty:%WOOD%_planks"}
+            },
+            "%MODID%:%WOOD%_drawer", false, wood
+    ));
+
+    // 15. Desk
+    write(output, wood + "_desk.json", constructWorkbenchRecipe(
+            new String[][]{
+                    {"6", "biomesoplenty:%WOOD%_planks"}
+            },
+            "%MODID%:%WOOD%_desk", false, wood
+    ));
+
+    // 16. Cutting Board
+    write(output, wood + "_cutting_board.json", constructWorkbenchRecipe(
+            new String[][]{
+                    {"2", "biomesoplenty:%WOOD%_planks"}
+            },
+            "%MODID%:%WOOD%_cutting_board", false, wood
+    ));
+
+    // 17. Crate
+    write(output, wood + "_crate.json", constructWorkbenchRecipe(
+            new String[][]{
+                    {"8", "biomesoplenty:%WOOD%_planks"}
+            },
+            "%MODID%:%WOOD%_crate", false, wood
+    ));
+
+    // 18. Chair
+    write(output, wood + "_chair.json", constructWorkbenchRecipe(
+            new String[][]{
+                    {"4", "biomesoplenty:%WOOD%_planks"}
+            },
+            "%MODID%:%WOOD%_chair", false, wood
+    ));
+
+    // 19. Bath
+    write(output, wood + "_bath.json", constructWorkbenchRecipe(
+            new String[][]{
+                    {"5", "biomesoplenty:%WOOD%_planks"},
+                    {"8", "minecraft:quartz_block"},
+                    {"2", "minecraft:iron_ingot"},
+                    {"1", "minecraft:copper_ingot"}
+            },
+            "%MODID%:%WOOD%_bath", false, wood
+    ));
+
+    // 20. Basin
+    write(output, wood + "_basin.json", constructWorkbenchRecipe(
+            new String[][]{
+                    {"3", "biomesoplenty:%WOOD%_planks"},
+                    {"4", "minecraft:quartz_block"},
+                    {"2", "minecraft:iron_ingot"},
+                    {"1", "minecraft:copper_ingot"}
+            },
+            "%MODID%:%WOOD%_basin", false, wood
+    ));
+}
+
+    private static String constructWorkbenchRecipe(String[][] materials, String result, boolean showNotification, String wood) {
+        StringBuilder sb = new StringBuilder();
+        sb.append("{\n  \"type\": \"").append(WORKBENCH_TYPE).append("\",\n");
+        sb.append("  \"materials\": [\n");
 
         for (int i = 0; i < materials.length; i++) {
-            Material m = materials[i];
-            json.append("    { \"count\": ").append(m.count())
-                .append(", \"item\": \"")
-                .append(m.item().replace("%WOOD%", wood))
-                .append("\" }");
-            if (i < materials.length - 1) json.append(",");
-            json.append("\n");
+            String count = materials[i][0];
+            String item = materials[i][1].replace("%WOOD%", wood);
+
+            sb.append("    { \"count\": ").append(count)
+              .append(", \"item\": \"").append(item).append("\" }");
+
+            if (i < materials.length - 1) sb.append(",");
+            sb.append("\n");
         }
 
-        json.append("  ],\n");
-        json.append("  \"result\": { \"item\": \"")
-            .append(result)
-            .append("\", \"count\": ")
-            .append(count)
-            .append(" },\n");
-        json.append("  \"show_notification\": ").append(showNotification).append("\n");
-        json.append("}");
+        sb.append("  ],\n");
 
-        return json.toString();
+        String finalResult = result
+                .replace("%WOOD%", wood)
+                .replace("%MODID%", RESULT_MOD_ID);
+
+        sb.append("  \"result\": \"").append(finalResult).append("\",\n");
+        sb.append("  \"show_notification\": ").append(showNotification).append("\n");
+        sb.append("}");
+
+        return sb.toString();
     }
 
     private static void write(Path output, String filename, String content) throws IOException {

@@ -1,8 +1,8 @@
 {
   "type": "refurbished_furniture:workbench_constructing",
   "materials": [
-    { "count": 6, "item": "minecraft:magic_planks" }
+    { "count": 6, "item": "biomesoplenty:magic_planks" }
   ],
-  "result": { "item": "furnituresoplenty:magic_desk", "count": 1 },
+  "result": "furnituresoplenty:magic_desk",
   "show_notification": false
 }

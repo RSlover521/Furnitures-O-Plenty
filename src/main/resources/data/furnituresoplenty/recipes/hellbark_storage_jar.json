@@ -1,9 +1,9 @@
 {
   "type": "refurbished_furniture:workbench_constructing",
   "materials": [
-    { "count": 2, "item": "minecraft:hellbark_planks" },
+    { "count": 2, "item": "biomesoplenty:hellbark_planks" },
     { "count": 1, "item": "minecraft:glass" }
   ],
-  "result": { "item": "furnituresoplenty:hellbark_storage_jar", "count": 1 },
+  "result": "furnituresoplenty:hellbark_storage_jar",
   "show_notification": false
 }

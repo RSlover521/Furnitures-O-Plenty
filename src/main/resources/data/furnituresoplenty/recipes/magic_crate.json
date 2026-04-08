@@ -1,8 +1,8 @@
 {
   "type": "refurbished_furniture:workbench_constructing",
   "materials": [
-    { "count": 8, "item": "minecraft:magic_planks" }
+    { "count": 8, "item": "biomesoplenty:magic_planks" }
   ],
-  "result": { "item": "furnituresoplenty:magic_crate", "count": 1 },
+  "result": "furnituresoplenty:magic_crate",
   "show_notification": false
 }

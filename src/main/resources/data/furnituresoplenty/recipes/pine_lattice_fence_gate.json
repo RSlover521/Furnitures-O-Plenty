@@ -1,9 +1,9 @@
 {
   "type": "refurbished_furniture:workbench_constructing",
   "materials": [
-    { "count": 2, "item": "minecraft:pine_planks" },
+    { "count": 2, "item": "biomesoplenty:pine_planks" },
     { "count": 4, "item": "minecraft:stick" }
   ],
-  "result": { "item": "furnituresoplenty:pine_lattice_fence_gate", "count": 1 },
+  "result": "furnituresoplenty:pine_lattice_fence_gate",
   "show_notification": false
 }

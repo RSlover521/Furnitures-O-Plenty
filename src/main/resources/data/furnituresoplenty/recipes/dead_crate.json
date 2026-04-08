@@ -1,8 +1,8 @@
 {
   "type": "refurbished_furniture:workbench_constructing",
   "materials": [
-    { "count": 8, "item": "minecraft:dead_planks" }
+    { "count": 8, "item": "biomesoplenty:dead_planks" }
   ],
-  "result": { "item": "furnituresoplenty:dead_crate", "count": 1 },
+  "result": "furnituresoplenty:dead_crate",
   "show_notification": false
 }

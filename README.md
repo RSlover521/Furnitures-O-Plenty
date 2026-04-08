@@ -16,7 +16,10 @@
     <img alt="Discussions" src="https://img.shields.io/github/discussions/RSlover521/Furnitures-O-Plenty?style=for-the-badge&color=blue&logo=github">
   </a>
   <a href="https://github.com/RSlover521/Furnitures-O-Plenty/issues">
-    <img alt="Open Issues" src="https://img.shields.io/github/issues/RSlover521/Furnitures-O-Plenty?style=for-the-badge&logo=github&color=yellow">
+    <img alt="Open Issues" src="https://img.shields.io/github/issues/RSlover521/Furnitures-O-Plenty?style=for-the-badge&logo=github&color=limegreen">
+  </a>
+  <a href="https://github.com/RSlover521/Furnitures-O-Plenty/releases">
+    <img alt="Total Downloads" src="https://img.shields.io/github/downloads/RSlover521/Furnitures-O-Plenty/total?style=for-the-badge&logo=github&color=purple">
   </a>
   <a href="https://modrinth.com/mod/furnitures-o-plenty">
     <img alt="Modrinth Downloads" src="https://img.shields.io/modrinth/dt/furnitures-o-plenty?style=for-the-badge&color=limegreen&logo=modrinth&logoColor=limegreen">
