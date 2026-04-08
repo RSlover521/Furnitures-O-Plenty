@@ -89,7 +89,7 @@ public class RecipeGenerator {
     ));
 
     // 7. Mailbox
-    write(output, wood + "_mailbox.json", constructWorkbenchRecipe(
+    write(output, wood + "_mail_box.json", constructWorkbenchRecipe(
             new String[][]{
                     {"8", "biomesoplenty:%WOOD%_planks"}
             },
