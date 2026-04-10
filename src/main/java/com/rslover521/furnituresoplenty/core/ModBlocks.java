@@ -2,7 +2,6 @@ package com.rslover521.furnituresoplenty.core;
 
 import java.util.Map;
 import java.util.function.Supplier;
-
 import com.mrcrayfish.furniture.refurbished.block.CeilingFanBlock;
 import com.mrcrayfish.furniture.refurbished.block.MetalType;
 import com.rslover521.furnituresoplenty.FurnituresOPlenty;
@@ -25,21 +24,17 @@ import com.rslover521.furnituresoplenty.customFurnitures.CustomStorageCabinetBlo
 import com.rslover521.furnituresoplenty.customFurnitures.CustomStorageJarBlock;
 import com.rslover521.furnituresoplenty.customFurnitures.CustomTableBlock;
 import com.rslover521.furnituresoplenty.customFurnitures.CustomToiletBlock;
-
 import biomesoplenty.api.block.BOPBlocks;
 import biomesoplenty.api.block.BOPWoodTypes;
-
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.SoundType;
 import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.minecraft.world.level.block.state.properties.NoteBlockInstrument;
 import net.minecraft.world.level.block.state.properties.WoodType;
-
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.RegistryObject;
-
 import static java.util.Map.entry;
 
 public class ModBlocks {
