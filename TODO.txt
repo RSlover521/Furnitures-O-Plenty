@@ -1,25 +1,23 @@
 TODO LIST (IN PRIORITY)
 
 - fix item models (done, worked)
-- fix storage cabinet missing texture issue (done)
-- fix table texture issue (in progress)
+- fix storage cabinet missing texture issue (done, worked)
+- fix table texture issue (done, worked)
 - release 1.0.1 beta (creative mode only)
 
 -----
 
-- fix ceiling fan no blades texture issue (in progress...)
-- add loot tables to all blocks
+- add loot tables to all blocks (in progress...)
+- add recipes for all blocks (done, worked)
 - release 1.0.2 (still beta) (supports survival... somehow)
 
 -----
 
-- add recipes for all blocks
+- fix ceiling fan no blades texture issue (in progress...)
 - fix rendering issues (water rendering on certain blocks)
-- list blocks in workbench menu
 - release 1.1.0 (official release)
 
 ----- 
 
 - any more bugs appear in issues link
-- JEI compat
 - release 1.1.1.
