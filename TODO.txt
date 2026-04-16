@@ -7,7 +7,7 @@ TODO LIST (IN PRIORITY)
 
 -----
 
-- add loot tables to all blocks (done, haven't tested yet)
+- add loot tables to all blocks (done, worked)
 - add recipes for all blocks (done, worked)
 - release 1.0.2 (still beta) (supports survival... somehow)
 
