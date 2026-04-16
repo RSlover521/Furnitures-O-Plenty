@@ -3,6 +3,13 @@
   "configurations": [
     {
       "type": "java",
+      "name": "TagGenerator",
+      "request": "launch",
+      "mainClass": "com.rslover521.furnituresoplenty.util.generators.TagGenerator",
+      "projectName": "Furnitures-O-Plenty"
+    },
+    {
+      "type": "java",
       "name": "LootTableGenerator",
       "request": "launch",
       "mainClass": "com.rslover521.furnituresoplenty.util.generators.LootTableGenerator",
