@@ -8,7 +8,7 @@ TODO LIST (IN PRIORITY)
 -----
 
 - fix ceiling fan no blades texture issue (in progress...)
-- add loot tables to all blocks
+- add loot tables to all blocks ()
 - release 1.0.2 (still beta) (supports survival... somehow)
 
 -----
