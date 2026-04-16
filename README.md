@@ -19,7 +19,7 @@
     <img alt="Open Issues" src="https://img.shields.io/github/issues/RSlover521/Furnitures-O-Plenty?style=for-the-badge&logo=github&color=limegreen">
   </a>
   <a href="https://github.com/RSlover521/Furnitures-O-Plenty/releases">
-    <img alt="Total Downloads" src="https://img.shields.io/github/downloads/RSlover521/Furnitures-O-Plenty/total?style=for-the-badge&logo=github&color=purple">
+    <img alt="Total Downloads" src="https://img.shields.io/github/downloads/RSlover521/Furnitures-O-Plenty/total?style=for-the-badge&logo=github&color=white">
   </a>
   <a href="https://modrinth.com/mod/furnitures-o-plenty">
     <img alt="Modrinth Downloads" src="https://img.shields.io/modrinth/dt/furnitures-o-plenty?style=for-the-badge&color=limegreen&logo=modrinth&logoColor=limegreen">
@@ -33,21 +33,29 @@
 
 ## 🌟 Furnitures O’ Plenty
 
-Furnitures O’ Plenty expands your decorating possibilities by bringing together the best of **Biomes O’ Plenty** and **MrCrayfish’s Furniture Mod**! Enjoy a wide variety of furniture crafted from every unique Biomes O’ Plenty wood type — from maple to empyreal — all designed to blend seamlessly with Minecraft’s style.
+Furnitures O’ Plenty (FOP) expands your decorating possibilities by bringing together the best of **Biomes O’ Plenty** and **MrCrayfish’s Furniture Mod**! Enjoy a wide variety of furniture crafted from every unique Biomes O’ Plenty wood type — from maple to empyreal — all designed to blend seamlessly with Minecraft’s style.
 
 Decorate your world, match your biomes, and make your builds truly feel like home!
 
-**⚠️ This mod is currently in beta. Use it wisely!**
+**⚠️ This mod is currently in beta. Use it wisely! Some features might not be added yet!**
 
 <p align="center">
   <img width="64" height="64" alt="mod_icon" src="https://github.com/user-attachments/assets/b3196382-e9dd-43ed-a0b0-6e3029e01536" />
 </p>
+
+<center> 
+
+*Note: This block does not exist in the mod. This block is used for visualization only.*
+
+</center>
 
 ---
 
 ## 📦 Overview
 
 **This mod of Minecraft combines every wood type from Biomes O' Plenty to the furnitures from Mr.Crayfish's Refurbished Furniture mod.**
+
+---
 
 ## 🪑 Mod Features Details
 Furniture variants for all Biomes O' Plenty wood types:
@@ -81,14 +89,14 @@ Furniture variants for all Biomes O' Plenty wood types:
 ## 💾 Installation
 
 1. Download your preferred version from **[CurseForge](https://www.curseforge.com/minecraft/mc-mods/furnitures-o-plenty)** or **[Modrinth](https://modrinth.com/mod/furnitures-o-plenty)**.  
-2. Make sure you have **Minecraft Forge** installed for your Minecraft version.  
+2. Make sure you have **Minecraft Forge** installed for the Minecraft version, 1.20.1 and forge 47 and above  
 3. Place the mod `.jar` file into your `mods` folder located inside your `.minecraft` files.  
 4. Installed the correct mod dependencies: **[Biomes O' Plenty](https://www.curseforge.com/minecraft/mc-mods/biomes-o-plenty) (Version: 1.0.14 or above)** and **[Refurbished Furniture](https://www.curseforge.com/minecraft/mc-mods/refurbished-furniture) (Version 19.0.0.90 or above)**. Make sure you installed their mod dependencies as well. You can check their dependencies in their mod descriptions.
 5. Launch Minecraft and enjoy your new furniture!
 
 ---
 
-### 🔗 Mod Links
+## 🔗 Mod Links
 
 ### Official Pages
 - [Modrinth](https://modrinth.com/mod/furnitures-o-plenty)  
@@ -96,8 +104,21 @@ Furniture variants for all Biomes O' Plenty wood types:
 
 ### GitHub
 - [Repository](https://github.com/RSlover521/Furnitures-O-Plenty)  
-- [Issues](https://github.com/RSlover521/Furnitures-O-Plenty/issues)  
+- [Report an Issue](https://github.com/RSlover521/Furnitures-O-Plenty/issues)  
 
 ### Dependencies
 - [Biomes O' Plenty](https://www.curseforge.com/minecraft/mc-mods/biomes-o-plenty)  
 - [Refurbished Furniture](https://www.curseforge.com/minecraft/mc-mods/refurbished-furniture)
+
+---
+
+### 🌟 Supported Mod Versions
+
+|Versions|Supported|
+|--------|---------|
+|FOP 1.0.0|❌|
+|FOP 1.0.1|✅|
+
+**Note: Please review your mod version before you open an issue on the github issue page!**
+
+---
