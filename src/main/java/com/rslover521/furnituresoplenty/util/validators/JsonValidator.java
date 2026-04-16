@@ -16,6 +16,7 @@ public class JsonValidator {
 			"src/main/resources/assets/furnituresoplenty/models/block",
 			"src/main/resources/assets/furnituresoplenty/lang",
 			"src/main/resources/data/furnituresoplenty/recipes",
+			"src/main/resources/data/furnituresoplenty/loot_tables/blocks",
 			"src/main/resources/data/furnituresoplenty/advancements"
 		};
 
