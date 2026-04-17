@@ -19,7 +19,7 @@ public class TagGenerator {
 
     // Your wood variants
     public static final List<String> WOOD_TYPES = List.of(
-                "fir", "pine", "maple", "redwood", "mahogany", "jacaranda", 
+                "fir", "pine", "maple", "redwood", "mahogany", "jacaranda",
                 "palm", "willow", "dead", "magic", "umbran", "hellbark", "empyreal"
 	);
 
@@ -36,12 +36,11 @@ public class TagGenerator {
             "chair", "crate", "cutting_board", "desk", "drawer",
             "kitchen_cabinetry", "kitchen_drawer", "kitchen_sink",
             "kitchen_storage_cabinet", "lattice_fence_gate", "lattice_fence",
-            "mail_box", "storage_cabinet", "table",
-            "light_ceiling_fan", "dark_ceiling_fan"
+            "mail_box", "storage_cabinet", "table"
     );
 
     private static final Set<String> PICKAXE_FURNITURE = Set.of(
-            "basin", "bath", "toilet", "storage_jar"
+            "basin", "bath", "toilet", "storage_jar", "light_ceiling_fan", "dark_ceiling_fan"
     );
 
     public static void main(String[] args) {
