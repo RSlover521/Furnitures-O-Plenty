@@ -1,0 +1,7 @@
+﻿{
+  "parent": "refurbished_furniture:block/hedge_connection_style_2",
+  "textures": {
+    "particle": "biomesoplenty:block/jacaranda_leaves",
+    "texture": "biomesoplenty:block/jacaranda_leaves"
+  }
+}

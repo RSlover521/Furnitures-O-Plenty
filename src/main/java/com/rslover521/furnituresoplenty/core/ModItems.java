@@ -252,6 +252,21 @@ public class ModItems {
     public static final RegistryObject<Item> HELLBARK_MAIL_BOX = ITEMS.register("hellbark_mail_box", () -> new BlockItem(ModBlocks.HELLBARK_MAIL_BOX.get(), new Item.Properties()));
     public static final RegistryObject<Item> EMPYREAL_MAIL_BOX = ITEMS.register("empyreal_mail_box", () -> new BlockItem(ModBlocks.EMPYREAL_MAIL_BOX.get(), new Item.Properties()));
 
+    // === HEDGES ===
+    public static final RegistryObject<Item> FIR_HEDGE = ITEMS.register("fir_hedge", () -> new BlockItem(ModBlocks.FIR_HEDGE.get(), new Item.Properties()));
+    public static final RegistryObject<Item> PINE_HEDGE = ITEMS.register("pine_hedge", () -> new BlockItem(ModBlocks.PINE_HEDGE.get(), new Item.Properties()));
+    public static final RegistryObject<Item> MAPLE_HEDGE = ITEMS.register("maple_hedge", () -> new BlockItem(ModBlocks.MAPLE_HEDGE.get(), new Item.Properties()));
+    public static final RegistryObject<Item> REDWOOD_HEDGE = ITEMS.register("redwood_hedge", () -> new BlockItem(ModBlocks.REDWOOD_HEDGE.get(), new Item.Properties()));
+    public static final RegistryObject<Item> MAHOGANY_HEDGE = ITEMS.register("mahogany_hedge", () -> new BlockItem(ModBlocks.MAHOGANY_HEDGE.get(), new Item.Properties()));
+    public static final RegistryObject<Item> JACARANDA_HEDGE = ITEMS.register("jacaranda_hedge", () -> new BlockItem(ModBlocks.JACARANDA_HEDGE.get(), new Item.Properties()));
+    public static final RegistryObject<Item> PALM_HEDGE = ITEMS.register("palm_hedge", () -> new BlockItem(ModBlocks.PALM_HEDGE.get(), new Item.Properties()));
+    public static final RegistryObject<Item> WILLOW_HEDGE = ITEMS.register("willow_hedge", () -> new BlockItem(ModBlocks.WILLOW_HEDGE.get(), new Item.Properties()));
+    public static final RegistryObject<Item> DEAD_HEDGE = ITEMS.register("dead_hedge", () -> new BlockItem(ModBlocks.DEAD_HEDGE.get(), new Item.Properties()));
+    public static final RegistryObject<Item> MAGIC_HEDGE = ITEMS.register("magic_hedge", () -> new BlockItem(ModBlocks.MAGIC_HEDGE.get(), new Item.Properties()));
+    public static final RegistryObject<Item> UMBRAN_HEDGE = ITEMS.register("umbran_hedge", () -> new BlockItem(ModBlocks.UMBRAN_HEDGE.get(), new Item.Properties()));
+    public static final RegistryObject<Item> HELLBARK_HEDGE = ITEMS.register("hellbark_hedge", () -> new BlockItem(ModBlocks.HELLBARK_HEDGE.get(), new Item.Properties()));
+    public static final RegistryObject<Item> EMPYREAL_HEDGE = ITEMS.register("empyreal_hedge", () -> new BlockItem(ModBlocks.EMPYREAL_HEDGE.get(), new Item.Properties()));
+
     // === STORAGE CABINETS ===
     public static final RegistryObject<Item> FIR_STORAGE_CABINET = ITEMS.register("fir_storage_cabinet", () -> new BlockItem(ModBlocks.FIR_STORAGE_CABINET.get(), new Item.Properties()));
     public static final RegistryObject<Item> PINE_STORAGE_CABINET = ITEMS.register("pine_storage_cabinet", () -> new BlockItem(ModBlocks.PINE_STORAGE_CABINET.get(), new Item.Properties()));

@@ -259,6 +259,21 @@ public class ModCreativeTabs {
                         output.accept(ModItems.HELLBARK_MAIL_BOX.get());
                         output.accept(ModItems.EMPYREAL_MAIL_BOX.get());
 
+                        // === HEDGES ===
+                        output.accept(ModItems.FIR_HEDGE.get());
+                        output.accept(ModItems.PINE_HEDGE.get());
+                        output.accept(ModItems.MAPLE_HEDGE.get());
+                        output.accept(ModItems.REDWOOD_HEDGE.get());
+                        output.accept(ModItems.MAHOGANY_HEDGE.get());
+                        output.accept(ModItems.JACARANDA_HEDGE.get());
+                        output.accept(ModItems.PALM_HEDGE.get());
+                        output.accept(ModItems.WILLOW_HEDGE.get());
+                        output.accept(ModItems.DEAD_HEDGE.get());
+                        output.accept(ModItems.MAGIC_HEDGE.get());
+                        output.accept(ModItems.UMBRAN_HEDGE.get());
+                        output.accept(ModItems.HELLBARK_HEDGE.get());
+                        output.accept(ModItems.EMPYREAL_HEDGE.get());
+
                         // === STORAGE CABINETS ===
                         output.accept(ModItems.FIR_STORAGE_CABINET.get());
                         output.accept(ModItems.PINE_STORAGE_CABINET.get());
