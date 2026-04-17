@@ -6,13 +6,17 @@ import com.mrcrayfish.furniture.refurbished.block.LeafType;
 import net.minecraft.world.level.block.state.BlockBehaviour;
 
 public class CustomHedgeBlock extends HedgeBlock { 
-	private LeafType type;
-	public CustomHedgeBlock(LeafType type, BlockBehaviour.Properties properties) {
-		super(type, properties);
+	private CustomBOPLeafType type;
+	public CustomHedgeBlock(CustomBOPLeafType type, BlockBehaviour.Properties properties) {
+		super(type.toLeafType(), properties);
 		this.type = type;
 	}
 
 	public LeafType getLeafType() {
+		return type.toLeafType();
+	}
+
+	public CustomBOPLeafType getCustomLeafType() {
 		return type;
 	}
 	

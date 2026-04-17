@@ -3,9 +3,9 @@ package com.rslover521.furnituresoplenty.core;
 import java.util.Map;
 import java.util.function.Supplier;
 import com.mrcrayfish.furniture.refurbished.block.CeilingFanBlock;
-import com.mrcrayfish.furniture.refurbished.block.LeafType;
 import com.mrcrayfish.furniture.refurbished.block.MetalType;
 import com.rslover521.furnituresoplenty.FurnituresOPlenty;
+import com.rslover521.furnituresoplenty.customFurnitures.CustomBOPLeafType;
 import com.rslover521.furnituresoplenty.customFurnitures.CustomBasinBlock;
 import com.rslover521.furnituresoplenty.customFurnitures.CustomBathBlock;
 import com.rslover521.furnituresoplenty.customFurnitures.CustomCeilingFanBlock;
@@ -73,20 +73,20 @@ public class ModBlocks {
 	        entry(BOPWoodTypes.EMPYREAL, () -> BOPBlocks.EMPYREAL_LEAVES)
 	);
 
-	public static final Map<WoodType, LeafType> HEDGE_LEAF_TYPES_BY_WOOD = Map.ofEntries(
-			entry(BOPWoodTypes.FIR, LeafType.SPRUCE),
-			entry(BOPWoodTypes.PINE, LeafType.SPRUCE),
-			entry(BOPWoodTypes.MAPLE, LeafType.OAK),
-	        entry(BOPWoodTypes.REDWOOD, LeafType.SPRUCE),
-	        entry(BOPWoodTypes.MAHOGANY, LeafType.JUNGLE),
-	        entry(BOPWoodTypes.JACARANDA, LeafType.CHERRY),
-	        entry(BOPWoodTypes.PALM, LeafType.JUNGLE),
-	        entry(BOPWoodTypes.DEAD, LeafType.DARK_OAK),
-	        entry(BOPWoodTypes.MAGIC, LeafType.AZALEA),
-	        entry(BOPWoodTypes.WILLOW, LeafType.OAK),
-	        entry(BOPWoodTypes.UMBRAN, LeafType.DARK_OAK),
-	        entry(BOPWoodTypes.HELLBARK, LeafType.DARK_OAK),
-	        entry(BOPWoodTypes.EMPYREAL, LeafType.CHERRY)
+	public static final Map<WoodType, CustomBOPLeafType> HEDGE_LEAF_TYPES_BY_WOOD = Map.ofEntries(
+			entry(BOPWoodTypes.FIR, CustomBOPLeafType.FIR),
+			entry(BOPWoodTypes.PINE, CustomBOPLeafType.PINE),
+			entry(BOPWoodTypes.MAPLE, CustomBOPLeafType.RED_MAPLE),
+	        entry(BOPWoodTypes.REDWOOD, CustomBOPLeafType.REDWOOD),
+	        entry(BOPWoodTypes.MAHOGANY, CustomBOPLeafType.MAHOGANY),
+	        entry(BOPWoodTypes.JACARANDA, CustomBOPLeafType.JACARANDA),
+	        entry(BOPWoodTypes.PALM, CustomBOPLeafType.PALM),
+	        entry(BOPWoodTypes.DEAD, CustomBOPLeafType.DEAD),
+	        entry(BOPWoodTypes.MAGIC, CustomBOPLeafType.MAGIC),
+	        entry(BOPWoodTypes.WILLOW, CustomBOPLeafType.WILLOW),
+	        entry(BOPWoodTypes.UMBRAN, CustomBOPLeafType.UMBRAN),
+	        entry(BOPWoodTypes.HELLBARK, CustomBOPLeafType.HELLBARK),
+	        entry(BOPWoodTypes.EMPYREAL, CustomBOPLeafType.EMPYREAL)
 	);
 
 	public static final DeferredRegister<Block> BLOCKS =
@@ -317,9 +317,15 @@ public class ModBlocks {
 	public static final RegistryObject<Block> HELLBARK_MAIL_BOX;
 	public static final RegistryObject<Block> EMPYREAL_MAIL_BOX;
 
+	public static final RegistryObject<Block> FLOWERING_OAK_HEDGE;
+	public static final RegistryObject<Block> CYPRESS_HEDGE;
+	public static final RegistryObject<Block> SNOWBLOSSOM_HEDGE;
+	public static final RegistryObject<Block> RAINBOW_BIRCH_HEDGE;
 	public static final RegistryObject<Block> FIR_HEDGE;
 	public static final RegistryObject<Block> PINE_HEDGE;
-	public static final RegistryObject<Block> MAPLE_HEDGE;
+	public static final RegistryObject<Block> RED_MAPLE_HEDGE;
+	public static final RegistryObject<Block> ORANGE_MAPLE_HEDGE;
+	public static final RegistryObject<Block> YELLOW_MAPLE_HEDGE;
 	public static final RegistryObject<Block> REDWOOD_HEDGE;
 	public static final RegistryObject<Block> MAHOGANY_HEDGE;
 	public static final RegistryObject<Block> JACARANDA_HEDGE;
@@ -612,19 +618,25 @@ public class ModBlocks {
 		HELLBARK_MAIL_BOX = registerMailBox("hellbark", BOPWoodTypes.HELLBARK);
 		EMPYREAL_MAIL_BOX = registerMailBox("empyreal", BOPWoodTypes.EMPYREAL);
 
-		FIR_HEDGE = registerHedge("fir", BOPWoodTypes.FIR);
-		PINE_HEDGE = registerHedge("pine", BOPWoodTypes.PINE);
-		MAPLE_HEDGE = registerHedge("maple", BOPWoodTypes.MAPLE);
-		REDWOOD_HEDGE = registerHedge("redwood", BOPWoodTypes.REDWOOD);
-		MAHOGANY_HEDGE = registerHedge("mahogany", BOPWoodTypes.MAHOGANY);
-		JACARANDA_HEDGE = registerHedge("jacaranda", BOPWoodTypes.JACARANDA);
-		PALM_HEDGE = registerHedge("palm", BOPWoodTypes.PALM);
-		WILLOW_HEDGE = registerHedge("willow", BOPWoodTypes.WILLOW);
-		DEAD_HEDGE = registerHedge("dead", BOPWoodTypes.DEAD);
-		MAGIC_HEDGE = registerHedge("magic", BOPWoodTypes.MAGIC);
-		UMBRAN_HEDGE = registerHedge("umbran", BOPWoodTypes.UMBRAN);
-		HELLBARK_HEDGE = registerHedge("hellbark", BOPWoodTypes.HELLBARK);
-		EMPYREAL_HEDGE = registerHedge("empyreal", BOPWoodTypes.EMPYREAL);
+		FLOWERING_OAK_HEDGE = registerHedge("flowering_oak", WoodType.OAK, CustomBOPLeafType.FLOWERING_OAK);
+		CYPRESS_HEDGE = registerHedge("cypress", BOPWoodTypes.FIR, CustomBOPLeafType.CYPRESS);
+		SNOWBLOSSOM_HEDGE = registerHedge("snowblossom", WoodType.CHERRY, CustomBOPLeafType.SNOWBLOSSOM);
+		RAINBOW_BIRCH_HEDGE = registerHedge("rainbow_birch", WoodType.BIRCH, CustomBOPLeafType.RAINBOW_BIRCH);
+		FIR_HEDGE = registerHedge("fir", BOPWoodTypes.FIR, CustomBOPLeafType.FIR);
+		PINE_HEDGE = registerHedge("pine", BOPWoodTypes.PINE, CustomBOPLeafType.PINE);
+		RED_MAPLE_HEDGE = registerHedge("red_maple", BOPWoodTypes.MAPLE, CustomBOPLeafType.RED_MAPLE);
+		ORANGE_MAPLE_HEDGE = registerHedge("orange_maple", BOPWoodTypes.MAPLE, CustomBOPLeafType.ORANGE_MAPLE);
+		YELLOW_MAPLE_HEDGE = registerHedge("yellow_maple", BOPWoodTypes.MAPLE, CustomBOPLeafType.YELLOW_MAPLE);
+		REDWOOD_HEDGE = registerHedge("redwood", BOPWoodTypes.REDWOOD, CustomBOPLeafType.REDWOOD);
+		MAHOGANY_HEDGE = registerHedge("mahogany", BOPWoodTypes.MAHOGANY, CustomBOPLeafType.MAHOGANY);
+		JACARANDA_HEDGE = registerHedge("jacaranda", BOPWoodTypes.JACARANDA, CustomBOPLeafType.JACARANDA);
+		PALM_HEDGE = registerHedge("palm", BOPWoodTypes.PALM, CustomBOPLeafType.PALM);
+		WILLOW_HEDGE = registerHedge("willow", BOPWoodTypes.WILLOW, CustomBOPLeafType.WILLOW);
+		DEAD_HEDGE = registerHedge("dead", BOPWoodTypes.DEAD, CustomBOPLeafType.DEAD);
+		MAGIC_HEDGE = registerHedge("magic", BOPWoodTypes.MAGIC, CustomBOPLeafType.MAGIC);
+		UMBRAN_HEDGE = registerHedge("umbran", BOPWoodTypes.UMBRAN, CustomBOPLeafType.UMBRAN);
+		HELLBARK_HEDGE = registerHedge("hellbark", BOPWoodTypes.HELLBARK, CustomBOPLeafType.HELLBARK);
+		EMPYREAL_HEDGE = registerHedge("empyreal", BOPWoodTypes.EMPYREAL, CustomBOPLeafType.EMPYREAL);
 
 		FIR_STORAGE_CABINET = registerStorageCabinets("fir", BOPWoodTypes.FIR);
 		PINE_STORAGE_CABINET = registerStorageCabinets("pine", BOPWoodTypes.PINE);
@@ -992,18 +1004,18 @@ public class ModBlocks {
         return block;
     }
 
-    private static RegistryObject<Block> registerHedge(String name, WoodType woodType) {
+    private static RegistryObject<Block> registerHedge(String name, WoodType woodType, CustomBOPLeafType leafType) {
         RegistryObject<Block> block = BLOCKS.register(name + "_hedge", () -> {
             Supplier<Block> leavesSupplier = BOP_LEAVES_BY_WOOD.get(woodType);
             if (leavesSupplier == null)
                 throw new IllegalArgumentException("Unknown leaves for wood type: " + woodType);
 
-            LeafType leafType = HEDGE_LEAF_TYPES_BY_WOOD.get(woodType);
             if (leafType == null)
                 throw new IllegalArgumentException("Unknown hedge leaf type for wood type: " + woodType);
 
             Block leaves = leavesSupplier.get();
-            return new CustomHedgeBlock(leafType, BlockBehaviour.Properties.copy(leaves));
+            return new CustomHedgeBlock(leafType,
+					BlockBehaviour.Properties.copy(leaves));
         });
 
         FurnituresOPlenty.LOGGER.info("Successfully registered block and item for "
