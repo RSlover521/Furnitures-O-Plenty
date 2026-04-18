@@ -1,6 +1,6 @@
 ﻿{
   "parent": "refurbished_furniture:item/hedge",
   "textures": {
-    "texture": "biomesoplenty:block/palm_leaves"
+    "texture": "furnituresoplenty:block/palm_hedge"
   }
 }

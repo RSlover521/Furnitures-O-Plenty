@@ -1,0 +1,7 @@
+{
+  "parent": "refurbished_furniture:block/hedge_center_side",
+  "textures": {
+    "particle": "furnituresoplenty:block/cypress_hedge",
+    "texture": "furnituresoplenty:block/cypress_hedge"
+  }
+}

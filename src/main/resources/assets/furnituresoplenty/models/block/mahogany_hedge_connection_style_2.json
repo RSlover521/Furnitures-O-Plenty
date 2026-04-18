@@ -1,7 +1,7 @@
-﻿{
+{
   "parent": "refurbished_furniture:block/hedge_connection_style_2",
   "textures": {
-    "particle": "biomesoplenty:block/mahogany_leaves",
-    "texture": "biomesoplenty:block/mahogany_leaves"
+    "particle": "furnituresoplenty:block/mahogany_hedge",
+    "texture": "furnituresoplenty:block/mahogany_hedge"
   }
 }
