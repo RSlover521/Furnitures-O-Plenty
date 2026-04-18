@@ -1,14 +1,14 @@
-﻿{
+{
   "type": "refurbished_furniture:workbench_constructing",
   "materials": [
     {
       "count": 6,
-      "item": "biomesoplenty:red_maple_leaves"
+      "item": "biomesoplenty:snowblossom_leaves"
     }
   ],
   "result": {
     "count": 8,
-    "item": "furnituresoplenty:maple_hedge"
+    "item": "furnituresoplenty:snowblossom_hedge"
   },
   "show_notification": false
 }

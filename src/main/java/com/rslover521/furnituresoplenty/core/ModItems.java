@@ -253,9 +253,15 @@ public class ModItems {
     public static final RegistryObject<Item> EMPYREAL_MAIL_BOX = ITEMS.register("empyreal_mail_box", () -> new BlockItem(ModBlocks.EMPYREAL_MAIL_BOX.get(), new Item.Properties()));
 
     // === HEDGES ===
+    public static final RegistryObject<Item> FLOWERING_OAK_HEDGE = ITEMS.register("flowering_oak_hedge", () -> new BlockItem(ModBlocks.FLOWERING_OAK_HEDGE.get(), new Item.Properties()));
+    public static final RegistryObject<Item> CYPRESS_HEDGE = ITEMS.register("cypress_hedge", () -> new BlockItem(ModBlocks.CYPRESS_HEDGE.get(), new Item.Properties()));
+    public static final RegistryObject<Item> SNOWBLOSSOM_HEDGE = ITEMS.register("snowblossom_hedge", () -> new BlockItem(ModBlocks.SNOWBLOSSOM_HEDGE.get(), new Item.Properties()));
+    public static final RegistryObject<Item> RAINBOW_BIRCH_HEDGE = ITEMS.register("rainbow_birch_hedge", () -> new BlockItem(ModBlocks.RAINBOW_BIRCH_HEDGE.get(), new Item.Properties()));
     public static final RegistryObject<Item> FIR_HEDGE = ITEMS.register("fir_hedge", () -> new BlockItem(ModBlocks.FIR_HEDGE.get(), new Item.Properties()));
     public static final RegistryObject<Item> PINE_HEDGE = ITEMS.register("pine_hedge", () -> new BlockItem(ModBlocks.PINE_HEDGE.get(), new Item.Properties()));
-    public static final RegistryObject<Item> MAPLE_HEDGE = ITEMS.register("maple_hedge", () -> new BlockItem(ModBlocks.MAPLE_HEDGE.get(), new Item.Properties()));
+    public static final RegistryObject<Item> RED_MAPLE_HEDGE = ITEMS.register("red_maple_hedge", () -> new BlockItem(ModBlocks.RED_MAPLE_HEDGE.get(), new Item.Properties()));
+    public static final RegistryObject<Item> ORANGE_MAPLE_HEDGE = ITEMS.register("orange_maple_hedge", () -> new BlockItem(ModBlocks.ORANGE_MAPLE_HEDGE.get(), new Item.Properties()));
+    public static final RegistryObject<Item> YELLOW_MAPLE_HEDGE = ITEMS.register("yellow_maple_hedge", () -> new BlockItem(ModBlocks.YELLOW_MAPLE_HEDGE.get(), new Item.Properties()));
     public static final RegistryObject<Item> REDWOOD_HEDGE = ITEMS.register("redwood_hedge", () -> new BlockItem(ModBlocks.REDWOOD_HEDGE.get(), new Item.Properties()));
     public static final RegistryObject<Item> MAHOGANY_HEDGE = ITEMS.register("mahogany_hedge", () -> new BlockItem(ModBlocks.MAHOGANY_HEDGE.get(), new Item.Properties()));
     public static final RegistryObject<Item> JACARANDA_HEDGE = ITEMS.register("jacaranda_hedge", () -> new BlockItem(ModBlocks.JACARANDA_HEDGE.get(), new Item.Properties()));

@@ -1,0 +1,14 @@
+{
+  "type": "refurbished_furniture:workbench_constructing",
+  "materials": [
+    {
+      "count": 6,
+      "item": "biomesoplenty:orange_maple_leaves"
+    }
+  ],
+  "result": {
+    "count": 8,
+    "item": "furnituresoplenty:orange_maple_hedge"
+  },
+  "show_notification": false
+}

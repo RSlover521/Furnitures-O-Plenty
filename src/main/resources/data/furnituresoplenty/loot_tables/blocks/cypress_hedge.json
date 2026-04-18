@@ -1,4 +1,4 @@
-﻿{
+{
   "type": "minecraft:block",
   "pools": [
     {
@@ -11,11 +11,11 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "furnituresoplenty:maple_hedge"
+          "name": "furnituresoplenty:cypress_hedge"
         }
       ],
       "rolls": 1.0
     }
   ],
-  "random_sequence": "furnituresoplenty:blocks/maple_hedge"
+  "random_sequence": "furnituresoplenty:blocks/cypress_hedge"
 }

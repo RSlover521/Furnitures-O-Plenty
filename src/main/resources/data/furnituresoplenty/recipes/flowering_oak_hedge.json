@@ -1,0 +1,14 @@
+{
+  "type": "refurbished_furniture:workbench_constructing",
+  "materials": [
+    {
+      "count": 6,
+      "item": "biomesoplenty:flowering_oak_leaves"
+    }
+  ],
+  "result": {
+    "count": 8,
+    "item": "furnituresoplenty:flowering_oak_hedge"
+  },
+  "show_notification": false
+}

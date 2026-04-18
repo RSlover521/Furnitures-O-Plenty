@@ -260,9 +260,15 @@ public class ModCreativeTabs {
                         output.accept(ModItems.EMPYREAL_MAIL_BOX.get());
 
                         // === HEDGES ===
+                        output.accept(ModItems.FLOWERING_OAK_HEDGE.get());
+                        output.accept(ModItems.CYPRESS_HEDGE.get());
+                        output.accept(ModItems.SNOWBLOSSOM_HEDGE.get());
+                        output.accept(ModItems.RAINBOW_BIRCH_HEDGE.get());
                         output.accept(ModItems.FIR_HEDGE.get());
                         output.accept(ModItems.PINE_HEDGE.get());
-                        output.accept(ModItems.MAPLE_HEDGE.get());
+                        output.accept(ModItems.RED_MAPLE_HEDGE.get());
+                        output.accept(ModItems.ORANGE_MAPLE_HEDGE.get());
+                        output.accept(ModItems.YELLOW_MAPLE_HEDGE.get());
                         output.accept(ModItems.REDWOOD_HEDGE.get());
                         output.accept(ModItems.MAHOGANY_HEDGE.get());
                         output.accept(ModItems.JACARANDA_HEDGE.get());
