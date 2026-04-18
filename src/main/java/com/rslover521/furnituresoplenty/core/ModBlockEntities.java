@@ -46,7 +46,7 @@ public class ModBlockEntities {
 	public static final RegistryObject<BlockEntityType<BathBlockEntity>> CUSTOM_BATH = 
 			BLOCK_ENTITIES.register("custom_bath", 
 					() -> BlockEntityType.Builder.of(BathBlockEntity::new, 
-							ModBlocks.DEAD_BATH.get(),
+							ModBlocks.FIR_BATH.get(),
 							ModBlocks.PINE_BATH.get(),
                     		ModBlocks.MAPLE_BATH.get(),
                             ModBlocks.REDWOOD_BATH.get(),
@@ -66,7 +66,6 @@ public class ModBlockEntities {
 					() -> BlockEntityType.Builder.of(CeilingFanBlockEntity::new, 
 							// Dark Ceiling Fan
 							ModBlocks.FIR_DARK_CEILING_FAN.get(),
-							ModBlocks.DEAD_DARK_CEILING_FAN.get(),
 							ModBlocks.PINE_DARK_CEILING_FAN.get(),
                     		ModBlocks.MAPLE_DARK_CEILING_FAN.get(),
                             ModBlocks.REDWOOD_DARK_CEILING_FAN.get(),
@@ -82,7 +81,6 @@ public class ModBlockEntities {
 
 							// Light Ceiling Fan
 							ModBlocks.FIR_LIGHT_CEILING_FAN.get(),
-							ModBlocks.DEAD_LIGHT_CEILING_FAN.get(),
 							ModBlocks.PINE_LIGHT_CEILING_FAN.get(),
                     		ModBlocks.MAPLE_LIGHT_CEILING_FAN.get(),
                             ModBlocks.REDWOOD_LIGHT_CEILING_FAN.get(),

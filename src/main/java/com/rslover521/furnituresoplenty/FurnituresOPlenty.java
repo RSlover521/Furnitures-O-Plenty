@@ -33,8 +33,6 @@ public class FurnituresOPlenty {
         
         ModBlockEntities.register(modEventBus);
 
-        ModAdvancementEvents.register(modEventBus);
-        
         ModItems.register(modEventBus);
 
         ModExtraModels.register(modEventBus);

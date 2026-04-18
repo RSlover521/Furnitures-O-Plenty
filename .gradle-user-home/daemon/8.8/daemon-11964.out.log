@@ -1,0 +1,688 @@
+2026-04-18T07:34:37.426-0500 [DEBUG] [org.gradle.launcher.daemon.bootstrap.DaemonMain] Assuming the daemon was started with following jvm opts: [-XX:+HeapDumpOnOutOfMemoryError, --add-opens=java.base/java.util=ALL-UNNAMED, --add-opens=java.base/java.lang=ALL-UNNAMED, --add-opens=java.base/java.lang.invoke=ALL-UNNAMED, --add-opens=java.prefs/java.util.prefs=ALL-UNNAMED, --add-opens=java.base/java.nio.charset=ALL-UNNAMED, --add-opens=java.base/java.net=ALL-UNNAMED, --add-opens=java.base/java.util.concurrent.atomic=ALL-UNNAMED, -Xms2G, -Xmx5G, -Dfile.encoding=UTF-8, -Duser.country=US, -Duser.language=en, -Duser.variant]
+2026-04-18T07:34:37.579-0500 [DEBUG] [org.gradle.internal.nativeintegration.services.NativeServices] Native-platform posix files integration is not available. Continuing with fallback.
+2026-04-18T07:34:37.590-0500 [INFO] [org.gradle.launcher.daemon.server.Daemon] start() called on daemon - DefaultDaemonContext[uid=618dfcdd-b403-4dd6-bcb0-e0c67681a3a8,javaHome=C:\Program Files\Java\jdk-17,javaVersion=17,daemonRegistryDir=D:\Users\wxinc\OneDrive\Desktop\Minecraft-modding-stuff\Furnitures-O-Plenty\.gradle-user-home\daemon,pid=11964,idleTimeout=120000,priority=NORMAL,applyInstrumentationAgent=true,nativeServicesMode=ENABLED,daemonOpts=-XX:+HeapDumpOnOutOfMemoryError,--add-opens=java.base/java.util=ALL-UNNAMED,--add-opens=java.base/java.lang=ALL-UNNAMED,--add-opens=java.base/java.lang.invoke=ALL-UNNAMED,--add-opens=java.prefs/java.util.prefs=ALL-UNNAMED,--add-opens=java.base/java.nio.charset=ALL-UNNAMED,--add-opens=java.base/java.net=ALL-UNNAMED,--add-opens=java.base/java.util.concurrent.atomic=ALL-UNNAMED,-Xms2G,-Xmx5G,-Dfile.encoding=UTF-8,-Duser.country=US,-Duser.language=en,-Duser.variant]
+2026-04-18T07:34:37.661-0500 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding IP addresses for network interface Software Loopback Interface 1
+2026-04-18T07:34:37.664-0500 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Is this a loopback interface? true
+2026-04-18T07:34:37.664-0500 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding loopback address /127.0.0.1
+2026-04-18T07:34:37.664-0500 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding loopback address /0:0:0:0:0:0:0:1
+2026-04-18T07:34:37.665-0500 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding IP addresses for network interface Microsoft 6to4 Adapter
+2026-04-18T07:34:37.668-0500 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Is this a loopback interface? false
+2026-04-18T07:34:37.668-0500 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding IP addresses for network interface Killer(R) Wi-Fi 6 AX1650x 160MHz Wireless Network Adapter (200NGW)
+2026-04-18T07:34:37.670-0500 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Is this a loopback interface? false
+2026-04-18T07:34:37.671-0500 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding remote address /192.168.1.131
+2026-04-18T07:34:37.671-0500 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding remote address /2600:1700:c00:3120:0:0:0:11
+2026-04-18T07:34:37.671-0500 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding remote address /2600:1700:c00:3120:3474:9a8:1dc9:528c
+2026-04-18T07:34:37.671-0500 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding remote address /2600:1700:c00:3120:1567:bd3d:fca0:1830
+2026-04-18T07:34:37.671-0500 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding remote address /fe80:0:0:0:6f01:82b2:3a70:3a17%wlan0
+2026-04-18T07:34:37.671-0500 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding IP addresses for network interface WAN Miniport (IKEv2)
+2026-04-18T07:34:37.674-0500 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Is this a loopback interface? false
+2026-04-18T07:34:37.674-0500 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding IP addresses for network interface WAN Miniport (PPTP)
+2026-04-18T07:34:37.677-0500 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Is this a loopback interface? false
+2026-04-18T07:34:37.677-0500 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding IP addresses for network interface Microsoft IP-HTTPS Platform Adapter
+2026-04-18T07:34:37.680-0500 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Is this a loopback interface? false
+2026-04-18T07:34:37.680-0500 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding IP addresses for network interface Microsoft Kernel Debug Network Adapter
+2026-04-18T07:34:37.682-0500 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Is this a loopback interface? false
+2026-04-18T07:34:37.683-0500 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding IP addresses for network interface Famatech Radmin VPN Ethernet Adapter
+2026-04-18T07:34:37.685-0500 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Is this a loopback interface? false
+2026-04-18T07:34:37.686-0500 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding remote address /26.227.120.94
+2026-04-18T07:34:37.686-0500 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding remote address /fdfd:0:0:0:0:0:1ae3:785e
+2026-04-18T07:34:37.686-0500 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding remote address /fe80:0:0:0:f421:f5c4:ecf6:378%eth1
+2026-04-18T07:34:37.686-0500 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding IP addresses for network interface Microsoft Wi-Fi Direct Virtual Adapter
+2026-04-18T07:34:37.688-0500 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Is this a loopback interface? false
+2026-04-18T07:34:37.688-0500 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding remote address /fe80:0:0:0:235f:620d:6c2b:f05d%wlan1
+2026-04-18T07:34:37.689-0500 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding IP addresses for network interface WAN Miniport (IP)
+2026-04-18T07:34:37.692-0500 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Is this a loopback interface? false
+2026-04-18T07:34:37.692-0500 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding IP addresses for network interface Bluetooth Device (Personal Area Network)
+2026-04-18T07:34:37.694-0500 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Is this a loopback interface? false
+2026-04-18T07:34:37.694-0500 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding remote address /fe80:0:0:0:7498:bde4:a6d6:b801%eth3
+2026-04-18T07:34:37.695-0500 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding IP addresses for network interface Microsoft Teredo Tunneling Adapter
+2026-04-18T07:34:37.697-0500 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Is this a loopback interface? false
+2026-04-18T07:34:37.697-0500 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding remote address /2001:0:14c9:cc02:300c:988:2eb3:49c0
+2026-04-18T07:34:37.698-0500 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding remote address /fe80:0:0:0:300c:988:2eb3:49c0%net4
+2026-04-18T07:34:37.698-0500 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding IP addresses for network interface WAN Miniport (IPv6)
+2026-04-18T07:34:37.700-0500 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Is this a loopback interface? false
+2026-04-18T07:34:37.701-0500 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding IP addresses for network interface WAN Miniport (PPPOE)
+2026-04-18T07:34:37.703-0500 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Is this a loopback interface? false
+2026-04-18T07:34:37.703-0500 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding IP addresses for network interface WAN Miniport (L2TP)
+2026-04-18T07:34:37.706-0500 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Is this a loopback interface? false
+2026-04-18T07:34:37.706-0500 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding IP addresses for network interface Realtek Gaming 2.5GbE Family Controller
+2026-04-18T07:34:37.709-0500 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Is this a loopback interface? false
+2026-04-18T07:34:37.710-0500 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding remote address /fe80:0:0:0:eb7a:3e4c:5bd3:c948%eth5
+2026-04-18T07:34:37.710-0500 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding IP addresses for network interface Microsoft Wi-Fi Direct Virtual Adapter #2
+2026-04-18T07:34:37.712-0500 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Is this a loopback interface? false
+2026-04-18T07:34:37.712-0500 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding remote address /fe80:0:0:0:926:266d:d9b6:9b73%wlan2
+2026-04-18T07:34:37.713-0500 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding IP addresses for network interface WAN Miniport (Network Monitor)
+2026-04-18T07:34:37.715-0500 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Is this a loopback interface? false
+2026-04-18T07:34:37.715-0500 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding IP addresses for network interface WAN Miniport (SSTP)
+2026-04-18T07:34:37.718-0500 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Is this a loopback interface? false
+2026-04-18T07:34:37.718-0500 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding IP addresses for network interface Microsoft Wi-Fi Direct Virtual Adapter #2-WFP Native MAC Layer LightWeight Filter-0000
+2026-04-18T07:34:37.720-0500 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Is this a loopback interface? false
+2026-04-18T07:34:37.720-0500 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding IP addresses for network interface Microsoft Wi-Fi Direct Virtual Adapter-WFP Native MAC Layer LightWeight Filter-0000
+2026-04-18T07:34:37.723-0500 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Is this a loopback interface? false
+2026-04-18T07:34:37.723-0500 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding IP addresses for network interface Microsoft Wi-Fi Direct Virtual Adapter-Native WiFi Filter Driver-0000
+2026-04-18T07:34:37.725-0500 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Is this a loopback interface? false
+2026-04-18T07:34:37.725-0500 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding IP addresses for network interface Realtek Gaming 2.5GbE Family Controller-WFP Native MAC Layer LightWeight Filter-0000
+2026-04-18T07:34:37.728-0500 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Is this a loopback interface? false
+2026-04-18T07:34:37.728-0500 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding IP addresses for network interface Realtek Gaming 2.5GbE Family Controller-QoS Packet Scheduler-0000
+2026-04-18T07:34:37.730-0500 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Is this a loopback interface? false
+2026-04-18T07:34:37.730-0500 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding IP addresses for network interface Realtek Gaming 2.5GbE Family Controller-WFP 802.3 MAC Layer LightWeight Filter-0000
+2026-04-18T07:34:37.733-0500 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Is this a loopback interface? false
+2026-04-18T07:34:37.733-0500 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding IP addresses for network interface Killer(R) Wi-Fi 6 AX1650x 160MHz Wireless Network Adapter (200NGW)-WFP Native MAC Layer LightWeight Filter-0000
+2026-04-18T07:34:37.735-0500 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Is this a loopback interface? false
+2026-04-18T07:34:37.735-0500 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding IP addresses for network interface Killer(R) Wi-Fi 6 AX1650x 160MHz Wireless Network Adapter (200NGW)-Virtual WiFi Filter Driver-0000
+2026-04-18T07:34:37.738-0500 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Is this a loopback interface? false
+2026-04-18T07:34:37.738-0500 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding IP addresses for network interface Killer(R) Wi-Fi 6 AX1650x 160MHz Wireless Network Adapter (200NGW)-Native WiFi Filter Driver-0000
+2026-04-18T07:34:37.740-0500 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Is this a loopback interface? false
+2026-04-18T07:34:37.740-0500 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding IP addresses for network interface Killer(R) Wi-Fi 6 AX1650x 160MHz Wireless Network Adapter (200NGW)-QoS Packet Scheduler-0000
+2026-04-18T07:34:37.743-0500 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Is this a loopback interface? false
+2026-04-18T07:34:37.743-0500 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding IP addresses for network interface Killer(R) Wi-Fi 6 AX1650x 160MHz Wireless Network Adapter (200NGW)-WFP 802.3 MAC Layer LightWeight Filter-0000
+2026-04-18T07:34:37.746-0500 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Is this a loopback interface? false
+2026-04-18T07:34:37.746-0500 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding IP addresses for network interface Microsoft Wi-Fi Direct Virtual Adapter-QoS Packet Scheduler-0000
+2026-04-18T07:34:37.748-0500 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Is this a loopback interface? false
+2026-04-18T07:34:37.748-0500 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding IP addresses for network interface Microsoft Wi-Fi Direct Virtual Adapter-WFP 802.3 MAC Layer LightWeight Filter-0000
+2026-04-18T07:34:37.750-0500 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Is this a loopback interface? false
+2026-04-18T07:34:37.750-0500 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding IP addresses for network interface Famatech Radmin VPN Ethernet Adapter-WFP Native MAC Layer LightWeight Filter-0000
+2026-04-18T07:34:37.753-0500 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Is this a loopback interface? false
+2026-04-18T07:34:37.753-0500 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding IP addresses for network interface Famatech Radmin VPN Ethernet Adapter-QoS Packet Scheduler-0000
+2026-04-18T07:34:37.755-0500 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Is this a loopback interface? false
+2026-04-18T07:34:37.755-0500 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding IP addresses for network interface Famatech Radmin VPN Ethernet Adapter-WFP 802.3 MAC Layer LightWeight Filter-0000
+2026-04-18T07:34:37.758-0500 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Is this a loopback interface? false
+2026-04-18T07:34:37.758-0500 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding IP addresses for network interface Microsoft Wi-Fi Direct Virtual Adapter #2-Native WiFi Filter Driver-0000
+2026-04-18T07:34:37.761-0500 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Is this a loopback interface? false
+2026-04-18T07:34:37.761-0500 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding IP addresses for network interface Microsoft Wi-Fi Direct Virtual Adapter #2-QoS Packet Scheduler-0000
+2026-04-18T07:34:37.763-0500 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Is this a loopback interface? false
+2026-04-18T07:34:37.763-0500 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding IP addresses for network interface Microsoft Wi-Fi Direct Virtual Adapter #2-WFP 802.3 MAC Layer LightWeight Filter-0000
+2026-04-18T07:34:37.766-0500 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Is this a loopback interface? false
+2026-04-18T07:34:37.766-0500 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding IP addresses for network interface WAN Miniport (IP)-WFP Native MAC Layer LightWeight Filter-0000
+2026-04-18T07:34:37.768-0500 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Is this a loopback interface? false
+2026-04-18T07:34:37.768-0500 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding IP addresses for network interface WAN Miniport (IP)-QoS Packet Scheduler-0000
+2026-04-18T07:34:37.771-0500 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Is this a loopback interface? false
+2026-04-18T07:34:37.771-0500 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding IP addresses for network interface WAN Miniport (IPv6)-WFP Native MAC Layer LightWeight Filter-0000
+2026-04-18T07:34:37.773-0500 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Is this a loopback interface? false
+2026-04-18T07:34:37.773-0500 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding IP addresses for network interface WAN Miniport (IPv6)-QoS Packet Scheduler-0000
+2026-04-18T07:34:37.776-0500 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Is this a loopback interface? false
+2026-04-18T07:34:37.776-0500 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding IP addresses for network interface WAN Miniport (Network Monitor)-WFP Native MAC Layer LightWeight Filter-0000
+2026-04-18T07:34:37.778-0500 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Is this a loopback interface? false
+2026-04-18T07:34:37.778-0500 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding IP addresses for network interface WAN Miniport (Network Monitor)-QoS Packet Scheduler-0000
+2026-04-18T07:34:37.781-0500 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Is this a loopback interface? false
+2026-04-18T07:34:37.787-0500 [DEBUG] [org.gradle.internal.remote.internal.inet.TcpIncomingConnector] Listening on [52e7f440-b4ba-4ddd-bc4c-9bc1e7285d4a port:60847, addresses:[localhost/127.0.0.1]].
+2026-04-18T07:34:37.793-0500 [DEBUG] [org.gradle.launcher.daemon.server.Daemon] Daemon starting at: Sat Apr 18 07:34:37 CDT 2026, with address: [52e7f440-b4ba-4ddd-bc4c-9bc1e7285d4a port:60847, addresses:[localhost/127.0.0.1]]
+2026-04-18T07:34:37.793-0500 [INFO] [org.gradle.launcher.daemon.server.DaemonRegistryUpdater] Advertising the daemon address to the clients: [52e7f440-b4ba-4ddd-bc4c-9bc1e7285d4a port:60847, addresses:[localhost/127.0.0.1]]
+2026-04-18T07:34:37.793-0500 [DEBUG] [org.gradle.launcher.daemon.server.DaemonRegistryUpdater] Advertised daemon context: DefaultDaemonContext[uid=618dfcdd-b403-4dd6-bcb0-e0c67681a3a8,javaHome=C:\Program Files\Java\jdk-17,javaVersion=17,daemonRegistryDir=D:\Users\wxinc\OneDrive\Desktop\Minecraft-modding-stuff\Furnitures-O-Plenty\.gradle-user-home\daemon,pid=11964,idleTimeout=120000,priority=NORMAL,applyInstrumentationAgent=true,nativeServicesMode=ENABLED,daemonOpts=-XX:+HeapDumpOnOutOfMemoryError,--add-opens=java.base/java.util=ALL-UNNAMED,--add-opens=java.base/java.lang=ALL-UNNAMED,--add-opens=java.base/java.lang.invoke=ALL-UNNAMED,--add-opens=java.prefs/java.util.prefs=ALL-UNNAMED,--add-opens=java.base/java.nio.charset=ALL-UNNAMED,--add-opens=java.base/java.net=ALL-UNNAMED,--add-opens=java.base/java.util.concurrent.atomic=ALL-UNNAMED,-Xms2G,-Xmx5G,-Dfile.encoding=UTF-8,-Duser.country=US,-Duser.language=en,-Duser.variant]
+2026-04-18T07:34:37.794-0500 [DEBUG] [org.gradle.launcher.daemon.registry.PersistentDaemonRegistry] Storing daemon address: [52e7f440-b4ba-4ddd-bc4c-9bc1e7285d4a port:60847, addresses:[localhost/127.0.0.1]], context: DefaultDaemonContext[uid=618dfcdd-b403-4dd6-bcb0-e0c67681a3a8,javaHome=C:\Program Files\Java\jdk-17,javaVersion=17,daemonRegistryDir=D:\Users\wxinc\OneDrive\Desktop\Minecraft-modding-stuff\Furnitures-O-Plenty\.gradle-user-home\daemon,pid=11964,idleTimeout=120000,priority=NORMAL,applyInstrumentationAgent=true,nativeServicesMode=ENABLED,daemonOpts=-XX:+HeapDumpOnOutOfMemoryError,--add-opens=java.base/java.util=ALL-UNNAMED,--add-opens=java.base/java.lang=ALL-UNNAMED,--add-opens=java.base/java.lang.invoke=ALL-UNNAMED,--add-opens=java.prefs/java.util.prefs=ALL-UNNAMED,--add-opens=java.base/java.nio.charset=ALL-UNNAMED,--add-opens=java.base/java.net=ALL-UNNAMED,--add-opens=java.base/java.util.concurrent.atomic=ALL-UNNAMED,-Xms2G,-Xmx5G,-Dfile.encoding=UTF-8,-Duser.country=US,-Duser.language=en,-Duser.variant]
+2026-04-18T07:34:37.805-0500 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Waiting to acquire exclusive lock on daemon addresses registry.
+2026-04-18T07:34:37.810-0500 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Lock acquired on daemon addresses registry.
+2026-04-18T07:34:37.811-0500 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Releasing lock on daemon addresses registry.
+2026-04-18T07:34:37.814-0500 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Waiting to acquire exclusive lock on daemon addresses registry.
+2026-04-18T07:34:37.814-0500 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Lock acquired on daemon addresses registry.
+2026-04-18T07:34:37.816-0500 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Releasing lock on daemon addresses registry.
+2026-04-18T07:34:37.817-0500 [LIFECYCLE] [org.gradle.launcher.daemon.server.Daemon] Daemon server started.
+2026-04-18T07:34:37.818-0500 [DEBUG] [org.gradle.launcher.daemon.bootstrap.DaemonStartupCommunication] Completed writing the daemon greeting. Closing streams...
+2026-04-18T07:34:37.822-0500 [DEBUG] [org.gradle.launcher.daemon.server.Daemon] stopOnExpiration() called on daemon
+2026-04-18T07:34:37.823-0500 [DEBUG] [org.gradle.launcher.daemon.server.Daemon] awaitExpiration() called on daemon
+2026-04-18T07:34:37.823-0500 [DEBUG] [org.gradle.launcher.daemon.server.DaemonStateCoordinator] daemon is running. Sleeping until state changes.
+2026-04-18T07:34:37.956-0500 [DEBUG] [org.gradle.internal.remote.internal.inet.TcpIncomingConnector] Accepted connection from /127.0.0.1:60848 to /127.0.0.1:60847.
+2026-04-18T07:34:38.009-0500 [DEBUG] [org.gradle.launcher.daemon.server.SynchronizedDispatchConnection] thread 30: received class org.gradle.launcher.daemon.protocol.Build
+2026-04-18T07:34:38.009-0500 [DEBUG] [org.gradle.launcher.daemon.server.DefaultDaemonConnection] thread 30: Received non-IO message from client: Build{id=342aa0cc-a357-4a2d-ab62-646f165b1c70, currentDir=D:\Users\wxinc\OneDrive\Desktop\Minecraft-modding-stuff\Furnitures-O-Plenty}
+2026-04-18T07:34:38.009-0500 [INFO] [org.gradle.launcher.daemon.server.DefaultIncomingConnectionHandler] Received command: Build{id=342aa0cc-a357-4a2d-ab62-646f165b1c70, currentDir=D:\Users\wxinc\OneDrive\Desktop\Minecraft-modding-stuff\Furnitures-O-Plenty}.
+2026-04-18T07:34:38.010-0500 [DEBUG] [org.gradle.launcher.daemon.server.DefaultIncomingConnectionHandler] Starting executing command: Build{id=342aa0cc-a357-4a2d-ab62-646f165b1c70, currentDir=D:\Users\wxinc\OneDrive\Desktop\Minecraft-modding-stuff\Furnitures-O-Plenty} with connection: socket connection from /127.0.0.1:60847 to /127.0.0.1:60848.
+2026-04-18T07:34:38.012-0500 [DEBUG] [org.gradle.launcher.daemon.server.DaemonStateCoordinator] Command execution: started DaemonCommandExecution[command = Build{id=342aa0cc-a357-4a2d-ab62-646f165b1c70, currentDir=D:\Users\wxinc\OneDrive\Desktop\Minecraft-modding-stuff\Furnitures-O-Plenty}, connection = DefaultDaemonConnection: socket connection from /127.0.0.1:60847 to /127.0.0.1:60848] after 0.0 minutes of idle
+2026-04-18T07:34:38.013-0500 [INFO] [org.gradle.launcher.daemon.server.DaemonRegistryUpdater] Marking the daemon as busy, address: [52e7f440-b4ba-4ddd-bc4c-9bc1e7285d4a port:60847, addresses:[localhost/127.0.0.1]]
+2026-04-18T07:34:38.013-0500 [DEBUG] [org.gradle.launcher.daemon.registry.PersistentDaemonRegistry] Marking busy by address: [52e7f440-b4ba-4ddd-bc4c-9bc1e7285d4a port:60847, addresses:[localhost/127.0.0.1]]
+2026-04-18T07:34:38.013-0500 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Waiting to acquire exclusive lock on daemon addresses registry.
+2026-04-18T07:34:38.014-0500 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Lock acquired on daemon addresses registry.
+2026-04-18T07:34:38.015-0500 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Releasing lock on daemon addresses registry.
+2026-04-18T07:34:38.015-0500 [DEBUG] [org.gradle.launcher.daemon.server.DaemonStateCoordinator] resetting idle timer
+2026-04-18T07:34:38.016-0500 [DEBUG] [org.gradle.launcher.daemon.server.DaemonStateCoordinator] daemon is running. Sleeping until state changes.
+2026-04-18T07:34:38.016-0500 [INFO] [org.gradle.launcher.daemon.server.exec.StartBuildOrRespondWithBusy] Daemon is about to start building Build{id=342aa0cc-a357-4a2d-ab62-646f165b1c70, currentDir=D:\Users\wxinc\OneDrive\Desktop\Minecraft-modding-stuff\Furnitures-O-Plenty}. Dispatching build started information...
+2026-04-18T07:34:38.016-0500 [DEBUG] [org.gradle.launcher.daemon.server.SynchronizedDispatchConnection] thread 32: dispatching org.gradle.launcher.daemon.protocol.BuildStarted@1359ffe7
+2026-04-18T07:34:38.018-0500 [DEBUG] [org.gradle.launcher.daemon.server.exec.EstablishBuildEnvironment] Configuring env variables: [USERDOMAIN_ROAMINGPROFILE, PROCESSOR_LEVEL, ALLUSERSPROFILE, CODEX_SHELL, PROCESSOR_ARCHITECTURE, PSModulePath, SystemDrive, DIRNAME, USERNAME, ProgramFiles(x86), CODEX_INTERNAL_ORIGINATOR_OVERRIDE, APP_HOME, CODEX_SANDBOX_NETWORK_DISABLED, DEFAULT_JVM_OPTS, PATHEXT, SHELL, DriverData, OneDriveConsumer, LOG_FORMAT, ProgramData, GIT_LFS_PATH, ProgramW6432, HOMEPATH, PROCESSOR_IDENTIFIER, ProgramFiles, PUBLIC, ZSH_TMUX_AUTOSTARTED, windir, LOCALAPPDATA, USERDOMAIN, LOGONSERVER, JAVA_HOME, PROMPT, RUST_LOG, OneDrive, APPDATA, GRADLE_USER_HOME, VBOX_HWVIRTEX_IGNORE_SVM_IN_USE, JAVA_EXE, CODEX_THREAD_ID, CommonProgramFiles, Path, DISABLE_AUTO_UPDATE, OS, COMPUTERNAME, PROCESSOR_REVISION, CLASSPATH, CommonProgramW6432, ComSpec, APP_BASE_NAME, ZSH_TMUX_AUTOSTART, =D:, SystemRoot, TEMP, HOMEDRIVE, USERPROFILE, TMP, CommonProgramFiles(x86), NUMBER_OF_PROCESSORS]
+2026-04-18T07:34:38.019-0500 [DEBUG] [org.gradle.launcher.daemon.server.SynchronizedDispatchConnection] thread 30: received class org.gradle.launcher.daemon.protocol.CloseInput
+2026-04-18T07:34:38.019-0500 [DEBUG] [org.gradle.launcher.daemon.server.DefaultDaemonConnection] thread 30: Received IO message from client: org.gradle.launcher.daemon.protocol.CloseInput@6fb90b75
+2026-04-18T07:34:38.022-0500 [DEBUG] [org.gradle.launcher.daemon.server.exec.LogToClient] About to start relaying all logs to the client via the connection.
+2026-04-18T07:34:38.022-0500 [INFO] [org.gradle.launcher.daemon.server.exec.LogToClient] The client will now receive all logging from the daemon (pid: 11964). The daemon log file: D:\Users\wxinc\OneDrive\Desktop\Minecraft-modding-stuff\Furnitures-O-Plenty\.gradle-user-home\daemon\8.8\daemon-11964.out.log
+2026-04-18T07:34:38.024-0500 [DEBUG] [org.gradle.launcher.daemon.server.exec.RequestStopIfSingleUsedDaemon] Requesting daemon stop after processing Build{id=342aa0cc-a357-4a2d-ab62-646f165b1c70, currentDir=D:\Users\wxinc\OneDrive\Desktop\Minecraft-modding-stuff\Furnitures-O-Plenty}
+2026-04-18T07:34:38.024-0500 [DEBUG] [org.gradle.launcher.daemon.server.clientinput.ClientInputForwarder] Closing this process' stdin at end of input.
+2026-04-18T07:34:38.024-0500 [LIFECYCLE] [org.gradle.launcher.daemon.server.DaemonStateCoordinator] Daemon will be stopped at the end of the build 
+2026-04-18T07:34:38.024-0500 [DEBUG] [org.gradle.launcher.daemon.server.clientinput.ClientInputForwarder] This process will no longer process any forwarded input.
+2026-04-18T07:34:38.024-0500 [DEBUG] [org.gradle.launcher.daemon.server.DaemonStateCoordinator] Stop as soon as idle requested. The daemon is busy: true
+2026-04-18T07:34:38.024-0500 [DEBUG] [org.gradle.launcher.daemon.server.DaemonStateCoordinator] daemon stop has been requested. Sleeping until state changes.
+2026-04-18T07:34:38.025-0500 [DEBUG] [org.gradle.launcher.daemon.server.exec.ExecuteBuild] The daemon has started executing the build.
+2026-04-18T07:34:38.025-0500 [DEBUG] [org.gradle.launcher.daemon.server.exec.ExecuteBuild] Executing build with daemon context: DefaultDaemonContext[uid=618dfcdd-b403-4dd6-bcb0-e0c67681a3a8,javaHome=C:\Program Files\Java\jdk-17,javaVersion=17,daemonRegistryDir=D:\Users\wxinc\OneDrive\Desktop\Minecraft-modding-stuff\Furnitures-O-Plenty\.gradle-user-home\daemon,pid=11964,idleTimeout=120000,priority=NORMAL,applyInstrumentationAgent=true,nativeServicesMode=ENABLED,daemonOpts=-XX:+HeapDumpOnOutOfMemoryError,--add-opens=java.base/java.util=ALL-UNNAMED,--add-opens=java.base/java.lang=ALL-UNNAMED,--add-opens=java.base/java.lang.invoke=ALL-UNNAMED,--add-opens=java.prefs/java.util.prefs=ALL-UNNAMED,--add-opens=java.base/java.nio.charset=ALL-UNNAMED,--add-opens=java.base/java.net=ALL-UNNAMED,--add-opens=java.base/java.util.concurrent.atomic=ALL-UNNAMED,-Xms2G,-Xmx5G,-Dfile.encoding=UTF-8,-Duser.country=US,-Duser.language=en,-Duser.variant]
+Java: 17.0.12, JVM: 17.0.12+8-LTS-286 (Oracle Corporation), Arch: amd64
+Setting up MCP environment
+Initializing steps
+Executing steps
+ > Running 'downloadManifest'
+ > Running 'downloadJson'
+ > Running 'downloadClient'
+ > Running 'downloadServer'
+ > Running 'extractServer'
+ > Running 'downloadClientMappings'
+ > Running 'mergeMappings'
+ > Running 'stripClient'
+ > Running 'stripServer'
+ > Running 'merge'
+ > Running 'listLibraries'
+ > Running 'rename'
+Stopping at requested step: D:\Users\wxinc\OneDrive\Desktop\Minecraft-modding-stuff\Furnitures-O-Plenty\.gradle-user-home\caches\forge_gradle\mcp_repo\de\oceanlabs\mcp\mcp_config\1.20.1-20230612.114412\joined\rename\output.jar
+[07:36:42] [main/INFO]: Writing debug log file accesstransform.log
+[07:36:42] [main/INFO]: Access Transformer processor running version 8.2.14
+[07:36:42] [main/INFO]: Command line arguments [--inJar, D:\Users\wxinc\OneDrive\Desktop\Minecraft-modding-stuff\Furnitures-O-Plenty\.gradle-user-home\caches\forge_gradle\minecraft_user_repo\net\minecraftforge\forge\1.20.1-47.4.0\forge-1.20.1-47.4.0-injected.jar, --outJar, D:\Users\wxinc\OneDrive\Desktop\Minecraft-modding-stuff\Furnitures-O-Plenty\.gradle-user-home\caches\forge_gradle\minecraft_user_repo\net\minecraftforge\forge\1.20.1-47.4.0_mapped_official_1.20.1\forge-1.20.1-47.4.0_mapped_official_1.20.1.jar, --logFile, accesstransform.log, --atFile, D:\Users\wxinc\OneDrive\Desktop\Minecraft-modding-stuff\Furnitures-O-Plenty\build\_atJar_4\parent_at.cfg]
+[07:36:42] [main/INFO]: Reading from D:\Users\wxinc\OneDrive\Desktop\Minecraft-modding-stuff\Furnitures-O-Plenty\.gradle-user-home\caches\forge_gradle\minecraft_user_repo\net\minecraftforge\forge\1.20.1-47.4.0\forge-1.20.1-47.4.0-injected.jar
+[07:36:42] [main/INFO]: Writing to D:\Users\wxinc\OneDrive\Desktop\Minecraft-modding-stuff\Furnitures-O-Plenty\.gradle-user-home\caches\forge_gradle\minecraft_user_repo\net\minecraftforge\forge\1.20.1-47.4.0_mapped_official_1.20.1\forge-1.20.1-47.4.0_mapped_official_1.20.1.jar
+[07:36:42] [main/INFO]: Transformer file D:\Users\wxinc\OneDrive\Desktop\Minecraft-modding-stuff\Furnitures-O-Plenty\build\_atJar_4\parent_at.cfg
+[07:36:42] [main/WARN]: Found existing output jar D:\Users\wxinc\OneDrive\Desktop\Minecraft-modding-stuff\Furnitures-O-Plenty\.gradle-user-home\caches\forge_gradle\minecraft_user_repo\net\minecraftforge\forge\1.20.1-47.4.0_mapped_official_1.20.1\forge-1.20.1-47.4.0_mapped_official_1.20.1.jar, overwriting
+[07:36:46] [main/INFO]: JAR transformation complete D:\Users\wxinc\OneDrive\Desktop\Minecraft-modding-stuff\Furnitures-O-Plenty\.gradle-user-home\caches\forge_gradle\minecraft_user_repo\net\minecraftforge\forge\1.20.1-47.4.0_mapped_official_1.20.1\forge-1.20.1-47.4.0_mapped_official_1.20.1.jar
+Creating SRG -> MCP TSRG
+D:\Users\wxinc\OneDrive\Desktop\Minecraft-modding-stuff\Furnitures-O-Plenty\src\main\java\com\rslover521\furnituresoplenty\client\model\ExtraModel.java:3: error: package net.minecraft.client.resources.model does not exist
+import net.minecraft.client.resources.model.BakedModel;
+                                           ^
+D:\Users\wxinc\OneDrive\Desktop\Minecraft-modding-stuff\Furnitures-O-Plenty\src\main\java\com\rslover521\furnituresoplenty\client\model\ExtraModel.java:4: error: package net.minecraft.resources does not exist
+import net.minecraft.resources.ResourceLocation;
+                              ^
+D:\Users\wxinc\OneDrive\Desktop\Minecraft-modding-stuff\Furnitures-O-Plenty\src\main\java\com\rslover521\furnituresoplenty\client\model\ExtraModel.java:7: error: cannot find symbol
+	private final ResourceLocation resourceLocation;
+	              ^
+  symbol:   class ResourceLocation
+  location: class ExtraModel
+D:\Users\wxinc\OneDrive\Desktop\Minecraft-modding-stuff\Furnitures-O-Plenty\src\main\java\com\rslover521\furnituresoplenty\client\model\ExtraModel.java:8: error: cannot find symbol
+	private BakedModel bakedModel;
+	        ^
+  symbol:   class BakedModel
+  location: class ExtraModel
+D:\Users\wxinc\OneDrive\Desktop\Minecraft-modding-stuff\Furnitures-O-Plenty\src\main\java\com\rslover521\furnituresoplenty\client\model\ExtraModel.java:10: error: cannot find symbol
+	public ExtraModel(ResourceLocation resourceLocation) {
+	                  ^
+  symbol:   class ResourceLocation
+  location: class ExtraModel
+D:\Users\wxinc\OneDrive\Desktop\Minecraft-modding-stuff\Furnitures-O-Plenty\src\main\java\com\rslover521\furnituresoplenty\client\model\ExtraModel.java:14: error: cannot find symbol
+	public ResourceLocation getResourceLocation() {
+	       ^
+  symbol:   class ResourceLocation
+  location: class ExtraModel
+D:\Users\wxinc\OneDrive\Desktop\Minecraft-modding-stuff\Furnitures-O-Plenty\src\main\java\com\rslover521\furnituresoplenty\client\model\ExtraModel.java:18: error: cannot find symbol
+	public void setBakedModel(BakedModel bakedModel) {
+	                          ^
+  symbol:   class BakedModel
+  location: class ExtraModel
+D:\Users\wxinc\OneDrive\Desktop\Minecraft-modding-stuff\Furnitures-O-Plenty\src\main\java\com\rslover521\furnituresoplenty\client\model\ExtraModel.java:22: error: cannot find symbol
+	public BakedModel getBakedModel() {
+	       ^
+  symbol:   class BakedModel
+  location: class ExtraModel
+D:\Users\wxinc\OneDrive\Desktop\Minecraft-modding-stuff\Furnitures-O-Plenty\src\main\java\com\rslover521\furnituresoplenty\client\renderer\CustomCeilingFanBlockEntityRenderer.java:5: error: package net.minecraft.client.renderer.blockentity does not exist
+import net.minecraft.client.renderer.blockentity.BlockEntityRendererProvider.Context;
+                                                ^
+D:\Users\wxinc\OneDrive\Desktop\Minecraft-modding-stuff\Furnitures-O-Plenty\src\main\java\com\rslover521\furnituresoplenty\client\renderer\CustomCeilingFanBlockEntityRenderer.java:7: error: cannot access BlockEntityRenderer
+public class CustomCeilingFanBlockEntityRenderer extends CeilingFanBlockEntityRenderer {
+       ^
+  class file for net.minecraft.client.renderer.blockentity.BlockEntityRenderer not found
+D:\Users\wxinc\OneDrive\Desktop\Minecraft-modding-stuff\Furnitures-O-Plenty\src\main\java\com\rslover521\furnituresoplenty\client\renderer\CustomCeilingFanBlockEntityRenderer.java:8: error: cannot find symbol
+	public CustomCeilingFanBlockEntityRenderer(Context context) {
+	                                           ^
+  symbol:   class Context
+  location: class CustomCeilingFanBlockEntityRenderer
+D:\Users\wxinc\OneDrive\Desktop\Minecraft-modding-stuff\Furnitures-O-Plenty\src\main\java\com\rslover521\furnituresoplenty\client\renderer\HedgeRenderTypes.java:6: error: package net.minecraft.client.renderer does not exist
+import net.minecraft.client.renderer.ItemBlockRenderTypes;
+                                    ^
+D:\Users\wxinc\OneDrive\Desktop\Minecraft-modding-stuff\Furnitures-O-Plenty\src\main\java\com\rslover521\furnituresoplenty\client\renderer\HedgeRenderTypes.java:7: error: package net.minecraft.client.renderer does not exist
+import net.minecraft.client.renderer.RenderType;
+                                    ^
+D:\Users\wxinc\OneDrive\Desktop\Minecraft-modding-stuff\Furnitures-O-Plenty\src\main\java\com\rslover521\furnituresoplenty\client\renderer\HedgeRenderTypes.java:11: error: package net.minecraftforge.fml.event.lifecycle does not exist
+import net.minecraftforge.fml.event.lifecycle.FMLClientSetupEvent;
+                                             ^
+D:\Users\wxinc\OneDrive\Desktop\Minecraft-modding-stuff\Furnitures-O-Plenty\src\main\java\com\rslover521\furnituresoplenty\client\renderer\HedgeRenderTypes.java:20: error: cannot find symbol
+    public static void onClientSetup(FMLClientSetupEvent event) {
+                                     ^
+  symbol:   class FMLClientSetupEvent
+  location: class HedgeRenderTypes
+D:\Users\wxinc\OneDrive\Desktop\Minecraft-modding-stuff\Furnitures-O-Plenty\src\main\java\com\rslover521\furnituresoplenty\Config.java:3: error: package net.minecraft.resources does not exist
+import net.minecraft.resources.ResourceLocation;
+                              ^
+D:\Users\wxinc\OneDrive\Desktop\Minecraft-modding-stuff\Furnitures-O-Plenty\src\main\java\com\rslover521\furnituresoplenty\Config.java:4: error: package net.minecraft.world.item does not exist
+import net.minecraft.world.item.Item;
+                               ^
+D:\Users\wxinc\OneDrive\Desktop\Minecraft-modding-stuff\Furnitures-O-Plenty\src\main\java\com\rslover521\furnituresoplenty\Config.java:5: error: package net.minecraftforge.common does not exist
+import net.minecraftforge.common.ForgeConfigSpec;
+                                ^
+D:\Users\wxinc\OneDrive\Desktop\Minecraft-modding-stuff\Furnitures-O-Plenty\src\main\java\com\rslover521\furnituresoplenty\Config.java:8: error: package net.minecraftforge.fml.event.config does not exist
+import net.minecraftforge.fml.event.config.ModConfigEvent;
+                                          ^
+D:\Users\wxinc\OneDrive\Desktop\Minecraft-modding-stuff\Furnitures-O-Plenty\src\main\java\com\rslover521\furnituresoplenty\Config.java:9: error: package net.minecraftforge.registries does not exist
+import net.minecraftforge.registries.ForgeRegistries;
+                                    ^
+D:\Users\wxinc\OneDrive\Desktop\Minecraft-modding-stuff\Furnitures-O-Plenty\src\main\java\com\rslover521\furnituresoplenty\Config.java:20: error: package ForgeConfigSpec does not exist
+    private static final ForgeConfigSpec.Builder BUILDER = new ForgeConfigSpec.Builder();
+                                        ^
+D:\Users\wxinc\OneDrive\Desktop\Minecraft-modding-stuff\Furnitures-O-Plenty\src\main\java\com\rslover521\furnituresoplenty\Config.java:22: error: package ForgeConfigSpec does not exist
+    private static final ForgeConfigSpec.BooleanValue LOG_DIRT_BLOCK = BUILDER
+                                        ^
+D:\Users\wxinc\OneDrive\Desktop\Minecraft-modding-stuff\Furnitures-O-Plenty\src\main\java\com\rslover521\furnituresoplenty\Config.java:26: error: package ForgeConfigSpec does not exist
+    private static final ForgeConfigSpec.IntValue MAGIC_NUMBER = BUILDER
+                                        ^
+D:\Users\wxinc\OneDrive\Desktop\Minecraft-modding-stuff\Furnitures-O-Plenty\src\main\java\com\rslover521\furnituresoplenty\Config.java:30: error: package ForgeConfigSpec does not exist
+    public static final ForgeConfigSpec.ConfigValue<String> MAGIC_NUMBER_INTRODUCTION = BUILDER
+                                       ^
+D:\Users\wxinc\OneDrive\Desktop\Minecraft-modding-stuff\Furnitures-O-Plenty\src\main\java\com\rslover521\furnituresoplenty\Config.java:35: error: package ForgeConfigSpec does not exist
+    private static final ForgeConfigSpec.ConfigValue<List<? extends String>> ITEM_STRINGS = BUILDER
+                                        ^
+D:\Users\wxinc\OneDrive\Desktop\Minecraft-modding-stuff\Furnitures-O-Plenty\src\main\java\com\rslover521\furnituresoplenty\Config.java:39: error: cannot find symbol
+    static final ForgeConfigSpec SPEC = BUILDER.build();
+                 ^
+  symbol:   class ForgeConfigSpec
+  location: class Config
+D:\Users\wxinc\OneDrive\Desktop\Minecraft-modding-stuff\Furnitures-O-Plenty\src\main\java\com\rslover521\furnituresoplenty\Config.java:44: error: cannot find symbol
+    public static Set<Item> items;
+                      ^
+  symbol:   class Item
+  location: class Config
+D:\Users\wxinc\OneDrive\Desktop\Minecraft-modding-stuff\Furnitures-O-Plenty\src\main\java\com\rslover521\furnituresoplenty\Config.java:54: error: cannot find symbol
+    static void onLoad(final ModConfigEvent event)
+                             ^
+  symbol:   class ModConfigEvent
+  location: class Config
+D:\Users\wxinc\OneDrive\Desktop\Minecraft-modding-stuff\Furnitures-O-Plenty\src\main\java\com\rslover521\furnituresoplenty\core\ModAdvancementEvents.java:5: error: package net.minecraft.resources does not exist
+import net.minecraft.resources.ResourceLocation;
+                              ^
+D:\Users\wxinc\OneDrive\Desktop\Minecraft-modding-stuff\Furnitures-O-Plenty\src\main\java\com\rslover521\furnituresoplenty\core\ModAdvancementEvents.java:6: error: package net.minecraft.server.level does not exist
+import net.minecraft.server.level.ServerPlayer;
+                                 ^
+D:\Users\wxinc\OneDrive\Desktop\Minecraft-modding-stuff\Furnitures-O-Plenty\src\main\java\com\rslover521\furnituresoplenty\core\ModAdvancementEvents.java:7: error: package net.minecraftforge.event.entity.player does not exist
+import net.minecraftforge.event.entity.player.PlayerEvent;
+                                             ^
+D:\Users\wxinc\OneDrive\Desktop\Minecraft-modding-stuff\Furnitures-O-Plenty\src\main\java\com\rslover521\furnituresoplenty\core\ModAdvancementEvents.java:14: error: cannot find symbol
+	private static final ResourceLocation ROOT_ADVANCEMENT = 
+	                     ^
+  symbol:   class ResourceLocation
+  location: class ModAdvancementEvents
+D:\Users\wxinc\OneDrive\Desktop\Minecraft-modding-stuff\Furnitures-O-Plenty\src\main\java\com\rslover521\furnituresoplenty\core\ModAdvancementEvents.java:18: error: package PlayerEvent does not exist
+	public static void onPlayerJoin(PlayerEvent.PlayerLoggedInEvent event) {
+	                                           ^
+D:\Users\wxinc\OneDrive\Desktop\Minecraft-modding-stuff\Furnitures-O-Plenty\src\main\java\com\rslover521\furnituresoplenty\core\ModBlockEntities.java:18: error: package net.minecraft.world.level.block.entity does not exist
+import net.minecraft.world.level.block.entity.BlockEntityType;
+                                             ^
+D:\Users\wxinc\OneDrive\Desktop\Minecraft-modding-stuff\Furnitures-O-Plenty\src\main\java\com\rslover521\furnituresoplenty\core\ModBlockEntities.java:20: error: package net.minecraftforge.registries does not exist
+import net.minecraftforge.registries.DeferredRegister;
+                                    ^
+D:\Users\wxinc\OneDrive\Desktop\Minecraft-modding-stuff\Furnitures-O-Plenty\src\main\java\com\rslover521\furnituresoplenty\core\ModBlockEntities.java:21: error: package net.minecraftforge.registries does not exist
+import net.minecraftforge.registries.ForgeRegistries;
+                                    ^
+D:\Users\wxinc\OneDrive\Desktop\Minecraft-modding-stuff\Furnitures-O-Plenty\src\main\java\com\rslover521\furnituresoplenty\core\ModBlockEntities.java:22: error: package net.minecraftforge.registries does not exist
+import net.minecraftforge.registries.RegistryObject;
+                                    ^
+D:\Users\wxinc\OneDrive\Desktop\Minecraft-modding-stuff\Furnitures-O-Plenty\src\main\java\com\rslover521\furnituresoplenty\core\ModBlockEntities.java:25: error: cannot find symbol
+	public static final DeferredRegister<BlockEntityType<?>> BLOCK_ENTITIES = 
+	                    ^
+  symbol:   class DeferredRegister
+  location: class ModBlockEntities
+D:\Users\wxinc\OneDrive\Desktop\Minecraft-modding-stuff\Furnitures-O-Plenty\src\main\java\com\rslover521\furnituresoplenty\core\ModBlockEntities.java:25: error: cannot find symbol
+	public static final DeferredRegister<BlockEntityType<?>> BLOCK_ENTITIES = 
+	                                     ^
+  symbol:   class BlockEntityType
+  location: class ModBlockEntities
+D:\Users\wxinc\OneDrive\Desktop\Minecraft-modding-stuff\Furnitures-O-Plenty\src\main\java\com\rslover521\furnituresoplenty\core\ModBlockEntities.java:28: error: cannot find symbol
+	public static final RegistryObject<BlockEntityType<BasinBlockEntity>> CUSTOM_BASIN = 
+	                    ^
+  symbol:   class RegistryObject
+  location: class ModBlockEntities
+D:\Users\wxinc\OneDrive\Desktop\Minecraft-modding-stuff\Furnitures-O-Plenty\src\main\java\com\rslover521\furnituresoplenty\core\ModBlockEntities.java:28: error: cannot find symbol
+	public static final RegistryObject<BlockEntityType<BasinBlockEntity>> CUSTOM_BASIN = 
+	                                   ^
+  symbol:   class BlockEntityType
+  location: class ModBlockEntities
+D:\Users\wxinc\OneDrive\Desktop\Minecraft-modding-stuff\Furnitures-O-Plenty\src\main\java\com\rslover521\furnituresoplenty\core\ModBlockEntities.java:46: error: cannot find symbol
+	public static final RegistryObject<BlockEntityType<BathBlockEntity>> CUSTOM_BATH = 
+	                    ^
+  symbol:   class RegistryObject
+  location: class ModBlockEntities
+D:\Users\wxinc\OneDrive\Desktop\Minecraft-modding-stuff\Furnitures-O-Plenty\src\main\java\com\rslover521\furnituresoplenty\core\ModBlockEntities.java:46: error: cannot find symbol
+	public static final RegistryObject<BlockEntityType<BathBlockEntity>> CUSTOM_BATH = 
+	                                   ^
+  symbol:   class BlockEntityType
+  location: class ModBlockEntities
+D:\Users\wxinc\OneDrive\Desktop\Minecraft-modding-stuff\Furnitures-O-Plenty\src\main\java\com\rslover521\furnituresoplenty\core\ModBlockEntities.java:64: error: cannot find symbol
+	public static final RegistryObject<BlockEntityType<CeilingFanBlockEntity>> CUSTOM_CEILING_FAN = 
+	                    ^
+  symbol:   class RegistryObject
+  location: class ModBlockEntities
+D:\Users\wxinc\OneDrive\Desktop\Minecraft-modding-stuff\Furnitures-O-Plenty\src\main\java\com\rslover521\furnituresoplenty\core\ModBlockEntities.java:64: error: cannot find symbol
+	public static final RegistryObject<BlockEntityType<CeilingFanBlockEntity>> CUSTOM_CEILING_FAN = 
+	                                   ^
+  symbol:   class BlockEntityType
+  location: class ModBlockEntities
+D:\Users\wxinc\OneDrive\Desktop\Minecraft-modding-stuff\Furnitures-O-Plenty\src\main\java\com\rslover521\furnituresoplenty\core\ModBlockEntities.java:100: error: cannot find symbol
+    public static final RegistryObject<BlockEntityType<CrateBlockEntity>> CUSTOM_CRATE = 
+                        ^
+  symbol:   class RegistryObject
+  location: class ModBlockEntities
+D:\Users\wxinc\OneDrive\Desktop\Minecraft-modding-stuff\Furnitures-O-Plenty\src\main\java\com\rslover521\furnituresoplenty\core\ModBlockEntities.java:100: error: cannot find symbol
+    public static final RegistryObject<BlockEntityType<CrateBlockEntity>> CUSTOM_CRATE = 
+                                       ^
+  symbol:   class BlockEntityType
+  location: class ModBlockEntities
+D:\Users\wxinc\OneDrive\Desktop\Minecraft-modding-stuff\Furnitures-O-Plenty\src\main\java\com\rslover521\furnituresoplenty\core\ModBlockEntities.java:118: error: cannot find symbol
+    public static final RegistryObject<BlockEntityType<CuttingBoardBlockEntity>> CUSTOM_CUTTING_BOARD =
+                        ^
+  symbol:   class RegistryObject
+  location: class ModBlockEntities
+D:\Users\wxinc\OneDrive\Desktop\Minecraft-modding-stuff\Furnitures-O-Plenty\src\main\java\com\rslover521\furnituresoplenty\core\ModBlockEntities.java:118: error: cannot find symbol
+    public static final RegistryObject<BlockEntityType<CuttingBoardBlockEntity>> CUSTOM_CUTTING_BOARD =
+                                       ^
+  symbol:   class BlockEntityType
+  location: class ModBlockEntities
+D:\Users\wxinc\OneDrive\Desktop\Minecraft-modding-stuff\Furnitures-O-Plenty\src\main\java\com\rslover521\furnituresoplenty\core\ModBlockEntities.java:136: error: cannot find symbol
+    public static final RegistryObject<BlockEntityType<DrawerBlockEntity>> CUSTOM_DRAWER = 
+                        ^
+  symbol:   class RegistryObject
+  location: class ModBlockEntities
+D:\Users\wxinc\OneDrive\Desktop\Minecraft-modding-stuff\Furnitures-O-Plenty\src\main\java\com\rslover521\furnituresoplenty\core\ModBlockEntities.java:136: error: cannot find symbol
+    public static final RegistryObject<BlockEntityType<DrawerBlockEntity>> CUSTOM_DRAWER = 
+                                       ^
+  symbol:   class BlockEntityType
+  location: class ModBlockEntities
+D:\Users\wxinc\OneDrive\Desktop\Minecraft-modding-stuff\Furnitures-O-Plenty\src\main\java\com\rslover521\furnituresoplenty\core\ModBlockEntities.java:154: error: cannot find symbol
+	public static final RegistryObject<BlockEntityType<KitchenDrawerBlockEntity>> CUSTOM_KITCHEN_DRAWER = 
+	                    ^
+  symbol:   class RegistryObject
+  location: class ModBlockEntities
+D:\Users\wxinc\OneDrive\Desktop\Minecraft-modding-stuff\Furnitures-O-Plenty\src\main\java\com\rslover521\furnituresoplenty\core\ModBlockEntities.java:154: error: cannot find symbol
+	public static final RegistryObject<BlockEntityType<KitchenDrawerBlockEntity>> CUSTOM_KITCHEN_DRAWER = 
+	                                   ^
+  symbol:   class BlockEntityType
+  location: class ModBlockEntities
+D:\Users\wxinc\OneDrive\Desktop\Minecraft-modding-stuff\Furnitures-O-Plenty\src\main\java\com\rslover521\furnituresoplenty\core\ModBlockEntities.java:172: error: cannot find symbol
+	public static final RegistryObject<BlockEntityType<KitchenSinkBlockEntity>> CUSTOM_KITCHEN_SINK = 
+	                    ^
+  symbol:   class RegistryObject
+  location: class ModBlockEntities
+D:\Users\wxinc\OneDrive\Desktop\Minecraft-modding-stuff\Furnitures-O-Plenty\src\main\java\com\rslover521\furnituresoplenty\core\ModBlockEntities.java:172: error: cannot find symbol
+	public static final RegistryObject<BlockEntityType<KitchenSinkBlockEntity>> CUSTOM_KITCHEN_SINK = 
+	                                   ^
+  symbol:   class BlockEntityType
+  location: class ModBlockEntities
+D:\Users\wxinc\OneDrive\Desktop\Minecraft-modding-stuff\Furnitures-O-Plenty\src\main\java\com\rslover521\furnituresoplenty\core\ModBlockEntities.java:190: error: cannot find symbol
+	public static final RegistryObject<BlockEntityType<MailboxBlockEntity>> CUSTOM_MAIL_BOX = 
+	                    ^
+  symbol:   class RegistryObject
+  location: class ModBlockEntities
+D:\Users\wxinc\OneDrive\Desktop\Minecraft-modding-stuff\Furnitures-O-Plenty\src\main\java\com\rslover521\furnituresoplenty\core\ModBlockEntities.java:190: error: cannot find symbol
+	public static final RegistryObject<BlockEntityType<MailboxBlockEntity>> CUSTOM_MAIL_BOX = 
+	                                   ^
+  symbol:   class BlockEntityType
+  location: class ModBlockEntities
+D:\Users\wxinc\OneDrive\Desktop\Minecraft-modding-stuff\Furnitures-O-Plenty\src\main\java\com\rslover521\furnituresoplenty\core\ModBlockEntities.java:208: error: cannot find symbol
+    public static final RegistryObject<BlockEntityType<StorageJarBlockEntity>> CUSTOM_STORAGE_JAR =
+                        ^
+  symbol:   class RegistryObject
+  location: class ModBlockEntities
+D:\Users\wxinc\OneDrive\Desktop\Minecraft-modding-stuff\Furnitures-O-Plenty\src\main\java\com\rslover521\furnituresoplenty\core\ModBlockEntities.java:208: error: cannot find symbol
+    public static final RegistryObject<BlockEntityType<StorageJarBlockEntity>> CUSTOM_STORAGE_JAR =
+                                       ^
+  symbol:   class BlockEntityType
+  location: class ModBlockEntities
+D:\Users\wxinc\OneDrive\Desktop\Minecraft-modding-stuff\Furnitures-O-Plenty\src\main\java\com\rslover521\furnituresoplenty\core\ModBlockEntities.java:226: error: cannot find symbol
+    public static final RegistryObject<BlockEntityType<StorageCabinetBlockEntity>> CUSTOM_STORAGE_CABINET =
+                        ^
+  symbol:   class RegistryObject
+  location: class ModBlockEntities
+D:\Users\wxinc\OneDrive\Desktop\Minecraft-modding-stuff\Furnitures-O-Plenty\src\main\java\com\rslover521\furnituresoplenty\core\ModBlockEntities.java:226: error: cannot find symbol
+    public static final RegistryObject<BlockEntityType<StorageCabinetBlockEntity>> CUSTOM_STORAGE_CABINET =
+                                       ^
+  symbol:   class BlockEntityType
+  location: class ModBlockEntities
+D:\Users\wxinc\OneDrive\Desktop\Minecraft-modding-stuff\Furnitures-O-Plenty\src\main\java\com\rslover521\furnituresoplenty\core\ModBlockEntities.java:260: error: cannot find symbol
+    public static final RegistryObject<BlockEntityType<ToiletBlockEntity>> CUSTOM_TOILET = 
+                        ^
+  symbol:   class RegistryObject
+  location: class ModBlockEntities
+D:\Users\wxinc\OneDrive\Desktop\Minecraft-modding-stuff\Furnitures-O-Plenty\src\main\java\com\rslover521\furnituresoplenty\core\ModBlockEntities.java:260: error: cannot find symbol
+    public static final RegistryObject<BlockEntityType<ToiletBlockEntity>> CUSTOM_TOILET = 
+                                       ^
+  symbol:   class BlockEntityType
+  location: class ModBlockEntities
+D:\Users\wxinc\OneDrive\Desktop\Minecraft-modding-stuff\Furnitures-O-Plenty\src\main\java\com\rslover521\furnituresoplenty\core\ModBlocks.java:31: error: package net.minecraft.world.level.block does not exist
+import net.minecraft.world.level.block.Block;
+                                      ^
+D:\Users\wxinc\OneDrive\Desktop\Minecraft-modding-stuff\Furnitures-O-Plenty\src\main\java\com\rslover521\furnituresoplenty\core\ModBlocks.java:32: error: package net.minecraft.world.level.block does not exist
+import net.minecraft.world.level.block.SoundType;
+                                      ^
+D:\Users\wxinc\OneDrive\Desktop\Minecraft-modding-stuff\Furnitures-O-Plenty\src\main\java\com\rslover521\furnituresoplenty\core\ModBlocks.java:33: error: package net.minecraft.world.level.block.state does not exist
+import net.minecraft.world.level.block.state.BlockBehaviour;
+                                            ^
+D:\Users\wxinc\OneDrive\Desktop\Minecraft-modding-stuff\Furnitures-O-Plenty\src\main\java\com\rslover521\furnituresoplenty\core\ModBlocks.java:34: error: package net.minecraft.world.level.block.state.properties does not exist
+import net.minecraft.world.level.block.state.properties.NoteBlockInstrument;
+                                                       ^
+D:\Users\wxinc\OneDrive\Desktop\Minecraft-modding-stuff\Furnitures-O-Plenty\src\main\java\com\rslover521\furnituresoplenty\core\ModBlocks.java:35: error: package net.minecraft.world.level.block.state.properties does not exist
+import net.minecraft.world.level.block.state.properties.WoodType;
+                                                       ^
+D:\Users\wxinc\OneDrive\Desktop\Minecraft-modding-stuff\Furnitures-O-Plenty\src\main\java\com\rslover521\furnituresoplenty\core\ModBlocks.java:37: error: package net.minecraftforge.registries does not exist
+import net.minecraftforge.registries.DeferredRegister;
+                                    ^
+D:\Users\wxinc\OneDrive\Desktop\Minecraft-modding-stuff\Furnitures-O-Plenty\src\main\java\com\rslover521\furnituresoplenty\core\ModBlocks.java:38: error: package net.minecraftforge.registries does not exist
+import net.minecraftforge.registries.ForgeRegistries;
+                                    ^
+D:\Users\wxinc\OneDrive\Desktop\Minecraft-modding-stuff\Furnitures-O-Plenty\src\main\java\com\rslover521\furnituresoplenty\core\ModBlocks.java:39: error: package net.minecraftforge.registries does not exist
+import net.minecraftforge.registries.RegistryObject;
+                                    ^
+D:\Users\wxinc\OneDrive\Desktop\Minecraft-modding-stuff\Furnitures-O-Plenty\src\main\java\com\rslover521\furnituresoplenty\core\ModBlocks.java:44: error: cannot find symbol
+	public static final Map<WoodType, Supplier<Block>> BOP_PLANKS_BY_WOOD = Map.ofEntries(
+	                        ^
+  symbol:   class WoodType
+  location: class ModBlocks
+D:\Users\wxinc\OneDrive\Desktop\Minecraft-modding-stuff\Furnitures-O-Plenty\src\main\java\com\rslover521\furnituresoplenty\core\ModBlocks.java:44: error: cannot find symbol
+	public static final Map<WoodType, Supplier<Block>> BOP_PLANKS_BY_WOOD = Map.ofEntries(
+	                                           ^
+  symbol:   class Block
+  location: class ModBlocks
+D:\Users\wxinc\OneDrive\Desktop\Minecraft-modding-stuff\Furnitures-O-Plenty\src\main\java\com\rslover521\furnituresoplenty\core\ModBlocks.java:60: error: cannot find symbol
+	public static final Map<WoodType, Supplier<Block>> BOP_LEAVES_BY_WOOD = Map.ofEntries(
+	                        ^
+  symbol:   class WoodType
+  location: class ModBlocks
+D:\Users\wxinc\OneDrive\Desktop\Minecraft-modding-stuff\Furnitures-O-Plenty\src\main\java\com\rslover521\furnituresoplenty\core\ModBlocks.java:60: error: cannot find symbol
+	public static final Map<WoodType, Supplier<Block>> BOP_LEAVES_BY_WOOD = Map.ofEntries(
+	                                           ^
+  symbol:   class Block
+  location: class ModBlocks
+D:\Users\wxinc\OneDrive\Desktop\Minecraft-modding-stuff\Furnitures-O-Plenty\src\main\java\com\rslover521\furnituresoplenty\core\ModBlocks.java:76: error: cannot find symbol
+	public static final Map<WoodType, CustomBOPLeafType> HEDGE_LEAF_TYPES_BY_WOOD = Map.ofEntries(
+	                        ^
+  symbol:   class WoodType
+  location: class ModBlocks
+D:\Users\wxinc\OneDrive\Desktop\Minecraft-modding-stuff\Furnitures-O-Plenty\src\main\java\com\rslover521\furnituresoplenty\core\ModBlocks.java:92: error: cannot find symbol
+	public static final DeferredRegister<Block> BLOCKS =
+	                    ^
+  symbol:   class DeferredRegister
+  location: class ModBlocks
+D:\Users\wxinc\OneDrive\Desktop\Minecraft-modding-stuff\Furnitures-O-Plenty\src\main\java\com\rslover521\furnituresoplenty\core\ModBlocks.java:92: error: cannot find symbol
+	public static final DeferredRegister<Block> BLOCKS =
+	                                     ^
+  symbol:   class Block
+  location: class ModBlocks
+D:\Users\wxinc\OneDrive\Desktop\Minecraft-modding-stuff\Furnitures-O-Plenty\src\main\java\com\rslover521\furnituresoplenty\core\ModBlocks.java:96: error: cannot find symbol
+	public static final RegistryObject<Block> FIR_BASIN;
+	                    ^
+  symbol:   class RegistryObject
+  location: class ModBlocks
+D:\Users\wxinc\OneDrive\Desktop\Minecraft-modding-stuff\Furnitures-O-Plenty\src\main\java\com\rslover521\furnituresoplenty\core\ModBlocks.java:96: error: cannot find symbol
+	public static final RegistryObject<Block> FIR_BASIN;
+	                                   ^
+  symbol:   class Block
+  location: class ModBlocks
+D:\Users\wxinc\OneDrive\Desktop\Minecraft-modding-stuff\Furnitures-O-Plenty\src\main\java\com\rslover521\furnituresoplenty\core\ModBlocks.java:97: error: cannot find symbol
+	public static final RegistryObject<Block> PINE_BASIN;
+	                    ^
+  symbol:   class RegistryObject
+  location: class ModBlocks
+D:\Users\wxinc\OneDrive\Desktop\Minecraft-modding-stuff\Furnitures-O-Plenty\src\main\java\com\rslover521\furnituresoplenty\core\ModBlocks.java:97: error: cannot find symbol
+	public static final RegistryObject<Block> PINE_BASIN;
+	                                   ^
+  symbol:   class Block
+  location: class ModBlocks
+D:\Users\wxinc\OneDrive\Desktop\Minecraft-modding-stuff\Furnitures-O-Plenty\src\main\java\com\rslover521\furnituresoplenty\core\ModBlocks.java:98: error: cannot find symbol
+	public static final RegistryObject<Block> MAPLE_BASIN;
+	                    ^
+  symbol:   class RegistryObject
+  location: class ModBlocks
+D:\Users\wxinc\OneDrive\Desktop\Minecraft-modding-stuff\Furnitures-O-Plenty\src\main\java\com\rslover521\furnituresoplenty\core\ModBlocks.java:98: error: cannot find symbol
+	public static final RegistryObject<Block> MAPLE_BASIN;
+	                                   ^
+  symbol:   class Block
+  location: class ModBlocks
+D:\Users\wxinc\OneDrive\Desktop\Minecraft-modding-stuff\Furnitures-O-Plenty\src\main\java\com\rslover521\furnituresoplenty\core\ModBlocks.java:99: error: cannot find symbol
+	public static final RegistryObject<Block> REDWOOD_BASIN;
+	                    ^
+  symbol:   class RegistryObject
+  location: class ModBlocks
+D:\Users\wxinc\OneDrive\Desktop\Minecraft-modding-stuff\Furnitures-O-Plenty\src\main\java\com\rslover521\furnituresoplenty\core\ModBlocks.java:99: error: cannot find symbol
+	public static final RegistryObject<Block> REDWOOD_BASIN;
+	                                   ^
+  symbol:   class Block
+  location: class ModBlocks
+D:\Users\wxinc\OneDrive\Desktop\Minecraft-modding-stuff\Furnitures-O-Plenty\src\main\java\com\rslover521\furnituresoplenty\core\ModBlocks.java:100: error: cannot find symbol
+	public static final RegistryObject<Block> MAHOGANY_BASIN;
+	                    ^
+  symbol:   class RegistryObject
+  location: class ModBlocks
+D:\Users\wxinc\OneDrive\Desktop\Minecraft-modding-stuff\Furnitures-O-Plenty\src\main\java\com\rslover521\furnituresoplenty\core\ModBlocks.java:100: error: cannot find symbol
+	public static final RegistryObject<Block> MAHOGANY_BASIN;
+	                                   ^
+  symbol:   class Block
+  location: class ModBlocks
+D:\Users\wxinc\OneDrive\Desktop\Minecraft-modding-stuff\Furnitures-O-Plenty\src\main\java\com\rslover521\furnituresoplenty\core\ModBlocks.java:101: error: cannot find symbol
+	public static final RegistryObject<Block> JACARANDA_BASIN;
+	                    ^
+  symbol:   class RegistryObject
+  location: class ModBlocks
+D:\Users\wxinc\OneDrive\Desktop\Minecraft-modding-stuff\Furnitures-O-Plenty\src\main\java\com\rslover521\furnituresoplenty\core\ModBlocks.java:101: error: cannot find symbol
+	public static final RegistryObject<Block> JACARANDA_BASIN;
+	                                   ^
+  symbol:   class Block
+  location: class ModBlocks
+D:\Users\wxinc\OneDrive\Desktop\Minecraft-modding-stuff\Furnitures-O-Plenty\src\main\java\com\rslover521\furnituresoplenty\core\ModBlocks.java:102: error: cannot find symbol
+	public static final RegistryObject<Block> PALM_BASIN;
+	                    ^
+  symbol:   class RegistryObject
+  location: class ModBlocks
+D:\Users\wxinc\OneDrive\Desktop\Minecraft-modding-stuff\Furnitures-O-Plenty\src\main\java\com\rslover521\furnituresoplenty\core\ModBlocks.java:102: error: cannot find symbol
+	public static final RegistryObject<Block> PALM_BASIN;
+	                                   ^
+  symbol:   class Block
+  location: class ModBlocks
+D:\Users\wxinc\OneDrive\Desktop\Minecraft-modding-stuff\Furnitures-O-Plenty\src\main\java\com\rslover521\furnituresoplenty\core\ModBlocks.java:103: error: cannot find symbol
+	public static final RegistryObject<Block> WILLOW_BASIN;
+	                    ^
+  symbol:   class RegistryObject
+  location: class ModBlocks
+D:\Users\wxinc\OneDrive\Desktop\Minecraft-modding-stuff\Furnitures-O-Plenty\src\main\java\com\rslover521\furnituresoplenty\core\ModBlocks.java:103: error: cannot find symbol
+	public static final RegistryObject<Block> WILLOW_BASIN;
+	                                   ^
+  symbol:   class Block
+  location: class ModBlocks
+D:\Users\wxinc\OneDrive\Desktop\Minecraft-modding-stuff\Furnitures-O-Plenty\src\main\java\com\rslover521\furnituresoplenty\core\ModBlocks.java:104: error: cannot find symbol
+	public static final RegistryObject<Block> DEAD_BASIN;
+	                    ^
+  symbol:   class RegistryObject
+  location: class ModBlocks
+D:\Users\wxinc\OneDrive\Desktop\Minecraft-modding-stuff\Furnitures-O-Plenty\src\main\java\com\rslover521\furnituresoplenty\core\ModBlocks.java:104: error: cannot find symbol
+	public static final RegistryObject<Block> DEAD_BASIN;
+	                                   ^
+  symbol:   class Block
+  location: class ModBlocks
+D:\Users\wxinc\OneDrive\Desktop\Minecraft-modding-stuff\Furnitures-O-Plenty\src\main\java\com\rslover521\furnituresoplenty\core\ModBlocks.java:105: error: cannot find symbol
+	public static final RegistryObject<Block> MAGIC_BASIN;
+	                    ^
+  symbol:   class RegistryObject
+  location: class ModBlocks
+D:\Users\wxinc\OneDrive\Desktop\Minecraft-modding-stuff\Furnitures-O-Plenty\src\main\java\com\rslover521\furnituresoplenty\core\ModBlocks.java:105: error: cannot find symbol
+	public static final RegistryObject<Block> MAGIC_BASIN;
+	                                   ^
+  symbol:   class Block
+  location: class ModBlocks
+D:\Users\wxinc\OneDrive\Desktop\Minecraft-modding-stuff\Furnitures-O-Plenty\src\main\java\com\rslover521\furnituresoplenty\core\ModBlocks.java:106: error: cannot find symbol
+	public static final RegistryObject<Block> UMBRAN_BASIN;
+	                    ^
+  symbol:   class RegistryObject
+  location: class ModBlocks
+D:\Users\wxinc\OneDrive\Desktop\Minecraft-modding-stuff\Furnitures-O-Plenty\src\main\java\com\rslover521\furnituresoplenty\core\ModBlocks.java:106: error: cannot find symbol
+	public static final RegistryObject<Block> UMBRAN_BASIN;
+	                                   ^
+  symbol:   class Block
+  location: class ModBlocks
+100 errors
+only showing the first 100 errors, of 2310 total; use -Xmaxerrs if you would like to see more
+
+FAILURE: Build failed with an exception.
+
+* What went wrong:
+Execution failed for task ':compileJava'.
+> Compilation failed; see the compiler error output for details.
+
+* Try:
+> Run with --info option to get more log output.
+> Run with --scan to get full insights.
+
+Deprecated Gradle features were used in this build, making it incompatible with Gradle 9.0.
+
+You can use '--warning-mode all' to show the individual deprecation warnings and determine if they come from your own scripts or plugins.
+
+For more on this, please refer to https://docs.gradle.org/8.8/userguide/command_line_interface.html#sec:command_line_warnings in the Gradle documentation.
+
+BUILD FAILED in 2m 49s
+1 actionable task: 1 executed
+2026-04-18T07:37:13.085-0500 [DEBUG] [org.gradle.launcher.daemon.server.exec.ExecuteBuild] The daemon has finished executing the build.
+2026-04-18T07:37:13.103-0500 [DEBUG] [org.gradle.launcher.daemon.server.DaemonStateCoordinator] daemon stop has been requested. Sleeping until state changes.
+2026-04-18T07:37:13.103-0500 [DEBUG] [org.gradle.launcher.daemon.server.DaemonStateCoordinator] Command execution: finished waiting for DaemonCommandExecution[command = Build{id=342aa0cc-a357-4a2d-ab62-646f165b1c70, currentDir=D:\Users\wxinc\OneDrive\Desktop\Minecraft-modding-stuff\Furnitures-O-Plenty}, connection = DefaultDaemonConnection: socket connection from /127.0.0.1:60847 to /127.0.0.1:60848]. Result org.gradle.launcher.daemon.server.DaemonStateCoordinator@389e3acc with state StopRequested
+2026-04-18T07:37:13.103-0500 [DEBUG] [org.gradle.launcher.daemon.server.DaemonStateCoordinator] Command execution: completed DaemonCommandExecution[command = Build{id=342aa0cc-a357-4a2d-ab62-646f165b1c70, currentDir=D:\Users\wxinc\OneDrive\Desktop\Minecraft-modding-stuff\Furnitures-O-Plenty}, connection = DefaultDaemonConnection: socket connection from /127.0.0.1:60847 to /127.0.0.1:60848]
+2026-04-18T07:37:13.104-0500 [DEBUG] [org.gradle.launcher.daemon.server.DaemonStateCoordinator] resetting idle timer
+2026-04-18T07:37:13.104-0500 [DEBUG] [org.gradle.launcher.daemon.server.DaemonStateCoordinator] Marking daemon stopped due to command completed and stop requested. The daemon is running a build: false
+2026-04-18T07:37:13.104-0500 [DEBUG] [org.gradle.launcher.daemon.server.DaemonStateCoordinator] daemon has stopped.
+2026-04-18T07:37:13.104-0500 [DEBUG] [org.gradle.launcher.daemon.server.exec.ReturnResult] Daemon is dispatching the build result: Success[value=org.gradle.launcher.exec.BuildActionResult@404ea4db]
+2026-04-18T07:37:13.104-0500 [DEBUG] [org.gradle.launcher.daemon.server.Daemon] stop() called on daemon
+2026-04-18T07:37:13.104-0500 [DEBUG] [org.gradle.launcher.daemon.server.SynchronizedDispatchConnection] thread 29: dispatching Success[value=org.gradle.launcher.exec.BuildActionResult@404ea4db]
+2026-04-18T07:37:13.104-0500 [INFO] [org.gradle.launcher.daemon.server.Daemon] Stop requested. Daemon is removing its presence from the registry...
+2026-04-18T07:37:13.104-0500 [DEBUG] [org.gradle.launcher.daemon.server.DaemonRegistryUpdater] Removing our presence to clients, eg. removing this address from the registry: [52e7f440-b4ba-4ddd-bc4c-9bc1e7285d4a port:60847, addresses:[localhost/127.0.0.1]]
+2026-04-18T07:37:13.105-0500 [DEBUG] [org.gradle.launcher.daemon.registry.PersistentDaemonRegistry] Removing daemon address: [52e7f440-b4ba-4ddd-bc4c-9bc1e7285d4a port:60847, addresses:[localhost/127.0.0.1]]
+2026-04-18T07:37:13.106-0500 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Waiting to acquire exclusive lock on daemon addresses registry.
+2026-04-18T07:37:13.107-0500 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Lock acquired on daemon addresses registry.
+2026-04-18T07:37:13.108-0500 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Releasing lock on daemon addresses registry.
+2026-04-18T07:37:13.109-0500 [DEBUG] [org.gradle.launcher.daemon.server.DaemonRegistryUpdater] Address removed from registry.
+2026-04-18T07:37:13.119-0500 [DEBUG] [org.gradle.launcher.daemon.server.exec.CleanUpVirtualFileSystemAfterBuild] Cleaning virtual file system after build finished
+2026-04-18T07:37:13.119-0500 [DEBUG] [org.gradle.launcher.daemon.server.DefaultIncomingConnectionHandler] Finishing executing command: Build{id=342aa0cc-a357-4a2d-ab62-646f165b1c70, currentDir=D:\Users\wxinc\OneDrive\Desktop\Minecraft-modding-stuff\Furnitures-O-Plenty}
+2026-04-18T07:37:13.159-0500 [DEBUG] [org.gradle.launcher.daemon.server.SynchronizedDispatchConnection] thread 30: received class org.gradle.launcher.daemon.protocol.Finished
+2026-04-18T07:37:13.160-0500 [DEBUG] [org.gradle.launcher.daemon.server.DefaultDaemonConnection] thread 30: Received non-IO message from client: org.gradle.launcher.daemon.protocol.Finished@6e064d4c
+2026-04-18T07:37:13.160-0500 [DEBUG] [org.gradle.launcher.daemon.server.DefaultIncomingConnectionHandler] Received finished message: org.gradle.launcher.daemon.protocol.Finished@6e064d4c
+2026-04-18T07:37:13.160-0500 [DEBUG] [org.gradle.launcher.daemon.server.SynchronizedDispatchConnection] thread 29: stopping connection
+2026-04-18T07:37:13.161-0500 [DEBUG] [org.gradle.internal.remote.internal.inet.SocketConnection] Discarding EOFException: java.io.EOFException
+2026-04-18T07:37:13.162-0500 [DEBUG] [org.gradle.launcher.daemon.server.SynchronizedDispatchConnection] thread 30: received null
+2026-04-18T07:37:13.162-0500 [DEBUG] [org.gradle.launcher.daemon.server.DefaultDaemonConnection] thread 30: Received end-of-input from client.
+2026-04-18T07:37:13.162-0500 [DEBUG] [org.gradle.launcher.daemon.server.SynchronizedDispatchConnection] thread 29: stopping connection
+2026-04-18T07:37:13.167-0500 [DEBUG] [org.gradle.internal.watch.vfs.impl.WatchingVirtualFileSystem] Closing VFS, dropping state
+2026-04-18T07:37:13.168-0500 [DEBUG] [org.gradle.cache.internal.DefaultCacheCoordinator] Cache Generated Gradle JARs cache (D:\Users\wxinc\OneDrive\Desktop\Minecraft-modding-stuff\Furnitures-O-Plenty\.gradle-user-home\caches\8.8\generated-gradle-jars) was closed 0 times.
+2026-04-18T07:37:13.168-0500 [DEBUG] [org.gradle.internal.watch.registry.impl.DefaultFileWatcherRegistry] Finished listening to file system change events
+2026-04-18T07:37:13.168-0500 [DEBUG] [org.gradle.cache.internal.LockOnDemandCrossProcessCacheAccess] Releasing file lock for artifact cache (D:\Users\wxinc\OneDrive\Desktop\Minecraft-modding-stuff\Furnitures-O-Plenty\.gradle-user-home\caches\modules-2)
+2026-04-18T07:37:13.169-0500 [DEBUG] [org.gradle.cache.internal.btree.BTreePersistentIndexedCache] Closing cache resource-at-url.bin (D:\Users\wxinc\OneDrive\Desktop\Minecraft-modding-stuff\Furnitures-O-Plenty\.gradle-user-home\caches\modules-2\metadata-2.106\resource-at-url.bin)
+2026-04-18T07:37:13.169-0500 [DEBUG] [org.gradle.cache.internal.btree.BTreePersistentIndexedCache] Closing cache module-artifact.bin (D:\Users\wxinc\OneDrive\Desktop\Minecraft-modding-stuff\Furnitures-O-Plenty\.gradle-user-home\caches\modules-2\metadata-2.106\module-artifact.bin)
+2026-04-18T07:37:13.169-0500 [DEBUG] [org.gradle.cache.internal.btree.BTreePersistentIndexedCache] Closing cache module-metadata.bin (D:\Users\wxinc\OneDrive\Desktop\Minecraft-modding-stuff\Furnitures-O-Plenty\.gradle-user-home\caches\modules-2\metadata-2.106\module-metadata.bin)
+2026-04-18T07:37:13.169-0500 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Releasing lock on artifact cache (D:\Users\wxinc\OneDrive\Desktop\Minecraft-modding-stuff\Furnitures-O-Plenty\.gradle-user-home\caches\modules-2).
+2026-04-18T07:37:13.170-0500 [DEBUG] [org.gradle.cache.internal.DefaultCacheCoordinator] Cache artifact cache (D:\Users\wxinc\OneDrive\Desktop\Minecraft-modding-stuff\Furnitures-O-Plenty\.gradle-user-home\caches\modules-2) was closed 2 times.
+2026-04-18T07:37:13.171-0500 [DEBUG] [org.gradle.cache.internal.DefaultCacheCoordinator] Cache groovy-dsl (D:\Users\wxinc\OneDrive\Desktop\Minecraft-modding-stuff\Furnitures-O-Plenty\.gradle-user-home\caches\8.8\groovy-dsl) was closed 0 times.
+2026-04-18T07:37:13.171-0500 [DEBUG] [org.gradle.cache.internal.DefaultCacheCoordinator] Cache Artifact transforms cache (D:\Users\wxinc\OneDrive\Desktop\Minecraft-modding-stuff\Furnitures-O-Plenty\.gradle-user-home\caches\8.8\transforms) was closed 0 times.
+2026-04-18T07:37:13.171-0500 [DEBUG] [org.gradle.cache.internal.LockOnDemandCrossProcessCacheAccess] Releasing file lock for journal cache (D:\Users\wxinc\OneDrive\Desktop\Minecraft-modding-stuff\Furnitures-O-Plenty\.gradle-user-home\caches\journal-1)
+2026-04-18T07:37:13.172-0500 [DEBUG] [org.gradle.cache.internal.btree.BTreePersistentIndexedCache] Closing cache file-access.bin (D:\Users\wxinc\OneDrive\Desktop\Minecraft-modding-stuff\Furnitures-O-Plenty\.gradle-user-home\caches\journal-1\file-access.bin)
+2026-04-18T07:37:13.172-0500 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Releasing lock on journal cache (D:\Users\wxinc\OneDrive\Desktop\Minecraft-modding-stuff\Furnitures-O-Plenty\.gradle-user-home\caches\journal-1).
+2026-04-18T07:37:13.172-0500 [DEBUG] [org.gradle.cache.internal.DefaultCacheCoordinator] Cache journal cache (D:\Users\wxinc\OneDrive\Desktop\Minecraft-modding-stuff\Furnitures-O-Plenty\.gradle-user-home\caches\journal-1) was closed 2 times.
+2026-04-18T07:37:13.173-0500 [DEBUG] [org.gradle.cache.internal.DefaultCacheCoordinator] Cache file hash cache (D:\Users\wxinc\OneDrive\Desktop\Minecraft-modding-stuff\Furnitures-O-Plenty\.gradle-user-home\caches\8.8\fileHashes) was closed 3 times.
+2026-04-18T07:37:13.174-0500 [DEBUG] [org.gradle.internal.operations.DefaultBuildOperationRunner] Build operation 'Deleting unused version-specific caches in D:\Users\wxinc\OneDrive\Desktop\Minecraft-modding-stuff\Furnitures-O-Plenty\.gradle-user-home\caches' started
+2026-04-18T07:37:13.184-0500 [DEBUG] [org.gradle.cache.internal.VersionSpecificCacheCleanupAction] Processed version-specific caches at D:\Users\wxinc\OneDrive\Desktop\Minecraft-modding-stuff\Furnitures-O-Plenty\.gradle-user-home\caches for cleanup in 0.01 secs
+2026-04-18T07:37:13.185-0500 [DEBUG] [org.gradle.internal.operations.DefaultBuildOperationRunner] Completing Build operation 'Deleting unused version-specific caches in D:\Users\wxinc\OneDrive\Desktop\Minecraft-modding-stuff\Furnitures-O-Plenty\.gradle-user-home\caches'
+2026-04-18T07:37:13.185-0500 [DEBUG] [org.gradle.internal.operations.DefaultBuildOperationRunner] Build operation 'Deleting unused version-specific caches in D:\Users\wxinc\OneDrive\Desktop\Minecraft-modding-stuff\Furnitures-O-Plenty\.gradle-user-home\caches' completed
+2026-04-18T07:37:13.186-0500 [DEBUG] [org.gradle.internal.operations.DefaultBuildOperationRunner] Build operation 'Deleting unused Gradle distributions in D:\Users\wxinc\OneDrive\Desktop\Minecraft-modding-stuff\Furnitures-O-Plenty\.gradle-user-home\wrapper\dists' started
+2026-04-18T07:37:13.189-0500 [DEBUG] [org.gradle.internal.operations.DefaultBuildOperationRunner] Completing Build operation 'Deleting unused Gradle distributions in D:\Users\wxinc\OneDrive\Desktop\Minecraft-modding-stuff\Furnitures-O-Plenty\.gradle-user-home\wrapper\dists'
+2026-04-18T07:37:13.189-0500 [DEBUG] [org.gradle.internal.operations.DefaultBuildOperationRunner] Build operation 'Deleting unused Gradle distributions in D:\Users\wxinc\OneDrive\Desktop\Minecraft-modding-stuff\Furnitures-O-Plenty\.gradle-user-home\wrapper\dists' completed
+Daemon vm is shutting down... The daemon has exited normally or was terminated in response to a user interrupt.
+2026-04-18T07:37:13.191-0500 [DEBUG] [org.gradle.launcher.daemon.registry.PersistentDaemonRegistry] Removing daemon address: [52e7f440-b4ba-4ddd-bc4c-9bc1e7285d4a port:60847, addresses:[localhost/127.0.0.1]]
+2026-04-18T07:37:13.192-0500 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Waiting to acquire exclusive lock on daemon addresses registry.
+2026-04-18T07:37:13.193-0500 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Lock acquired on daemon addresses registry.
+2026-04-18T07:37:13.194-0500 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Releasing lock on daemon addresses registry.

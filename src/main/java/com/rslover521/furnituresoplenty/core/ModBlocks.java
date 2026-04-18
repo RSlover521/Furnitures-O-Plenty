@@ -73,6 +73,28 @@ public class ModBlocks {
 	        entry(BOPWoodTypes.EMPYREAL, () -> BOPBlocks.EMPYREAL_LEAVES)
 	);
 
+	public static final Map<CustomBOPLeafType, Supplier<Block>> HEDGE_LEAVES_BY_TYPE = Map.ofEntries(
+			entry(CustomBOPLeafType.FLOWERING_OAK, () -> BOPBlocks.FLOWERING_OAK_LEAVES),
+			entry(CustomBOPLeafType.CYPRESS, () -> BOPBlocks.CYPRESS_LEAVES),
+			entry(CustomBOPLeafType.SNOWBLOSSOM, () -> BOPBlocks.SNOWBLOSSOM_LEAVES),
+			entry(CustomBOPLeafType.RAINBOW_BIRCH, () -> BOPBlocks.RAINBOW_BIRCH_LEAVES),
+			entry(CustomBOPLeafType.FIR, () -> BOPBlocks.FIR_LEAVES),
+			entry(CustomBOPLeafType.PINE, () -> BOPBlocks.PINE_LEAVES),
+			entry(CustomBOPLeafType.RED_MAPLE, () -> BOPBlocks.RED_MAPLE_LEAVES),
+			entry(CustomBOPLeafType.ORANGE_MAPLE, () -> BOPBlocks.ORANGE_MAPLE_LEAVES),
+			entry(CustomBOPLeafType.YELLOW_MAPLE, () -> BOPBlocks.YELLOW_MAPLE_LEAVES),
+	        entry(CustomBOPLeafType.REDWOOD, () -> BOPBlocks.REDWOOD_LEAVES),
+	        entry(CustomBOPLeafType.MAHOGANY, () -> BOPBlocks.MAHOGANY_LEAVES),
+	        entry(CustomBOPLeafType.JACARANDA, () -> BOPBlocks.JACARANDA_LEAVES),
+	        entry(CustomBOPLeafType.PALM, () -> BOPBlocks.PALM_LEAVES),
+	        entry(CustomBOPLeafType.DEAD, () -> BOPBlocks.DEAD_LEAVES),
+	        entry(CustomBOPLeafType.MAGIC, () -> BOPBlocks.MAGIC_LEAVES),
+	        entry(CustomBOPLeafType.WILLOW, () -> BOPBlocks.WILLOW_LEAVES),
+	        entry(CustomBOPLeafType.UMBRAN, () -> BOPBlocks.UMBRAN_LEAVES),
+	        entry(CustomBOPLeafType.HELLBARK, () -> BOPBlocks.HELLBARK_LEAVES),
+	        entry(CustomBOPLeafType.EMPYREAL, () -> BOPBlocks.EMPYREAL_LEAVES)
+	);
+
 	public static final Map<WoodType, CustomBOPLeafType> HEDGE_LEAF_TYPES_BY_WOOD = Map.ofEntries(
 			entry(BOPWoodTypes.FIR, CustomBOPLeafType.FIR),
 			entry(BOPWoodTypes.PINE, CustomBOPLeafType.PINE),
@@ -1006,12 +1028,12 @@ public class ModBlocks {
 
     private static RegistryObject<Block> registerHedge(String name, WoodType woodType, CustomBOPLeafType leafType) {
         RegistryObject<Block> block = BLOCKS.register(name + "_hedge", () -> {
-            Supplier<Block> leavesSupplier = BOP_LEAVES_BY_WOOD.get(woodType);
-            if (leavesSupplier == null)
-                throw new IllegalArgumentException("Unknown leaves for wood type: " + woodType);
-
             if (leafType == null)
                 throw new IllegalArgumentException("Unknown hedge leaf type for wood type: " + woodType);
+
+            Supplier<Block> leavesSupplier = HEDGE_LEAVES_BY_TYPE.get(leafType);
+            if (leavesSupplier == null)
+                throw new IllegalArgumentException("Unknown leaves for hedge leaf type: " + leafType);
 
             Block leaves = leavesSupplier.get();
             return new CustomHedgeBlock(leafType,

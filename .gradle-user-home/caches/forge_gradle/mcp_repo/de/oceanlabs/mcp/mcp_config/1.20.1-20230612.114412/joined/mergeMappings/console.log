@@ -1,0 +1,16 @@
+JVM:         C:\Program Files\Java\jdk-17\bin\java.exe
+JVM Args:    
+Run Args:    "--task", "MERGE_MAPPING", "--left", "config/joined.tsrg", "--right", "D:\Users\wxinc\OneDrive\Desktop\Minecraft-modding-stuff\Furnitures-O-Plenty\.gradle-user-home\caches\forge_gradle\mcp_repo\de\oceanlabs\mcp\mcp_config\1.20.1-20230612.114412\joined\downloadClientMappings\client_mappings.txt", "--right-names", "right,left", "--classes", "--output", "D:\Users\wxinc\OneDrive\Desktop\Minecraft-modding-stuff\Furnitures-O-Plenty\.gradle-user-home\caches\forge_gradle\mcp_repo\de\oceanlabs\mcp\mcp_config\1.20.1-20230612.114412\joined\mergeMappings\output.jar"
+Classpath:   D:\Users\wxinc\OneDrive\Desktop\Minecraft-modding-stuff\Furnitures-O-Plenty\.gradle-user-home\caches\forge_gradle\maven_downloader\net\minecraftforge\installertools\1.2.0\installertools-1.2.0-fatjar.jar
+Working Dir: D:\Users\wxinc\OneDrive\Desktop\Minecraft-modding-stuff\Furnitures-O-Plenty\.gradle-user-home\caches\forge_gradle\mcp_repo\de\oceanlabs\mcp\mcp_config\1.20.1-20230612.114412\joined\mergeMappings
+Main Class:  net.minecraftforge.installertools.ConsoleTool
+Task: MERGE_MAPPING
+Left:    config\joined.tsrg
+         null
+Right:   D:\Users\wxinc\OneDrive\Desktop\Minecraft-modding-stuff\Furnitures-O-Plenty\.gradle-user-home\caches\forge_gradle\mcp_repo\de\oceanlabs\mcp\mcp_config\1.20.1-20230612.114412\joined\downloadClientMappings\client_mappings.txt
+         right,left
+Classes: true
+Fields:  false
+Methods: false
+Params:  false
+Output:  D:\Users\wxinc\OneDrive\Desktop\Minecraft-modding-stuff\Furnitures-O-Plenty\.gradle-user-home\caches\forge_gradle\mcp_repo\de\oceanlabs\mcp\mcp_config\1.20.1-20230612.114412\joined\mergeMappings\output.jar
