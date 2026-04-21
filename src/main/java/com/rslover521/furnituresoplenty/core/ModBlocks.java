@@ -40,7 +40,7 @@ import net.minecraftforge.registries.RegistryObject;
 import static java.util.Map.entry;
 
 public class ModBlocks {
-	// Util Map
+	// Util Maps
 	public static final Map<WoodType, Supplier<Block>> BOP_PLANKS_BY_WOOD = Map.ofEntries(
 			entry(BOPWoodTypes.FIR, () -> BOPBlocks.FIR_PLANKS),
 			entry(BOPWoodTypes.PINE, () -> BOPBlocks.PINE_PLANKS),

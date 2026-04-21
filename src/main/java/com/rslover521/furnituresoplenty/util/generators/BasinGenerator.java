@@ -5,7 +5,6 @@ import java.nio.file.Files;
 import java.nio.file.Path;
 
 public class BasinGenerator {
-
     private static final String MOD_ID = "furnituresoplenty";
 
     private static final String[] WOOD_TYPES = {
