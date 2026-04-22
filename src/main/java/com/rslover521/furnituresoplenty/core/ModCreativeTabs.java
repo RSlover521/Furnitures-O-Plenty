@@ -264,6 +264,7 @@ public class ModCreativeTabs {
                         output.accept(ModItems.CYPRESS_HEDGE.get());
                         output.accept(ModItems.SNOWBLOSSOM_HEDGE.get());
                         output.accept(ModItems.RAINBOW_BIRCH_HEDGE.get());
+                        output.accept(ModItems.ORIGIN_HEDGE.get());
                         output.accept(ModItems.FIR_HEDGE.get());
                         output.accept(ModItems.PINE_HEDGE.get());
                         output.accept(ModItems.RED_MAPLE_HEDGE.get());

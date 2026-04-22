@@ -23,6 +23,7 @@ public final class HedgeRenderTypes {
             ItemBlockRenderTypes.setRenderLayer(ModBlocks.CYPRESS_HEDGE.get(), RenderType.cutoutMipped());
             ItemBlockRenderTypes.setRenderLayer(ModBlocks.SNOWBLOSSOM_HEDGE.get(), RenderType.cutoutMipped());
             ItemBlockRenderTypes.setRenderLayer(ModBlocks.RAINBOW_BIRCH_HEDGE.get(), RenderType.cutoutMipped());
+            ItemBlockRenderTypes.setRenderLayer(ModBlocks.ORIGIN_HEDGE.get(), RenderType.cutoutMipped());
             ItemBlockRenderTypes.setRenderLayer(ModBlocks.FIR_HEDGE.get(), RenderType.cutoutMipped());
             ItemBlockRenderTypes.setRenderLayer(ModBlocks.PINE_HEDGE.get(), RenderType.cutoutMipped());
             ItemBlockRenderTypes.setRenderLayer(ModBlocks.RED_MAPLE_HEDGE.get(), RenderType.cutoutMipped());

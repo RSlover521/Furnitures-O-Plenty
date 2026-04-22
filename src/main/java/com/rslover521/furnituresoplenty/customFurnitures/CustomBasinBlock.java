@@ -5,7 +5,7 @@ import com.mrcrayfish.furniture.refurbished.block.WoodenBasinBlock;
 import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.minecraft.world.level.block.state.properties.WoodType;
 
-public class CustomBasinBlock extends WoodenBasinBlock{
+public class CustomBasinBlock extends WoodenBasinBlock {
 	private WoodType woodType;
 	
 	public CustomBasinBlock(WoodType woodType, BlockBehaviour.Properties properties) {
