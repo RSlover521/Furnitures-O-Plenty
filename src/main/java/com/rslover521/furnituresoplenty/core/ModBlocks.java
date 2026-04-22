@@ -37,6 +37,7 @@ import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.RegistryObject;
+import net.minecraftforge.fml.ModList;
 import static java.util.Map.entry;
 
 public class ModBlocks {
@@ -321,6 +322,7 @@ public class ModBlocks {
 	public static final RegistryObject<Block> CYPRESS_HEDGE;
 	public static final RegistryObject<Block> SNOWBLOSSOM_HEDGE;
 	public static final RegistryObject<Block> RAINBOW_BIRCH_HEDGE;
+	public static final RegistryObject<Block> ORIGIN_HEDGE;
 	public static final RegistryObject<Block> FIR_HEDGE;
 	public static final RegistryObject<Block> PINE_HEDGE;
 	public static final RegistryObject<Block> RED_MAPLE_HEDGE;
@@ -622,6 +624,7 @@ public class ModBlocks {
 		CYPRESS_HEDGE = registerHedge("cypress", BOPWoodTypes.FIR, CustomBOPLeafType.CYPRESS);
 		SNOWBLOSSOM_HEDGE = registerHedge("snowblossom", WoodType.CHERRY, CustomBOPLeafType.SNOWBLOSSOM);
 		RAINBOW_BIRCH_HEDGE = registerHedge("rainbow_birch", WoodType.BIRCH, CustomBOPLeafType.RAINBOW_BIRCH);
+		ORIGIN_HEDGE = registerHedge("origin", WoodType.OAK, CustomBOPLeafType.ORIGIN);
 		FIR_HEDGE = registerHedge("fir", BOPWoodTypes.FIR, CustomBOPLeafType.FIR);
 		PINE_HEDGE = registerHedge("pine", BOPWoodTypes.PINE, CustomBOPLeafType.PINE);
 		RED_MAPLE_HEDGE = registerHedge("red_maple", BOPWoodTypes.MAPLE, CustomBOPLeafType.RED_MAPLE);
@@ -693,6 +696,11 @@ public class ModBlocks {
 		UMBRAN_TOILET = registerToilet("umbran", BOPWoodTypes.UMBRAN);
 		HELLBARK_TOILET = registerToilet("hellbark", BOPWoodTypes.HELLBARK);
 		EMPYREAL_TOILET = registerToilet("empyreal", BOPWoodTypes.EMPYREAL);
+
+
+		if(ModList.get().isLoaded("backpacked")) {
+			
+		}
 	}
 
 

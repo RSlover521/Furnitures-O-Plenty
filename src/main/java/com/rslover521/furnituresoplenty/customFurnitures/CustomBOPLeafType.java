@@ -8,6 +8,7 @@ public enum CustomBOPLeafType {
     CYPRESS("cypress", "Cypress"),
     SNOWBLOSSOM("snowblossom", "Snowblossom"),
     RAINBOW_BIRCH("rainbow_birch", "Rainbow Birch"),
+    ORIGIN("origin", "Origin"),
     FIR("fir", "Fir"),
     PINE("pine", "Pine"),
     RED_MAPLE("red_maple", "Red Maple"),
@@ -48,6 +49,7 @@ public enum CustomBOPLeafType {
 			case CYPRESS -> LeafType.SPRUCE;
 			case SNOWBLOSSOM -> LeafType.CHERRY;
 			case RAINBOW_BIRCH -> LeafType.BIRCH;
+            case ORIGIN -> LeafType.OAK;
             case FIR -> LeafType.SPRUCE;
 			case PINE -> LeafType.SPRUCE;
 			case RED_MAPLE -> LeafType.OAK;
