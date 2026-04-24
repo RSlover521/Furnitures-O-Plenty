@@ -1,0 +1,140 @@
+{
+  "formatVersion": "1.1",
+  "component": {
+    "group": "net.minecraftforge",
+    "module": "eventbus",
+    "version": "6.0.5",
+    "attributes": {
+      "org.gradle.status": "release"
+    }
+  },
+  "createdBy": {
+    "gradle": {
+      "version": "7.4.2"
+    }
+  },
+  "variants": [
+    {
+      "name": "apiElements",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.jvm.version": 16,
+        "org.gradle.libraryelements": "jar",
+        "org.gradle.usage": "java-api"
+      },
+      "dependencies": [
+        {
+          "group": "net.jodah",
+          "module": "typetools",
+          "version": {
+            "requires": "0.6.+"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "eventbus-6.0.5.jar",
+          "url": "eventbus-6.0.5.jar",
+          "size": 53985,
+          "sha512": "e109553d05b54c839ecdbf536d5dcec488577351c22e562cb5625392954ab1850a437baf4ad3172ef5ed1d4242aba7450e3c50337f396254ff83db02b97b8755",
+          "sha256": "ae8bd4ea6b32509ace6dba904698b52e13d222625488c8291a05ab870e66c1dd",
+          "sha1": "699143dd438431d06b57416944f7cedbe52e1475",
+          "md5": "2a6245210b446b2144071e71ca13432b"
+        }
+      ]
+    },
+    {
+      "name": "runtimeElements",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.jvm.version": 16,
+        "org.gradle.libraryelements": "jar",
+        "org.gradle.usage": "java-runtime"
+      },
+      "dependencies": [
+        {
+          "group": "net.sf.jopt-simple",
+          "module": "jopt-simple",
+          "version": {
+            "requires": "5.0.4"
+          }
+        },
+        {
+          "group": "org.ow2.asm",
+          "module": "asm",
+          "version": {
+            "requires": "9.2"
+          }
+        },
+        {
+          "group": "org.ow2.asm",
+          "module": "asm-commons",
+          "version": {
+            "requires": "9.2"
+          }
+        },
+        {
+          "group": "org.ow2.asm",
+          "module": "asm-tree",
+          "version": {
+            "requires": "9.2"
+          }
+        },
+        {
+          "group": "org.apache.logging.log4j",
+          "module": "log4j-api",
+          "version": {
+            "requires": "2.17.1"
+          }
+        },
+        {
+          "group": "cpw.mods",
+          "module": "modlauncher",
+          "version": {
+            "requires": "10.0.+"
+          }
+        },
+        {
+          "group": "net.jodah",
+          "module": "typetools",
+          "version": {
+            "requires": "0.6.+"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "eventbus-6.0.5.jar",
+          "url": "eventbus-6.0.5.jar",
+          "size": 53985,
+          "sha512": "e109553d05b54c839ecdbf536d5dcec488577351c22e562cb5625392954ab1850a437baf4ad3172ef5ed1d4242aba7450e3c50337f396254ff83db02b97b8755",
+          "sha256": "ae8bd4ea6b32509ace6dba904698b52e13d222625488c8291a05ab870e66c1dd",
+          "sha1": "699143dd438431d06b57416944f7cedbe52e1475",
+          "md5": "2a6245210b446b2144071e71ca13432b"
+        }
+      ]
+    },
+    {
+      "name": "sourcesElements",
+      "attributes": {
+        "org.gradle.category": "documentation",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.docstype": "sources",
+        "org.gradle.usage": "java-runtime"
+      },
+      "files": [
+        {
+          "name": "eventbus-6.0.5-sources.jar",
+          "url": "eventbus-6.0.5-sources.jar",
+          "size": 35073,
+          "sha512": "09f8ae42222a9ec32031938c2b39743ae2e7397814d9d668aefd5619dbd02cd4b2cd741287b71d1849811e6a9f5e5d1b69c955e484a4e37f13060c3b12230748",
+          "sha256": "04520b2cbaa8d9b34c84d095f108d3788977722d5451637eb73cfc27f5ad559b",
+          "sha1": "09e63113e81f9d25c5082ba61df851935d510957",
+          "md5": "3434fe63a8e9cc22533a47f7853dfc81"
+        }
+      ]
+    }
+  ]
+}

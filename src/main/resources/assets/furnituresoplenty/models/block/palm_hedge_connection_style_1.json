@@ -1,7 +1,7 @@
-﻿{
+{
   "parent": "refurbished_furniture:block/hedge_connection_style_1",
   "textures": {
-    "particle": "biomesoplenty:block/palm_leaves",
-    "texture": "biomesoplenty:block/palm_leaves"
+    "particle": "furnituresoplenty:block/palm_hedge",
+    "texture": "furnituresoplenty:block/palm_hedge"
   }
 }

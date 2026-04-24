@@ -1,0 +1,7 @@
+{
+  "parent": "refurbished_furniture:block/hedge_connection_style_1",
+  "textures": {
+    "particle": "furnituresoplenty:block/yellow_maple_hedge",
+    "texture": "furnituresoplenty:block/yellow_maple_hedge"
+  }
+}

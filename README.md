@@ -71,6 +71,8 @@ Furniture variants for all Biomes O' Plenty wood types:
 
 **Wood Types:** Fir, Pine, Maple, Redwood, Mahogany, Jacaranda, Palm, Willow, Dead, Magic, Umbran, Hellbark, Empyreal
 
+**And hedges in different leaf types from BOP:** Flowering Oak, Cypress, Snowblossom, Rainbow Birch, Fir, Pine, Maple, Redwood, Mahogany, Jacaranda, Palm, Willow, Dead, Magic, Umbran, Hellbark, Empyreal.
+
 ---
 
 ## 🌏 Available Languages
@@ -114,10 +116,11 @@ Furniture variants for all Biomes O' Plenty wood types:
 
 ### 🌟 Supported Mod Versions
 
-|Versions|Supported|
-|--------|---------|
-|FOP 1.0.0|❌|
-|FOP 1.0.1|✅|
+| Versions  |Supported|
+|-----------|-|
+| FOP 1.0.0 |❌|
+| FOP 1.0.1 |❌|
+| FOP 1.0.2 |✅|
 
 **Note: Please review your mod version before you open an issue on the github issue page!**
 
