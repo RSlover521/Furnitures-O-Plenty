@@ -71,7 +71,7 @@ Furniture variants for all Biomes O' Plenty wood types:
 
 **Wood Types:** Fir, Pine, Maple, Redwood, Mahogany, Jacaranda, Palm, Willow, Dead, Magic, Umbran, Hellbark, Empyreal
 
-**And hedges in different leaf types from BOP:** Flowering Oak, Cypress, Snowblossom, Rainbow Birch, Fir, Pine, Maple, Redwood, Mahogany, Jacaranda, Palm, Willow, Dead, Magic, Umbran, Hellbark, Empyreal.
+**... And hedges in different leaf types from BOP:** Flowering Oak, Cypress, Snowblossom, Origin, Rainbow Birch, Fir, Pine, Red Maple, Orange Maple, Yellow Maple, Redwood, Mahogany, Jacaranda, Palm, Willow, Dead, Magic, Umbran, Hellbark, Empyreal.
 
 ---
 

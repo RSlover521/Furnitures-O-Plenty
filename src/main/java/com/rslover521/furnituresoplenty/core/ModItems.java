@@ -257,6 +257,7 @@ public class ModItems {
     public static final RegistryObject<Item> CYPRESS_HEDGE = ITEMS.register("cypress_hedge", () -> new BlockItem(ModBlocks.CYPRESS_HEDGE.get(), new Item.Properties()));
     public static final RegistryObject<Item> SNOWBLOSSOM_HEDGE = ITEMS.register("snowblossom_hedge", () -> new BlockItem(ModBlocks.SNOWBLOSSOM_HEDGE.get(), new Item.Properties()));
     public static final RegistryObject<Item> RAINBOW_BIRCH_HEDGE = ITEMS.register("rainbow_birch_hedge", () -> new BlockItem(ModBlocks.RAINBOW_BIRCH_HEDGE.get(), new Item.Properties()));
+    public static final RegistryObject<Item> ORIGIN_HEDGE = ITEMS.register("origin_hedge", () -> new BlockItem(ModBlocks.ORIGIN_HEDGE.get(), new Item.Properties()));
     public static final RegistryObject<Item> FIR_HEDGE = ITEMS.register("fir_hedge", () -> new BlockItem(ModBlocks.FIR_HEDGE.get(), new Item.Properties()));
     public static final RegistryObject<Item> PINE_HEDGE = ITEMS.register("pine_hedge", () -> new BlockItem(ModBlocks.PINE_HEDGE.get(), new Item.Properties()));
     public static final RegistryObject<Item> RED_MAPLE_HEDGE = ITEMS.register("red_maple_hedge", () -> new BlockItem(ModBlocks.RED_MAPLE_HEDGE.get(), new Item.Properties()));

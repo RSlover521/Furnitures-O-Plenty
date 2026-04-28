@@ -1,10 +1,11 @@
 {
   "replace": false,
-  "values": [
+    "values": [
     "furnituresoplenty:flowering_oak_hedge",
     "furnituresoplenty:cypress_hedge",
     "furnituresoplenty:snowblossom_hedge",
     "furnituresoplenty:rainbow_birch_hedge",
+    "furnituresoplenty:origin_hedge",
     "furnituresoplenty:fir_hedge",
     "furnituresoplenty:pine_hedge",
     "furnituresoplenty:red_maple_hedge",
