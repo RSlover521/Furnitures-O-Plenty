@@ -11,7 +11,10 @@ TODO LIST (IN PRIORITY)
 - add recipes for all blocks (done, worked, along with JEI support)
 - add hedges and different hedges for maple (done, worked)
 - release 1.0.2 (still beta) (supports survival... somehow)
-- mini update: origin hedges (in progress...)
+
+-----
+
+- mini update: origin hedges (Done, haven't tested yet)
 - release 1.0.3 (beta)
 
 -----
