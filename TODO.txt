@@ -19,9 +19,10 @@ TODO LIST (IN PRIORITY)
 
 -----
 
-- fix ceiling fan no blades texture issue (in progress...)
+- fix ceiling fan no blades texture issue (done, haven't tested yet)
 - fix rendering issues (e.g. water rendering on certain blocks, lattice fence and lattice fence gates, storgae jars...)
-- backpacked compat (backpack shelf)
+- recolor textures
+- backpacked compat (in progress...)
 - release 1.1.0 (official release)
 
 ----- 
