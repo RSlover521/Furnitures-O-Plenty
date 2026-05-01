@@ -1,10 +1,9 @@
-package com.rslover521.furnituresoplenty.client.renderer;
+package com.rslover521.furnituresoplenty.core;
 
 import com.mrcrayfish.furniture.refurbished.client.renderer.blockentity.CeilingFanBlockEntityRenderer;
+import com.mrcrayfish.furniture.refurbished.client.renderer.blockentity.StorageJarRenderer;
 import com.rslover521.furnituresoplenty.FurnituresOPlenty;
-import com.rslover521.furnituresoplenty.core.ModBlockEntities;
-import com.rslover521.furnituresoplenty.core.ModBlocks;
-import com.rslover521.furnituresoplenty.core.ModExtraModels;
+import com.rslover521.furnituresoplenty.client.renderer.CustomCeilingFanBlockEntityRenderer;
 
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.renderer.ItemBlockRenderTypes;
@@ -17,8 +16,8 @@ import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.event.lifecycle.FMLClientSetupEvent;
 
 @Mod.EventBusSubscriber(modid = FurnituresOPlenty.MODID, bus = Mod.EventBusSubscriber.Bus.MOD, value = Dist.CLIENT)
-public final class HedgeRenderTypes {
-    private HedgeRenderTypes() {
+public final class ModClientRenderers {
+    private ModClientRenderers() {
     }
 
     @SuppressWarnings("removal")
@@ -79,6 +78,7 @@ public final class HedgeRenderTypes {
     @SubscribeEvent
     public static void onRegisterRenderers(EntityRenderersEvent.RegisterRenderers event) {
         event.registerBlockEntityRenderer(ModBlockEntities.CUSTOM_CEILING_FAN.get(), CustomCeilingFanBlockEntityRenderer::new);
+        event.registerBlockEntityRenderer(ModBlockEntities.CUSTOM_STORAGE_JAR.get(), StorageJarRenderer::new);
     }
 
     private static void registerFanBlade(net.minecraft.world.level.block.Block block, ResourceLocation modelLocation) {

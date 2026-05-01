@@ -35,7 +35,6 @@ public class FurnituresOPlenty {
         ModItems.register(modEventBus);
 
         ModExtraModels.register(modEventBus);
-
         // Defer init until after registries exist
         context.getModEventBus().addListener(this::commonSetup);
     }
