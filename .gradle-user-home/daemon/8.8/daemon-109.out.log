@@ -1,0 +1,29 @@
+2026-05-01T13:51:07.756+0000 [DEBUG] [org.gradle.launcher.daemon.bootstrap.DaemonMain] Assuming the daemon was started with following jvm opts: [-XX:+HeapDumpOnOutOfMemoryError, --add-opens=java.base/java.util=ALL-UNNAMED, --add-opens=java.base/java.lang=ALL-UNNAMED, --add-opens=java.base/java.lang.invoke=ALL-UNNAMED, --add-opens=java.prefs/java.util.prefs=ALL-UNNAMED, --add-opens=java.base/java.nio.charset=ALL-UNNAMED, --add-opens=java.base/java.net=ALL-UNNAMED, --add-opens=java.base/java.util.concurrent.atomic=ALL-UNNAMED, -Xms2G, -Xmx5G, -Dfile.encoding=UTF-8, -Duser.country, -Duser.language=en, -Duser.variant]
+2026-05-01T13:51:08.553+0000 [INFO] [org.gradle.launcher.daemon.server.Daemon] start() called on daemon - DefaultDaemonContext[uid=ea89cdaa-894f-4123-8fd9-d63f91fbf977,javaHome=/opt/java/11.0.14,javaVersion=11,daemonRegistryDir=/workspaces/Furnitures-O-Plenty/.gradle-user-home/daemon,pid=109,idleTimeout=120000,priority=NORMAL,applyInstrumentationAgent=true,nativeServicesMode=ENABLED,daemonOpts=-XX:+HeapDumpOnOutOfMemoryError,--add-opens=java.base/java.util=ALL-UNNAMED,--add-opens=java.base/java.lang=ALL-UNNAMED,--add-opens=java.base/java.lang.invoke=ALL-UNNAMED,--add-opens=java.prefs/java.util.prefs=ALL-UNNAMED,--add-opens=java.base/java.nio.charset=ALL-UNNAMED,--add-opens=java.base/java.net=ALL-UNNAMED,--add-opens=java.base/java.util.concurrent.atomic=ALL-UNNAMED,-Xms2G,-Xmx5G,-Dfile.encoding=UTF-8,-Duser.country,-Duser.language=en,-Duser.variant]
+Daemon vm is shutting down... The daemon has exited normally or was terminated in response to a user interrupt.
+2026-05-01T13:51:08.767+0000 [DEBUG] [org.gradle.launcher.daemon.registry.PersistentDaemonRegistry] Removing daemon address: null
+2026-05-01T13:51:08.824+0000 [DEBUG] [org.gradle.launcher.daemon.server.Daemon] VM shutdown hook was unable to remove the daemon address from the registry. It will be cleaned up later.
+java.lang.RuntimeException: Could not determine a usable wildcard IP for this machine.
+	at org.gradle.internal.remote.internal.inet.InetAddressFactory.getWildcardBindingAddress(InetAddressFactory.java:88)
+	at org.gradle.cache.internal.locklistener.FileLockCommunicator.<init>(FileLockCommunicator.java:49)
+	at org.gradle.cache.internal.locklistener.DefaultFileLockContentionHandler.getCommunicator(DefaultFileLockContentionHandler.java:263)
+	at org.gradle.cache.internal.locklistener.DefaultFileLockContentionHandler.reservePort(DefaultFileLockContentionHandler.java:255)
+	at org.gradle.cache.internal.DefaultFileLockManager.lock(DefaultFileLockManager.java:109)
+	at org.gradle.cache.internal.DefaultFileLockManager.lock(DefaultFileLockManager.java:96)
+	at org.gradle.cache.internal.DefaultFileLockManager.lock(DefaultFileLockManager.java:91)
+	at org.gradle.cache.internal.OnDemandFileAccess.updateFile(OnDemandFileAccess.java:51)
+	at org.gradle.cache.internal.FileBackedObjectHolder.update(FileBackedObjectHolder.java:87)
+	at org.gradle.cache.internal.FileIntegrityViolationSuppressingObjectHolderDecorator$1.create(FileIntegrityViolationSuppressingObjectHolderDecorator.java:50)
+	at org.gradle.cache.internal.FileIntegrityViolationSuppressingObjectHolderDecorator.doUpdate(FileIntegrityViolationSuppressingObjectHolderDecorator.java:67)
+	at org.gradle.cache.internal.FileIntegrityViolationSuppressingObjectHolderDecorator.update(FileIntegrityViolationSuppressingObjectHolderDecorator.java:47)
+	at org.gradle.launcher.daemon.registry.PersistentDaemonRegistry.remove(PersistentDaemonRegistry.java:133)
+	at org.gradle.launcher.daemon.server.Daemon$1.run(Daemon.java:127)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+Caused by: java.net.SocketException: Operation not permitted (Socket creation failed)
+	at java.base/java.net.NetworkInterface.getAll(Native Method)
+	at java.base/java.net.NetworkInterface.getNetworkInterfaces(NetworkInterface.java:359)
+	at org.gradle.internal.remote.internal.inet.InetAddresses.analyzeNetworkInterfaces(InetAddresses.java:43)
+	at org.gradle.internal.remote.internal.inet.InetAddresses.<init>(InetAddresses.java:39)
+	at org.gradle.internal.remote.internal.inet.InetAddressFactory.init(InetAddressFactory.java:99)
+	at org.gradle.internal.remote.internal.inet.InetAddressFactory.getWildcardBindingAddress(InetAddressFactory.java:84)
+	... 14 more
