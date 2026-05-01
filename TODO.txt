@@ -14,7 +14,7 @@ TODO LIST (IN PRIORITY)
 
 -----
 
-- mini update: origin hedges (Done, haven't tested yet)
+- mini update: origin hedges (done, worked)
 - release 1.0.3 (beta)
 
 -----
