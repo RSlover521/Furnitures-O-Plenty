@@ -121,6 +121,7 @@ Furniture variants for all Biomes O' Plenty wood types:
 | FOP 1.0.0 |❌|
 | FOP 1.0.1 |❌|
 | FOP 1.0.2 |✅|
+| FOP 1.0.3 |✅|
 
 **Note: Please review your mod version before you open an issue on the github issue page!**
 
