@@ -5,7 +5,7 @@ import java.io.*;
 import java.nio.file.*;
 import java.util.*;
 
-public class ModValidator {
+public class    ModValidator {
 
     // Your mod ID
     private static final String MOD_ID = "furnituresoplenty";

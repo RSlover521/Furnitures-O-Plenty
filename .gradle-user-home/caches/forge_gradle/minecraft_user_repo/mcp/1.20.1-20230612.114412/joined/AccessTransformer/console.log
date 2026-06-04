@@ -1,0 +1,6 @@
+JVM:         C:\Program Files\Java\jdk-17\bin\java.exe
+JVM Args:    
+Run Args:    "--inJar", "D:\Users\wxinc\OneDrive\Desktop\Minecraft-modding-stuff\Furnitures-O-Plenty\.gradle-user-home\caches\forge_gradle\minecraft_user_repo\mcp\1.20.1-20230612.114412\joined\rename\output.jar", "--outJar", "D:\Users\wxinc\OneDrive\Desktop\Minecraft-modding-stuff\Furnitures-O-Plenty\.gradle-user-home\caches\forge_gradle\minecraft_user_repo\mcp\1.20.1-20230612.114412\joined\AccessTransformer\output.jar", "--atFile", "C:\Users\wxinc\AppData\Local\Temp\FG_ats_17387322629655413107.cfg"
+Classpath:   D:\Users\wxinc\OneDrive\Desktop\Minecraft-modding-stuff\Furnitures-O-Plenty\.gradle-user-home\caches\forge_gradle\maven_downloader\net\minecraftforge\accesstransformers\8.2.14\accesstransformers-8.2.14-fatjar.jar
+Working Dir: D:\Users\wxinc\OneDrive\Desktop\Minecraft-modding-stuff\Furnitures-O-Plenty\.gradle-user-home\caches\forge_gradle\minecraft_user_repo\mcp\1.20.1-20230612.114412\joined\AccessTransformer
+Main Class:  net.minecraftforge.accesstransformer.TransformerProcessor

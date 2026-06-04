@@ -43,7 +43,7 @@ Decorate your world, match your biomes, and make your builds truly feel like hom
   <img width="64" height="64" alt="mod_icon" src="https://github.com/user-attachments/assets/b3196382-e9dd-43ed-a0b0-6e3029e01536" />
 </p>
 
-<center> 
+<center>
 
 *Note: This block does not exist in the mod. This block is used for visualization only.*
 
