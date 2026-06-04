@@ -279,6 +279,19 @@
   "block.furnituresoplenty.empyreal_storage_jar": "Empyreal Storage Jar",
   "block.furnituresoplenty.empyreal_table": "Empyreal Table",
   "block.furnituresoplenty.empyreal_toilet": "Empyreal Toilet",
+  "block.furnituresoplenty.fir_backpack_shelf": "Fir Backpack Shelf",
+  "block.furnituresoplenty.pine_backpack_shelf": "Pine Backpack Shelf",
+  "block.furnituresoplenty.maple_backpack_shelf": "Maple Backpack Shelf",
+  "block.furnituresoplenty.redwood_backpack_shelf": "Redwood Backpack Shelf",
+  "block.furnituresoplenty.mahogany_backpack_shelf": "Mahogany Backpack Shelf",
+  "block.furnituresoplenty.jacaranda_backpack_shelf": "Jacaranda Backpack Shelf",
+  "block.furnituresoplenty.palm_backpack_shelf": "Palm Backpack Shelf",
+  "block.furnituresoplenty.willow_backpack_shelf": "Willow Backpack Shelf",
+  "block.furnituresoplenty.dead_backpack_shelf": "Dead Backpack Shelf",
+  "block.furnituresoplenty.magic_backpack_shelf": "Magic Backpack Shelf",
+  "block.furnituresoplenty.umbran_backpack_shelf": "Umbran Backpack Shelf",
+  "block.furnituresoplenty.hellbark_backpack_shelf": "Hellbark Backpack Shelf",
+  "block.furnituresoplenty.empyreal_backpack_shelf": "Empyreal Backpack Shelf",
 
   "itemGroup.furnituresoplenty": "Furnitures O' Plenty"
 }

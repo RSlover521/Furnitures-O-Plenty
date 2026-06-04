@@ -333,7 +333,21 @@ public class ModItems {
     public static final RegistryObject<Item> UMBRAN_TOILET = ITEMS.register("umbran_toilet", () -> new BlockItem(ModBlocks.UMBRAN_TOILET.get(), new Item.Properties()));
     public static final RegistryObject<Item> HELLBARK_TOILET = ITEMS.register("hellbark_toilet", () -> new BlockItem(ModBlocks.HELLBARK_TOILET.get(), new Item.Properties()));
     public static final RegistryObject<Item> EMPYREAL_TOILET = ITEMS.register("empyreal_toilet", () -> new BlockItem(ModBlocks.EMPYREAL_TOILET.get(), new Item.Properties()));
-    
+
+    public static final RegistryObject<Item> FIR_BACKPACK_SHELF = ITEMS.register("fir_backpack_shelf", () -> new BlockItem(ModBlocks.FIR_BACKPACK_SHELF.get(), new Item.Properties()));
+    public static final RegistryObject<Item> PINE_BACKPACK_SHELF = ITEMS.register("pine_backpack_shelf", () -> new BlockItem(ModBlocks.PINE_BACKPACK_SHELF.get(), new Item.Properties()));
+    public static final RegistryObject<Item> MAPLE_BACKPACK_SHELF = ITEMS.register("maple_backpack_shelf", () -> new BlockItem(ModBlocks.MAPLE_BACKPACK_SHELF.get(), new Item.Properties()));
+    public static final RegistryObject<Item> REDWOOD_BACKPACK_SHELF = ITEMS.register("redwood_backpack_shelf", () -> new BlockItem(ModBlocks.REDWOOD_BACKPACK_SHELF.get(), new Item.Properties()));
+    public static final RegistryObject<Item> MAHOGANY_BACKPACK_SHELF = ITEMS.register("mahogany_backpack_shelf", () -> new BlockItem(ModBlocks.MAHOGANY_BACKPACK_SHELF.get(), new Item.Properties()));
+    public static final RegistryObject<Item> JACARANDA_BACKPACK_SHELF = ITEMS.register("jacaranda_backpack_shelf", () -> new BlockItem(ModBlocks.JACARANDA_BACKPACK_SHELF.get(), new Item.Properties()));
+    public static final RegistryObject<Item> PALM_BACKPACK_SHELF = ITEMS.register("palm_backpack_shelf", () -> new BlockItem(ModBlocks.PALM_BACKPACK_SHELF.get(), new Item.Properties()));
+    public static final RegistryObject<Item> WILLOW_BACKPACK_SHELF = ITEMS.register("willow_backpack_shelf", () -> new BlockItem(ModBlocks.WILLOW_BACKPACK_SHELF.get(), new Item.Properties()));
+    public static final RegistryObject<Item> DEAD_BACKPACK_SHELF = ITEMS.register("dead_backpack_shelf", () -> new BlockItem(ModBlocks.DEAD_BACKPACK_SHELF.get(), new Item.Properties()));
+    public static final RegistryObject<Item> MAGIC_BACKPACK_SHELF = ITEMS.register("magic_backpack_shelf", () -> new BlockItem(ModBlocks.MAGIC_BACKPACK_SHELF.get(), new Item.Properties()));
+    public static final RegistryObject<Item> UMBRAN_BACKPACK_SHELF = ITEMS.register("umbran_backpack_shelf", () -> new BlockItem(ModBlocks.UMBRAN_BACKPACK_SHELF.get(), new Item.Properties()));
+    public static final RegistryObject<Item> HELLBARK_BACKPACK_SHELF = ITEMS.register("hellbark_backpack_shelf", () -> new BlockItem(ModBlocks.HELLBARK_BACKPACK_SHELF.get(), new Item.Properties()));
+    public static final RegistryObject<Item> EMPYREAL_BACKPACK_SHELF = ITEMS.register("empyreal_backpack_shelf", () -> new BlockItem(ModBlocks.EMPYREAL_BACKPACK_SHELF.get(), new Item.Properties()));
+
     public static void register(IEventBus eventBus) {
     	ITEMS.register(eventBus);
     }

@@ -8,6 +8,7 @@ import net.minecraft.world.item.CreativeModeTab;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.RegistryObject;
+import net.minecraftforge.fml.ModList;
 import net.minecraft.world.item.ItemStack;
 
 public class ModCreativeTabs {
@@ -339,7 +340,23 @@ public class ModCreativeTabs {
                         output.accept(ModItems.MAGIC_TOILET.get());
                         output.accept(ModItems.UMBRAN_TOILET.get());
                         output.accept(ModItems.HELLBARK_TOILET.get());
-                        output.accept(ModItems.EMPYREAL_TOILET.get());                        
+                        output.accept(ModItems.EMPYREAL_TOILET.get());
+                        
+                        if(ModList.get().isLoaded("backpacked")) {
+                            output.accept(ModItems.FIR_BACKPACK_SHELF.get());
+                            output.accept(ModItems.PINE_BACKPACK_SHELF.get());
+                            output.accept(ModItems.MAPLE_BACKPACK_SHELF.get());
+                            output.accept(ModItems.REDWOOD_BACKPACK_SHELF.get());
+                            output.accept(ModItems.MAHOGANY_BACKPACK_SHELF.get());
+                            output.accept(ModItems.JACARANDA_BACKPACK_SHELF.get());
+                            output.accept(ModItems.PALM_BACKPACK_SHELF.get());
+                            output.accept(ModItems.WILLOW_BACKPACK_SHELF.get());
+                            output.accept(ModItems.DEAD_BACKPACK_SHELF.get());
+                            output.accept(ModItems.MAGIC_BACKPACK_SHELF.get());
+                            output.accept(ModItems.UMBRAN_BACKPACK_SHELF.get());
+                            output.accept(ModItems.HELLBARK_BACKPACK_SHELF.get());
+                            output.accept(ModItems.EMPYREAL_BACKPACK_SHELF.get());
+                        }
                         })
                     .build());
 	
