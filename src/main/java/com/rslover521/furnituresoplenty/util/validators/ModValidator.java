@@ -1,8 +1,6 @@
 package com.rslover521.furnituresoplenty.util.validators;
 
 import com.google.gson.*;
-import org.jetbrains.annotations.NotNull;
-
 import java.io.*;
 import java.nio.file.*;
 import java.util.*;
@@ -60,7 +58,15 @@ public class ModValidator {
             if (json.has("parent")) {
                 String parent = json.get("parent").getAsString();
                 if (!isExternalNamespace(parent)) {
-                    Path parentPath = getPath(parent);
+                    String parentRel = parent.contains(":") ? parent.split(":", 2)[1] : parent;
+                    Path parentPath;
+                    if (parentRel.startsWith("block/")) {
+                        parentPath = MODELS_BLOCK.resolve(parentRel.substring(6) + ".json");
+                    } else if (parentRel.startsWith("item/")) {
+                        parentPath = MODELS_ITEM.resolve(parentRel.substring(5) + ".json");
+                    } else {
+                        parentPath = RESOURCES_DIR.resolve(parentRel + ".json");
+                    }
                     if (!Files.exists(parentPath)) {
                         System.out.println("[Missing parent] In " + f.getFileName() + " → " + parentPath);
                     }
@@ -88,19 +94,6 @@ public class ModValidator {
         } catch (Exception e) {
             System.out.println("[Error reading JSON] " + f.getFileName() + " → " + e.getMessage());
         }
-    }
-
-    private static @NotNull Path getPath(String parent) {
-        String parentRel = parent.contains(":") ? parent.split(":", 2)[1] : parent;
-        Path parentPath;
-        if (parentRel.startsWith("block/")) {
-            parentPath = MODELS_BLOCK.resolve(parentRel.substring(6) + ".json");
-        } else if (parentRel.startsWith("item/")) {
-            parentPath = MODELS_ITEM.resolve(parentRel.substring(5) + ".json");
-        } else {
-            parentPath = RESOURCES_DIR.resolve(parentRel + ".json");
-        }
-        return parentPath;
     }
 
     private static boolean isExternalNamespace(String str) {

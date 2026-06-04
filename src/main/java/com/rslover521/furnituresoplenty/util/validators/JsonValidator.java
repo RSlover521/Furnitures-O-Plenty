@@ -23,6 +23,7 @@ public class JsonValidator {
 		};
 
 		int count = 0;
+        int invalidCount = 0;
 
 		ArrayList<String> invalidFiles = new ArrayList<>();
 
@@ -40,6 +41,7 @@ public class JsonValidator {
 					allValid = false;
 					invalidFiles.add(file.getName());
 					count ++;
+                    invalidCount ++;
                 	e.printStackTrace();
             	}
        		}
@@ -47,15 +49,15 @@ public class JsonValidator {
 
 		System.out.println("-----------------------------------\nSummary:");
 
-		if(allValid) { 
-			System.out.println("✅ All valid. Good to go! \nScanned " + count + " files in total."); 
-		} else { 
-			System.out.println("❌ Not all valid. Please check the console for any file errors. " + 
-			"\nScanned " + count + " files in total." +
+		if(allValid) {
+			System.out.println("✅ All valid. Good to go! \nScanned " + count + " files in total.");
+		} else {
+			System.out.println("❌ Not all valid. Please check the console for any file errors. " +
+			"\nScanned " + count + " files in total, with " + invalidCount + " invalid files." +
 				"\nHere is a list of invalid files: ");
 			for(String dir : invalidFiles) {
 				System.out.println(dir);
-			} 
+			}
 		}
     }
 }
