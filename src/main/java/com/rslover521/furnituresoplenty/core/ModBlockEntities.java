@@ -13,6 +13,7 @@ import com.rslover521.furnituresoplenty.customBlockEntities.CustomBasinBlockEnti
 import com.rslover521.furnituresoplenty.customBlockEntities.CustomBathBlockEntity;
 import com.rslover521.furnituresoplenty.customBlockEntities.CustomCeilingFanBlockEntity;
 import com.rslover521.furnituresoplenty.customBlockEntities.CustomKitchenSinkBlockEntity;
+import com.rslover521.furnituresoplenty.customBlockEntities.CustomShelfBlockEntity;
 import com.rslover521.furnituresoplenty.customBlockEntities.CustomToiletBlockEntity;
 
 import net.minecraft.world.level.block.entity.BlockEntityType;
@@ -272,6 +273,24 @@ public class ModBlockEntities {
                             ModBlocks.HELLBARK_TOILET.get(),
                             ModBlocks.EMPYREAL_TOILET.get()
                      ).build(null));
+
+    public static final RegistryObject<BlockEntityType<CustomShelfBlockEntity>> CUSTOM_SHELF = 
+            BLOCK_ENTITIES.register("custom_shelf",
+                    () -> BlockEntityType.Builder.of(CustomShelfBlockEntity::new,
+                            ModBlocks.FIR_BACKPACK_SHELF.get(),
+                            ModBlocks.PINE_BACKPACK_SHELF.get(),
+                            ModBlocks.MAPLE_BACKPACK_SHELF.get(),
+                            ModBlocks.REDWOOD_BACKPACK_SHELF.get(),
+                            ModBlocks.MAHOGANY_BACKPACK_SHELF.get(),
+                            ModBlocks.JACARANDA_BACKPACK_SHELF.get(),
+                            ModBlocks.PALM_BACKPACK_SHELF.get(),
+                            ModBlocks.WILLOW_BACKPACK_SHELF.get(),
+                            ModBlocks.DEAD_BACKPACK_SHELF.get(),
+                            ModBlocks.MAGIC_BACKPACK_SHELF.get(),
+                            ModBlocks.UMBRAN_BACKPACK_SHELF.get(),
+                            ModBlocks.HELLBARK_BACKPACK_SHELF.get(),
+                            ModBlocks.EMPYREAL_BACKPACK_SHELF.get()
+                    ).build(null));
 
         public static void register(IEventBus eventBus) {
                 BLOCK_ENTITIES.register(eventBus);

@@ -52,6 +52,18 @@
     "java.sourcePaths": [
         "/home/codespace/.gradle/caches/forge_gradle/minecraft_user_repo/mcp/1.20.1-20230612.114412/joined/decompile"
     ],
+    "java.home": "/usr/lib/jvm/java-17-openjdk-amd64",
+    "java.configuration.runtimes": [
+        {
+            "name": "JavaSE-17",
+            "path": "/usr/lib/jvm/java-17-openjdk-amd64",
+            "default": true
+        }
+    ],
+    "terminal.integrated.env.linux": {
+        "JAVA_HOME": "/usr/lib/jvm/java-17-openjdk-amd64",
+        "PATH": "/usr/lib/jvm/java-17-openjdk-amd64/bin:${env:PATH}"
+    },
     "java.compile.nullAnalysis.mode": "automatic",
     "java.configuration.updateBuildConfiguration": "automatic",
     "java.format.settings.url": ".vscode/java-formatter.xml",

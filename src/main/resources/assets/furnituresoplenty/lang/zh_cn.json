@@ -279,6 +279,20 @@
   "block.furnituresoplenty.hellbark_hedge": "地狱皮树篱",
   "block.furnituresoplenty.empyreal_hedge": "重霄树篱",
   "block.furnituresoplenty.origin_hedge": "起源树篱",
+  "block.furnituresoplenty.fir_backpack_shelf": "冷杉背包架",
+  "block.furnituresoplenty.pine_backpack_shelf": "松木背包架",
+  "block.furnituresoplenty.maple_backpack_shelf": "枫木背包架",
+  "block.furnituresoplenty.redwood_backpack_shelf": "红木背包架",
+  "block.furnituresoplenty.mahogany_backpack_shelf": "桃花心木背包架",
+  "block.furnituresoplenty.jacaranda_backpack_shelf": "蓝花楹背包架",
+  "block.furnituresoplenty.palm_backpack_shelf": "棕榈背包架",
+  "block.furnituresoplenty.willow_backpack_shelf": "柳树背包架",
+  "block.furnituresoplenty.dead_backpack_shelf": "死木背包架",
+  "block.furnituresoplenty.magic_backpack_shelf": "魔法背包架",
+  "block.furnituresoplenty.umbran_backpack_shelf": "暗影背包架",
+  "block.furnituresoplenty.hellbark_backpack_shelf": "地狱皮背包架",
+  "block.furnituresoplenty.empyreal_backpack_shelf": "重霄背包架",
+  "block.furnituresoplenty.origin_backpack_shelf": "起源背包架",
 
   "itemGroup.furnituresoplenty": "Furnitures O' Plenty"
 }

@@ -30,3 +30,10 @@ issueTrackerURL="https://github.com/RSlover521/Furnitures-O-Plenty/issues"
     versionRange="[19.0.0.90,)"
     ordering="AFTER"
     side="BOTH"
+
+[[dependencies.furnituresoplenty]]
+    modId="backpacked"
+    mandatory=false
+    versionRange="[2.2.5,)"
+    ordering="AFTER"
+    side="BOTH"
