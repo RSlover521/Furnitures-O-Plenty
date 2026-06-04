@@ -53,7 +53,7 @@ Decorate your world, match your biomes, and make your builds truly feel like hom
 
 ## 📦 Overview
 
-**This mod of Minecraft combines every wood type from Biomes O' Plenty to the furnitures from Mr.Crayfish's Refurbished Furniture mod.**
+**This mod of Minecraft combines every wood type from Biomes O' Plenty to the furniture from Mr.Crayfish's Refurbished Furniture mod.**
 
 ---
 
@@ -67,7 +67,8 @@ Furniture variants for all Biomes O' Plenty wood types:
 - Storage Cabinets and Drawers  
 - Lattice Fences and Lattice Fence Gates  
 - Kitchen Cabinetry, Kitchen Drawers and Kitchen Sinks  
-- Cutting Boards, Kitchen Cabinets, and Kitchen Storage Cabinets  
+- Cutting Boards, Kitchen Cabinets, and Kitchen Storage Cabinets
+- And backpack shelf furniture if you have installed MrCrayfish's Backpacked mod
 
 **Wood Types:** Fir, Pine, Maple, Redwood, Mahogany, Jacaranda, Palm, Willow, Dead, Magic, Umbran, Hellbark, Empyreal
 
@@ -127,6 +128,6 @@ Furniture variants for all Biomes O' Plenty wood types:
 | FOP 1.1.0 |❌|
 | FOP 1.1.1 |✅|
 
-**Note: Please review your mod version before you open an issue on the github issue page!**
+**Note: Please review your mod version before you open an issue on the GitHub issue page!**
 
 ---
