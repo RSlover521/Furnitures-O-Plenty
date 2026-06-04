@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "H": {
+      "item": "biomesoplenty:mahogany_slab"
+    },
+    "L": {
+      "item": "biomesoplenty:mahogany_log"
+    },
+    "S": {
+      "item": "minecraft:stick"
+    }
+  },
+  "pattern": [
+    "LHL",
+    "S S"
+  ],
+  "result": {
+    "count": 4,
+    "item": "furnituresoplenty:mahogany_backpack_shelf"
+  },
+  "show_notification": true
+}

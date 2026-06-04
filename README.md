@@ -79,6 +79,7 @@ Furniture variants for all Biomes O' Plenty wood types:
 
 - English (US)  
 - Chinese (Simplified, Credit to ChengBubble)
+- Chinese (Traditional)
 
 ---
 
@@ -93,7 +94,7 @@ Furniture variants for all Biomes O' Plenty wood types:
 1. Download your preferred version from **[CurseForge](https://www.curseforge.com/minecraft/mc-mods/furnitures-o-plenty)** or **[Modrinth](https://modrinth.com/mod/furnitures-o-plenty)**.  
 2. Make sure you have **Minecraft Forge** installed for the Minecraft version, 1.20.1 and forge 47 and above  
 3. Place the mod `.jar` file into your `mods` folder located inside your `.minecraft` files.  
-4. Installed the correct mod dependencies: **[Biomes O' Plenty](https://www.curseforge.com/minecraft/mc-mods/biomes-o-plenty) (Version: 1.0.14 or above)** and **[Refurbished Furniture](https://www.curseforge.com/minecraft/mc-mods/refurbished-furniture) (Version 19.0.0.90 or above)**. Make sure you installed their mod dependencies as well. You can check their dependencies in their mod descriptions.
+4. Installed the correct mod dependencies: **[Biomes O' Plenty](https://www.curseforge.com/minecraft/mc-mods/biomes-o-plenty) (Version: 1.0.14 or above)**, **[Refurbished Furniture](https://www.curseforge.com/minecraft/mc-mods/refurbished-furniture) (Version 19.0.0.90 or above), and optionally [Backpacked](https://www.curseforge.com/minecraft/mc-mods/backpacked)**. Make sure you installed their mod dependencies as well. You can check their dependencies in their mod descriptions.
 5. Launch Minecraft and enjoy your new furniture!
 
 ---
@@ -111,6 +112,7 @@ Furniture variants for all Biomes O' Plenty wood types:
 ### Dependencies
 - [Biomes O' Plenty](https://www.curseforge.com/minecraft/mc-mods/biomes-o-plenty)  
 - [Refurbished Furniture](https://www.curseforge.com/minecraft/mc-mods/refurbished-furniture)
+- (Optional)[Backpacked](https://www.curseforge.com/minecraft/mc-mods/backpacked)
 
 ---
 
@@ -122,7 +124,8 @@ Furniture variants for all Biomes O' Plenty wood types:
 | FOP 1.0.1 |❌|
 | FOP 1.0.2 |❌|
 | FOP 1.0.3 |❌|
-| FOP 1.1.0 |✅|
+| FOP 1.1.0 |❌|
+| FOP 1.1.1 |✅|
 
 **Note: Please review your mod version before you open an issue on the github issue page!**
 

@@ -1,5 +1,6 @@
 package com.rslover521.furnituresoplenty.core;
 
+import com.mrcrayfish.backpacked.client.renderer.entity.layers.ShelfRenderer;
 import com.mrcrayfish.furniture.refurbished.client.renderer.blockentity.CeilingFanBlockEntityRenderer;
 import com.mrcrayfish.furniture.refurbished.client.renderer.blockentity.BasinBlockEntityRenderer;
 import com.mrcrayfish.furniture.refurbished.client.renderer.blockentity.BathBlockEntityRenderer;
@@ -170,6 +171,7 @@ public final class ModClientRenderers {
         event.registerBlockEntityRenderer(ModBlockEntities.CUSTOM_BATH.get(), BathBlockEntityRenderer::new);
         event.registerBlockEntityRenderer(ModBlockEntities.CUSTOM_CEILING_FAN.get(), CustomCeilingFanBlockEntityRenderer::new);
         event.registerBlockEntityRenderer(ModBlockEntities.CUSTOM_KITCHEN_SINK.get(), KitchenSinkBlockEntityRenderer::new);
+        event.registerBlockEntityRenderer(ModBlockEntities.CUSTOM_SHELF.get(), ShelfRenderer::new);
         event.registerBlockEntityRenderer(ModBlockEntities.CUSTOM_STORAGE_JAR.get(), StorageJarRenderer::new);
         event.registerBlockEntityRenderer(ModBlockEntities.CUSTOM_TOILET.get(), ToiletBlockEntityRenderer::new);
     }

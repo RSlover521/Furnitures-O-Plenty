@@ -182,6 +182,19 @@
     "furnituresoplenty:empyreal_lattice_fence",
     "furnituresoplenty:empyreal_mail_box",
     "furnituresoplenty:empyreal_storage_cabinet",
-    "furnituresoplenty:empyreal_table"
+    "furnituresoplenty:empyreal_table",
+    "furnituresoplenty:fir_backpack_shelf",
+    "furnituresoplenty:pine_backpack_shelf",
+    "furnituresoplenty:maple_backpack_shelf",
+    "furnituresoplenty:redwood_backpack_shelf",
+    "furnituresoplenty:mahogany_backpack_shelf",
+    "furnituresoplenty:jacaranda_backpack_shelf",
+    "furnituresoplenty:palm_backpack_shelf",
+    "furnituresoplenty:willow_backpack_shelf",
+    "furnituresoplenty:dead_backpack_shelf",
+    "furnituresoplenty:magic_backpack_shelf",
+    "furnituresoplenty:umbran_backpack_shelf",
+    "furnituresoplenty:hellbark_backpack_shelf",
+    "furnituresoplenty:empyreal_backpack_shelf"
   ]
 }

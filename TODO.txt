@@ -25,7 +25,16 @@ TODO LIST (IN PRIORITY)
 
 ----- 
 
+- backpacked compat (done, worked)
+- release 1.1.1 (official).
+
+-----
+
+- cutting board food rendering issue
+- release 1.1.2 (official).
+
+-----
+
 - recolor textures
-- backpacked compat (in progress...)
-- any more bugs appear in issues link
-- release 1.1.1.
+- any more bugs found/in the issues link
+- release 1.1.3 (official)
