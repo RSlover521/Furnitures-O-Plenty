@@ -11,13 +11,15 @@ public class JsonValidator {
     public static void main(String[] args) {
 		boolean allValid = true;
 		String[] allDirectories = {
-			"src/main/resources/assets/furnituresoplenty/models/item",
 			"src/main/resources/assets/furnituresoplenty/blockstates",
+			"src/main/resources/assets/furnituresoplenty/models/item",
 			"src/main/resources/assets/furnituresoplenty/models/block",
+			"src/main/resources/assets/furnituresoplenty/models/extra",
 			"src/main/resources/assets/furnituresoplenty/lang",
 			"src/main/resources/data/furnituresoplenty/recipes",
 			"src/main/resources/data/furnituresoplenty/loot_tables/blocks",
-			"src/main/resources/data/furnituresoplenty/advancements"
+			"src/main/resources/data/furnituresoplenty/advancements",
+			"src/main/resources/data/minecraft/tags/blocks/mineable"
 		};
 
 		int count = 0;

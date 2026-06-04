@@ -26,6 +26,7 @@ import com.rslover521.furnituresoplenty.customFurnitures.CustomStorageCabinetBlo
 import com.rslover521.furnituresoplenty.customFurnitures.CustomStorageJarBlock;
 import com.rslover521.furnituresoplenty.customFurnitures.CustomTableBlock;
 import com.rslover521.furnituresoplenty.customFurnitures.CustomToiletBlock;
+import com.rslover521.furnituresoplenty.customFurnitures.CustomShelfBlock;
 import biomesoplenty.api.block.BOPBlocks;
 import biomesoplenty.api.block.BOPWoodTypes;
 import net.minecraft.world.level.block.Block;
@@ -418,6 +419,21 @@ public class ModBlocks {
 	public static final RegistryObject<Block> HELLBARK_TOILET;
 	public static final RegistryObject<Block> EMPYREAL_TOILET;
 
+	// Register Backpacked shelf blocks here if the backpacked mod is loaded.
+	public static RegistryObject<Block> FIR_BACKPACK_SHELF;
+	public static RegistryObject<Block> PINE_BACKPACK_SHELF;
+	public static RegistryObject<Block> MAPLE_BACKPACK_SHELF;
+	public static RegistryObject<Block> REDWOOD_BACKPACK_SHELF;
+	public static RegistryObject<Block> MAHOGANY_BACKPACK_SHELF;
+	public static RegistryObject<Block> JACARANDA_BACKPACK_SHELF;
+	public static RegistryObject<Block> PALM_BACKPACK_SHELF;
+	public static RegistryObject<Block> WILLOW_BACKPACK_SHELF;
+	public static RegistryObject<Block> DEAD_BACKPACK_SHELF;
+	public static RegistryObject<Block> MAGIC_BACKPACK_SHELF;
+	public static RegistryObject<Block> UMBRAN_BACKPACK_SHELF;
+	public static RegistryObject<Block> HELLBARK_BACKPACK_SHELF;
+	public static RegistryObject<Block> EMPYREAL_BACKPACK_SHELF;
+
 	static {
 		FIR_BASIN = registerBasin("fir", BOPWoodTypes.FIR);
 		PINE_BASIN = registerBasin("pine", BOPWoodTypes.PINE);
@@ -722,13 +738,20 @@ public class ModBlocks {
 
 
 		if(ModList.get().isLoaded("backpacked")) {
-			
+			FIR_BACKPACK_SHELF = registerShelf("fir", BOPWoodTypes.FIR);
+			PINE_BACKPACK_SHELF = registerShelf("pine", BOPWoodTypes.PINE);
+			MAPLE_BACKPACK_SHELF = registerShelf("maple", BOPWoodTypes.MAPLE);
+			REDWOOD_BACKPACK_SHELF = registerShelf("redwood", BOPWoodTypes.REDWOOD);
+			MAHOGANY_BACKPACK_SHELF = registerShelf("mahogany", BOPWoodTypes.MAHOGANY);
+			JACARANDA_BACKPACK_SHELF = registerShelf("jacaranda", BOPWoodTypes.JACARANDA);
+			PALM_BACKPACK_SHELF = registerShelf("palm", BOPWoodTypes.PALM);
+			WILLOW_BACKPACK_SHELF = registerShelf("willow", BOPWoodTypes.WILLOW);
+			DEAD_BACKPACK_SHELF = registerShelf("dead", BOPWoodTypes.DEAD);
+			MAGIC_BACKPACK_SHELF = registerShelf("magic", BOPWoodTypes.MAGIC);
+			UMBRAN_BACKPACK_SHELF = registerShelf("umbran", BOPWoodTypes.UMBRAN);
+			HELLBARK_BACKPACK_SHELF = registerShelf("hellbark", BOPWoodTypes.HELLBARK);
+			EMPYREAL_BACKPACK_SHELF = registerShelf("empyreal", BOPWoodTypes.EMPYREAL);
 		}
-	}
-
-
-	public static void register(IEventBus modEventBus) {
-		BLOCKS.register(modEventBus);
 	}
 
 	private static RegistryObject<Block> registerBasin(String name, WoodType woodType) {
@@ -1137,4 +1160,30 @@ public class ModBlocks {
                 + FurnituresOPlenty.MODID + ":" + name + "_toilet");
         return block;
     }
+
+	private static RegistryObject<Block> registerShelf(String name, WoodType woodType) {
+		RegistryObject<Block> block = BLOCKS.register(name + "_backpack_shelf", () -> {
+			Supplier<Block> plankSupplier = BOP_PLANKS_BY_WOOD.get(woodType);
+			if (plankSupplier == null)
+				throw new IllegalArgumentException("Unknown planks for wood type: " + woodType);
+
+			Block planks = plankSupplier.get();
+			return new CustomShelfBlock(woodType, BlockBehaviour.Properties.of()
+					.mapColor(planks.defaultMapColor())
+					.instrument(NoteBlockInstrument.BASS)
+					.strength(2.0F)
+					.sound(SoundType.WOOD)
+					.ignitedByLava()
+					.noOcclusion()
+					.forceSolidOn());
+		});
+
+		FurnituresOPlenty.LOGGER.info("Successfully registered block and item for "
+				+ FurnituresOPlenty.MODID + ":" + name + "_shelf");
+		return block;
+	}
+
+	public static void register(IEventBus modEventBus) {
+		BLOCKS.register(modEventBus);
+	}
 }
