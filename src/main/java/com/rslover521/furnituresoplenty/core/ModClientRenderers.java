@@ -1,6 +1,6 @@
 package com.rslover521.furnituresoplenty.core;
 
-import com.mrcrayfish.backpacked.client.renderer.entity.layers.ShelfRenderer;
+import com.rslover521.furnituresoplenty.compat.backpacked.BackpackedClientCompat;
 import com.mrcrayfish.furniture.refurbished.client.renderer.blockentity.CeilingFanBlockEntityRenderer;
 import com.mrcrayfish.furniture.refurbished.client.renderer.blockentity.BasinBlockEntityRenderer;
 import com.mrcrayfish.furniture.refurbished.client.renderer.blockentity.BathBlockEntityRenderer;
@@ -20,6 +20,7 @@ import net.minecraftforge.client.event.ModelEvent;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.client.event.EntityRenderersEvent;
 import net.minecraftforge.fml.common.Mod;
+import net.minecraftforge.fml.ModList;
 import net.minecraftforge.fml.event.lifecycle.FMLClientSetupEvent;
 import net.minecraftforge.registries.RegistryObject;
 
@@ -171,7 +172,9 @@ public final class ModClientRenderers {
         event.registerBlockEntityRenderer(ModBlockEntities.CUSTOM_BATH.get(), BathBlockEntityRenderer::new);
         event.registerBlockEntityRenderer(ModBlockEntities.CUSTOM_CEILING_FAN.get(), CustomCeilingFanBlockEntityRenderer::new);
         event.registerBlockEntityRenderer(ModBlockEntities.CUSTOM_KITCHEN_SINK.get(), KitchenSinkBlockEntityRenderer::new);
-        event.registerBlockEntityRenderer(ModBlockEntities.CUSTOM_SHELF.get(), ShelfRenderer::new);
+        if (ModList.get().isLoaded("backpacked")) {
+            BackpackedClientCompat.registerRenderer(event);
+        }
         event.registerBlockEntityRenderer(ModBlockEntities.CUSTOM_STORAGE_JAR.get(), StorageJarRenderer::new);
         event.registerBlockEntityRenderer(ModBlockEntities.CUSTOM_TOILET.get(), ToiletBlockEntityRenderer::new);
     }

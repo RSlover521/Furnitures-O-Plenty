@@ -6,10 +6,12 @@ import com.rslover521.furnituresoplenty.core.ModBlocks;
 import com.rslover521.furnituresoplenty.core.ModCreativeTabs;
 import com.rslover521.furnituresoplenty.core.ModExtraModels;
 import com.rslover521.furnituresoplenty.core.ModItems;
+import com.rslover521.furnituresoplenty.compat.backpacked.BackpackedCompat;
 
 import net.minecraftforge.event.server.ServerStartingEvent;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.fml.common.Mod;
+import net.minecraftforge.fml.ModList;
 import net.minecraftforge.fml.event.lifecycle.FMLCommonSetupEvent;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 
@@ -25,6 +27,12 @@ public class FurnituresOPlenty {
     
     public FurnituresOPlenty(FMLJavaModLoadingContext context) {
         IEventBus modEventBus = context.getModEventBus();
+
+        // Keep every reference to Backpacked behind this presence check. Loading the
+        // compatibility class without Backpacked would otherwise fail class loading.
+        if (ModList.get().isLoaded("backpacked")) {
+            BackpackedCompat.register();
+        }
 
         ModBlocks.register(modEventBus);
 
