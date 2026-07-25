@@ -63,6 +63,9 @@ remapJar {
 }
 
 sourcesJar {
+    // common and Forge each need pack.mcmeta as independent development
+    // resource roots; retain a single identical copy in the merged sources JAR.
+    duplicatesStrategy = DuplicatesStrategy.EXCLUDE
     dependsOn project(':common').sourcesJar
     from project(':common').sourcesJar.archiveFile.map { zipTree(it) }
 }

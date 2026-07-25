@@ -12,6 +12,9 @@ dependencies {
     modCompileOnly 'curse.maven:biomes-o-plenty-220318:6364066'
     modCompileOnly 'curse.maven:refurbished-furniture-897116:6623929'
     modCompileOnly 'curse.maven:framework-549225:6531429'
+    // Backpacked's shared ShelfBlock/ShelfBlockEntity API is present on both
+    // loaders. Platform subclasses and bootstrap code stay in loader modules.
+    modCompileOnly 'curse.maven:backpacked-fabric-667380:7300458'
 }
 
 processResources {

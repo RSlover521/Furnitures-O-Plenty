@@ -29,6 +29,7 @@ dependencies {
     modImplementation 'curse.maven:glitchcore-955399:5787838'
     modImplementation 'curse.maven:refurbished-furniture-897116:6623929'
     modImplementation 'curse.maven:framework-549225:6531429'
+    modImplementation 'curse.maven:backpacked-fabric-667380:7300458'
 
     // Forge supplies these libraries through FML; the Fabric artifacts expect
     // the host project to provide them. They are regular Java libraries, not

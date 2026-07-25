@@ -12,10 +12,14 @@ import com.mrcrayfish.furniture.refurbished.blockentity.ToiletBlockEntity;
 import com.rslover521.furnituresoplenty.client.renderer.CustomCeilingFanBlockEntityRenderer;
 import com.rslover521.furnituresoplenty.core.ModBlockEntities;
 import com.rslover521.furnituresoplenty.core.ModExtraModels;
+import com.rslover521.furnituresoplenty.compat.backpacked.BackpackedCompat;
+import com.mrcrayfish.backpacked.client.renderer.entity.layers.ShelfRenderer;
+import com.mrcrayfish.backpacked.blockentity.ShelfBlockEntity;
 import net.fabricmc.api.ClientModInitializer;
 import net.fabricmc.fabric.api.blockrenderlayer.v1.BlockRenderLayerMap;
 import net.fabricmc.fabric.api.client.model.loading.v1.ModelLoadingPlugin;
 import net.fabricmc.fabric.api.client.rendering.v1.BlockEntityRendererRegistry;
+import net.fabricmc.loader.api.FabricLoader;
 import net.minecraft.client.renderer.RenderType;
 import net.minecraft.client.renderer.blockentity.BlockEntityRendererProvider;
 import net.minecraft.core.registries.BuiltInRegistries;
@@ -51,6 +55,10 @@ public final class FurnituresOPlentyFabricClient implements ClientModInitializer
         BlockEntityRendererRegistry.register(ModBlockEntities.CUSTOM_STORAGE_JAR.get(), StorageJarRenderer::new);
         BlockEntityRendererRegistry.register(ModBlockEntities.CUSTOM_TOILET.get(),
                 narrow((BlockEntityRendererProvider<ToiletBlockEntity>) ToiletBlockEntityRenderer::new));
+
+        if (FabricLoader.getInstance().isModLoaded("backpacked") && BackpackedCompat.CUSTOM_SHELF != null) {
+            BlockEntityRendererRegistry.register(BackpackedCompat.CUSTOM_SHELF.get(), ShelfRenderer::new);
+        }
 
         ModelLoadingPlugin.register(context -> context.addModels(ModExtraModels.MODELS.values()));
     }
