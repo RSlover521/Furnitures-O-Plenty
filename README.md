@@ -59,10 +59,10 @@ FOP combines the wood types from Biomes O’ Plenty with furniture from MrCrayfi
 
 ### Supported platforms
 
-| Minecraft | Mod loader | Loader version |
-|-----------|------------|----------------|
-| 1.20.1 | Forge | 47 or newer |
-| 1.20.1 | Fabric | Fabric Loader 0.16.10 or newer |
+| Minecraft | Mod loader | Loader version                 |
+|-----------|------------|--------------------------------|
+| 1.20.1    | Forge      | Forge FML 47.4.x or newer      |
+| 1.20.1    | Fabric     | Fabric Loader 0.16.10 or newer |
 
 ---
 
@@ -106,14 +106,13 @@ Backpacked shelf compatibility is available on both Forge and Fabric. Use the Ba
 
 ### Required dependencies
 
-| Dependency | Minecraft version | Notes |
-|------------|-------------------|-------|
-| [Architectury API](https://modrinth.com/mod/architectury-api) | 1.20.1 | Required on Forge and Fabric |
-| [Biomes O’ Plenty](https://www.curseforge.com/minecraft/mc-mods/biomes-o-plenty) | 1.20.1, version 19.0.0.90+ | Install the matching Forge or Fabric build |
-| [MrCrayfish’s Furniture Mod: Refurbished](https://www.curseforge.com/minecraft/mc-mods/refurbished-furniture) | 1.20.1, version 1.0.14+ | Install the matching Forge or Fabric build |
-| [Framework](https://www.curseforge.com/minecraft/mc-mods/framework) | 1.20.1 | Required by Refurbished Furniture and Backpacked; use the matching loader build |
+| Dependency                                                                                                    | Minecraft version          | Notes                                                                           |
+|---------------------------------------------------------------------------------------------------------------|----------------------------|---------------------------------------------------------------------------------|
+| [Architectury API](https://modrinth.com/mod/architectury-api)                                                 | 1.20.1                     | Required on Forge and Fabric                                                    |
+| [Biomes O’ Plenty](https://www.curseforge.com/minecraft/mc-mods/biomes-o-plenty)                              | 1.20.1, version 19.0.0.90+ | Install the matching Forge or Fabric build                                      |
+| [MrCrayfish’s Furniture Mod: Refurbished](https://www.curseforge.com/minecraft/mc-mods/refurbished-furniture) | 1.20.1, version 1.0.14+    | Install the matching Forge or Fabric build                                      |
 
-Biomes O’ Plenty may also require loader-specific supporting libraries such as TerraBlender and GlitchCore. Follow the dependency list shown by the download platform for the exact BOP file you install.
+Biomes O’ Plenty and MrCrayfish's Refurbished Furniture may also require loader-specific supporting libraries such as TerraBlender, GlitchCore, and Framework. Follow the dependency list shown by the download platform for the exact BOP file you install.
 
 ### Optional Backpacked compatibility
 
@@ -165,15 +164,16 @@ Built loader JARs are written to:
 
 ## 🌟 Supported FOP versions
 
-| FOP version | Minecraft | Forge | Fabric | Support status |
-|-------------|-----------|-------|--------|----------------|
-| 1.0.0 | 1.20.1 | Yes | No | Unsupported |
-| 1.0.1 | 1.20.1 | Yes | No | Unsupported |
-| 1.0.2 | 1.20.1 | Yes | No | Unsupported |
-| 1.0.3 | 1.20.1 | Yes | No | Unsupported |
-| 1.1.0 | 1.20.1 | Yes | No | Unsupported |
-| 1.1.1 | 1.20.1 | Yes | No | Supported legacy release |
-| 1.1.2 | 1.20.1 | Yes | Yes | Current multi-loader release |
+| FOP version | Minecraft | Forge  | Fabric | Support status               |
+|-------------|-----------|--------|--------|------------------------------|
+| 1.0.0       | 1.20.1    | Yes    | No     | Unsupported                  |
+| 1.0.1       | 1.20.1    | Yes    | No     | Unsupported                  |
+| 1.0.2       | 1.20.1    | Yes    | No     | Unsupported                  |
+| 1.0.3       | 1.20.1    | Yes    | No     | Unsupported                  |
+| 1.1.0       | 1.20.1    | Yes    | No     | Unsupported                  |
+| 1.1.1       | 1.20.1    | Yes    | No     | Supported legacy release     |
+| 1.1.2       | 1.20.1    | Yes    | No     | Supported legacy release     |
+| 1.1.3       | 1.20.1    | Yes    | Yes    | Current Multi-Loader Release |
 
 Please confirm your Minecraft version, mod loader, and FOP version before opening an issue.
 
