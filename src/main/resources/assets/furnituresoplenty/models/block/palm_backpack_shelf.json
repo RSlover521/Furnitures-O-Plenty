@@ -1,6 +1,0 @@
-{
-  "parent": "backpacked:block/backpack_shelf",
-  "textures": {
-    "log": "biomesoplenty:block/palm_log_top"
-  }
-}

@@ -1,6 +1,0 @@
-{
-  "parent": "furnituresoplenty:item/lattice_fence",
-  "textures": {
-    "texture": "furnituresoplenty:block/umbran_lattice_fence"
-  }
-}

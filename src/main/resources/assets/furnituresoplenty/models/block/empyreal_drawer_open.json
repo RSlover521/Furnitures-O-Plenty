@@ -1,7 +1,0 @@
-{
-  "parent": "furnituresoplenty:block/drawer_open",
-  "textures": {
-    "particle": "furnituresoplenty:block/empyreal_particle",
-    "texture": "furnituresoplenty:block/empyreal_drawer"
-  }
-}

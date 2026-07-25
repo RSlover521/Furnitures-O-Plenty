@@ -1,6 +1,0 @@
-{
-  "parent": "refurbished_furniture:block/ceiling_fan_blade",
-  "textures": {
-    "texture": "furnituresoplenty:block/pine_dark_ceiling_fan"
-  }
-}

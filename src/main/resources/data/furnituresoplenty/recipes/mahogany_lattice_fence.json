@@ -1,9 +1,0 @@
-{
-  "type": "refurbished_furniture:workbench_constructing",
-  "materials": [
-    { "count": 4, "item": "biomesoplenty:mahogany_planks" },
-    { "count": 4, "item": "minecraft:stick" }
-  ],
-  "result": "furnituresoplenty:mahogany_lattice_fence",
-  "show_notification": false
-}

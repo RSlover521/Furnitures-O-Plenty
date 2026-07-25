@@ -1,7 +1,0 @@
-{
-  "parent": "furnituresoplenty:block/crate_closed",
-  "textures": {
-    "particle": "biomesoplenty:block/empyreal_planks",
-    "texture": "furnituresoplenty:block/empyreal_crate"
-  }
-}

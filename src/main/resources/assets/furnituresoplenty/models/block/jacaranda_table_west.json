@@ -1,7 +1,0 @@
-{
-  "parent": "refurbished_furniture:block/table_west",
-  "textures": {
-    "particle": "biomesoplenty:block/jacaranda_planks",
-    "texture": "furnituresoplenty:block/jacaranda_table"
-  }
-}

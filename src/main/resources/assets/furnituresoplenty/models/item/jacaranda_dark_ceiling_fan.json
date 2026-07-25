@@ -1,6 +1,0 @@
-{
-  "parent": "furnituresoplenty:item/ceiling_fan",
-  "textures": {
-    "texture": "furnituresoplenty:block/jacaranda_dark_ceiling_fan"
-  }
-}

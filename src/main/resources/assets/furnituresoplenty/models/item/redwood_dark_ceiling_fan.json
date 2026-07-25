@@ -1,6 +1,0 @@
-{
-  "parent": "furnituresoplenty:item/ceiling_fan",
-  "textures": {
-    "texture": "furnituresoplenty:block/redwood_dark_ceiling_fan"
-  }
-}

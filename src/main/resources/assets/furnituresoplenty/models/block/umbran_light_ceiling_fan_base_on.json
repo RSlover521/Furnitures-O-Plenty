@@ -1,7 +1,0 @@
-{
-  "parent": "furnituresoplenty:block/ceiling_fan_base_on",
-  "textures": {
-    "particle": "biomesoplenty:block/umbran_planks",
-    "texture": "furnituresoplenty:block/umbran_light_ceiling_fan"
-  }
-}

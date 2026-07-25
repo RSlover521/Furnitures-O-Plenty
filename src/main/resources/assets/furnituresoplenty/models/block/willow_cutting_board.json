@@ -1,7 +1,0 @@
-{
-  "parent": "furnituresoplenty:block/cutting_board",
-  "textures": {
-    "particle": "biomesoplenty:block/willow_planks",
-    "texture": "furnituresoplenty:block/willow_cutting_board"
-  }
-}

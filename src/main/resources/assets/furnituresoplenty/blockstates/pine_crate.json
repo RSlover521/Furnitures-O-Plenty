@@ -1,6 +1,0 @@
-{
-  "variants": {
-    "open=false": { "model": "furnituresoplenty:block/pine_crate_closed" },
-    "open=true":  { "model": "furnituresoplenty:block/pine_crate_open" }
-  }
-}

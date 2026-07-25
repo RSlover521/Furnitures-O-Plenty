@@ -1,7 +1,0 @@
-{
-  "parent": "furnituresoplenty:block/desk_left",
-  "textures": {
-    "particle": "biomesoplenty:block/mahogany_planks",
-    "texture": "furnituresoplenty:block/mahogany_desk"
-  }
-}

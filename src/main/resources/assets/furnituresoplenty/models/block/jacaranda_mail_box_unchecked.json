@@ -1,7 +1,0 @@
-{
-  "parent": "furnituresoplenty:block/mail_box_unchecked",
-  "textures": {
-    "particle": "biomesoplenty:block/jacaranda_planks",
-    "texture": "furnituresoplenty:block/jacaranda_mail_box"
-  }
-}

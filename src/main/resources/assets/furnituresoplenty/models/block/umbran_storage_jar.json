@@ -1,7 +1,0 @@
-{
-  "parent": "furnituresoplenty:block/storage_jar",
-  "textures": {
-    "particle": "minecraft:block/glass",
-    "texture": "furnituresoplenty:block/umbran_storage_jar"
-  }
-}

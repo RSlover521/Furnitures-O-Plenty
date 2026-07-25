@@ -1,7 +1,0 @@
-{
-  "parent": "furnituresoplenty:block/lattice_fence_center",
-  "textures": {
-    "particle": "biomesoplenty:block/jacaranda_planks",
-    "texture": "furnituresoplenty:block/jacaranda_lattice_fence"
-  }
-}
