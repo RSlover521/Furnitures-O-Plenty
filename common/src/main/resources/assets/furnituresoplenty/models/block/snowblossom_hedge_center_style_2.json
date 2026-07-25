@@ -1,0 +1,7 @@
+{
+  "parent": "refurbished_furniture:block/hedge_center_style_2",
+  "textures": {
+    "particle": "furnituresoplenty:block/snowblossom_hedge",
+    "texture": "furnituresoplenty:block/snowblossom_hedge"
+  }
+}

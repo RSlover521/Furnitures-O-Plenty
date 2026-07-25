@@ -1,0 +1,7 @@
+﻿{
+  "parent": "refurbished_furniture:block/hedge_connection_style_3",
+  "textures": {
+    "particle": "biomesoplenty:block/dead_leaves",
+    "texture": "biomesoplenty:block/dead_leaves"
+  }
+}

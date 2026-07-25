@@ -1,0 +1,59 @@
+{
+  "multipart": [
+    {
+      "apply": [
+        { "model": "furnituresoplenty:block/origin_hedge_center_style_1" },
+        { "model": "furnituresoplenty:block/origin_hedge_center_style_2" },
+        { "model": "furnituresoplenty:block/origin_hedge_center_style_3" }
+      ]
+    },
+    {
+      "apply": { "model": "furnituresoplenty:block/origin_hedge_center_side", "y": 180 },
+      "when": { "north": "false" }
+    },
+    {
+      "apply": { "model": "furnituresoplenty:block/origin_hedge_center_side", "y": 270 },
+      "when": { "east": "false" }
+    },
+    {
+      "apply": { "model": "furnituresoplenty:block/origin_hedge_center_side" },
+      "when": { "south": "false" }
+    },
+    {
+      "apply": { "model": "furnituresoplenty:block/origin_hedge_center_side", "y": 90 },
+      "when": { "west": "false" }
+    },
+    {
+      "apply": [
+        { "model": "furnituresoplenty:block/origin_hedge_connection_style_1", "y": 180 },
+        { "model": "furnituresoplenty:block/origin_hedge_connection_style_2", "y": 180 },
+        { "model": "furnituresoplenty:block/origin_hedge_connection_style_3", "y": 180 }
+      ],
+      "when": { "north": "true" }
+    },
+    {
+      "apply": [
+        { "model": "furnituresoplenty:block/origin_hedge_connection_style_1", "y": 270 },
+        { "model": "furnituresoplenty:block/origin_hedge_connection_style_2", "y": 270 },
+        { "model": "furnituresoplenty:block/origin_hedge_connection_style_3", "y": 270 }
+      ],
+      "when": { "east": "true" }
+    },
+    {
+      "apply": [
+        { "model": "furnituresoplenty:block/origin_hedge_connection_style_1" },
+        { "model": "furnituresoplenty:block/origin_hedge_connection_style_2" },
+        { "model": "furnituresoplenty:block/origin_hedge_connection_style_3" }
+      ],
+      "when": { "south": "true" }
+    },
+    {
+      "apply": [
+        { "model": "furnituresoplenty:block/origin_hedge_connection_style_1", "y": 90 },
+        { "model": "furnituresoplenty:block/origin_hedge_connection_style_2", "y": 90 },
+        { "model": "furnituresoplenty:block/origin_hedge_connection_style_3", "y": 90 }
+      ],
+      "when": { "west": "true" }
+    }
+  ]
+}

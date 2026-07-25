@@ -1,0 +1,70 @@
+plugins {
+    id 'com.github.johnrengelman.shadow' version '7.1.2'
+}
+
+architectury {
+    platformSetupLoomIde()
+    forge()
+}
+
+configurations {
+    common
+    shadowCommon
+    compileClasspath.extendsFrom common
+    runtimeClasspath.extendsFrom common
+    developmentForge.extendsFrom common
+}
+
+dependencies {
+    forge "net.minecraftforge:forge:${rootProject.minecraft_version}-${rootProject.forge_version}"
+    modApi "dev.architectury:architectury-forge:${rootProject.architectury_version}"
+
+    common(project(path: ':common', configuration: 'namedElements')) { transitive false }
+    shadowCommon(project(path: ':common', configuration: 'transformProductionForge')) { transitive false }
+
+    modImplementation "curse.maven:terrablender-563928:5378180"
+    modCompileOnly 'curse.maven:biomes-o-plenty-220318:6364065'
+    modRuntimeOnly 'curse.maven:biomes-o-plenty-220318:6364065'
+    modImplementation 'curse.maven:refurbished-furniture-897116:6623931'
+    modCompileOnly files('../libs/backpacked-forge-1.20.1-2.2.5.jar')
+    modRuntimeOnly files('../libs/backpacked-forge-1.20.1-2.2.5.jar')
+    modImplementation 'curse.maven:framework-549225:6531428'
+    modRuntimeOnly 'curse.maven:glitchcore-955399:5787839'
+}
+
+processResources {
+    def replacements = [
+        minecraft_version: rootProject.minecraft_version,
+        minecraft_version_range: rootProject.minecraft_version_range,
+        forge_version: rootProject.forge_version,
+        forge_version_range: rootProject.forge_version_range,
+        loader_version_range: rootProject.loader_version_range,
+        mod_id: rootProject.mod_id,
+        mod_name: rootProject.mod_name,
+        mod_license: rootProject.mod_license,
+        mod_version: rootProject.mod_version,
+        mod_authors: rootProject.mod_authors,
+        mod_description: rootProject.mod_description
+    ]
+    inputs.properties replacements
+    filesMatching(['META-INF/mods.toml', 'pack.mcmeta']) { expand replacements }
+
+}
+
+shadowJar {
+    exclude 'fabric.mod.json'
+    configurations = [project.configurations.shadowCommon]
+    archiveClassifier = 'dev-shadow'
+}
+
+remapJar {
+    input.set shadowJar.archiveFile
+    dependsOn shadowJar
+}
+
+sourcesJar {
+    dependsOn project(':common').sourcesJar
+    from project(':common').sourcesJar.archiveFile.map { zipTree(it) }
+}
+
+components.java.withVariantsFromConfiguration(configurations.shadowRuntimeElements) { skip() }

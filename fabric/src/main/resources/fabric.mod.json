@@ -1,0 +1,31 @@
+{
+  "schemaVersion": 1,
+  "id": "furnituresoplenty",
+  "version": "${version}",
+  "name": "Furnitures O' Plenty",
+  "description": "A mod that compats between Biomes O' Plenty and MrCrayfish's Refurbished Furniture.",
+  "authors": ["RSlover521"],
+  "contact": {
+    "issues": "https://github.com/RSlover521/Furnitures-O-Plenty/issues"
+  },
+  "license": "MIT",
+  "icon": "furnituresoplenty_icon.png",
+  "environment": "*",
+  "entrypoints": {
+    "main": ["com.rslover521.furnituresoplenty.fabric.FurnituresOPlentyFabric"],
+    "client": ["com.rslover521.furnituresoplenty.fabric.FurnituresOPlentyFabricClient"]
+  },
+  "depends": {
+    "fabricloader": ">=0.16.10",
+    "fabric-api": "*",
+    "minecraft": "~1.20.1",
+    "java": ">=17",
+    "architectury": ">=9.1.12",
+    "biomesoplenty": ">=19.0.0.90",
+    "refurbished_furniture": ">=1.0.14",
+    "framework": "*"
+  },
+  "suggests": {
+    "backpacked": ">=2.2.5"
+  }
+}

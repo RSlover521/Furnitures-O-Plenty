@@ -1,0 +1,7 @@
+{
+  "parent": "furnituresoplenty:block/table_east_north_south",
+  "textures": {
+    "particle": "biomesoplenty:block/redwood_planks",
+    "texture": "furnituresoplenty:block/redwood_table"
+  }
+}

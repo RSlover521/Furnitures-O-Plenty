@@ -1,0 +1,7 @@
+{
+  "parent": "furnituresoplenty:block/kitchen_drawer_open",
+  "textures": {
+    "particle": "biomesoplenty:block/umbran_planks",
+    "texture": "furnituresoplenty:block/umbran_kitchen_drawer"
+  }
+}

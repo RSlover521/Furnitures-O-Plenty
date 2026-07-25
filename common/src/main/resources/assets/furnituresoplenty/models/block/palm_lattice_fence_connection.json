@@ -1,0 +1,7 @@
+{
+  "parent": "furnituresoplenty:block/lattice_fence_connection",
+  "textures": {
+    "particle": "furnituresoplenty:block/palm_particle",
+    "texture": "furnituresoplenty:block/palm_lattice_fence"
+  }
+}

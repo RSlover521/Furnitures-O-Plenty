@@ -1,0 +1,7 @@
+{
+  "parent": "furnituresoplenty:block/cabinet_closed_hinge_right",
+  "textures": {
+    "particle": "biomesoplenty:block/mahogany_planks",
+    "texture": "furnituresoplenty:block/mahogany_storage_cabinet"
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=north": {
+      "model": "furnituresoplenty:block/hellbark_backpack_shelf"
+    },
+    "facing=east": {
+      "model": "furnituresoplenty:block/hellbark_backpack_shelf",
+      "y": 90
+    },
+    "facing=south": {
+      "model": "furnituresoplenty:block/hellbark_backpack_shelf",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "furnituresoplenty:block/hellbark_backpack_shelf",
+      "y": 270
+    }
+  }
+}

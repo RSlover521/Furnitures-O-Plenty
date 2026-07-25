@@ -1,0 +1,7 @@
+{
+  "parent": "furnituresoplenty:block/kitchen_cabinetry_default",
+  "textures": {
+    "particle": "biomesoplenty:block/empyreal_planks",
+    "texture": "furnituresoplenty:block/empyreal_kitchen_cabinetry"
+  }
+}

@@ -1,0 +1,7 @@
+{
+  "parent": "furnituresoplenty:block/cabinet_closed_hinge_right",
+  "textures": {
+    "particle": "biomesoplenty:block/willow_planks",
+    "texture": "furnituresoplenty:block/willow_storage_cabinet"
+  }
+}

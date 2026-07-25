@@ -1,0 +1,7 @@
+{
+  "parent": "refurbished_furniture:block/hedge_connection_style_1",
+  "textures": {
+    "particle": "furnituresoplenty:block/flowering_oak_hedge",
+    "texture": "furnituresoplenty:block/flowering_oak_hedge"
+  }
+}

@@ -1,0 +1,14 @@
+﻿{
+  "type": "refurbished_furniture:workbench_constructing",
+  "materials": [
+    {
+      "count": 6,
+      "item": "biomesoplenty:umbran_leaves"
+    }
+  ],
+  "result": {
+    "count": 8,
+    "item": "furnituresoplenty:umbran_hedge"
+  },
+  "show_notification": false
+}

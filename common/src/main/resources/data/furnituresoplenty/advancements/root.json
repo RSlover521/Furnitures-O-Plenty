@@ -1,0 +1,23 @@
+{
+    "display": {
+        "icon": {
+            "item": "furnituresoplenty:maple_chair"
+        },
+        "title": {
+            "text": "Furnitures O' Plenty"
+        },
+        "description": {
+            "text": "Welcome to Furnitures O' Plenty!"
+        },
+        "background": "minecraft:textures/gui/advancements/backgrounds/stone.png",
+        "frame": "task",
+        "show_toast": true,
+        "announce_to_chat": true,
+        "hidden": false
+    },
+    "criteria": {
+        "trigger_on_join": {
+            "trigger": "minecraft:impossible"
+        }
+    }
+}

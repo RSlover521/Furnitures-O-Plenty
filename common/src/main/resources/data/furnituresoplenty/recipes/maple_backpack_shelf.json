@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "H": {
+      "item": "biomesoplenty:maple_slab"
+    },
+    "L": {
+      "item": "biomesoplenty:maple_log"
+    },
+    "S": {
+      "item": "minecraft:stick"
+    }
+  },
+  "pattern": [
+    "LHL",
+    "S S"
+  ],
+  "result": {
+    "count": 4,
+    "item": "furnituresoplenty:maple_backpack_shelf"
+  },
+  "show_notification": true
+}

@@ -1,0 +1,7 @@
+{
+  "parent": "refurbished_furniture:block/table_south_west",
+  "textures": {
+    "particle": "biomesoplenty:block/palm_planks",
+    "texture": "furnituresoplenty:block/palm_table"
+  }
+}

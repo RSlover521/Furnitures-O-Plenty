@@ -1,0 +1,30 @@
+architectury {
+    common(rootProject.enabled_platforms.split(','))
+}
+
+dependencies {
+    modImplementation "net.fabricmc:fabric-loader:${rootProject.fabric_loader_version}"
+    modApi "dev.architectury:architectury:${rootProject.architectury_version}"
+
+    // Compile shared furniture implementations against the Fabric variants.
+    // These classes use the dependencies' loader-neutral Minecraft API; each
+    // platform still supplies its own matching runtime artifact.
+    modCompileOnly 'curse.maven:biomes-o-plenty-220318:6364066'
+    modCompileOnly 'curse.maven:refurbished-furniture-897116:6623929'
+    modCompileOnly 'curse.maven:framework-549225:6531429'
+}
+
+processResources {
+    inputs.property 'mod_id', rootProject.mod_id
+    filesMatching('pack.mcmeta') { expand mod_id: rootProject.mod_id }
+
+}
+
+publishing {
+    publications {
+        mavenCommon(MavenPublication) {
+            artifactId = rootProject.mod_id
+            from components.java
+        }
+    }
+}

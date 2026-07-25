@@ -1,0 +1,65 @@
+plugins {
+    id 'com.github.johnrengelman.shadow' version '7.1.2'
+}
+
+architectury {
+    platformSetupLoomIde()
+    fabric()
+}
+
+configurations {
+    common
+    shadowCommon
+    compileClasspath.extendsFrom common
+    runtimeClasspath.extendsFrom common
+    developmentFabric.extendsFrom common
+}
+
+dependencies {
+    modImplementation "net.fabricmc:fabric-loader:${rootProject.fabric_loader_version}"
+    modApi "net.fabricmc.fabric-api:fabric-api:${rootProject.fabric_api_version}"
+    modApi "dev.architectury:architectury-fabric:${rootProject.architectury_version}"
+
+    // Fabric 1.20.1 runtime dependencies used by the development client.
+    // Curse Maven does not publish transitive dependency metadata, so the
+    // libraries required by Biomes O' Plenty and Refurbished Furniture are
+    // declared explicitly.
+    modImplementation 'curse.maven:biomes-o-plenty-220318:6364066'
+    modImplementation 'curse.maven:terrablender-fabric-565956:6290449'
+    modImplementation 'curse.maven:glitchcore-955399:5787838'
+    modImplementation 'curse.maven:refurbished-furniture-897116:6623929'
+    modImplementation 'curse.maven:framework-549225:6531429'
+
+    // Forge supplies these libraries through FML; the Fabric artifacts expect
+    // the host project to provide them. They are regular Java libraries, not
+    // Fabric mods, so use runtimeOnly rather than modRuntimeOnly.
+    runtimeOnly 'com.electronwill.night-config:core:3.6.4'
+    runtimeOnly 'com.electronwill.night-config:toml:3.6.4'
+    runtimeOnly 'org.reflections:reflections:0.10.2'
+    runtimeOnly 'net.jodah:typetools:0.6.3'
+
+    common(project(path: ':common', configuration: 'namedElements')) { transitive false }
+    shadowCommon(project(path: ':common', configuration: 'transformProductionFabric')) { transitive false }
+}
+
+processResources {
+    inputs.property 'version', project.version
+    filesMatching('fabric.mod.json') { expand version: project.version }
+}
+
+shadowJar {
+    configurations = [project.configurations.shadowCommon]
+    archiveClassifier = 'dev-shadow'
+}
+
+remapJar {
+    input.set shadowJar.archiveFile
+    dependsOn shadowJar
+}
+
+sourcesJar {
+    dependsOn project(':common').sourcesJar
+    from project(':common').sourcesJar.archiveFile.map { zipTree(it) }
+}
+
+components.java.withVariantsFromConfiguration(configurations.shadowRuntimeElements) { skip() }

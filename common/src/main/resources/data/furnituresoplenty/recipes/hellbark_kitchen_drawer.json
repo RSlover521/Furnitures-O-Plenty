@@ -1,0 +1,9 @@
+{
+  "type": "refurbished_furniture:workbench_constructing",
+  "materials": [
+    { "count": 12, "item": "biomesoplenty:hellbark_planks" },
+    { "count": 1, "item": "minecraft:white_dye" }
+  ],
+  "result": "furnituresoplenty:hellbark_kitchen_drawer",
+  "show_notification": false
+}

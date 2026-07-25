@@ -1,0 +1,6 @@
+{
+  "parent": "furnituresoplenty:item/bath",
+  "textures": {
+    "texture": "furnituresoplenty:block/magic_bath"
+  }
+}

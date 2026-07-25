@@ -1,0 +1,7 @@
+{
+  "parent": "furnituresoplenty:block/cabinet_open_hinge_right",
+  "textures": {
+    "particle": "biomesoplenty:block/palm_planks",
+    "texture": "furnituresoplenty:block/palm_storage_cabinet"
+  }
+}
