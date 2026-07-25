@@ -173,7 +173,7 @@ Built loader JARs are written to:
 | 1.1.0       | 1.20.1    | Yes    | No     | Unsupported                  |
 | 1.1.1       | 1.20.1    | Yes    | No     | Supported legacy release     |
 | 1.1.2       | 1.20.1    | Yes    | No     | Supported legacy release     |
-| 1.1.3       | 1.20.1    | Yes    | Yes    | Current Multi-Loader Release |
+| 1.2.0       | 1.20.1    | Yes    | Yes    | Current Multi-Loader Release |
 
 Please confirm your Minecraft version, mod loader, and FOP version before opening an issue.
 
