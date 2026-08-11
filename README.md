@@ -164,13 +164,9 @@ Built loader JARs are written to:
 
 ## 🌟 Supported FOP versions
 
+**⚠ NOTE: 1.0.0 - 1.1.0 ARE NO LONGER SUPPORTED. IF YOU WANT SUPPORT, UPGRADE YOUR FOP VERSION ⚠**
+
 | FOP version | Minecraft | Forge  | Fabric | Support status               |
-|-------------|-----------|--------|--------|------------------------------|
-| 1.0.0       | 1.20.1    | Yes    | No     | Unsupported                  |
-| 1.0.1       | 1.20.1    | Yes    | No     | Unsupported                  |
-| 1.0.2       | 1.20.1    | Yes    | No     | Unsupported                  |
-| 1.0.3       | 1.20.1    | Yes    | No     | Unsupported                  |
-| 1.1.0       | 1.20.1    | Yes    | No     | Unsupported                  |
 | 1.1.1       | 1.20.1    | Yes    | No     | Supported legacy release     |
 | 1.1.2       | 1.20.1    | Yes    | No     | Supported legacy release     |
 | 1.2.0       | 1.20.1    | Yes    | Yes    | Current Multi-Loader Release |
