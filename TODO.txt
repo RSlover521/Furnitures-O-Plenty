@@ -20,21 +20,47 @@ TODO LIST (IN PRIORITY)
 -----
 
 - fix ceiling fan no blades texture issue (done, WORKED)
-- fix rendering issues (e.g. water rendering on certain blocks)
+- fix rendering issues (e.g. water rendering on certain blocks) (done, worked)
 - release 1.1.0 (official release)
 
 ----- 
 
-- backpacked compat (done, worked)
-- release 1.1.1 (official).
+- backpacked compat (done, does not work without backpacked mod)
+- release 1.1.1 (official)
 
 -----
 
-- cutting board food rendering issue
-- release 1.1.2 (official).
+- backpacked compat issue fix (done, worked)
+- release 1.1.2 (official)
 
 -----
 
-- recolor textures
-- any more bugs found/in the issues link
-- release 1.1.3 (official)
+- Multi-loader support (internal changes) (done, worked)
+- release 1.2.0 (official)
+
+-----
+
+- cutting board rendering issue (done, haven't tested yet)
+- release 1.2.1 (official)
+
+----- 
+
+- texture recoloring (in progress)
+- release 1.2.2 (official)
+
+-----
+
+- 1.20.4 minecraft version bump release
+- Biomes O' Plenty internal implement
+- Add new wood types (if applicable)
+- MinecraftForge/Fabric API 1.20.4 changes
+- Architectury API 1.20.4 changes (major changes possible)
+- release 1.3.0 (official)
+
+-----
+
+- 1.21.1 update
+- Neoforge Implementation
+- MinecraftForge/Fabric API 1.21.1 changes
+- Biomes O' Plenty wood type updates
+- release 1.4.0 (official)
