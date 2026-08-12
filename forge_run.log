@@ -1,0 +1,84 @@
+To honour the JVM settings for this build a single-use Daemon process will be forked. For more on this, please refer to https://docs.gradle.org/8.8/userguide/gradle_daemon.html#sec:disabling_the_daemon in the Gradle documentation.
+Daemon will be stopped at the end of the build 
+
+> Configure project :
+Architect Plugin: 3.4.151
+Architectury Loom: 1.7.435
+You are using an outdated version of Architectury Loom! This version will not receive any support, please consider updating!
+
+> Task :common:compileJava UP-TO-DATE
+> Task :common:processResources UP-TO-DATE
+> Task :common:classes UP-TO-DATE
+> Task :common:jar UP-TO-DATE
+> Task :forge:compileJava UP-TO-DATE
+> Task :forge:processResources UP-TO-DATE
+> Task :forge:classes UP-TO-DATE
+> Task :forge:generateLog4jConfig UP-TO-DATE
+> Task :forge:generateRemapClasspath UP-TO-DATE
+> Task :forge:generateDLIConfig UP-TO-DATE
+> Task :forge:prepareArchitecturyTransformer
+> Task :forge:configureLaunch
+> Task :forge:downloadAssets UP-TO-DATE
+> Task :forge:configureClientLaunch
+
+> Task :forge:runClient
+[Architectury Transformer] Architectury Runtime 5.2.80
+[Architectury Transformer] Read classpath in 4.781 s
+[Architectury Transformer] Listening at /workspaces/Furnitures-O-Plenty/common/build/devlibs/furnituresoplenty-1.2.1-dev.jar
+[34m[19:13:26][m [32m[main/INFO][m [36m(Launcher)[m [0mModLauncher running: args [--launchTarget, forgeclientuserdev, --version, MOD_DEV, --assetIndex, 1.20.1-5, --assetsDir, /home/codespace/.gradle/caches/fabric-loom/assets, --gameDir, ., --fml.forgeVersion, 47.4.0, --fml.mcVersion, 1.20.1, --fml.forgeGroup, net.minecraftforge, --fml.mcpVersion, 20230612.114412]
+[m[34m[19:13:26][m [32m[main/INFO][m [36m(Launcher)[m [0mModLauncher 10.0.9+10.0.9+main.dcd20f30 starting: java version 17.0.20 by Amazon.com Inc.; OS Linux arch amd64 version 6.8.0-1052-azure
+[m[34m[19:13:26][m [32m[main/INFO][m [36m(ImmediateWindowHandler)[m [0mLoading ImmediateWindowProvider fmlearlywindow
+[merror: XDG_RUNTIME_DIR is invalid or not set in the environment.
+[34m[19:13:27][m [31m[main/ERROR][m [36m(EARLYDISPLAY)[m [31mERROR DISPLAY
+Failed to initialize graphics window with current settings.
+
+
+Failure details:
+We are unable to initialize the graphics system.
+glfwInit failed.
+
+
+If you click yes, we will try and open https://links.minecraftforge.net/early-display-errors in your default browser
+[mException in thread "main" java.lang.IllegalStateException: Unable to initialize GLFW
+	at MC-BOOTSTRAP/fmlearlydisplay@1.20.1-47.4.0/net.minecraftforge.fml.earlydisplay.DisplayWindow.initWindow(DisplayWindow.java:348)
+	at MC-BOOTSTRAP/fmlearlydisplay@1.20.1-47.4.0/net.minecraftforge.fml.earlydisplay.DisplayWindow.start(DisplayWindow.java:291)
+	at MC-BOOTSTRAP/fmlearlydisplay@1.20.1-47.4.0/net.minecraftforge.fml.earlydisplay.DisplayWindow.initialize(DisplayWindow.java:154)
+	at MC-BOOTSTRAP/fmlloader@1.20.1-47.4.0/net.minecraftforge.fml.loading.ImmediateWindowHandler.load(ImmediateWindowHandler.java:48)
+	at MC-BOOTSTRAP/fmlloader@1.20.1-47.4.0/net.minecraftforge.fml.loading.ModDirTransformerDiscoverer.earlyInitialization(ModDirTransformerDiscoverer.java:43)
+	at MC-BOOTSTRAP/cpw.mods.modlauncher@10.0.9/cpw.mods.modlauncher.TransformationServicesHandler.lambda$discoverServices$18(TransformationServicesHandler.java:131)
+	at java.base/java.lang.Iterable.forEach(Iterable.java:75)
+	at MC-BOOTSTRAP/cpw.mods.modlauncher@10.0.9/cpw.mods.modlauncher.TransformationServicesHandler.discoverServices(TransformationServicesHandler.java:131)
+	at MC-BOOTSTRAP/cpw.mods.modlauncher@10.0.9/cpw.mods.modlauncher.Launcher.run(Launcher.java:87)
+	at MC-BOOTSTRAP/cpw.mods.modlauncher@10.0.9/cpw.mods.modlauncher.Launcher.main(Launcher.java:78)
+	at MC-BOOTSTRAP/cpw.mods.modlauncher@10.0.9/cpw.mods.modlauncher.BootstrapLaunchConsumer.accept(BootstrapLaunchConsumer.java:26)
+	at MC-BOOTSTRAP/cpw.mods.modlauncher@10.0.9/cpw.mods.modlauncher.BootstrapLaunchConsumer.accept(BootstrapLaunchConsumer.java:23)
+	at cpw.mods.bootstraplauncher.BootstrapLauncher.main(BootstrapLauncher.java:141)
+	at net.fabricmc.devlaunchinjector.Main.main(Main.java:86)
+	at dev.architectury.transformer.TransformerRuntime.main(TransformerRuntime.java:219)
+xterm: Xt error: Can't open display: 
+xterm: DISPLAY is not set
+cat: /tmp/tinyfd.txt: No such file or directory
+rm: cannot remove '/tmp/tinyfd.txt': No such file or directory
+
+> Task :forge:runClient FAILED
+
+FAILURE: Build failed with an exception.
+
+* What went wrong:
+Execution failed for task ':forge:runClient'.
+> Process 'command '/usr/local/sdkman/candidates/java/17.0.20-amzn/bin/java'' finished with non-zero exit value 1
+
+* Try:
+> Run with --stacktrace option to get the stack trace.
+> Run with --info or --debug option to get more log output.
+> Run with --scan to get full insights.
+> Get more help at https://help.gradle.org.
+
+Deprecated Gradle features were used in this build, making it incompatible with Gradle 9.0.
+
+You can use '--warning-mode all' to show the individual deprecation warnings and determine if they come from your own scripts or plugins.
+
+For more on this, please refer to https://docs.gradle.org/8.8/userguide/command_line_interface.html#sec:command_line_warnings in the Gradle documentation.
+
+BUILD FAILED in 50s
+11 actionable tasks: 2 executed, 9 up-to-date
