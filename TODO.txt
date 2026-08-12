@@ -1,35 +1,5 @@
 TODO LIST (IN PRIORITY)
 
-- fix item models (done, worked)
-- fix storage cabinet missing texture issue (done, worked)
-- fix table texture issue (done, worked)
-- release 1.0.1 beta (creative mode only)
-
------
-
-- add loot tables to all blocks (done, worked)
-- add recipes for all blocks (done, worked, along with JEI support)
-- add hedges and different hedges for maple (done, worked)
-- release 1.0.2 (still beta) (supports survival... somehow)
-
------
-
-- mini update: origin hedges (done, worked)
-- release 1.0.3 (beta)
-
------
-
-- fix ceiling fan no blades texture issue (done, WORKED)
-- fix rendering issues (e.g. water rendering on certain blocks) (done, worked)
-- release 1.1.0 (official release)
-
------ 
-
-- backpacked compat (done, does not work without backpacked mod)
-- release 1.1.1 (official)
-
------
-
 - backpacked compat issue fix (done, worked)
 - release 1.1.2 (official)
 
@@ -55,12 +25,59 @@ TODO LIST (IN PRIORITY)
 - Add new wood types (if applicable)
 - MinecraftForge/Fabric API 1.20.4 changes
 - Architectury API 1.20.4 changes (major changes possible)
+- release 1.2.3 (official)
+
+-----
+
+- 1.20.6 update
+- release 1.2.4 (official)
+
+-----
+
+- 1.21 update
+- new branch
+- Neoforge Implementation
+- MinecraftForge/Fabric API 1.21.1 changes
+- Architectury API 1.21.1 changes
+- Biomes O' Plenty wood type updates
 - release 1.3.0 (official)
 
 -----
 
 - 1.21.1 update
-- Neoforge Implementation
-- MinecraftForge/Fabric API 1.21.1 changes
-- Biomes O' Plenty wood type updates
-- release 1.4.0 (official)
+
+-----
+
+- 1.21.4 update
+
+-----
+
+- 1.21.5 update
+
+-----
+
+- 1.21.6 update
+
+-----
+
+- 1.21.7 update
+
+-----
+
+- 1.21.8 update
+
+----- (no 1.21.9, as Refurbished Furniture does not have 1.21.9 version)
+
+- 1.21.10 update
+
+-----
+
+- 1.21.11 update
+
+----- (no 26.1.1 as Biomesoplenty does not have 26.1.1)
+
+- 26.1.2 update
+
+-----
+
+- 26.2 update
