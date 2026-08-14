@@ -27,12 +27,10 @@
   <a href="https://www.curseforge.com/minecraft/mc-mods/furnitures-o-plenty">
     <img alt="CurseForge Downloads" src="https://img.shields.io/curseforge/dt/1363774?style=for-the-badge&color=orange&logo=curseforge&logoColor=orange">
   </a>
-</p>
-
 <p align="center">
-  <img alt="Minecraft 1.20.1" src="https://img.shields.io/badge/Minecraft-1.20.1-62B47A?style=for-the-badge&logo=minecraft">
-  <img alt="Forge supported" src="https://img.shields.io/badge/Forge-Supported-F16436?style=for-the-badge">
-  <img alt="Fabric supported" src="https://img.shields.io/badge/Fabric-Supported-DBD0B4?style=for-the-badge">
+  <img alt="Minecraft 1.20.1" src="https://img.shields.io/badge/Minecraft-1.20.1-62B47A?style=for-the-badge&logo=minecraft&logoColor=white">
+  <img alt="Forge supported" src="https://img.shields.io/badge/Forge-Supported-F16436?style=for-the-badge&logo=data:image/svg%2Bxml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxMDAgMTAwIj4KICAKPGCGSMS9Gb3JnZSBhbnZpbCBpY29uIC0tPgogIDxnIGZpbGw9IiNGMTY0MzYiPgogICAgPCEtLSBBbnZpbCBib2R5IC0tPgogICAgPHJlY3QgeD0iMjUiIHk9IjM1IiB3aWR0aD0iNTAiIGhlaWdodD0iMjUiIHJ4PSIyIi8+CiAgICA8IS0tIEFudmlsIGhvcm4gLS0+CiAgICA8ZWxsaXBzZSBjeD0iNzUiIGN5PSI0MCIgcng9IjEyIiByeT0iMTAiLz4KICAgIDwhLS0gQW52aWwgYmFzZS9zdGFuZCAtLT4KICAgIDxyZWN0IHg9IjIwIiB5PSI2MCIgd2lkdGg9IjYwIiBoZWlnaHQ9IjgiIHJ4PSIyIi8+CiAgICA8IS0tIFN0YW5kIGxlZ3MgLS0+CiAgICA8cmVjdCB4PSIyNSIgeT0iNjgiIHdpZHRoPSI2IiBoZWlnaHQ9IjEwIi8+CiAgICA8cmVjdCB4PSI2OSIgeT0iNjgiIHdpZHRoPSI2IiBoZWlnaHQ9IjEwIi8+CiAgPC9nPgojsvzwvc3ZnPg==">
+  <img alt="Fabric supported" src="https://img.shields.io/badge/Fabric-Supported-DBD0B4?style=for-the-badge&logo=data:image/svg%2Bxml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxMDAgMTAwIj4KICAKPGCGSMS9GYWJyaWMgaW50ZXJjb25uZWN0ZWQgbm9kZXMgaWNvbiAtLT4KICAKPGCGC1sS9UuZ3p0Ryp0YW5kIFswLjNdIGZvbnQtd2VpZ2h0PSJib2xkIiBmaWxsPSIjREJEMEI0IiB0ZXh0LWFuY2hvcj0ibWlkZGxlIiBkeT0iLjNlbSI+RkM8L3RleHQ+PC9zdmc+">
 </p>
 
 ---

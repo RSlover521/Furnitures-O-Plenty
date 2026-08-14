@@ -15,6 +15,9 @@ dependencies {
     // Backpacked's shared ShelfBlock/ShelfBlockEntity API is present on both
     // loaders. Platform subclasses and bootstrap code stay in loader modules.
     modCompileOnly 'curse.maven:backpacked-fabric-667380:7300458'
+
+    // JSON parsing for ModValidator
+    implementation 'com.google.code.gson:gson:2.10.1'
 }
 
 processResources {
