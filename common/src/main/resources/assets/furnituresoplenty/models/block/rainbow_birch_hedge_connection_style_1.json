@@ -1,7 +1,7 @@
 {
   "parent": "refurbished_furniture:block/hedge_connection_style_1",
   "textures": {
-    "particle": "furnituresoplenty:block/rainbow_birch_hedge",
+    "particle": "biomesoplenty:rainbow_birch_leaves",
     "texture": "furnituresoplenty:block/rainbow_birch_hedge"
   }
 }

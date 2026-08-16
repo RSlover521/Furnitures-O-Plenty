@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+  <!-- Fabric interconnected nodes icon -->
+  <g fill="none" stroke="#DBD0B4" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+    <!-- Top left node -->
+    <circle cx="25" cy="25" r="5" fill="#DBD0B4"/>
+    <!-- Top right node -->
+    <circle cx="75" cy="25" r="5" fill="#DBD0B4"/>
+    <!-- Bottom left node -->
+    <circle cx="25" cy="75" r="5" fill="#DBD0B4"/>
+    <!-- Bottom right node -->
+    <circle cx="75" cy="75" r="5" fill="#DBD0B4"/>
+    <!-- Center node -->
+    <circle cx="50" cy="50" r="5" fill="#DBD0B4"/>
+    
+    <!-- Connecting lines -->
+    <line x1="25" y1="25" x2="50" y2="50"/>
+    <line x1="75" y1="25" x2="50" y2="50"/>
+    <line x1="25" y1="75" x2="50" y2="50"/>
+    <line x1="75" y1="75" x2="50" y2="50"/>
+  </g>
+</svg>

@@ -4,6 +4,7 @@ import com.rslover521.furnituresoplenty.forge.compat.backpacked.BackpackedClient
 import com.mrcrayfish.furniture.refurbished.client.renderer.blockentity.CeilingFanBlockEntityRenderer;
 import com.mrcrayfish.furniture.refurbished.client.renderer.blockentity.BasinBlockEntityRenderer;
 import com.mrcrayfish.furniture.refurbished.client.renderer.blockentity.BathBlockEntityRenderer;
+import com.mrcrayfish.furniture.refurbished.client.renderer.blockentity.CuttingBoardBlockEntityRenderer;
 import com.mrcrayfish.furniture.refurbished.client.renderer.blockentity.KitchenSinkBlockEntityRenderer;
 import com.mrcrayfish.furniture.refurbished.client.renderer.blockentity.StorageJarRenderer;
 import com.mrcrayfish.furniture.refurbished.client.renderer.blockentity.ToiletBlockEntityRenderer;
@@ -174,6 +175,7 @@ public final class ModClientRenderers {
         event.registerBlockEntityRenderer(ModBlockEntities.CUSTOM_BASIN.get(), BasinBlockEntityRenderer::new);
         event.registerBlockEntityRenderer(ModBlockEntities.CUSTOM_BATH.get(), BathBlockEntityRenderer::new);
         event.registerBlockEntityRenderer(ModBlockEntities.CUSTOM_CEILING_FAN.get(), CustomCeilingFanBlockEntityRenderer::new);
+        event.registerBlockEntityRenderer(ModBlockEntities.CUSTOM_CUTTING_BOARD.get(), CuttingBoardBlockEntityRenderer::new);
         event.registerBlockEntityRenderer(ModBlockEntities.CUSTOM_KITCHEN_SINK.get(), KitchenSinkBlockEntityRenderer::new);
         if (ModList.get().isLoaded("backpacked")) {
             BackpackedClientCompat.registerRenderer(event);
