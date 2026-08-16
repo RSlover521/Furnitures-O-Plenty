@@ -1,7 +1,7 @@
 {
   "parent": "furnituresoplenty:block/drawer_left_open",
   "textures": {
-    "particle": "furnituresoplenty:block/dead_particle",
+    "particle": "biomesoplenty:dead_particle",
     "texture": "furnituresoplenty:block/dead_drawer"
   }
 }
