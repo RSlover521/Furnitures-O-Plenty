@@ -1,7 +1,6 @@
 package com.rslover521.furnituresoplenty.core;
 
 import com.mrcrayfish.furniture.refurbished.blockentity.CrateBlockEntity;
-import com.mrcrayfish.furniture.refurbished.blockentity.CuttingBoardBlockEntity;
 import com.mrcrayfish.furniture.refurbished.blockentity.DrawerBlockEntity;
 import com.mrcrayfish.furniture.refurbished.blockentity.KitchenDrawerBlockEntity;
 import com.mrcrayfish.furniture.refurbished.blockentity.MailboxBlockEntity;
@@ -12,6 +11,7 @@ import com.rslover521.furnituresoplenty.FurnituresOPlentyCommon;
 import com.rslover521.furnituresoplenty.customBlockEntities.CustomBasinBlockEntity;
 import com.rslover521.furnituresoplenty.customBlockEntities.CustomBathBlockEntity;
 import com.rslover521.furnituresoplenty.customBlockEntities.CustomCeilingFanBlockEntity;
+import com.rslover521.furnituresoplenty.customBlockEntities.CustomCuttingBoardBlockEntity;
 import com.rslover521.furnituresoplenty.customBlockEntities.CustomKitchenSinkBlockEntity;
 import com.rslover521.furnituresoplenty.customBlockEntities.CustomToiletBlockEntity;
 
@@ -113,9 +113,9 @@ public class ModBlockEntities {
                             ModBlocks.EMPYREAL_CRATE.get()
                     ).build(null));
 
-    public static final RegistrySupplier<BlockEntityType<CuttingBoardBlockEntity>> CUSTOM_CUTTING_BOARD =
+    public static final RegistrySupplier<BlockEntityType<CustomCuttingBoardBlockEntity>> CUSTOM_CUTTING_BOARD =
             BLOCK_ENTITIES.register("custom_cutting_board",
-                    () -> BlockEntityType.Builder.of(CuttingBoardBlockEntity::new, 
+                    () -> BlockEntityType.Builder.of(CustomCuttingBoardBlockEntity::new,
                             ModBlocks.FIR_CUTTING_BOARD.get(),
                             ModBlocks.PINE_CUTTING_BOARD.get(),
                             ModBlocks.MAPLE_CUTTING_BOARD.get(),

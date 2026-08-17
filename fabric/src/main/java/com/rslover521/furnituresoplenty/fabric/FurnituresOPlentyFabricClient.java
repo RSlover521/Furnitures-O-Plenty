@@ -8,6 +8,7 @@ import com.mrcrayfish.furniture.refurbished.client.renderer.blockentity.StorageJ
 import com.mrcrayfish.furniture.refurbished.client.renderer.blockentity.ToiletBlockEntityRenderer;
 import com.mrcrayfish.furniture.refurbished.blockentity.BasinBlockEntity;
 import com.mrcrayfish.furniture.refurbished.blockentity.BathBlockEntity;
+import com.mrcrayfish.furniture.refurbished.blockentity.CuttingBoardBlockEntity;
 import com.mrcrayfish.furniture.refurbished.blockentity.KitchenSinkBlockEntity;
 import com.mrcrayfish.furniture.refurbished.blockentity.ToiletBlockEntity;
 import com.rslover521.furnituresoplenty.client.renderer.CustomCeilingFanBlockEntityRenderer;
@@ -51,7 +52,8 @@ public final class FurnituresOPlentyFabricClient implements ClientModInitializer
         BlockEntityRendererRegistry.register(ModBlockEntities.CUSTOM_BATH.get(),
                 narrow((BlockEntityRendererProvider<BathBlockEntity>) BathBlockEntityRenderer::new));
         BlockEntityRendererRegistry.register(ModBlockEntities.CUSTOM_CEILING_FAN.get(), CustomCeilingFanBlockEntityRenderer::new);
-        BlockEntityRendererRegistry.register(ModBlockEntities.CUSTOM_CUTTING_BOARD.get(), CuttingBoardBlockEntityRenderer::new);
+        BlockEntityRendererRegistry.register(ModBlockEntities.CUSTOM_CUTTING_BOARD.get(),
+                narrow((BlockEntityRendererProvider<CuttingBoardBlockEntity>) CuttingBoardBlockEntityRenderer::new));
         BlockEntityRendererRegistry.register(ModBlockEntities.CUSTOM_KITCHEN_SINK.get(),
                 narrow((BlockEntityRendererProvider<KitchenSinkBlockEntity>) KitchenSinkBlockEntityRenderer::new));
         BlockEntityRendererRegistry.register(ModBlockEntities.CUSTOM_STORAGE_JAR.get(), StorageJarRenderer::new);
