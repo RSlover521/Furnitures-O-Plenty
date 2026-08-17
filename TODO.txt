@@ -10,7 +10,7 @@ TODO LIST (IN PRIORITY)
 
 -----
 
-- cutting board rendering issue (done, haven't tested yet)
+- cutting board rendering issue (done, worked)
 - release 1.2.1 (official)
 
 ----- 
